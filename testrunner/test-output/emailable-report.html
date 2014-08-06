@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</th></tr><tr><td><a href="#t0">component-tests(failed)(failed)(failed)(failed)(failed)</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">3,195</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">parallel-ui-tests(failed)(failed)(failed)(failed)(failed)</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">206,092</td><td></td><td></td></tr><tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">9</th><th class="num">209,287</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">component-tests(failed)(failed)(failed)(failed)(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">teammates.test.cases.storage.AccountsDbTest</td><td><a href="#m0">testDeleteAccount</a></td><td rowspan="1">1407296153150</td><td rowspan="1">486</td></tr><tr class="failedodd"><td rowspan="2">teammates.test.cases.storage.ProfilesDbTest</td><td><a href="#m1">testUpdateStudentProfile</a></td><td rowspan="1">1407296153637</td><td rowspan="1">28</td></tr><tr class="failedodd"><td><a href="#m2">testUpdateStudentProfilePicture</a></td><td rowspan="1">1407296153665</td><td rowspan="1">131</td></tr><tr class="failedeven"><td rowspan="1">teammates.test.cases.ui.AllActionsAccessControlTest</td><td><a href="#m3">StudentProfilePictureEdit</a></td><td rowspan="1">1407296154805</td><td rowspan="1">134</td></tr><tr class="failedodd"><td rowspan="1">teammates.test.cases.ui.StudentProfilePictureEditActionTest</td><td><a href="#m4">testExecuteAndPostProcess</a></td><td rowspan="1">1407296155641</td><td rowspan="1">47</td></tr></tbody><tbody id="t1"><tr><th colspan="4">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</td><td><a href="#m5">allTests</a></td><td rowspan="1">1407296168774</td><td rowspan="1">99935</td></tr><tr class="failedodd"><td rowspan="1">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</td><td><a href="#m6">testAll</a></td><td rowspan="1">1407296186196</td><td rowspan="1">35603</td></tr><tr class="failedeven"><td rowspan="1">teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest</td><td><a href="#m7">testAll</a></td><td rowspan="1">1407296176944</td><td rowspan="1">181725</td></tr><tr class="failedodd"><td rowspan="1">teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</td><td><a href="#m8">testAll</a></td><td rowspan="1">1407296198038</td><td rowspan="1">31510</td></tr></tbody></table><h2>component-tests(failed)(failed)(failed)(failed)(failed)</h2><h3 id="m0">teammates.test.cases.storage.AccountsDbTest#testDeleteAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/appengine/tools/cloudstorage/GcsFilename
+	at teammates.common.util.GoogleCloudStorageHelper.writeDataToGcs(GoogleCloudStorageHelper.java:54)
+	at teammates.common.util.GoogleCloudStorageHelper.writeFileToGcs(GoogleCloudStorageHelper.java:26)
+	at teammates.test.cases.storage.AccountsDbTest.testDeleteAccount(AccountsDbTest.java:273)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.google.appengine.tools.cloudstorage.GcsFilename
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 23 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">teammates.test.cases.storage.ProfilesDbTest#testUpdateStudentProfile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/appengine/tools/cloudstorage/GcsFilename
+	at teammates.common.util.GoogleCloudStorageHelper.writeDataToGcs(GoogleCloudStorageHelper.java:54)
+	at teammates.common.util.GoogleCloudStorageHelper.writeFileToGcs(GoogleCloudStorageHelper.java:26)
+	at teammates.test.cases.storage.ProfilesDbTest.testUpdateStudentProfile(ProfilesDbTest.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">teammates.test.cases.storage.ProfilesDbTest#testUpdateStudentProfilePicture</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/appengine/tools/cloudstorage/GcsFilename
+	at teammates.common.util.GoogleCloudStorageHelper.writeDataToGcs(GoogleCloudStorageHelper.java:54)
+	at teammates.common.util.GoogleCloudStorageHelper.writeFileToGcs(GoogleCloudStorageHelper.java:26)
+	at teammates.test.cases.storage.ProfilesDbTest.testUpdateStudentProfilePicture(ProfilesDbTest.java:164)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">teammates.test.cases.ui.AllActionsAccessControlTest#StudentProfilePictureEdit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/appengine/tools/cloudstorage/GcsFilename
+	at teammates.ui.controller.StudentProfilePictureEditAction.execute(StudentProfilePictureEditAction.java:60)
+	at teammates.ui.controller.Action.executeAndPostProcess(Action.java:312)
+	at teammates.test.cases.ui.BaseActionTest.verifyCanAccess(BaseActionTest.java:635)
+	at teammates.test.cases.ui.BaseActionTest.verifyAccessibleForStudents(BaseActionTest.java:352)
+	at teammates.test.cases.ui.BaseActionTest.verifyAnyRegisteredUserCanAccess(BaseActionTest.java:252)
+	at teammates.test.cases.ui.AllActionsAccessControlTest.StudentProfilePictureEdit(AllActionsAccessControlTest.java:1516)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.google.appengine.tools.cloudstorage.GcsFilename
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 26 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">teammates.test.cases.ui.StudentProfilePictureEditActionTest#testExecuteAndPostProcess</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/appengine/tools/cloudstorage/GcsFilename
+	at teammates.ui.controller.StudentProfilePictureEditAction.execute(StudentProfilePictureEditAction.java:60)
+	at teammates.ui.controller.Action.executeAndPostProcess(Action.java:312)
+	at teammates.test.cases.ui.StudentProfilePictureEditActionTest.testExecuteAndPostProcess(StudentProfilePictureEditActionTest.java:100)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>parallel-ui-tests(failed)(failed)(failed)(failed)(failed)</h2><h3 id="m5">teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest#allTests</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;[The interval 1 - 5 is not divisible by the specified increment.]&gt; but was:&lt;[Please enter valid numbers for all the options.]&gt;
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.testInputValidationForNumScaleQuestion(InstructorFeedbackEditPageUiTest.java:627)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests(InstructorFeedbackEditPageUiTest.java:105)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest#testAll</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testSubmitAction(InstructorFeedbackSubmitPageUiTest.java:188)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll(InstructorFeedbackSubmitPageUiTest.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest#testAll</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=instructorWith2Courses&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;charlie&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorWith2Courses&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Students
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;panel panel-info&quot;&gt;
+               &lt;div class=&quot;panel-heading&quot;&gt;
+                  &lt;strong&gt;
+                     [course3]
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;panel-body padding-0&quot;&gt;
+                  &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                     &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;
+                              Photo
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortsection-0&quot; onclick=&quot;toggleSort(this, 1)&quot;&gt;
+                              Section
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortteam-0&quot; onclick=&quot;toggleSort(this, 2)&quot;&gt;
+                              Team
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname-0&quot; onclick=&quot;toggleSort(this, 3)&quot;&gt;
+                              Student Name
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortemail-0&quot; onclick=&quot;toggleSort(this, 4)&quot;&gt;
+                              Email
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th&gt;
+                              Action(s)
+                           &lt;/th&gt;
+                        &lt;/tr&gt;
+                     &lt;/thead&gt;
+                     &lt;tbody&gt;
+                        &lt;tr id=&quot;student-c0.0&quot; style=&quot;display: table-row;&quot;&gt;
+                           &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
+                              &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&quot;&gt;
+                                 &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
+                                    View Photo
+                                 &lt;/a&gt;
+                                 &lt;img alt=&quot;No Image Given&quot; class=&quot;hidden&quot; src=&quot;&quot;/&gt;
+                                                               &lt;/div&gt;
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentsection-c0.0&quot;&gt;
+                              None
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentteam-c0.0&quot;&gt;
+                              Team 2
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentname-c0.0&quot;&gt;
+                              Charlie D
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentemail-c0.0&quot;&gt;
+                              CCSDetailsUiT.charlie.tmms@gmail.com
+                           &lt;/td&gt;
+                           &lt;td class=&quot;no-print align-center&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course3&amp;studentemail=CCSDetailsUiT.charlie.tmms%40gmail.com&amp;user=instructorWith2Courses&quot; title=&quot;&quot;&gt;
+                                 View
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course3&amp;studentemail=CCSDetailsUiT.charlie.tmms%40gmail.com&amp;user=instructorWith2Courses&quot; title=&quot;&quot;&gt;
+                                 Edit
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; data-original-title=&quot;Delete the student and the corresponding submissions from the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course3&amp;studentemail=CCSDetailsUiT.charlie.tmms%40gmail.com&amp;user=instructorWith2Courses&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course3&apos;,&apos;Charlie D&apos;)&quot; title=&quot;&quot;&gt;
+                                 Delete
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all data about this student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course3&amp;studentemail=CCSDetailsUiT.charlie.tmms%40gmail.com&amp;user=instructorWith2Courses&quot; title=&quot;&quot;&gt;
+                                 All Records
+                              &lt;/a&gt;
+                              &lt;div class=&quot;dropdown&quot; style=&quot;display:inline;&quot;&gt;
+                                 &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                    Add Comment
+                                 &lt;/a&gt;
+                                 &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot; style=&quot;text-align:left;&quot;&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course3&amp;studentemail=CCSDetailsUiT.charlie.tmms%40gmail.com&amp;user=instructorWith2Courses&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Charlie D
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course3&amp;studentemail=CCSDetailsUiT.charlie.tmms%40gmail.com&amp;user=instructorWith2Courses&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Team 2
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/div&gt;
+                           &lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/tbody&gt;
+                  &lt;/table&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=instructorWith2Courses&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;charlie&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorWith2Courses&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+         No results found.
+      &lt;/div&gt;
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+      &lt;/script&gt;
+   &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:815)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:857)
+	at teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testSearch(InstructorStudentListPageUiTest.java:79)
+	at teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll(InstructorStudentListPageUiTest.java:56)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest#testAll</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest.testSubmitAction(StudentFeedbackSubmitPageUiTest.java:207)
+	at teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest.testAll(StudentFeedbackSubmitPageUiTest.java:56)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
