@@ -1,0 +1,5 @@
+From https://github.com/TEAMMATES/repo
+ * [new branch]      Issue2372  -> origin/Issue2372
+Branch origin-Issue2372 set up to track remote branch Issue2372 from origin.
+Switched to a new branch 'origin-Issue2372'
+Already up-to-date.
