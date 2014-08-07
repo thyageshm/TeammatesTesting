@@ -18,4 +18,4 @@ compile:
 BUILD FAILED
 D:\Teammates\build.xml:46: Compile failed; see the compiler error output for details.
 
-Total time: 10 seconds
+Total time: 12 seconds
