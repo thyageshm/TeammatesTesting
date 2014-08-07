@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="117630" started-at="2014-08-06T08:43:27Z" finished-at="2014-08-06T08:45:25Z">
+  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="100870" started-at="2014-08-07T03:54:40Z" finished-at="2014-08-07T03:56:21Z">
     <groups>
     </groups>
-    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="117630" started-at="2014-08-06T08:43:27Z" finished-at="2014-08-06T08:45:25Z">
+    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="100870" started-at="2014-08-07T03:54:40Z" finished-at="2014-08-07T03:56:21Z">
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@1f6177]" name="classSetup" is-config="true" duration-ms="8987" started-at="2014-08-06T08:43:28Z" finished-at="2014-08-06T08:43:37Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@a4f80e]" name="classSetup" is-config="true" duration-ms="10221" started-at="2014-08-07T03:54:41Z" finished-at="2014-08-07T03:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@1f6177]" name="allTests" duration-ms="107816" started-at="2014-08-06T08:43:37Z" finished-at="2014-08-06T08:45:25Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@a4f80e]" name="allTests" duration-ms="89838" started-at="2014-08-07T03:54:51Z" finished-at="2014-08-07T03:56:21Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<[The interval 1 - 5 is not divisible by the specified increment.]> but was:<[Please enter valid numbers for all the options.]>]]>
@@ -41,17 +41,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@1f6177]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-06T08:45:25Z" finished-at="2014-08-06T08:45:25Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@a4f80e]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-07T03:56:21Z" finished-at="2014-08-07T03:56:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
+      <class name="teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest@8aa29e]" name="testSetUp" is-config="true" duration-ms="577" started-at="2014-08-07T03:54:40Z" finished-at="2014-08-07T03:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@999f10]" name="testSetup" is-config="true" duration-ms="0" started-at="2014-08-07T03:54:41Z" finished-at="2014-08-07T03:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@e25f8a]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-08-07T03:54:41Z" finished-at="2014-08-07T03:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest@8aa29e]" name="testTearDown" is-config="true" duration-ms="219" started-at="2014-08-07T03:56:21Z" finished-at="2014-08-07T03:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@e25f8a]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-07T03:56:21Z" finished-at="2014-08-07T03:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@3330e2]" name="classSetup" is-config="true" duration-ms="24591" started-at="2014-08-06T08:43:28Z" finished-at="2014-08-06T08:43:52Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@155e32a]" name="classSetup" is-config="true" duration-ms="19132" started-at="2014-08-07T03:54:41Z" finished-at="2014-08-07T03:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@3330e2]" name="testAll" duration-ms="34102" started-at="2014-08-06T08:43:52Z" finished-at="2014-08-06T08:44:26Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@155e32a]" name="testAll" duration-ms="29645" started-at="2014-08-07T03:55:00Z" finished-at="2014-08-07T03:55:30Z">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 
@@ -80,17 +102,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@3330e2]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-06T08:44:26Z" finished-at="2014-08-06T08:44:26Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@155e32a]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-07T03:55:30Z" finished-at="2014-08-07T03:55:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1d0e98]" name="classSetup" is-config="true" duration-ms="16196" started-at="2014-08-06T08:43:28Z" finished-at="2014-08-06T08:43:44Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1f4b610]" name="classSetup" is-config="true" duration-ms="28370" started-at="2014-08-07T03:54:41Z" finished-at="2014-08-07T03:55:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1d0e98]" name="testAll" duration-ms="33340" started-at="2014-08-06T08:43:44Z" finished-at="2014-08-06T08:44:17Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1f4b610]" name="testAll" duration-ms="28535" started-at="2014-08-07T03:55:09Z" finished-at="2014-08-07T03:55:38Z">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 
@@ -119,33 +141,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1d0e98]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-06T08:44:17Z" finished-at="2014-08-06T08:44:17Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1f4b610]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-07T03:55:38Z" finished-at="2014-08-07T03:55:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
-      <class name="teammates.test.cases.storage.CoursesDbTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.storage.CoursesDbTest@1a91f44]" name="testSetUp" is-config="true" duration-ms="577" started-at="2014-08-06T08:43:27Z" finished-at="2014-08-06T08:43:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@167de91]" name="testSetup" is-config="true" duration-ms="0" started-at="2014-08-06T08:43:28Z" finished-at="2014-08-06T08:43:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@1c62aa8]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-08-06T08:43:28Z" finished-at="2014-08-06T08:43:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.storage.CoursesDbTest@1a91f44]" name="testTearDown" is-config="true" duration-ms="234" started-at="2014-08-06T08:45:25Z" finished-at="2014-08-06T08:45:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@1c62aa8]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-06T08:45:25Z" finished-at="2014-08-06T08:45:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.storage.CoursesDbTest -->
     </test> <!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) -->
   </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] -->
 </testng-results>
