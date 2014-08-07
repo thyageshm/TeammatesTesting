@@ -4,38 +4,8 @@
   <listeners>
     <listener class-name="teammates.test.util.PriorityInterceptor"/>
   </listeners>
-  <test name="rare-tests(failed)(failed)(failed)" parallel="classes">
+  <test name="component-tests(failed)(failed)(failed)" parallel="tests">
     <classes>
-      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="testSetup"/>
-          <include name="testSetup"/>
-          <include name="testSetup"/>
-          <include name="testSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
-      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
-        <methods>
-          <include name="classTearDown"/>
-          <include name="classSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
-      <class name="teammates.test.cases.testdriver.BackDoorTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="testEditStudent"/>
-        </methods>
-      </class> <!-- teammates.test.cases.testdriver.BackDoorTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
         <methods>
           <include name="classSetup"/>
@@ -48,40 +18,82 @@
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest -->
-      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
-      <class name="teammates.test.cases.ui.browsertests.AdminHomePageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
         <methods>
           <include name="classSetup"/>
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
+      <class name="teammates.test.cases.ui.AdminInstructorAccountAddActionTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.AdminInstructorAccountAddActionTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
+        <methods>
+          <include name="classSetup"/>
+          <include name="testSetup"/>
+          <include name="testSetup"/>
+          <include name="testSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorHomePageUiTest">
         <methods>
           <include name="classTearDown"/>
           <include name="classSetup"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorHomePageUiTest -->
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
+        <methods>
+          <include name="classTearDown"/>
+          <include name="classSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testAll"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
     </classes>
-  </test> <!-- rare-tests(failed)(failed)(failed) -->
+  </test> <!-- component-tests(failed)(failed)(failed) -->
   <test name="sequential-ui-tests(failed)(failed)(failed)" parallel="tests">
     <classes>
+      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
+        <methods>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest">
+        <methods>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
+        <methods>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
+      <class name="teammates.test.cases.ui.AdminInstructorAccountAddActionTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.AdminInstructorAccountAddActionTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
         <methods>
           <include name="classSetup"/>
@@ -89,10 +101,15 @@
           <include name="testSetup"/>
           <include name="testSetup"/>
           <include name="testSetup"/>
-          <include name="testSetup"/>
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorHomePageUiTest">
+        <methods>
+          <include name="classTearDown"/>
+          <include name="classSetup"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorHomePageUiTest -->
       <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
         <methods>
           <include name="classTearDown"/>
@@ -100,93 +117,15 @@
           <include name="testSetUp"/>
           <include name="testSetUp"/>
           <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
           <include name="testTearDown"/>
           <include name="testTearDown"/>
           <include name="testTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
-      <class name="teammates.test.cases.testdriver.BackDoorTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.testdriver.BackDoorTest -->
-      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest -->
-      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
-      <class name="teammates.test.cases.ui.browsertests.AdminHomePageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.InstructorHomePageUiTest">
-        <methods>
-          <include name="classTearDown"/>
-          <include name="classSetup"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorHomePageUiTest -->
     </classes>
   </test> <!-- sequential-ui-tests(failed)(failed)(failed) -->
   <test name="parallel-ui-tests(failed)(failed)(failed)" parallel="classes">
     <classes>
-      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="testSetup"/>
-          <include name="testSetup"/>
-          <include name="testSetup"/>
-          <include name="testSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
-      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
-        <methods>
-          <include name="classTearDown"/>
-          <include name="classSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
-      <class name="teammates.test.cases.testdriver.BackDoorTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.testdriver.BackDoorTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest">
         <methods>
           <include name="testAll"/>
@@ -201,24 +140,6 @@
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
-      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
-      <class name="teammates.test.cases.ui.browsertests.AdminHomePageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
         <methods>
           <include name="classSetup"/>
@@ -226,12 +147,44 @@
           <include name="testAll"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
+      <class name="teammates.test.cases.ui.AdminInstructorAccountAddActionTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.AdminInstructorAccountAddActionTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
+        <methods>
+          <include name="classSetup"/>
+          <include name="testSetup"/>
+          <include name="testSetup"/>
+          <include name="testSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorHomePageUiTest">
         <methods>
           <include name="classTearDown"/>
           <include name="classSetup"/>
+          <include name="allTests"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorHomePageUiTest -->
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
+        <methods>
+          <include name="classTearDown"/>
+          <include name="classSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
     </classes>
   </test> <!-- parallel-ui-tests(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]] -->

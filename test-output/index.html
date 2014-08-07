@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,26 +114,7 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.testdriver.BackDoorTest" hash-for-method="testEditStudent">testEditStudent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="hide-methods passed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (hide)</a> <!-- hide-methods passed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
-                      <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="show-methods passed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (show)</a> <!-- show-methods passed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
-                    </span>
-                    <div class="method-list-content passed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest" hash-for-method="allTests">allTests</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -148,20 +129,21 @@
           <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">teammates.test.cases.testdriver.BackDoorTest</span>
+              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testEditStudent">
-                  </a> <!-- testEditStudent -->
-                  <span class="method-name">testEditStudent</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;[BACKDOOR_STATUS_SUCCESS]&gt; but was:&lt;[BACKDOOR_STATUS_FAILURE]teammates.common.exception.EntityDoesNotExistException: Trying to update non-existent Student: idOfTypicalCourse1/student4InCourse1@gmail.com	at teammates.storage.api.StudentsDb.verifyStudentExists(StudentsDb.java:510)	at teammates.logic.core.StudentsLogic.updateStudentCascadeWithSubmissionAdjustmentScheduled(StudentsLogic.java:270)	at teammates.logic.core.StudentsLogic.updateStudentCascade(StudentsLogic.java:228)	at teammates.logic.core.StudentsLogic.updateStudentCascadeWithoutDocument(StudentsLogic.java:222)	at teammates.logic.api.Logic.updateStudentWithoutDocument(Logic.java:1083)	at teammates.logic.backdoor.BackDoorLogic.editStudentAsJson(BackDoorLogic.java:312)	at teammates.logic.backdoor.BackDoorServlet.executeBackendAction(BackDoorServlet.java:257)	at teammates.logic.backdoor.BackDoorServlet.doPost(BackDoorServlet.java:126)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)	at teammates.storage.datastore.DatastoreFilter.doFilter(DatastoreFilter.java:28)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.socket.dev.DevSocketFilter.doFilter(DevSocketFilter.java:74)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.ResponseRewriterFilter.doFilter(ResponseRewriterFilter.java:127)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.HeaderVerificationFilter.doFilter(HeaderVerificationFilter.java:34)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.blobstore.dev.ServeBlobFilter.doFilter(ServeBlobFilter.java:63)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.apphosting.utils.servlet.TransactionCleanupFilter.doFilter(TransactionCleanupFilter.java:43)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.StaticFileFilter.doFilter(StaticFileFilter.java:125)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectRequest(DevAppServerModulesFilter.java:366)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectModuleRequest(DevAppServerModulesFilter.java:349)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doFilter(DevAppServerModulesFilter.java:116)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)	at com.google.appengine.tools.development.DevAppEngineWebAppContext.handle(DevAppEngineWebAppContext.java:98)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at com.google.appengine.tools.development.JettyContainerService$ApiProxyHandler.handle(JettyContainerService.java:491)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at org.mortbay.jetty.Server.handle(Server.java:326)	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:938)	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:755)	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)&gt;
-	at teammates.test.cases.testdriver.BackDoorTest.testEditStudent(BackDoorTest.java:392)
+                  <a name="testAll">
+                  </a> <!-- testAll -->
+                  <span class="method-name">testAll</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testSubmitAction(InstructorFeedbackSubmitPageUiTest.java:188)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll(InstructorFeedbackSubmitPageUiTest.java:51)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 12 stack frames
+... Removed 14 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -213,44 +195,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
-          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAll">
-                  </a> <!-- testAll -->
-                  <span class="method-name">testAll</span>
-                  <div class="stack-trace">java.lang.AssertionError: 
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testSubmitAction(InstructorFeedbackSubmitPageUiTest.java:188)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll(InstructorFeedbackSubmitPageUiTest.java:51)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
-          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="allTests">
-                  </a> <!-- allTests -->
-                  <span class="method-name">allTests</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-passed -->
         </div> <!-- panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
         <div panel-name="test-xml-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -264,156 +208,26 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;teammates.test.util.PriorityInterceptor&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;rare-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;teammates.test.cases.testdriver.BackDoorTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;setUp&quot;/&gt;
-          &lt;include name=&quot;testEditStudent&quot;/&gt;
-          &lt;include name=&quot;tearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.testdriver.BackDoorTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- rare-tests(failed)(failed)(failed)(failed)(failed) --&gt;
-  &lt;test name=&quot;sequential-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;tests&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;teammates.test.cases.testdriver.BackDoorTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;setUp&quot;/&gt;
-          &lt;include name=&quot;tearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.testdriver.BackDoorTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;allTests&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- sequential-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
   &lt;test name=&quot;parallel-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;teammates.test.cases.testdriver.BackDoorTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.AdminInstructorAccountAddActionTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;setUp&quot;/&gt;
-          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.testdriver.BackDoorTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.AdminInstructorAccountAddActionTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testAll&quot;/&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
           &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;testSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;classTearDown&quot;/&gt;
-          &lt;include name=&quot;testAll&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;allTests&quot;/&gt;
@@ -424,20 +238,16 @@
       &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testAll&quot;/&gt;
           &lt;include name=&quot;classSetup&quot;/&gt;
           &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;testAll&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] --&gt;
@@ -451,13 +261,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (7 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">sequential-ui-tests(failed)(failed)(failed)(failed)(failed) (7 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (7 classes)</span>
+                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -483,32 +287,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'allTests')
 data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest')
-data.setCell(0, 3, 104184);
+data.setCell(0, 3, 96318);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'allTests')
-data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest')
-data.setCell(1, 3, 73621);
+data.setCell(1, 1, 'testAll')
+data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest')
+data.setCell(1, 3, 33080);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testAll')
-data.setCell(2, 2, 'teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest')
-data.setCell(2, 3, 34010);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAll')
-data.setCell(3, 2, 'teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest')
-data.setCell(3, 3, 32823);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testEditStudent')
-data.setCell(4, 2, 'teammates.test.cases.testdriver.BackDoorTest')
-data.setCell(4, 3, 203);
+data.setCell(2, 2, 'teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest')
+data.setCell(2, 3, 32020);
 window.suiteTableData['Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
               </div> <!-- times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
             </div> <!-- times-div -->
@@ -523,138 +319,28 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">49 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.testdriver.BackDoorTest</span>
+              <span class="ignored-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAccounts</span>
-                <br/>
-                <span class="ignored-method-name">testAccounts</span>
-                <br/>
-                <span class="ignored-method-name">testAccounts</span>
-                <br/>
-                <span class="ignored-method-name">testGetKeyForStudent</span>
-                <br/>
-                <span class="ignored-method-name">testGetKeyForStudent</span>
-                <br/>
-                <span class="ignored-method-name">testGetKeyForStudent</span>
-                <br/>
-                <span class="ignored-method-name">testCreateStudent</span>
-                <br/>
-                <span class="ignored-method-name">testCreateStudent</span>
-                <br/>
-                <span class="ignored-method-name">testCreateStudent</span>
-                <br/>
-                <span class="ignored-method-name">testCreateEvaluation</span>
-                <br/>
-                <span class="ignored-method-name">testCreateEvaluation</span>
-                <br/>
-                <span class="ignored-method-name">testCreateEvaluation</span>
-                <br/>
-                <span class="ignored-method-name">testCreateCourse</span>
-                <br/>
-                <span class="ignored-method-name">testCreateCourse</span>
-                <br/>
-                <span class="ignored-method-name">testCreateCourse</span>
-                <br/>
-                <span class="ignored-method-name">testGetCoursesByInstructorId</span>
-                <br/>
-                <span class="ignored-method-name">testGetCoursesByInstructorId</span>
-                <br/>
-                <span class="ignored-method-name">testGetCoursesByInstructorId</span>
-                <br/>
-                <span class="ignored-method-name">testEditSubmission</span>
-                <br/>
-                <span class="ignored-method-name">testEditSubmission</span>
-                <br/>
-                <span class="ignored-method-name">testEditSubmission</span>
-                <br/>
-                <span class="ignored-method-name">testDeletion</span>
-                <br/>
-                <span class="ignored-method-name">testEditStudent</span>
-                <br/>
-                <span class="ignored-method-name">testDeletion</span>
-                <br/>
-                <span class="ignored-method-name">testEditStudent</span>
-                <br/>
-                <span class="ignored-method-name">testDeletion</span>
-                <br/>
-                <span class="ignored-method-name">testEditEvaluation</span>
-                <br/>
-                <span class="ignored-method-name">testEditEvaluation</span>
-                <br/>
-                <span class="ignored-method-name">testEditEvaluation</span>
-                <br/>
-                <span class="ignored-method-name">testPersistence</span>
-                <br/>
-                <span class="ignored-method-name">testPersistence</span>
-                <br/>
-                <span class="ignored-method-name">testPersistence</span>
-                <br/>
-                <span class="ignored-method-name">testCreateInstructor</span>
-                <br/>
-                <span class="ignored-method-name">testCreateInstructor</span>
-                <br/>
-                <span class="ignored-method-name">testCreateInstructor</span>
+                <span class="ignored-method-name">testAll</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.logic.EvaluationsLogicTest</span>
+              <span class="ignored-class-name">teammates.test.cases.ui.AdminInstructorAccountAddActionTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAll</span>
+                <span class="ignored-method-name">testGenerateNextDemoCourseId</span>
                 <br/>
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-                <span class="ignored-method-name">testAll</span>
+                <span class="ignored-method-name">testExecuteAndPostProcess</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">allTests</span>
-                <br/>
-                <span class="ignored-method-name">allTests</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-                <span class="ignored-method-name">testAll</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">allTests</span>
-                <br/>
                 <span class="ignored-method-name">allTests</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -667,15 +353,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">teammates.test.cases.ui.AdminInstructorAccountAddActionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
                 <span class="method-start">0 ms</span>
@@ -685,102 +363,41 @@ return data;
               <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">testSetUp</span>
-                <span class="method-start">577 ms</span>
+                <span class="method-start">630 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetup</span>
-                <span class="method-start">577 ms</span>
+                <span class="method-start">630 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">testSetup</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">testSetup</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">classSetup</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.testdriver.BackDoorTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">577 ms</span>
+                <span class="method-name">classSetup</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">classSetup</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">classSetup</span>
-                <span class="method-start">577 ms</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">classSetup</span>
-                <span class="method-start">593 ms</span>
+                <span class="method-start">640 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">allTests</span>
-                <span class="method-start">12498 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.testdriver.BackDoorTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testEditStudent</span>
-                <span class="method-start">13184 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13387 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">13387 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">13652 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">allTests</span>
-                <span class="method-start">19848 ms</span>
+                <span class="method-start">10913 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -789,7 +406,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAll</span>
-                <span class="method-start">27884 ms</span>
+                <span class="method-start">18330 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -798,63 +415,42 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAll</span>
-                <span class="method-start">37308 ms</span>
+                <span class="method-start">26565 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">classTearDown</span>
-                <span class="method-start">61894 ms</span>
+                <span class="method-start">51410 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">classTearDown</span>
-                <span class="method-start">70131 ms</span>
+                <span class="method-start">58585 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">classTearDown</span>
-                <span class="method-start">93469 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">93469 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">93469 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">classTearDown</span>
-                <span class="method-start">116682 ms</span>
+                <span class="method-start">107231 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.ui.AdminInstructorAccountAddActionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">116682 ms</span>
+                <span class="method-start">107231 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">116682 ms</span>
+                <span class="method-start">107449 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
