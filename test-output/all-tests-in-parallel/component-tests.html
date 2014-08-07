@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>component-tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>458/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>457/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 07 03:31:33 UTC 2014</td>
+<td>Started on:</td><td>Thu Aug 07 03:58:17 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>311 seconds (311858 ms)</td>
+<tr><td>Total time:</td><td>354 seconds (354455 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,56 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForStudent()'><b>testJoinCourseForStudent</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td><div><pre>teammates.common.exception.InvalidParametersException: Trying to update to an email that is already used by: name/email2@gmail.com
+	at teammates.storage.api.StudentsDb.updateStudent(StudentsDb.java:368)
+	at teammates.logic.core.StudentsLogic.updateStudentCascadeWithSubmissionAdjustmentScheduled(StudentsLogic.java:281)
+	at teammates.logic.core.StudentsLogic.updateStudentCascade(StudentsLogic.java:228)
+	at teammates.logic.core.StudentsLogic.updateStudentCascadeWithoutDocument(StudentsLogic.java:222)
+	at teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForStudent(AccountsLogicTest.java:348)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11171795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11171795'><pre>teammates.common.exception.InvalidParametersException: Trying to update to an email that is already used by: name/email2@gmail.com
+	at teammates.storage.api.StudentsDb.updateStudent(StudentsDb.java:368)
+	at teammates.logic.core.StudentsLogic.updateStudentCascadeWithSubmissionAdjustmentScheduled(StudentsLogic.java:281)
+	at teammates.logic.core.StudentsLogic.updateStudentCascade(StudentsLogic.java:228)
+	at teammates.logic.core.StudentsLogic.updateStudentCascadeWithoutDocument(StudentsLogic.java:222)
+	at teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForStudent(AccountsLogicTest.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@7da288</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -507,13 +557,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentProfilePictureEdit()'><b>StudentProfilePictureEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>teammates.test.cases.ui.AllActionsAccessControlTest@1c36edb</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.TestGetValidityInfo_INSTRUCTOR_ROLE()'><b>TestGetValidityInfo_INSTRUCTOR_ROLE</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.CourseRosterTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.common.CourseRosterTest</td>
 <td></td>
@@ -523,32 +573,32 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.FeedbackQuestionsLogicTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.logic.FeedbackQuestionsLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.FeedbackQuestionsLogicTest@53ca8a</td></tr>
+<td>teammates.test.cases.logic.FeedbackQuestionsLogicTest@1164d11</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.FeedbackResponsesLogicTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.logic.FeedbackResponsesLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.FeedbackResponsesLogicTest@182db39</td></tr>
+<td>teammates.test.cases.logic.FeedbackResponsesLogicTest@111f366</td></tr>
 <tr>
 <td title='teammates.test.cases.common.BuildPropertiesTest.checkPresence()'><b>checkPresence</b><br>Test class: teammates.test.cases.common.BuildPropertiesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.BuildPropertiesTest@1630be5</td></tr>
+<td>teammates.test.cases.common.BuildPropertiesTest@3fdf63</td></tr>
 <tr>
 <td title='teammates.test.cases.common.BuildPropertiesTest.checkReadingEmailTemplates()'><b>checkReadingEmailTemplates</b><br>Test class: teammates.test.cases.common.BuildPropertiesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.BuildPropertiesTest@1630be5</td></tr>
+<td>teammates.test.cases.common.BuildPropertiesTest@3fdf63</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackCopyActionTest.testAccessControl()'><b>testAccessControl</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackCopyActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackCopyActionTest@12d71ce</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackCopyActionTest@ffe94b</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest.testAccessControl()'><b>testAccessControl</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest@5787c</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest@17351e4</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testAccountFunctions()'><b>testAccountFunctions</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
@@ -588,7 +638,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.automated.FeedbackSessionClosingReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.FeedbackSessionClosingReminderTest</td>
 <td></td>
 <td>2</td>
-<td>teammates.test.automated.FeedbackSessionClosingReminderTest@44b0f8</td></tr>
+<td>teammates.test.automated.FeedbackSessionClosingReminderTest@527035</td></tr>
 <tr>
 <td title='teammates.test.automated.FeedbackSessionOpeningReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.FeedbackSessionOpeningReminderTest</td>
 <td></td>
@@ -598,7 +648,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.SubmissionsAdjustmentTest.testAdjustmentOfResponses()'><b>testAdjustmentOfResponses</b><br>Test class: teammates.test.cases.logic.SubmissionsAdjustmentTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.SubmissionsAdjustmentTest@167db34</td></tr>
+<td>teammates.test.cases.logic.SubmissionsAdjustmentTest@16833a4</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponseCommentsDbTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.storage.FeedbackResponseCommentsDbTest</td>
 <td></td>
@@ -608,12 +658,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.CoursesLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.CoursesLogicTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.logic.CoursesLogicTest@33f652</td></tr>
+<td>teammates.test.cases.logic.CoursesLogicTest@178ddf4</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EvaluationsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.EvaluationsLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EvaluationsLogicTest@168e0e7</td></tr>
+<td>teammates.test.cases.logic.EvaluationsLogicTest@9b81d5</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest</td>
 <td></td>
@@ -623,7 +673,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.FeedbackSessionsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.FeedbackSessionsLogicTest</td>
 <td></td>
 <td>3</td>
-<td>teammates.test.cases.logic.FeedbackSessionsLogicTest@182e1ac</td></tr>
+<td>teammates.test.cases.logic.FeedbackSessionsLogicTest@f051af</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.InstructorsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.InstructorsLogicTest</td>
 <td></td>
@@ -632,8 +682,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.logic.StudentsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.StudentsLogicTest</td>
 <td></td>
-<td>2</td>
-<td>teammates.test.cases.logic.StudentsLogicTest@52d4df</td></tr>
+<td>1</td>
+<td>teammates.test.cases.logic.StudentsLogicTest@f71ff4</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.SubmissionsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.SubmissionsLogicTest</td>
 <td></td>
@@ -643,7 +693,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.FeedbackSessionsDbTest.testAllGetFeedbackSessions()'><b>testAllGetFeedbackSessions</b><br>Test class: teammates.test.cases.storage.FeedbackSessionsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackSessionsDbTest@1ad6dbe</td></tr>
+<td>teammates.test.cases.storage.FeedbackSessionsDbTest@19ad02</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.ActionResultTest.testAppendParameters()'><b>testAppendParameters</b><br>Test class: teammates.test.cases.ui.ActionResultTest</td>
 <td></td>
@@ -653,12 +703,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.BaseTestCaseTest.testAssertContains()'><b>testAssertContains</b><br>Test class: teammates.test.cases.BaseTestCaseTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.BaseTestCaseTest@527035</td></tr>
+<td>teammates.test.cases.BaseTestCaseTest@1fcbecc</td></tr>
 <tr>
 <td title='teammates.test.cases.BaseTestCaseTest.testAssertContainsRegex()'><b>testAssertContainsRegex</b><br>Test class: teammates.test.cases.BaseTestCaseTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.BaseTestCaseTest@527035</td></tr>
+<td>teammates.test.cases.BaseTestCaseTest@1fcbecc</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.TeamEvalResultTest.testAverageColumns()'><b>testAverageColumns</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
 <td></td>
@@ -668,7 +718,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.CommentAttributesTest.testBasicGetters()'><b>testBasicGetters</b><br>Test class: teammates.test.cases.common.CommentAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CommentAttributesTest@865651</td></tr>
+<td>teammates.test.cases.common.CommentAttributesTest@1ef9e5e</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FeedbackSessionAttributesTest.testBasicGetters()'><b>testBasicGetters</b><br>Test class: teammates.test.cases.common.FeedbackSessionAttributesTest</td>
 <td></td>
@@ -678,7 +728,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testCalculateEvalStatus()'><b>testCalculateEvalStatus</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.TeamEvalResultTest.testCalculatePerceivedForStudent()'><b>testCalculatePerceivedForStudent</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
 <td></td>
@@ -693,7 +743,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.TimeHelperTest.testCombineDateTime()'><b>testCombineDateTime</b><br>Test class: teammates.test.cases.common.TimeHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.TimeHelperTest@7b4d34</td></tr>
+<td>teammates.test.cases.common.TimeHelperTest@150916c</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.HtmlHelperTest.testComparison()'><b>testComparison</b><br>Test class: teammates.test.cases.testdriver.HtmlHelperTest</td>
 <td></td>
@@ -708,7 +758,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.InstructorAttributesTest.testConstructor()'><b>testConstructor</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorPrivilegesTest.testConstructor()'><b>testConstructor</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
 <td></td>
@@ -718,7 +768,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.StudentAttributesFactoryTest.testConstructor()'><b>testConstructor</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentAttributesFactoryTest@80411f</td></tr>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@1753747</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.HtmlHelperTest.testConvertToStandardHtml()'><b>testConvertToStandardHtml</b><br>Test class: teammates.test.cases.testdriver.HtmlHelperTest</td>
 <td></td>
@@ -732,8 +782,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.storage.AccountsDbTest.testCreateAccount()'><b>testCreateAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
 <td></td>
-<td>1</td>
-<td>teammates.test.cases.storage.AccountsDbTest@1eaeb3e</td></tr>
+<td>0</td>
+<td>teammates.test.cases.storage.AccountsDbTest@1fa522d</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testCreateAccount()'><b>testCreateAccount</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
@@ -743,17 +793,17 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.CommentsDbTest.testCreateComment()'><b>testCreateComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CommentsDbTest@1164d11</td></tr>
+<td>teammates.test.cases.storage.CommentsDbTest@11dc4c8</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.CommentsLogicTest.testCreateComment()'><b>testCreateComment</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.CommentsLogicTest@1fa522d</td></tr>
+<td>teammates.test.cases.logic.CommentsLogicTest@129271e</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.CoursesDbTest.testCreateCourse()'><b>testCreateCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CoursesDbTest@1604c40</td></tr>
+<td>teammates.test.cases.storage.CoursesDbTest@11684ac</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testCreateDeleteFeedbackQuestion()'><b>testCreateDeleteFeedbackQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
 <td></td>
@@ -763,12 +813,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testCreateDeleteFeedbackResponse()'><b>testCreateDeleteFeedbackResponse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackSessionsDbTest.testCreateDeleteFeedbackSession()'><b>testCreateDeleteFeedbackSession</b><br>Test class: teammates.test.cases.storage.FeedbackSessionsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackSessionsDbTest@1ad6dbe</td></tr>
+<td>teammates.test.cases.storage.FeedbackSessionsDbTest@19ad02</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.EntitiesDbTest.testCreateEntity()'><b>testCreateEntity</b><br>Test class: teammates.test.cases.storage.EntitiesDbTest</td>
 <td></td>
@@ -778,12 +828,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.EvaluationsDbTest.testCreateEvaluation()'><b>testCreateEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.EvaluationsDbTest@12250ef</td></tr>
+<td>teammates.test.cases.storage.EvaluationsDbTest@1ab735a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testCreateInstructor()'><b>testCreateInstructor</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FeedbackResponseDetailsTest.testCreateResponseDetails()'><b>testCreateResponseDetails</b><br>Test class: teammates.test.cases.common.FeedbackResponseDetailsTest</td>
 <td></td>
@@ -793,7 +843,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.StudentsDbTest.testCreateStudent()'><b>testCreateStudent</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.StudentsDbTest@109aeea</td></tr>
+<td>teammates.test.cases.storage.StudentsDbTest@7b4d34</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.SubmissionsDbTest.testCreateSubmission()'><b>testCreateSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
 <td></td>
@@ -803,7 +853,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.LogicTest.testCreateSubmission()'><b>testCreateSubmission</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.SubmissionTaskQueueLogicTest.testCreationOfSubmissions()'><b>testCreationOfSubmissions</b><br>Test class: teammates.test.cases.logic.SubmissionTaskQueueLogicTest</td>
 <td></td>
@@ -813,12 +863,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.testdriver.DataBundleTest.testDataBundle()'><b>testDataBundle</b><br>Test class: teammates.test.cases.testdriver.DataBundleTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.DataBundleTest@1f23d57</td></tr>
+<td>teammates.test.cases.testdriver.DataBundleTest@449a5c</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.AccountsDbTest.testDeleteAccount()'><b>testDeleteAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.AccountsDbTest@1eaeb3e</td></tr>
+<td>teammates.test.cases.storage.AccountsDbTest@1fa522d</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testDeleteAccountCascade()'><b>testDeleteAccountCascade</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
@@ -828,42 +878,42 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.CommentsDbTest.testDeleteComment()'><b>testDeleteComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CommentsDbTest@1164d11</td></tr>
+<td>teammates.test.cases.storage.CommentsDbTest@11dc4c8</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.CommentsLogicTest.testDeleteComment()'><b>testDeleteComment</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.CommentsLogicTest@1fa522d</td></tr>
+<td>teammates.test.cases.logic.CommentsLogicTest@129271e</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.CommentsDbTest.testDeleteComments()'><b>testDeleteComments</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CommentsDbTest@1164d11</td></tr>
+<td>teammates.test.cases.storage.CommentsDbTest@11dc4c8</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.CoursesDbTest.testDeleteCourse()'><b>testDeleteCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CoursesDbTest@1604c40</td></tr>
+<td>teammates.test.cases.storage.CoursesDbTest@11684ac</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.EvaluationsDbTest.testDeleteEvaluation()'><b>testDeleteEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.EvaluationsDbTest@12250ef</td></tr>
+<td>teammates.test.cases.storage.EvaluationsDbTest@1ab735a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testDeleteInstructor()'><b>testDeleteInstructor</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testDeleteInstructorsForCourse()'><b>testDeleteInstructorsForCourse</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testDeleteInstructorsForGoogleId()'><b>testDeleteInstructorsForGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testDeleteProfilePicture()'><b>testDeleteProfilePicture</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
@@ -873,7 +923,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.StudentsDbTest.testDeleteStudent()'><b>testDeleteStudent</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.StudentsDbTest@109aeea</td></tr>
+<td>teammates.test.cases.storage.StudentsDbTest@7b4d34</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.SubmissionsDbTest.testDeleteSubmission()'><b>testDeleteSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
 <td></td>
@@ -883,12 +933,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.LogicTest.testDeleteSubmission()'><b>testDeleteSubmission</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.AccountsDbTest.testEditAccount()'><b>testEditAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.AccountsDbTest@1eaeb3e</td></tr>
+<td>teammates.test.cases.storage.AccountsDbTest@1fa522d</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.SubmissionsDbTest.testEditSubmission()'><b>testEditSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
 <td></td>
@@ -898,7 +948,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.SubmissionsAdjustmentTest.testEnrollStudentsWithScheduledSubmissionAdjustment()'><b>testEnrollStudentsWithScheduledSubmissionAdjustment</b><br>Test class: teammates.test.cases.logic.SubmissionsAdjustmentTest</td>
 <td></td>
 <td>7</td>
-<td>teammates.test.cases.logic.SubmissionsAdjustmentTest@167db34</td></tr>
+<td>teammates.test.cases.logic.SubmissionsAdjustmentTest@16833a4</td></tr>
 <tr>
 <td title='teammates.test.automated.EvaluationClosingReminderTest.testEvaluationClosingMailAction()'><b>testEvaluationClosingMailAction</b><br>Test class: teammates.test.automated.EvaluationClosingReminderTest</td>
 <td></td>
@@ -913,12 +963,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.EvaluationsEmailTaskQueueTest.testEvaluationsPublishEmail()'><b>testEvaluationsPublishEmail</b><br>Test class: teammates.test.cases.logic.EvaluationsEmailTaskQueueTest</td>
 <td></td>
 <td>2</td>
-<td>teammates.test.cases.logic.EvaluationsEmailTaskQueueTest@17fe790</td></tr>
+<td>teammates.test.cases.logic.EvaluationsEmailTaskQueueTest@8ad851</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EvaluationsEmailTaskQueueTest.testEvaluationsRemindEmail()'><b>testEvaluationsRemindEmail</b><br>Test class: teammates.test.cases.logic.EvaluationsEmailTaskQueueTest</td>
 <td></td>
 <td>2</td>
-<td>teammates.test.cases.logic.EvaluationsEmailTaskQueueTest@17fe790</td></tr>
+<td>teammates.test.cases.logic.EvaluationsEmailTaskQueueTest@8ad851</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackResponseCommentAddActionTest.testExcecuteAndPostProcess()'><b>testExcecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResponseCommentAddActionTest</td>
 <td></td>
@@ -928,12 +978,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest.testExcecuteAndPostProcess()'><b>testExcecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest@1753747</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest@5b13dd</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest.testExcecuteAndPostProcess()'><b>testExcecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest@edb374</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest@1d73938</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.TeamEvalResultTest.testExcludeSelfRatings()'><b>testExcludeSelfRatings</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
 <td></td>
@@ -948,22 +998,22 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorCommentsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCommentsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCommentsPageActionTest@138ecb8</td></tr>
+<td>teammates.test.cases.ui.InstructorCommentsPageActionTest@ad6ab6</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminAccountDeletePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminAccountDeletePageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminAccountDeletePageActionTest@bf5dc6</td></tr>
+<td>teammates.test.cases.ui.AdminAccountDeletePageActionTest@761e4d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminAccountDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminAccountDetailsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminAccountDetailsPageActionTest@1ab735a</td></tr>
+<td>teammates.test.cases.ui.AdminAccountDetailsPageActionTest@6061a8</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminAccountManagementPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminAccountManagementPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminAccountManagementPageActionTest@178ddf4</td></tr>
+<td>teammates.test.cases.ui.AdminAccountManagementPageActionTest@1c3666a</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminActivityLogPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminActivityLogPageActionTest</td>
 <td></td>
@@ -973,37 +1023,37 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.AdminExceptionTestActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminExceptionTestActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminExceptionTestActionTest@859f0a</td></tr>
+<td>teammates.test.cases.ui.AdminExceptionTestActionTest@168e0e7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminHomePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminHomePageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminHomePageActionTest@b7d0ec</td></tr>
+<td>teammates.test.cases.ui.AdminHomePageActionTest@1708eee</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminInstructorAccountAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminInstructorAccountAddActionTest</td>
 <td></td>
-<td>6</td>
-<td>teammates.test.cases.ui.AdminInstructorAccountAddActionTest@41b68d</td></tr>
+<td>8</td>
+<td>teammates.test.cases.ui.AdminInstructorAccountAddActionTest@1b42659</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminSearchPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminSearchPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminSearchPageActionTest@bac0ad</td></tr>
+<td>teammates.test.cases.ui.AdminSearchPageActionTest@109aeea</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.EvaluationStatsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.EvaluationStatsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.EvaluationStatsPageActionTest@18ba7dc</td></tr>
+<td>teammates.test.cases.ui.EvaluationStatsPageActionTest@1b972d9</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.FeedbackSessionStatsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.FeedbackSessionStatsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.FeedbackSessionStatsPageActionTest@1385ce</td></tr>
+<td>teammates.test.cases.ui.FeedbackSessionStatsPageActionTest@156a792</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseArchiveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseArchiveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseArchiveActionTest@158826e</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseArchiveActionTest@992916</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseDeleteActionTest</td>
 <td></td>
@@ -1043,7 +1093,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest@1ff8cef</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest@1399f26</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseJoinActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseJoinActionTest</td>
 <td></td>
@@ -1053,7 +1103,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest@832834</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest@c4931d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseRemindActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseRemindActionTest</td>
 <td></td>
@@ -1063,27 +1113,27 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest@14a3622</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest@9bb7f5</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest@69079</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest@182db39</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest@1be9c2f</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest@44b0f8</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest@12e1a27</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest@1604c40</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest@139a367</td></tr>
+<td>teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest@62a8d2</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorCoursesPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCoursesPageActionTest</td>
 <td></td>
@@ -1093,7 +1143,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorEvalAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalAddActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalAddActionTest@992916</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalAddActionTest@1f23d57</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalDeleteActionTest</td>
 <td></td>
@@ -1103,22 +1153,22 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorEvalEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalEditPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalEditPageActionTest@121be32</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalEditPageActionTest@baf4c</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalEditSaveActionTest@1ae0d02</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalEditSaveActionTest@182e1ac</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalPreviewActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalPreviewActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalPreviewActionTest@a929da</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalPreviewActionTest@ffd7af</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalPublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalPublishActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalPublishActionTest@15a5ab</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalPublishActionTest@52d4df</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalRemindActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalRemindActionTest</td>
 <td></td>
@@ -1128,12 +1178,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest@d7cb51</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest@f5bb3d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalResultsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalResultsPageActionTest@1cd7dc7</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalResultsPageActionTest@4dc532</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest</td>
 <td></td>
@@ -1143,12 +1193,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest@aa769a</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest@19e774d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest@919d3e</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest@111b156</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalUnpublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalUnpublishActionTest</td>
 <td></td>
@@ -1163,17 +1213,17 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorFeedbackCopyActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackCopyActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackCopyActionTest@12d71ce</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackCopyActionTest@ffe94b</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackDeleteActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackDeleteActionTest@1124c5e</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackDeleteActionTest@53ca8a</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackEditPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackEditPageActionTest@16f77b6</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackEditPageActionTest@a5031d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest</td>
 <td></td>
@@ -1183,7 +1233,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest@507c5f</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest@154850</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest</td>
 <td></td>
@@ -1193,17 +1243,17 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorFeedbackPublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackPublishActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackPublishActionTest@1b1bba5</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackPublishActionTest@135cf21</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@1282220</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest@5787c</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest@17351e4</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
 <td></td>
@@ -1217,18 +1267,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest</td>
 <td></td>
-<td>1</td>
-<td>teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest@19ad02</td></tr>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest@cc9ff5</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackRemindActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackRemindActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackRemindActionTest@ef02ce</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackRemindActionTest@162f992</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest@19e774d</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest@1c477f1</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResultsPageActionTest</td>
 <td></td>
@@ -1253,7 +1303,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorFeedbacksPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbacksPageActionTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.ui.InstructorFeedbacksPageActionTest@6180f</td></tr>
+<td>teammates.test.cases.ui.InstructorFeedbacksPageActionTest@1219de8</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorHomePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorHomePageActionTest</td>
 <td></td>
@@ -1263,7 +1313,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorStudentCommentAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentCommentAddActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorStudentCommentAddActionTest@162f992</td></tr>
+<td>teammates.test.cases.ui.InstructorStudentCommentAddActionTest@18eb0a5</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorStudentCommentEditActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentCommentEditActionTest</td>
 <td></td>
@@ -1278,22 +1328,22 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.InstructorStudentListPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentListPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorStudentListPageActionTest@9a8e52</td></tr>
+<td>teammates.test.cases.ui.InstructorStudentListPageActionTest@185552b</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorStudentRecordsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentRecordsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@1a21b63</td></tr>
+<td>teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@1630be5</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentCommentsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCommentsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentCommentsPageActionTest@18eb0a5</td></tr>
+<td>teammates.test.cases.ui.StudentCommentsPageActionTest@1192410</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentCourseDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCourseDetailsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentCourseDetailsPageActionTest@34ca1a</td></tr>
+<td>teammates.test.cases.ui.StudentCourseDetailsPageActionTest@1c087a2</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentCourseJoinActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCourseJoinActionTest</td>
 <td></td>
@@ -1308,17 +1358,17 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.StudentEvalResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentEvalResultsPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentEvalResultsPageActionTest@1ea6b61</td></tr>
+<td>teammates.test.cases.ui.StudentEvalResultsPageActionTest@919d3e</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest@1fcbecc</td></tr>
+<td>teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest@1cd7dc7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest@f051af</td></tr>
+<td>teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest@ee1626</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest</td>
 <td></td>
@@ -1328,21 +1378,21 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest@7da1fc</td></tr>
+<td>teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest@1ff8cef</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentFeedbackResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackResultsPageActionTest</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>teammates.test.cases.ui.StudentFeedbackResultsPageActionTest@1e33bad</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest</td>
 <td></td>
-<td>4</td>
-<td>teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest@88be19</td></tr>
+<td>5</td>
+<td>teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest@12c689f</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest</td>
 <td></td>
-<td>2</td>
+<td>3</td>
 <td>teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest@578144</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentHomePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentHomePageActionTest</td>
@@ -1353,7 +1403,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.StudentProfileEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfileEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentProfileEditSaveActionTest@3d780</td></tr>
+<td>teammates.test.cases.ui.StudentProfileEditSaveActionTest@1385f78</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.StudentProfilePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfilePageActionTest</td>
 <td></td>
@@ -1372,7 +1422,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessConstSumOption()'><b>testExecuteAndPostProcessConstSumOption</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@13e2254</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessConstSumRecipient()'><b>testExecuteAndPostProcessConstSumRecipient</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
@@ -1433,7 +1483,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.automated.FeedbackSessionClosingReminderTest.testFeedbackSessionClosingMailAction()'><b>testFeedbackSessionClosingMailAction</b><br>Test class: teammates.test.automated.FeedbackSessionClosingReminderTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.automated.FeedbackSessionClosingReminderTest@44b0f8</td></tr>
+<td>teammates.test.automated.FeedbackSessionClosingReminderTest@527035</td></tr>
 <tr>
 <td title='teammates.test.automated.FeedbackSessionPublishedReminderTest.testFeedbackSessionOpeningMailAction()'><b>testFeedbackSessionOpeningMailAction</b><br>Test class: teammates.test.automated.FeedbackSessionPublishedReminderTest</td>
 <td></td>
@@ -1448,47 +1498,47 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.TimeHelperTest.testFormatTimeForEvaluation()'><b>testFormatTimeForEvaluation</b><br>Test class: teammates.test.cases.common.TimeHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.TimeHelperTest@7b4d34</td></tr>
+<td>teammates.test.cases.common.TimeHelperTest@150916c</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmailBase()'><b>testGenerateEvaluationEmailBase</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmails()'><b>testGenerateEvaluationEmails</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EmailsTest.testGenerateFeedbackEmailBase()'><b>testGenerateFeedbackEmailBase</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EmailsTest.testGenerateFeedbackSessionEmails()'><b>testGenerateFeedbackSessionEmails</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.AdminInstructorAccountAddActionTest.testGenerateNextDemoCourseId()'><b>testGenerateNextDemoCourseId</b><br>Test class: teammates.test.cases.ui.AdminInstructorAccountAddActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.AdminInstructorAccountAddActionTest@41b68d</td></tr>
+<td>teammates.test.cases.ui.AdminInstructorAccountAddActionTest@1b42659</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StringHelperTest.testGenerateStringOfLength()'><b>testGenerateStringOfLength</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EmailsTest.testGenerateStudentCourseJoinEmail()'><b>testGenerateStudentCourseJoinEmail</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.AccountsDbTest.testGetAccount()'><b>testGetAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.AccountsDbTest@1eaeb3e</td></tr>
+<td>teammates.test.cases.storage.AccountsDbTest@1fa522d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.ActivityLogTest.testGetActionName()'><b>testGetActionName</b><br>Test class: teammates.test.cases.ui.ActivityLogTest</td>
 <td></td>
@@ -1498,27 +1548,27 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.CommentsDbTest.testGetComment()'><b>testGetComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CommentsDbTest@1164d11</td></tr>
+<td>teammates.test.cases.storage.CommentsDbTest@11dc4c8</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.CommentsLogicTest.testGetComments()'><b>testGetComments</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.CommentsLogicTest@1fa522d</td></tr>
+<td>teammates.test.cases.logic.CommentsLogicTest@129271e</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.CoursesDbTest.testGetCourse()'><b>testGetCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CoursesDbTest@1604c40</td></tr>
+<td>teammates.test.cases.storage.CoursesDbTest@11684ac</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.LogicTest.testGetCurrentUser()'><b>testGetCurrentUser</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.EmailsTest.testGetEmailInfo()'><b>testGetEmailInfo</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.common.AccountAttributesTest.testGetEntityTypeAsString()'><b>testGetEntityTypeAsString</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
 <td></td>
@@ -1533,7 +1583,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.EvaluationsDbTest.testGetEvaluation()'><b>testGetEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.EvaluationsDbTest@12250ef</td></tr>
+<td>teammates.test.cases.storage.EvaluationsDbTest@1ab735a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testGetFeedbackQuestions()'><b>testGetFeedbackQuestions</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
 <td></td>
@@ -1553,72 +1603,72 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponses()'><b>testGetFeedbackResponses</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForQuestion()'><b>testGetFeedbackResponsesForQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForQuestionInSection()'><b>testGetFeedbackResponsesForQuestionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForReceiverForCourse()'><b>testGetFeedbackResponsesForReceiverForCourse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForReceiverForQuestion()'><b>testGetFeedbackResponsesForReceiverForQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForReceiverForQuestionInSection()'><b>testGetFeedbackResponsesForReceiverForQuestionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSession()'><b>testGetFeedbackResponsesForSession</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionFromSection()'><b>testGetFeedbackResponsesForSessionFromSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionInSection()'><b>testGetFeedbackResponsesForSessionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionToSection()'><b>testGetFeedbackResponsesForSessionToSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionWithinRange()'><b>testGetFeedbackResponsesForSessionWithinRange</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesFromGiverForCourse()'><b>testGetFeedbackResponsesFromGiverForCourse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesFromGiverForQuestion()'><b>testGetFeedbackResponsesFromGiverForQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesFromGiverForQuestionInSection()'><b>testGetFeedbackResponsesFromGiverForQuestionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.common.AccountAttributesTest.testGetIdentificationString()'><b>testGetIdentificationString</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
 <td></td>
@@ -1628,7 +1678,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.AccountsDbTest.testGetInstructorAccounts()'><b>testGetInstructorAccounts</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.AccountsDbTest@1eaeb3e</td></tr>
+<td>teammates.test.cases.storage.AccountsDbTest@1fa522d</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testGetInstructorAccounts()'><b>testGetInstructorAccounts</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
@@ -1638,32 +1688,32 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorForEmail()'><b>testGetInstructorForEmail</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorForGoogleId()'><b>testGetInstructorForGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorForRegistrationKey()'><b>testGetInstructorForRegistrationKey</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorsForCourse()'><b>testGetInstructorsForCourse</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorsForEmail()'><b>testGetInstructorsForEmail</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorsForGoogleId()'><b>testGetInstructorsForGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.common.AccountAttributesTest.testGetInvalidStateInfo()'><b>testGetInvalidStateInfo</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
 <td></td>
@@ -1673,7 +1723,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testGetInvalidStateInfo()'><b>testGetInvalidStateInfo</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SubmissionAttributesTest.testGetInvalidStateInfo()'><b>testGetInvalidStateInfo</b><br>Test class: teammates.test.cases.common.SubmissionAttributesTest</td>
 <td></td>
@@ -1683,7 +1733,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.InstructorAttributesTest.testGetInvalidityInfo()'><b>testGetInvalidityInfo</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentProfileAttributesTest.testGetInvalidityInfo()'><b>testGetInvalidityInfo</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
 <td></td>
@@ -1693,17 +1743,17 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.LogicTest.testGetLoginUrl()'><b>testGetLoginUrl</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.LogicTest.testGetLogoutUrl()'><b>testGetLogoutUrl</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.StudentsDbTest.testGetStudent()'><b>testGetStudent</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.StudentsDbTest@109aeea</td></tr>
+<td>teammates.test.cases.storage.StudentsDbTest@7b4d34</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testGetStudentAndUpdateStudentProfile()'><b>testGetStudentAndUpdateStudentProfile</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
@@ -1723,22 +1773,22 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.BackDoorLogicTest.testGetSubmission()'><b>testGetSubmission</b><br>Test class: teammates.test.cases.logic.BackDoorLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.BackDoorLogicTest@8ad851</td></tr>
+<td>teammates.test.cases.logic.BackDoorLogicTest@13d701a</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.LogicTest.testGetSubmissionsForEvaluationFromStudent()'><b>testGetSubmissionsForEvaluationFromStudent</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorEvalsPageDataTest.testGetTimeOptions()'><b>testGetTimeOptions</b><br>Test class: teammates.test.cases.ui.InstructorEvalsPageDataTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.InstructorEvalsPageDataTest@4dc532</td></tr>
+<td>teammates.test.cases.ui.InstructorEvalsPageDataTest@121be32</td></tr>
 <tr>
 <td title='teammates.test.cases.common.CourseAttributesTest.testGetValidityInfo()'><b>testGetValidityInfo</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CourseAttributesTest@1ef9e5e</td></tr>
+<td>teammates.test.cases.common.CourseAttributesTest@12250ef</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testGetValidityInfo()'><b>testGetValidityInfo</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -1748,72 +1798,72 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfoForAllowedName()'><b>testGetValidityInfoForAllowedName</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfoForSizeCappedNonEmptyString()'><b>testGetValidityInfoForSizeCappedNonEmptyString</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfoForSizeCappedPossiblyEmptyString()'><b>testGetValidityInfoForSizeCappedPossiblyEmptyString</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_COUNTRY()'><b>testGetValidityInfo_COUNTRY</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_COURSE_ID()'><b>testGetValidityInfo_COURSE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_COURSE_NAME()'><b>testGetValidityInfo_COURSE_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_EMAIL()'><b>testGetValidityInfo_EMAIL</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_EVALUATION_NAME()'><b>testGetValidityInfo_EVALUATION_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_GENDER()'><b>testGetValidityInfo_GENDER</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_GOOGLE_ID()'><b>testGetValidityInfo_GOOGLE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_INSTITUTE_NAME()'><b>testGetValidityInfo_INSTITUTE_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_PERSON_NAME()'><b>testGetValidityInfo_PERSON_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_STUDENT_ROLE_COMMENTS()'><b>testGetValidityInfo_STUDENT_ROLE_COMMENTS</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_TEAM_NAME()'><b>testGetValidityInfo_TEAM_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest.testGracePeriodExecuteAndPostProcess()'><b>testGracePeriodExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest</td>
 <td></td>
@@ -1828,12 +1878,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.LogicTest.testHasStudentSubmittedEvaluation()'><b>testHasStudentSubmittedEvaluation</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorAttributesTest.testIsAllowedForPrivilege()'><b>testIsAllowedForPrivilege</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorPrivilegesTest.testIsAllowedForPrivilege()'><b>testIsAllowedForPrivilege</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
 <td></td>
@@ -1848,12 +1898,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.InstructorAttributesTest.testIsEqualToAnotherInstructor()'><b>testIsEqualToAnotherInstructor</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StringHelperTest.testIsMatching()'><b>testIsMatching</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorPrivilegesTest.testIsPrivilegeNameValid()'><b>testIsPrivilegeNameValid</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
 <td></td>
@@ -1863,12 +1913,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testIsReady()'><b>testIsReady</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorAttributesTest.testIsRegistered()'><b>testIsRegistered</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testIsRegistered()'><b>testIsRegistered</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -1888,12 +1938,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.CourseAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CourseAttributesTest@1ef9e5e</td></tr>
+<td>teammates.test.cases.common.CourseAttributesTest@12250ef</td></tr>
 <tr>
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -1908,14 +1958,9 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.StringHelperTest.testIsWhiteSpace()'><b>testIsWhiteSpace</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForInstructor()'><b>testJoinCourseForInstructor</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
-<td></td>
-<td>0</td>
-<td>teammates.test.cases.logic.AccountsLogicTest@7da288</td></tr>
-<tr>
-<td title='teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForStudent()'><b>testJoinCourseForStudent</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
 <td></td>
 <td>0</td>
 <td>teammates.test.cases.logic.AccountsLogicTest@7da288</td></tr>
@@ -1923,17 +1968,17 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.StringHelperTest.testKeyEncryption()'><b>testKeyEncryption</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesFactoryTest.testLocateColumnIndexes()'><b>testLocateColumnIndexes</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentAttributesFactoryTest@80411f</td></tr>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@1753747</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesFactoryTest.testMakeStudent()'><b>testMakeStudent</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentAttributesFactoryTest@80411f</td></tr>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@1753747</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.TeamEvalResultTest.testNormalizeValues()'><b>testNormalizeValues</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
 <td></td>
@@ -1943,7 +1988,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.BackDoorLogicTest.testPersistDataBundle()'><b>testPersistDataBundle</b><br>Test class: teammates.test.cases.logic.BackDoorLogicTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.logic.BackDoorLogicTest@8ad851</td></tr>
+<td>teammates.test.cases.logic.BackDoorLogicTest@13d701a</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.TeamEvalResultTest.testPurgeValuesCorrespondingToSpecialValuesInFilter()'><b>testPurgeValuesCorrespondingToSpecialValuesInFilter</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
 <td></td>
@@ -1953,47 +1998,47 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.StringHelperTest.testRecoverFromSanitizedText()'><b>testRecoverFromSanitizedText</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StringHelperTest.testRemoveExtraSpace()'><b>testRemoveExtraSpace</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FeedbackQuestionAttributesTest.testRemoveIrrelevantVisibilityOptions()'><b>testRemoveIrrelevantVisibilityOptions</b><br>Test class: teammates.test.cases.common.FeedbackQuestionAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FeedbackQuestionAttributesTest@ffd7af</td></tr>
+<td>teammates.test.cases.common.FeedbackQuestionAttributesTest@1be9c2f</td></tr>
 <tr>
 <td title='teammates.test.cases.common.CommentAttributesTest.testSanitize()'><b>testSanitize</b><br>Test class: teammates.test.cases.common.CommentAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CommentAttributesTest@865651</td></tr>
+<td>teammates.test.cases.common.CommentAttributesTest@1ef9e5e</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeEmail()'><b>testSanitizeEmail</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeForCsv()'><b>testSanitizeForCsv</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeForHtml()'><b>testSanitizeForHtml</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeForJs()'><b>testSanitizeForJs</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeForRichText()'><b>testSanitizeForRichText</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.AccountAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
 <td></td>
@@ -2003,12 +2048,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentProfileAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
 <td></td>
@@ -2018,27 +2063,27 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeGoogleId()'><b>testSanitizeGoogleId</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeListForCsv()'><b>testSanitizeListForCsv</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeName()'><b>testSanitizeName</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeTextField()'><b>testSanitizeTextField</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SanitizerTest.testSanitizeTitle()'><b>testSanitizeTitle</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SanitizerTest@15ce9f</td></tr>
+<td>teammates.test.cases.common.SanitizerTest@7da1fc</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest.testScheduleFeedbackSessionClosingEmails()'><b>testScheduleFeedbackSessionClosingEmails</b><br>Test class: teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest</td>
 <td></td>
@@ -2068,12 +2113,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testSetDerivedAttributes()'><b>testSetDerivedAttributes</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.SessionAttributesTest.testSort()'><b>testSort</b><br>Test class: teammates.test.cases.common.SessionAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.SessionAttributesTest@37f8a7</td></tr>
+<td>teammates.test.cases.common.SessionAttributesTest@41b68d</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testSortByNameAndThenByEmail()'><b>testSortByNameAndThenByEmail</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -2098,27 +2143,27 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.StudentResultBundleTest.testSortIncomingByFeedbackAscending()'><b>testSortIncomingByFeedbackAscending</b><br>Test class: teammates.test.cases.common.StudentResultBundleTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentResultBundleTest@3bb53f</td></tr>
+<td>teammates.test.cases.common.StudentResultBundleTest@17fe790</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentResultBundleTest.testSortIncomingByStudentNameAscending()'><b>testSortIncomingByStudentNameAscending</b><br>Test class: teammates.test.cases.common.StudentResultBundleTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentResultBundleTest@3bb53f</td></tr>
+<td>teammates.test.cases.common.StudentResultBundleTest@17fe790</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentResultBundleTest.testSortOutgoingByStudentNameAscending()'><b>testSortOutgoingByStudentNameAscending</b><br>Test class: teammates.test.cases.common.StudentResultBundleTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentResultBundleTest@3bb53f</td></tr>
+<td>teammates.test.cases.common.StudentResultBundleTest@17fe790</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesFactoryTest.testSplitLineIntoColumns()'><b>testSplitLineIntoColumns</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StudentAttributesFactoryTest@80411f</td></tr>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@1753747</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StringHelperTest.testSplitName()'><b>testSplitName</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testStudentConstructor()'><b>testStudentConstructor</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -2133,7 +2178,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.EmailsTest.testSystemCrashReportEmailContent()'><b>testSystemCrashReportEmailContent</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.EmailsTest@1708eee</td></tr>
+<td>teammates.test.cases.logic.EmailsTest@33f652</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testToEnrollmentString()'><b>testToEnrollmentString</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -2148,7 +2193,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.InstructorAttributesTest.testToEntity()'><b>testToEntity</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.InstructorAttributesTest@11684ac</td></tr>
+<td>teammates.test.cases.common.InstructorAttributesTest@3d2ff1</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentProfileAttributesTest.testToEntity()'><b>testToEntity</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
 <td></td>
@@ -2163,12 +2208,12 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.CourseAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CourseAttributesTest@1ef9e5e</td></tr>
+<td>teammates.test.cases.common.CourseAttributesTest@12250ef</td></tr>
 <tr>
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
 <td></td>
@@ -2183,7 +2228,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.common.StringHelperTest.testToStringForStringLists()'><b>testToStringForStringLists</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.StringHelperTest@3d2ff1</td></tr>
+<td>teammates.test.cases.common.StringHelperTest@138ecb8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.UrlTest.testTrimTrailingSlash()'><b>testTrimTrailingSlash</b><br>Test class: teammates.test.cases.common.UrlTest</td>
 <td></td>
@@ -2193,22 +2238,22 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.CommentsDbTest.testUpdateComment()'><b>testUpdateComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CommentsDbTest@1164d11</td></tr>
+<td>teammates.test.cases.storage.CommentsDbTest@11dc4c8</td></tr>
 <tr>
 <td title='teammates.test.cases.logic.CommentsLogicTest.testUpdateComment()'><b>testUpdateComment</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.CommentsLogicTest@1fa522d</td></tr>
+<td>teammates.test.cases.logic.CommentsLogicTest@129271e</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.CoursesDbTest.testUpdateCourse()'><b>testUpdateCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CoursesDbTest@1604c40</td></tr>
+<td>teammates.test.cases.storage.CoursesDbTest@11684ac</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.EvaluationsDbTest.testUpdateEvaluation()'><b>testUpdateEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.EvaluationsDbTest@12250ef</td></tr>
+<td>teammates.test.cases.storage.EvaluationsDbTest@1ab735a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testUpdateFeedbackQuestion()'><b>testUpdateFeedbackQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
 <td></td>
@@ -2218,27 +2263,27 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testUpdateFeedbackResponse()'><b>testUpdateFeedbackResponse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest@1f575ec</td></tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@b7d0ec</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.FeedbackSessionsDbTest.testUpdateFeedbackSession()'><b>testUpdateFeedbackSession</b><br>Test class: teammates.test.cases.storage.FeedbackSessionsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.FeedbackSessionsDbTest@1ad6dbe</td></tr>
+<td>teammates.test.cases.storage.FeedbackSessionsDbTest@19ad02</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testUpdateInstructorByEmail()'><b>testUpdateInstructorByEmail</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.InstructorsDbTest.testUpdateInstructorByGoogleId()'><b>testUpdateInstructorByGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.InstructorsDbTest@1c087a2</td></tr>
+<td>teammates.test.cases.storage.InstructorsDbTest@108bc5a</td></tr>
 <tr>
 <td title='teammates.test.cases.storage.CommentsDbTest.testUpdateInstructorEmailAndStudentEmail()'><b>testUpdateInstructorEmailAndStudentEmail</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.CommentsDbTest@1164d11</td></tr>
+<td>teammates.test.cases.storage.CommentsDbTest@11dc4c8</td></tr>
 <tr>
 <td title='teammates.test.cases.common.InstructorPrivilegesTest.testUpdatePrivilegeInCourseLevel()'><b>testUpdatePrivilegeInCourseLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
 <td></td>
@@ -2283,27 +2328,27 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.logic.LogicTest.testUpdateSubmissions()'><b>testUpdateSubmissions</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.logic.LogicTest@1b42659</td></tr>
+<td>teammates.test.cases.logic.LogicTest@1a21b63</td></tr>
 <tr>
 <td title='teammates.test.cases.common.CommentAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.CommentAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CommentAttributesTest@865651</td></tr>
+<td>teammates.test.cases.common.CommentAttributesTest@1ef9e5e</td></tr>
 <tr>
 <td title='teammates.test.cases.common.CourseAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.CourseAttributesTest@1ef9e5e</td></tr>
+<td>teammates.test.cases.common.CourseAttributesTest@12250ef</td></tr>
 <tr>
 <td title='teammates.test.cases.common.EvaluationAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.EvaluationAttributesTest@a5bce1</td></tr>
+<td>teammates.test.cases.common.EvaluationAttributesTest@37f8a7</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FeedbackQuestionAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.FeedbackQuestionAttributesTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FeedbackQuestionAttributesTest@ffd7af</td></tr>
+<td>teammates.test.cases.common.FeedbackQuestionAttributesTest@1be9c2f</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FeedbackSessionAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.FeedbackSessionAttributesTest</td>
 <td></td>
@@ -2328,32 +2373,32 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest.testValidation()'><b>testValidation</b><br>Test class: teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest@f051af</td></tr>
+<td>teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest@ee1626</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_COURSE_ID()'><b>test_REGEX_COURSE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_EMAIL()'><b>test_REGEX_EMAIL</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_GOOGLE_ID_NON_EMAIL()'><b>test_REGEX_GOOGLE_ID_NON_EMAIL</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_NAME()'><b>test_REGEX_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_SAMPLE_COURSE_ID()'><b>test_REGEX_SAMPLE_COURSE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.common.FieldValidatorTest@13d701a</td></tr>
+<td>teammates.test.cases.common.FieldValidatorTest@2e71fc</td></tr>
 <tr>
 <td title='teammates.test.cases.common.StudentProfileAttributesTest.testeGetIdentificationString()'><b>testeGetIdentificationString</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
 <td></td>
@@ -2363,7 +2408,7 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.storage.StudentsDbTest.testupdateStudentWithoutDocument()'><b>testupdateStudentWithoutDocument</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.storage.StudentsDbTest@109aeea</td></tr>
+<td>teammates.test.cases.storage.StudentsDbTest@7b4d34</td></tr>
 </table><p>
 </body>
 </html>

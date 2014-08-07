@@ -6,37 +6,18 @@
   </listeners>
   <test name="parallel-ui-tests(failed)(failed)(failed)(failed)" parallel="classes">
     <classes>
-      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
-        <methods>
-          <include name="testSetup"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
-      <class name="teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest -->
-      <class name="teammates.test.automated.EvaluationOpeningReminderTest">
+      <class name="teammates.test.automated.FeedbackSessionPublishedReminderTest">
         <methods>
           <include name="testSetUp"/>
           <include name="testTearDown"/>
         </methods>
-      </class> <!-- teammates.test.automated.EvaluationOpeningReminderTest -->
-      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
+      </class> <!-- teammates.test.automated.FeedbackSessionPublishedReminderTest -->
+      <class name="teammates.test.cases.storage.FeedbackSessionsDbTest">
         <methods>
-          <include name="allTests"/>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
         </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
-        <methods>
-          <include name="classSetup"/>
-          <include name="classTearDown"/>
-          <include name="testAll"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
+      </class> <!-- teammates.test.cases.storage.FeedbackSessionsDbTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest">
         <methods>
           <include name="testAll"/>
@@ -44,6 +25,25 @@
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
+        <methods>
+          <include name="allTests"/>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
+        <methods>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
+        <methods>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+          <include name="testAll"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
     </classes>
   </test> <!-- parallel-ui-tests(failed)(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]] -->
