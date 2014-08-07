@@ -1,0 +1,2 @@
+fatal: A branch named 'origin-master' already exists.
+Already up-to-date.
