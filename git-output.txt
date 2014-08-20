@@ -1,0 +1,23 @@
+From https://github.com/TEAMMATES/repo
+   5dab644..a6cbd24  master     -> origin/master
+   0f89370..6723e90  AccessControl -> origin/AccessControl
+   c3280ee..7aa8717  Feature-Profiles -> origin/Feature-Profiles
+   7b1402a..e46fddf  FeedbackSessions -> origin/FeedbackSessions
+   e9e4ce7..99dbeff  Issue2201  -> origin/Issue2201
+ * [new branch]      Issue2313  -> origin/Issue2313
+ * [new branch]      Issue2319  -> origin/Issue2319
+ * [new branch]      Issue2385  -> origin/Issue2385
+ * [new branch]      Issue2386  -> origin/Issue2386
+ * [new branch]      Issue2409  -> origin/Issue2409
+ * [new branch]      Issue2412  -> origin/Issue2412
+ * [new branch]      Issue2414  -> origin/Issue2414
+ * [new branch]      ProfileRefactor -> origin/ProfileRefactor
+   7dca526..496f46c  dev        -> origin/dev
+ * [new tag]         V5.10      -> V5.10
+ * [new tag]         V5.11      -> V5.11
+ * [new tag]         V5.11.01   -> V5.11.01
+D	runtests.bat
+M	src/test/resources/pages/godmode.html
+Branch origin-dev set up to track remote branch dev from origin.
+Switched to a new branch 'origin-dev'
+Already up-to-date.
