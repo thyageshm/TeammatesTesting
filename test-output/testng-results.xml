@@ -2,34 +2,16 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="26305" started-at="2014-08-21T09:03:04Z" finished-at="2014-08-21T09:03:31Z">
+  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="26103" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:53Z">
     <groups>
     </groups>
-    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="14091" started-at="2014-08-21T09:03:04Z" finished-at="2014-08-21T09:03:18Z">
-      <class name="teammates.test.cases.storage.FeedbackSessionsDbTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.storage.FeedbackSessionsDbTest@e08edd]" name="testSetUp" is-config="true" duration-ms="546" started-at="2014-08-21T09:03:04Z" finished-at="2014-08-21T09:03:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@d53d82]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-08-21T09:03:05Z" finished-at="2014-08-21T09:03:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.storage.FeedbackSessionsDbTest@e08edd]" name="testTearDown" is-config="true" duration-ms="281" started-at="2014-08-21T09:03:18Z" finished-at="2014-08-21T09:03:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@d53d82]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T09:03:18Z" finished-at="2014-08-21T09:03:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.storage.FeedbackSessionsDbTest -->
+    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="14450" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:41Z">
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@16ac22d]" name="classSetUp" is-config="true" duration-ms="6398" started-at="2014-08-21T09:03:05Z" finished-at="2014-08-21T09:03:11Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@ef87ba]" name="classSetUp" is-config="true" duration-ms="7240" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@16ac22d]" name="testGodMode" duration-ms="140" started-at="2014-08-21T09:03:11Z" finished-at="2014-08-21T09:03:11Z">
+        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@ef87ba]" name="testGodMode" duration-ms="187" started-at="2014-08-21T13:57:35Z" finished-at="2014-08-21T13:57:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<   <title>
@@ -155,37 +137,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGodMode -->
-        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@16ac22d]" name="closeClass" is-config="true" duration-ms="6710" started-at="2014-08-21T09:03:11Z" finished-at="2014-08-21T09:03:18Z">
+        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@ef87ba]" name="closeClass" is-config="true" duration-ms="6211" started-at="2014-08-21T13:57:35Z" finished-at="2014-08-21T13:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeClass -->
       </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
+      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@c03da9]" name="testSetUp" is-config="true" duration-ms="562" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.SubmissionTaskQueueLogicTest@983fe1]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@c03da9]" name="testTearDown" is-config="true" duration-ms="234" started-at="2014-08-21T13:57:41Z" finished-at="2014-08-21T13:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.SubmissionTaskQueueLogicTest@983fe1]" name="testTearDown" is-config="true" duration-ms="16" started-at="2014-08-21T13:57:41Z" finished-at="2014-08-21T13:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
     </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed) -->
-    <test name="sequential-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="26305" started-at="2014-08-21T09:03:04Z" finished-at="2014-08-21T09:03:31Z">
-      <class name="teammates.test.cases.storage.FeedbackSessionsDbTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.storage.FeedbackSessionsDbTest@395294]" name="testSetUp" is-config="true" duration-ms="546" started-at="2014-08-21T09:03:04Z" finished-at="2014-08-21T09:03:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@76ced6]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-08-21T09:03:05Z" finished-at="2014-08-21T09:03:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@76ced6]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T09:03:31Z" finished-at="2014-08-21T09:03:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.storage.FeedbackSessionsDbTest@395294]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T09:03:31Z" finished-at="2014-08-21T09:03:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.storage.FeedbackSessionsDbTest -->
+    <test name="sequential-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="26103" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:53Z">
       <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@15c9cb8]" name="classSetup" is-config="true" duration-ms="13248" started-at="2014-08-21T09:03:05Z" finished-at="2014-08-21T09:03:18Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@1684b79]" name="classSetup" is-config="true" duration-ms="13638" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@15c9cb8]" name="allTests" duration-ms="12495" started-at="2014-08-21T09:03:18Z" finished-at="2014-08-21T09:03:31Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@1684b79]" name="allTests" duration-ms="11903" started-at="2014-08-21T13:57:41Z" finished-at="2014-08-21T13:57:53Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[URL: http://localhost:8888/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&courseid=comments.idOfTypicalCourse1]]>
@@ -222,11 +204,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@15c9cb8]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T09:03:31Z" finished-at="2014-08-21T09:03:31Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@1684b79]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T13:57:53Z" finished-at="2014-08-21T13:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
+      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@13cd05a]" name="testSetUp" is-config="true" duration-ms="562" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.SubmissionTaskQueueLogicTest@138554d]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-08-21T13:57:27Z" finished-at="2014-08-21T13:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@13cd05a]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T13:57:53Z" finished-at="2014-08-21T13:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.SubmissionTaskQueueLogicTest@138554d]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-08-21T13:57:53Z" finished-at="2014-08-21T13:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
     </test> <!-- sequential-ui-tests(failed)(failed)(failed)(failed)(failed) -->
   </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] -->
 </testng-results>
