@@ -1,8 +1,39 @@
 From https://github.com/TEAMMATES/repo
-   a6cbd24..f57c465  master     -> origin/master
- * [new branch]      Issue2427  -> origin/Issue2427
+   f57c465..8239006  master     -> origin/master
+   d1cabd1..30724b8  Issue2417  -> origin/Issue2417
+   7245669..4a1f71c  Issue2427  -> origin/Issue2427
+ * [new branch]      Issue2435  -> origin/Issue2435
+ * [new branch]      Issue2439  -> origin/Issue2439
+   496f46c..8352ca1  dev        -> origin/dev
+ * [new tag]         V5.12      -> V5.12
 fatal: A branch named 'origin-master' already exists.
-Updating a6cbd24..f57c465
+Updating f57c465..8239006
 Fast-forward
- .../logic/core/FeedbackResponsesLogic.java         | 32 ++++++++--------------
- 1 file changed, 11 insertions(+), 21 deletions(-)
+ .../datatransfer/StudentProfileAttributes.java     |   3 +-
+ src/main/java/teammates/logic/api/GateKeeper.java  |  17 ++
+ src/main/java/teammates/logic/api/Logic.java       |   3 +-
+ .../java/teammates/logic/core/AccountsLogic.java   |   3 +-
+ .../java/teammates/storage/api/ProfilesDb.java     | 220 ++++++++++-------
+ ...InstructorFeedbackResponseCommentAddAction.java |   3 +-
+ ...nstructorFeedbackResponseCommentEditAction.java |   3 +-
+ .../StudentProfileCreateFormUrlAction.java         |  45 ++--
+ .../StudentProfileCreateFormUrlAjaxPageData.java   |   4 +-
+ .../controller/StudentProfileEditSaveAction.java   |   2 +-
+ .../ui/controller/StudentProfilePictureAction.java |  76 +++---
+ .../StudentProfilePictureEditAction.java           | 231 ++++++++++++------
+ .../StudentProfilePictureUploadAction.java         |  25 +-
+ .../cases/common/StudentProfileAttributesTest.java | 101 +++++---
+ .../test/cases/logic/AccountsLogicTest.java        |  23 +-
+ .../java/teammates/test/cases/logic/LogicTest.java |  44 +---
+ .../test/cases/storage/ProfilesDbTest.java         | 166 ++++++++++---
+ ...ructorFeedbackResponseCommentAddActionTest.java |  28 ++-
+ ...uctorFeedbackResponseCommentEditActionTest.java |  30 ++-
+ .../ui/StudentProfileCreateFormUrlActionTest.java  |  63 ++---
+ .../cases/ui/StudentProfileEditSaveActionTest.java | 267 +++++++++++----------
+ .../cases/ui/StudentProfilePageActionTest.java     |  85 ++++---
+ .../cases/ui/StudentProfilePictureActionTest.java  | 175 ++++++++------
+ .../ui/StudentProfilePictureEditActionTest.java    | 198 +++++++++++----
+ .../ui/browsertests/StudentProfilePageUiTest.java  |  11 +-
+ .../resources/data/StudentProfilePageUiTest.json   |  15 ++
+ .../pages/instructorCommentsPageEditFrc.html       |   4 +-
+ 27 files changed, 1176 insertions(+), 669 deletions(-)
