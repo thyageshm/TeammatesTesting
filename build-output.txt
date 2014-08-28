@@ -1,0 +1,17 @@
+Buildfile: D:\Teammates\build.xml
+
+copyjars:
+     [copy] Copying 11 files to D:\Teammates\src\main\webapp\WEB-INF\lib
+
+compile:
+     [copy] Copying 4 files to D:\Teammates\src\main\webapp\WEB-INF\classes
+    [javac] Compiling 622 source files to D:\Teammates\src\main\webapp\WEB-INF\classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+
+enhance:
+  [enhance] DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+  [enhance] DataNucleus Enhancer completed with success for 12 classes. Timings : input=172 ms, enhance=140 ms, total=312 ms. Consult the log for full details
+
+BUILD SUCCESSFUL
+Total time: 16 seconds
