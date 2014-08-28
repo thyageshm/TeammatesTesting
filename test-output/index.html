@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (show)</a> <!-- show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
                     </span>
                     <div class="method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest" hash-for-method="allTests">allTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.GodModeTest" hash-for-method="testGodMode">testGodMode</a> <!-- method navigator-link -->
@@ -116,6 +121,478 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allTests">
+                  </a> <!-- allTests -->
+                  <span class="method-name">allTests</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=searchUI.idOfInstructor1OfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;student2&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;searchUI.idOfInstructor1OfCourse1&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comment
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Students
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;panel panel-info&quot;&gt;
+               &lt;div class=&quot;panel-heading&quot;&gt;
+                  &lt;strong&gt;
+                     [searchUI.idOfTypicalCourse1]
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;panel-body padding-0&quot;&gt;
+                  &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                     &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;
+                              Photo
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortsection-0&quot; onclick=&quot;toggleSort(this, 1)&quot;&gt;
+                              Section
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortteam-0&quot; onclick=&quot;toggleSort(this, 2)&quot;&gt;
+                              Team
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname-0&quot; onclick=&quot;toggleSort(this, 3)&quot;&gt;
+                              Student Name
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortemail-0&quot; onclick=&quot;toggleSort(this, 4)&quot;&gt;
+                              Email
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th&gt;
+                              Action(s)
+                           &lt;/th&gt;
+                        &lt;/tr&gt;
+                     &lt;/thead&gt;
+                     &lt;tbody&gt;
+                        &lt;tr id=&quot;student-c0.0&quot; style=&quot;display: table-row;&quot;&gt;
+                           &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
+                              &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&amp;user=searchUI.idOfInstructor1OfCourse1&quot;&gt;
+                                 &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
+                                    View Photo
+                                 &lt;/a&gt;
+                                 &lt;img alt=&quot;No Image Given&quot; class=&quot;hidden&quot; src=&quot;&quot;/&gt;
+                                                               &lt;/div&gt;
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentsection-c0.0&quot;&gt;
+                              Section 1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentteam-c0.0&quot;&gt;
+                              Team 1.1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentname-c0.0&quot;&gt;
+                              student2 2 In Course1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentemail-c0.0&quot;&gt;
+                              searchUI.student2.2InCourse1@gmail.com
+                           &lt;/td&gt;
+                           &lt;td class=&quot;no-print align-center&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 View
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 Edit
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; data-original-title=&quot;Delete the student and the corresponding submissions from the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;searchUI.idOfTypicalCourse1&apos;,&apos;student2 2 In Course1&apos;)&quot; title=&quot;&quot;&gt;
+                                 Delete
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all data about this student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 All Records
+                              &lt;/a&gt;
+                              &lt;div class=&quot;dropdown&quot; style=&quot;display:inline;&quot;&gt;
+                                 &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                    Add Comment
+                                 &lt;/a&gt;
+                                 &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot; style=&quot;text-align:left;&quot;&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on student2 2 In Course1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Team 1.1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Section 1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/div&gt;
+                           &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr id=&quot;student-c0.1&quot; style=&quot;display: table-row;&quot;&gt;
+                           &lt;td id=&quot;studentphoto-c0.1&quot;&gt;
+                              &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;
+                                 &lt;img alt=&quot;No Image Given&quot; class=&quot;&quot; src=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&amp;user=searchUI.idOfInstructor1OfCourse1&quot;/&gt;
+                                                               &lt;/div&gt;
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentsection-c0.1&quot;&gt;
+                              Section 1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentteam-c0.1&quot;&gt;
+                              Team 1.1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentname-c0.1&quot;&gt;
+                              student2 In Course1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentemail-c0.1&quot;&gt;
+                              searchUI.student2InCourse1@gmail.com
+                           &lt;/td&gt;
+                           &lt;td class=&quot;no-print align-center&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 View
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 Edit
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; data-original-title=&quot;Delete the student and the corresponding submissions from the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;searchUI.idOfTypicalCourse1&apos;,&apos;student2 In Course1&apos;)&quot; title=&quot;&quot;&gt;
+                                 Delete
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all data about this student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 All Records
+                              &lt;/a&gt;
+                              &lt;div class=&quot;dropdown&quot; style=&quot;display:inline;&quot;&gt;
+                                 &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                    Add Comment
+                                 &lt;/a&gt;
+                                 &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot; style=&quot;text-align:left;&quot;&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on student2 In Course1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Team 1.1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Section 1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/div&gt;
+                           &lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/tbody&gt;
+                  &lt;/table&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=searchUI.idOfInstructor1OfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;student2&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;searchUI.idOfInstructor1OfCourse1&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Students
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;panel panel-info&quot;&gt;
+               &lt;div class=&quot;panel-heading&quot;&gt;
+                  &lt;strong&gt;
+                     [searchUI.idOfTypicalCourse1]
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;panel-body padding-0&quot;&gt;
+                  &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                     &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;
+                              Photo
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortsection-0&quot; onclick=&quot;toggleSort(this, 1)&quot;&gt;
+                              Section
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortteam-0&quot; onclick=&quot;toggleSort(this, 2)&quot;&gt;
+                              Team
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname-0&quot; onclick=&quot;toggleSort(this, 3)&quot;&gt;
+                              Student Name
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortemail-0&quot; onclick=&quot;toggleSort(this, 4)&quot;&gt;
+                              Email
+                              &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                              &lt;/span&gt;
+                           &lt;/th&gt;
+                           &lt;th&gt;
+                              Action(s)
+                           &lt;/th&gt;
+                        &lt;/tr&gt;
+                     &lt;/thead&gt;
+                     &lt;tbody&gt;
+                        &lt;tr id=&quot;student-c0.0&quot; style=&quot;display: table-row;&quot;&gt;
+                           &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
+                              &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=76CF767AAF02012BB75DCBBBF1437326FB3EF3440C8A4E151762E5876B0CE68BF389A137977A80E11BB78E3A610A0182&amp;courseid=7AB9683F8F9BB26B116464268794011CE852E7FE8E2C5698B449E09AAB574EA2&amp;user=searchUI.idOfInstructor1OfCourse1&quot;&gt;
+                                 &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
+                                    View Photo
+                                 &lt;/a&gt;
+                                 &lt;img alt=&quot;No Image Given&quot; class=&quot;hidden&quot; src=&quot;&quot;/&gt;
+                                                               &lt;/div&gt;
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentsection-c0.0&quot;&gt;
+                              Section 1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentteam-c0.0&quot;&gt;
+                              Team 1.1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentname-c0.0&quot;&gt;
+                              student2 2 In Course1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentemail-c0.0&quot;&gt;
+                              searchUI.student2.2InCourse1@gmail.com
+                           &lt;/td&gt;
+                           &lt;td class=&quot;no-print align-center&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 View
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 Edit
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; data-original-title=&quot;Delete the student and the corresponding submissions from the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;searchUI.idOfTypicalCourse1&apos;,&apos;student2 2 In Course1&apos;)&quot; title=&quot;&quot;&gt;
+                                 Delete
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all data about this student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 All Records
+                              &lt;/a&gt;
+                              &lt;div class=&quot;dropdown&quot; style=&quot;display:inline;&quot;&gt;
+                                 &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                    Add Comment
+                                 &lt;/a&gt;
+                                 &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot; style=&quot;text-align:left;&quot;&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on student2 2 In Course1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Team 1.1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2.2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Section 1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/div&gt;
+                           &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr id=&quot;student-c0.1&quot; style=&quot;display: table-row;&quot;&gt;
+                           &lt;td id=&quot;studentphoto-c0.1&quot;&gt;
+                              &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;
+                                 &lt;img alt=&quot;No Image Given&quot; class=&quot;&quot; src=&quot;/page/studentProfilePic?studentemail=76CF767AAF02012BB75DCBBBF1437326F5370F01D59E19D5A8A4E10EB861C8425C8E51DD1B4E0C5A912A6CF5CFD797E1&amp;courseid=7AB9683F8F9BB26B116464268794011CE852E7FE8E2C5698B449E09AAB574EA2&amp;user=searchUI.idOfInstructor1OfCourse1&quot;/&gt;
+                                                               &lt;/div&gt;
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentsection-c0.1&quot;&gt;
+                              Section 1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentteam-c0.1&quot;&gt;
+                              Team 1.1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentname-c0.1&quot;&gt;
+                              student2 In Course1
+                           &lt;/td&gt;
+                           &lt;td id=&quot;studentemail-c0.1&quot;&gt;
+                              searchUI.student2InCourse1@gmail.com
+                           &lt;/td&gt;
+                           &lt;td class=&quot;no-print align-center&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 View
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 Edit
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; data-original-title=&quot;Delete the student and the corresponding submissions from the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;searchUI.idOfTypicalCourse1&apos;,&apos;student2 In Course1&apos;)&quot; title=&quot;&quot;&gt;
+                                 Delete
+                              &lt;/a&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all data about this student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&quot; title=&quot;&quot;&gt;
+                                 All Records
+                              &lt;/a&gt;
+                              &lt;div class=&quot;dropdown&quot; style=&quot;display:inline;&quot;&gt;
+                                 &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                    Add Comment
+                                 &lt;/a&gt;
+                                 &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot; style=&quot;text-align:left;&quot;&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on student2 In Course1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Team 1.1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;
+                                       &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=searchUI.idOfTypicalCourse1&amp;studentemail=searchUI.student2InCourse1%40gmail.com&amp;user=searchUI.idOfInstructor1OfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                          Comment on Section 1
+                                       &lt;/a&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/div&gt;
+                           &lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/tbody&gt;
+                  &lt;/table&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:822)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:864)
+	at teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.testSearch(InstructorSearchPageUiTest.java:118)
+	at teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.allTests(InstructorSearchPageUiTest.java:47)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
           <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -202,18 +679,6 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;rare-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetUp&quot;/&gt;
@@ -221,8 +686,63 @@
           &lt;include name=&quot;closeClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- rare-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+  &lt;test name=&quot;parallel-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;allTests&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,7 +754,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (3 classes)</span>
+                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -260,16 +783,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGodMode')
-data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
-data.setCell(0, 3, 125);
+data.setCell(0, 1, 'allTests')
+data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest')
+data.setCell(0, 3, 33696);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGodMode')
+data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
+data.setCell(1, 3, 125);
 window.suiteTableData['Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 125 ms</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
               </div> <!-- times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
             </div> <!-- times-div -->
@@ -284,19 +811,37 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest</span>
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testExecuteAndPostProcess</span>
+                <span class="ignored-method-name">allTests</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.GodModeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGodMode</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.logic.EvaluationsLogicTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
                 <span class="ignored-method-name">testAll</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -309,7 +854,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
                 <span class="method-start">0 ms</span>
@@ -319,38 +868,79 @@ return data;
               <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">530 ms</span>
+                <span class="method-start">546 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">546 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">classSetUp</span>
-                <span class="method-start">546 ms</span>
+                <span class="method-start">562 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">562 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testGodMode</span>
-                <span class="method-start">8254 ms</span>
+                <span class="method-start">8754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeClass</span>
-                <span class="method-start">8379 ms</span>
+                <span class="method-start">8879 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">8395 ms</span>
+                <span class="method-start">8879 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">8613 ms</span>
+                <span class="method-start">9113 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">allTests</span>
+                <span class="method-start">27288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">60984 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">60984 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">60984 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

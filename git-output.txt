@@ -1,14 +1,10 @@
 From https://github.com/TEAMMATES/repo
-   8239006..c29f836  master     -> origin/master
-   23ba6a4..e29cd2d  Issue2383  -> origin/Issue2383
-   57977dc..4ea3c9e  Issue2439  -> origin/Issue2439
- * [new branch]      Issue2448  -> origin/Issue2448
- * [new branch]      Issue2451  -> origin/Issue2451
-   8352ca1..7b82238  dev        -> origin/dev
- * [new branch]      release    -> origin/release
- * [new tag]         V5.12.01   -> V5.12.01
-D	runtests.bat
-M	src/test/resources/pages/godmode.html
-Branch origin-Issue2448 set up to track remote branch Issue2448 from origin.
-Switched to a new branch 'origin-Issue2448'
-Already up-to-date.
+   232f82b..25d3e72  Issue2448  -> origin/Issue2448
+fatal: A branch named 'origin-Issue2448' already exists.
+Updating 232f82b..25d3e72
+Fast-forward
+ .../ui/browsertests/InstructorSearchPageUiTest.java   | 19 +++++++++++++++++--
+ .../test/pageobjects/InstructorSearchPage.java        |  4 ++++
+ ...InstructorSearchPageSearchStudentsForStudent1.html |  2 +-
+ ...InstructorSearchPageSearchStudentsForStudent2.html | 11 +++++------
+ 4 files changed, 27 insertions(+), 9 deletions(-)
