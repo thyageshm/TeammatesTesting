@@ -1,10 +1,15 @@
 From https://github.com/TEAMMATES/repo
-   232f82b..25d3e72  Issue2448  -> origin/Issue2448
+   c29f836..eccdbe7  master     -> origin/master
+ * [new branch]      Issue2447  -> origin/Issue2447
+   25d3e72..bacd590  Issue2448  -> origin/Issue2448
 fatal: A branch named 'origin-Issue2448' already exists.
-Updating 232f82b..25d3e72
+Updating 25d3e72..bacd590
 Fast-forward
- .../ui/browsertests/InstructorSearchPageUiTest.java   | 19 +++++++++++++++++--
- .../test/pageobjects/InstructorSearchPage.java        |  4 ++++
- ...InstructorSearchPageSearchStudentsForStudent1.html |  2 +-
- ...InstructorSearchPageSearchStudentsForStudent2.html | 11 +++++------
- 4 files changed, 27 insertions(+), 9 deletions(-)
+ .../ui/controller/InstructorFeedbackAddAction.java |  1 +
+ .../ui/controller/InstructorFeedbacksPageData.java |  1 +
+ src/main/webapp/js/instructorFeedbacks.js          |  5 +--
+ src/main/webapp/jsp/instructorFeedbacks.jsp        | 11 ++++---
+ .../browsertests/InstructorFeedbackPageUiTest.java | 38 ++++++++++++++++++++++
+ .../test/pageobjects/InstructorFeedbacksPage.java  | 12 +++++++
+ ...tructorSearchPageSearchStudentsForStudent2.html |  2 +-
+ 7 files changed, 62 insertions(+), 8 deletions(-)
