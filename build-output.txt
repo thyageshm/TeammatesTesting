@@ -6,17 +6,12 @@ copyjars:
 compile:
      [copy] Copying 4 files to D:\Teammates\src\main\webapp\WEB-INF\classes
     [javac] Compiling 627 source files to D:\Teammates\src\main\webapp\WEB-INF\classes
-    [javac] D:\Teammates\src\main\java\teammates\client\scripts\GenerateLargeScaledData.java:7: error: package org.mortbay.log does not exist
-    [javac] import org.mortbay.log.Log;
-    [javac]                       ^
-    [javac] D:\Teammates\src\main\java\teammates\client\scripts\GenerateLargeScaledData.java:7: error: package org.mortbay.log does not exist
-    [javac] import org.mortbay.log.Log;
-    [javac]                       ^
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
-    [javac] 1 error
 
-BUILD FAILED
-D:\Teammates\build.xml:46: Compile failed; see the compiler error output for details.
+enhance:
+  [enhance] DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
+  [enhance] DataNucleus Enhancer completed with success for 12 classes. Timings : input=172 ms, enhance=140 ms, total=312 ms. Consult the log for full details
 
-Total time: 6 seconds
+BUILD SUCCESSFUL
+Total time: 11 seconds

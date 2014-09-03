@@ -1,0 +1,2360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="40129" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:33:24Z">
+    <groups>
+    </groups>
+    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="22532" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:33:06Z">
+      <class name="teammates.test.cases.ui.browsertests.GodModeTest">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@18bd34e]" name="classSetUp" is-config="true" duration-ms="7599" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@18bd34e]" name="testGodMode" duration-ms="140" started-at="2014-09-03T15:32:52Z" finished-at="2014-09-03T15:32:52Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<   <title>
+   </title>
+   <div id="frameBodyWrapper">
+      <input type="text" value=""/>
+            <a class="student-profile-pic-view-link btn-link" data-link="/page/studentProfilePic?studentemail={*}&courseid={*}">
+         View Photo
+      </a>
+      <a class="navLinks" data-unreg="true" href="/page/studentCourseJoinAuthentication?key={*}&">
+         Home
+      </a>
+      <input class="form-control" id="start" name="start" type="text" value="{*}"/>
+            <p class="form-control-static">
+         {*}
+      </p>
+      <input name="commentid" type="hidden" value="{*}"/>
+            <input name="questionid" type="hidden" value="{*}"/>
+            <a class="btn btn-default btn-xs t_course_archive0" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=testuserm.gma-demo&archive=true&next=%2Fpage%2FinstructorCoursesPage&user=testuser.instructor" title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)">
+      </a>
+      <input name="end" value="21/05/2001"/>
+            <div>
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      </div>
+   </div>
+
+> but was:<   <title>
+   </title>
+   <div id="frameBodyWrapper">
+      <input type="text" value=""/>
+            <a class="student-profile-pic-view-link btn-link" data-link="/page/studentProfilePic?studentemail={*}&courseid={*}">
+         View Photo
+      </a>
+      <a class="navLinks" data-unreg="true" href="/page/studentCourseJoinAuthentication?key={*}&">
+         Home
+      </a>
+      <input class="form-control" id="start" name="start" type="text" value="07/08/2014"/>
+            <p class="form-control-static">
+         07 Aug 2014, 05:35
+      </p>
+      <input name="commentid" type="hidden" value="{*}"/>
+            <input name="questionid" type="hidden" value="{*}"/>
+            <a class="btn btn-default btn-xs t_course_archive0" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=testuserm.gma-demo&archive=true&next=%2Fpage%2FinstructorCoursesPage&user=testuser.instructor" title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)">
+      </a>
+      <input name="end" value="21/05/2001"/>
+            <div>
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      </div>
+   </div>
+
+>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<   <title>
+   </title>
+   <div id="frameBodyWrapper">
+      <input type="text" value=""/>
+            <a class="student-profile-pic-view-link btn-link" data-link="/page/studentProfilePic?studentemail={*}&courseid={*}">
+         View Photo
+      </a>
+      <a class="navLinks" data-unreg="true" href="/page/studentCourseJoinAuthentication?key={*}&">
+         Home
+      </a>
+      <input class="form-control" id="start" name="start" type="text" value="{*}"/>
+            <p class="form-control-static">
+         {*}
+      </p>
+      <input name="commentid" type="hidden" value="{*}"/>
+            <input name="questionid" type="hidden" value="{*}"/>
+            <a class="btn btn-default btn-xs t_course_archive0" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=testuserm.gma-demo&archive=true&next=%2Fpage%2FinstructorCoursesPage&user=testuser.instructor" title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)">
+      </a>
+      <input name="end" value="21/05/2001"/>
+            <div>
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      </div>
+   </div>
+
+> but was:<   <title>
+   </title>
+   <div id="frameBodyWrapper">
+      <input type="text" value=""/>
+            <a class="student-profile-pic-view-link btn-link" data-link="/page/studentProfilePic?studentemail={*}&courseid={*}">
+         View Photo
+      </a>
+      <a class="navLinks" data-unreg="true" href="/page/studentCourseJoinAuthentication?key={*}&">
+         Home
+      </a>
+      <input class="form-control" id="start" name="start" type="text" value="07/08/2014"/>
+            <p class="form-control-static">
+         07 Aug 2014, 05:35
+      </p>
+      <input name="commentid" type="hidden" value="{*}"/>
+            <input name="questionid" type="hidden" value="{*}"/>
+            <a class="btn btn-default btn-xs t_course_archive0" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=testuserm.gma-demo&archive=true&next=%2Fpage%2FinstructorCoursesPage&user=testuser.instructor" title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)">
+      </a>
+      <input name="end" value="21/05/2001"/>
+            <div>
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      </div>
+   </div>
+
+>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at teammates.test.cases.ui.browsertests.GodModeTest.verifyOutput(GodModeTest.java:131)
+	at teammates.test.cases.ui.browsertests.GodModeTest.testGodMode(GodModeTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGodMode -->
+        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@18bd34e]" name="closeClass" is-config="true" duration-ms="13982" started-at="2014-09-03T15:32:52Z" finished-at="2014-09-03T15:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeClass -->
+      </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
+      <class name="teammates.test.cases.ui.InstructorEvalAddActionTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorEvalAddActionTest@37bf73]" name="testSetUp" is-config="true" duration-ms="562" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@16ac176]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.InstructorEvalAddActionTest@37bf73]" name="testTearDown" is-config="true" duration-ms="249" started-at="2014-09-03T15:33:06Z" finished-at="2014-09-03T15:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@16ac176]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-03T15:33:06Z" finished-at="2014-09-03T15:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.ui.InstructorEvalAddActionTest -->
+    </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed) -->
+    <test name="sequential-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="27961" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:33:12Z">
+      <class name="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@1f622fa]" name="classSetup" is-config="true" duration-ms="14028" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@1f622fa]" name="allTests" duration-ms="13355" started-at="2014-09-03T15:32:58Z" finished-at="2014-09-03T15:33:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL: http://localhost:8888/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&courseid=comments.idOfTypicalCourse1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL: http://localhost:8888/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&courseid=comments.idOfTypicalCourse1
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.testScripts(InstructorCommentsPageUiTest.java:93)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.allTests(InstructorCommentsPageUiTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allTests -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@1f622fa]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-09-03T15:33:12Z" finished-at="2014-09-03T15:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest -->
+      <class name="teammates.test.cases.ui.InstructorEvalAddActionTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorEvalAddActionTest@d36d73]" name="testSetUp" is-config="true" duration-ms="562" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@3f45a8]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.InstructorEvalAddActionTest@d36d73]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-03T15:33:12Z" finished-at="2014-09-03T15:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@3f45a8]" name="testTearDown" is-config="true" duration-ms="16" started-at="2014-09-03T15:33:12Z" finished-at="2014-09-03T15:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.ui.InstructorEvalAddActionTest -->
+    </test> <!-- sequential-ui-tests(failed)(failed)(failed)(failed)(failed) -->
+    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="40129" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:33:24Z">
+      <class name="teammates.test.cases.ui.browsertests.InstructorHomePageUiTest">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@1c4fe21]" name="classSetup" is-config="true" duration-ms="21721" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@1c4fe21]" name="allTests" duration-ms="17830" started-at="2014-09-03T15:33:06Z" finished-at="2014-09-03T15:33:24Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<<[expected>
+   <div class="container theme-showcase" id="frameBodyWrapper">
+      <div id="topOfPage">
+      </div>
+      <div class="inner-container">
+         <div class="row">
+            <div class="col-md-5">
+               <h1>
+                  Instructor Home
+               </h1>
+            </div>
+            <div class="col-md-5 instructor-header-bar">
+               <form action="/page/instructorSearchPage?user=CHomeUiT.instructor.tmms" method="get" name="search_form">
+                  <div class="input-group">
+                     <input class="form-control" data-original-title="Search for student's name" data-placement="top" data-toggle="tooltip" id="searchbox" name="searchkey" placeholder="Student Name" title="" type="text"/>
+                                          <span class="input-group-btn">
+                        <button class="btn btn-default" id="buttonSearch" type="submit" value="Search">
+                           Search
+                        </button>
+                     </span>
+                  </div>
+                  <input name="searchstudents" type="hidden" value="true"/>
+                                    <input name="searchcommentforstudents" type="hidden" value="false"/>
+                                    <input name="searchcommentforresponses" type="hidden" value="false"/>
+                                    <input name="user" type="hidden" value="CHomeUiT.instructor.tmms"/>
+                                 </form>
+            </div>
+            <div class="col-md-2 instructor-header-bar">
+               <a class="btn btn-primary btn-md" href="/page/instructorCoursesPage?user=CHomeUiT.instructor.tmms" id="addNewCourse">
+                  Add New Course
+               </a>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div id="statusMessage" style="display: none;">
+      </div>
+      <div class="row">
+         <div class="col-md-5 pull-right">
+            <div class="row">
+               <div class="col-md-3 btn-group">
+                  <h5 class="pull-right">
+                     <strong>
+                        Sort By:
+                     </strong>
+                  </h5>
+               </div>
+               <div class="col-md-9">
+                  <div class="btn-group pull-right" data-toggle="buttons">
+                     <label class="btn btn-default " data="id" id="sortById" name="sortby">
+                        <input type="radio"/>
+                                                Course ID
+                     </label>
+                     <label class="btn btn-default " data="name" id="sortByName" name="sortby">
+                        <input name="sortby" type="radio" value="name"/>
+                                                Course Name
+                     </label>
+                     <label class="btn btn-default active" data="createdAt" id="sortByDate" name="sortby">
+                        <input type="radio"/>
+                                                Creation Date
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course0">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS1101] :
+                                    Programming Methodology
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS1101" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS1101&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS1101&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session0">
+                  <td>
+                     Fourth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation is created but has not yet started" data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fourth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session1">
+                  <td>
+                     Fifth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fifth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('Fifth Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session2">
+                  <td>
+                     Third Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished but the results have not been made available to the students" data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Third Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Eval');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course1">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS2104] :
+                                    Programming Language Concepts
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS2104" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS2104&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS2104&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session3">
+                  <td>
+                     First Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     4 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','First Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session5">
+                  <td>
+                     Second Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is waiting to open." data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 0
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Second Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="This session is not yet opened" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session6">
+                  <td>
+                     First Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is open for submissions." data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','First Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Feedback Session');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('First Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session4">
+                  <td>
+                     Second Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished and the results have been made available to students" data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test disabled" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','Second Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make results not visible to students" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalUnpublish?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Second Eval');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session7">
+                  <td>
+                     Fourth Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended.<br />The responses for this session are visible." data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Fourth Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make responses no longer visible" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackUnpublish?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Fourth Feedback Session');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session8">
+                  <td>
+                     Third Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended." data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Third Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+         </div>
+
+</expected]>> but was:<<[actual>
+   <div class="container theme-showcase" id="frameBodyWrapper">
+      <div id="topOfPage">
+      </div>
+      <div class="inner-container">
+         <div class="row">
+            <div class="col-md-5">
+               <h1>
+                  Instructor Home
+               </h1>
+            </div>
+            <div class="col-md-5 instructor-header-bar">
+               <form action="/page/instructorSearchPage?user=CHomeUiT.instructor.tmms" method="get" name="search_form">
+                  <div class="input-group">
+                     <input class="form-control" data-original-title="Search for student's name" data-placement="top" data-toggle="tooltip" id="searchbox" name="searchkey" placeholder="Student Name" title="" type="text"/>
+                                          <span class="input-group-btn">
+                        <button class="btn btn-default" id="buttonSearch" type="submit" value="Search">
+                           Search
+                        </button>
+                     </span>
+                  </div>
+                  <input name="searchstudents" type="hidden" value="true"/>
+                                    <input name="searchcommentforstudents" type="hidden" value="false"/>
+                                    <input name="searchcommentforresponses" type="hidden" value="false"/>
+                                    <input name="user" type="hidden" value="CHomeUiT.instructor.tmms"/>
+                                 </form>
+            </div>
+            <div class="col-md-2 instructor-header-bar">
+               <a class="btn btn-primary btn-md" href="/page/instructorCoursesPage?user=CHomeUiT.instructor.tmms" id="addNewCourse">
+                  Add New Course
+               </a>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div id="statusMessage" style="display: none;">
+      </div>
+      <div class="row">
+         <div class="col-md-5 pull-right">
+            <div class="row">
+               <div class="col-md-3 btn-group">
+                  <h5 class="pull-right">
+                     <strong>
+                        Sort By:
+                     </strong>
+                  </h5>
+               </div>
+               <div class="col-md-9">
+                  <div class="btn-group pull-right" data-toggle="buttons">
+                     <label class="btn btn-default " data="id" id="sortById" name="sortby">
+                        <input type="radio"/>
+                                                Course ID
+                     </label>
+                     <label class="btn btn-default " data="name" id="sortByName" name="sortby">
+                        <input name="sortby" type="radio" value="name"/>
+                                                Course Name
+                     </label>
+                     <label class="btn btn-default active" data="createdAt" id="sortByDate" name="sortby">
+                        <input type="radio"/>
+                                                Creation Date
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course0">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS2104] :
+                                    Programming Language Concepts
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS2104" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS2104&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS2104&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session0">
+                  <td>
+                     First Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     4 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','First Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session2">
+                  <td>
+                     Second Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is waiting to open." data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 0
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Second Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="This session is not yet opened" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session3">
+                  <td>
+                     First Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is open for submissions." data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','First Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Feedback Session');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('First Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session1">
+                  <td>
+                     Second Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished and the results have been made available to students" data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test disabled" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','Second Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make results not visible to students" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalUnpublish?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Second Eval');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session4">
+                  <td>
+                     Fourth Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended.<br />The responses for this session are visible." data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Fourth Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make responses no longer visible" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackUnpublish?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Fourth Feedback Session');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session5">
+                  <td>
+                     Third Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended." data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Third Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course1">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS1101] :
+                                    Programming Methodology
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS1101" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS1101&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS1101&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session6">
+                  <td>
+                     Fourth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation is created but has not yet started" data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fourth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session7">
+                  <td>
+                     Fifth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fifth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('Fifth Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session8">
+                  <td>
+                     Third Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished but the results have not been made available to the students" data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Third Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Eval');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+         </div>
+
+</actual]>>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<<[expected>
+   <div class="container theme-showcase" id="frameBodyWrapper">
+      <div id="topOfPage">
+      </div>
+      <div class="inner-container">
+         <div class="row">
+            <div class="col-md-5">
+               <h1>
+                  Instructor Home
+               </h1>
+            </div>
+            <div class="col-md-5 instructor-header-bar">
+               <form action="/page/instructorSearchPage?user=CHomeUiT.instructor.tmms" method="get" name="search_form">
+                  <div class="input-group">
+                     <input class="form-control" data-original-title="Search for student's name" data-placement="top" data-toggle="tooltip" id="searchbox" name="searchkey" placeholder="Student Name" title="" type="text"/>
+                                          <span class="input-group-btn">
+                        <button class="btn btn-default" id="buttonSearch" type="submit" value="Search">
+                           Search
+                        </button>
+                     </span>
+                  </div>
+                  <input name="searchstudents" type="hidden" value="true"/>
+                                    <input name="searchcommentforstudents" type="hidden" value="false"/>
+                                    <input name="searchcommentforresponses" type="hidden" value="false"/>
+                                    <input name="user" type="hidden" value="CHomeUiT.instructor.tmms"/>
+                                 </form>
+            </div>
+            <div class="col-md-2 instructor-header-bar">
+               <a class="btn btn-primary btn-md" href="/page/instructorCoursesPage?user=CHomeUiT.instructor.tmms" id="addNewCourse">
+                  Add New Course
+               </a>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div id="statusMessage" style="display: none;">
+      </div>
+      <div class="row">
+         <div class="col-md-5 pull-right">
+            <div class="row">
+               <div class="col-md-3 btn-group">
+                  <h5 class="pull-right">
+                     <strong>
+                        Sort By:
+                     </strong>
+                  </h5>
+               </div>
+               <div class="col-md-9">
+                  <div class="btn-group pull-right" data-toggle="buttons">
+                     <label class="btn btn-default " data="id" id="sortById" name="sortby">
+                        <input type="radio"/>
+                                                Course ID
+                     </label>
+                     <label class="btn btn-default " data="name" id="sortByName" name="sortby">
+                        <input name="sortby" type="radio" value="name"/>
+                                                Course Name
+                     </label>
+                     <label class="btn btn-default active" data="createdAt" id="sortByDate" name="sortby">
+                        <input type="radio"/>
+                                                Creation Date
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course0">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS1101] :
+                                    Programming Methodology
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS1101" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS1101&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS1101&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session0">
+                  <td>
+                     Fourth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation is created but has not yet started" data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fourth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session1">
+                  <td>
+                     Fifth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fifth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('Fifth Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session2">
+                  <td>
+                     Third Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished but the results have not been made available to the students" data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Third Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Eval');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course1">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS2104] :
+                                    Programming Language Concepts
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS2104" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS2104&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS2104&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session3">
+                  <td>
+                     First Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     4 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','First Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session5">
+                  <td>
+                     Second Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is waiting to open." data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 0
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Second Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="This session is not yet opened" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session6">
+                  <td>
+                     First Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is open for submissions." data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','First Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Feedback Session');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('First Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session4">
+                  <td>
+                     Second Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished and the results have been made available to students" data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test disabled" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','Second Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make results not visible to students" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalUnpublish?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Second Eval');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session7">
+                  <td>
+                     Fourth Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended.<br />The responses for this session are visible." data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Fourth Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make responses no longer visible" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackUnpublish?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Fourth Feedback Session');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session8">
+                  <td>
+                     Third Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended." data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Third Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+         </div>
+
+</expected]>> but was:<<[actual>
+   <div class="container theme-showcase" id="frameBodyWrapper">
+      <div id="topOfPage">
+      </div>
+      <div class="inner-container">
+         <div class="row">
+            <div class="col-md-5">
+               <h1>
+                  Instructor Home
+               </h1>
+            </div>
+            <div class="col-md-5 instructor-header-bar">
+               <form action="/page/instructorSearchPage?user=CHomeUiT.instructor.tmms" method="get" name="search_form">
+                  <div class="input-group">
+                     <input class="form-control" data-original-title="Search for student's name" data-placement="top" data-toggle="tooltip" id="searchbox" name="searchkey" placeholder="Student Name" title="" type="text"/>
+                                          <span class="input-group-btn">
+                        <button class="btn btn-default" id="buttonSearch" type="submit" value="Search">
+                           Search
+                        </button>
+                     </span>
+                  </div>
+                  <input name="searchstudents" type="hidden" value="true"/>
+                                    <input name="searchcommentforstudents" type="hidden" value="false"/>
+                                    <input name="searchcommentforresponses" type="hidden" value="false"/>
+                                    <input name="user" type="hidden" value="CHomeUiT.instructor.tmms"/>
+                                 </form>
+            </div>
+            <div class="col-md-2 instructor-header-bar">
+               <a class="btn btn-primary btn-md" href="/page/instructorCoursesPage?user=CHomeUiT.instructor.tmms" id="addNewCourse">
+                  Add New Course
+               </a>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div id="statusMessage" style="display: none;">
+      </div>
+      <div class="row">
+         <div class="col-md-5 pull-right">
+            <div class="row">
+               <div class="col-md-3 btn-group">
+                  <h5 class="pull-right">
+                     <strong>
+                        Sort By:
+                     </strong>
+                  </h5>
+               </div>
+               <div class="col-md-9">
+                  <div class="btn-group pull-right" data-toggle="buttons">
+                     <label class="btn btn-default " data="id" id="sortById" name="sortby">
+                        <input type="radio"/>
+                                                Course ID
+                     </label>
+                     <label class="btn btn-default " data="name" id="sortByName" name="sortby">
+                        <input name="sortby" type="radio" value="name"/>
+                                                Course Name
+                     </label>
+                     <label class="btn btn-default active" data="createdAt" id="sortByDate" name="sortby">
+                        <input type="radio"/>
+                                                Creation Date
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course0">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS2104] :
+                                    Programming Language Concepts
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS2104" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS2104&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS2104&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS2104&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS2104')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session0">
+                  <td>
+                     First Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     4 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','First Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS2104&evaluationname=First+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session2">
+                  <td>
+                     Second Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is waiting to open." data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 0
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Second Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="This session is not yet opened" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Second+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session3">
+                  <td>
+                     First Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and is open for submissions." data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','First Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('First Feedback Session');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=First+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('First Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session1">
+                  <td>
+                     Second Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished and the results have been made available to students" data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test disabled" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS2104','Second Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make results not visible to students" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalUnpublish?courseid=CHomeUiT.CS2104&evaluationname=Second+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Second Eval');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session4">
+                  <td>
+                     Fourth Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended.<br />The responses for this session are visible." data-placement="top" data-toggle="tooltip" title="">
+                        Published
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Fourth Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-unpublish-for-test" data-original-title="Make responses no longer visible" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackUnpublish?courseid=CHomeUiT.CS2104&fsname=Fourth+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleUnpublishEvaluation('Fourth Feedback Session');" title="">
+                        Unpublish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session5">
+                  <td>
+                     Third Feedback Session
+                  </td>
+                  <td>
+                     <span data-original-title="The feedback session has been created, is visible, and has ended." data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/feedbackSessionStatsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the submitted responses for this feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackResultsPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit feedback session details" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the feedback session" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackDelete?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteFeedbackSessionConfirmation('CHomeUiT.CS2104','Third Feedback Session');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-submit-for-test" data-original-title="Start submitting feedback" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackSubmissionEditPage?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" title="">
+                        Submit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students and instructors who have not submitted their feedbacks to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackRemind?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Make session responses available for viewing" data-placement="top" data-toggle="tooltip" href="/page/instructorFeedbackPublish?courseid=CHomeUiT.CS2104&fsname=Third+Feedback+Session&next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Feedback Session');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+            <div class="panel panel-primary" id="course1">
+         <div class="panel-heading">
+            <div class="row">
+               <div class="col-md-6">
+                  <strong>
+                     [CHomeUiT.CS1101] :
+                                    Programming Methodology
+                  </strong>
+               </div>
+               <div class="col-md-6">
+                  <span class="pull-right">
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-enroll-for-test" data-original-title="Enroll student into the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseEnrollPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Enroll
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-view-for-test" data-original-title="View, edit and send invitation emails to the students in the course" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseDetailsPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        View
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-edit-for-test" data-original-title="Edit Course information and instructor list" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseEditPage?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test" data-original-title="Add a feedback session for the course" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorFeedbacksPage?user=CHomeUiT.instructor.tmms&courseid=CHomeUiT.CS1101" title="">
+                        Add Session
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-archive-for-test" data-original-title="Archive the course so that it will not be shown in the home page any more (you can still access it from the 'Courses' tab)" data-placement="top" data-toggle="tooltip" href="/page/instructorCourseArchive?courseid=CHomeUiT.CS1101&archive=true&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleArchiveCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Archive
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                        hidden" data-original-title="Send email notification to recipients of 0 pending comment" data-placement="top" data-toggle="tooltip" href="/page/instructorStudentCommentClearPending?courseid=CHomeUiT.CS1101&user=CHomeUiT.instructor.tmms" title="">
+                        <span class="badge">
+                           0
+                        </span>
+                        <span class="glyphicon glyphicon-comment">
+                        </span>
+                        <span class="glyphicon glyphicon-arrow-right">
+                        </span>
+                        <span class="glyphicon glyphicon-envelope">
+                        </span>
+                     </a>
+                     <a class="btn btn-primary btn-xs btn-tm-actions course-delete-for-test" data-original-title="Delete the course and its corresponding students and sessions" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorCourseDelete?courseid=CHomeUiT.CS1101&next=%2Fpage%2FinstructorHomePage&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteCourseConfirmation('CHomeUiT.CS1101')" title="">
+                        Delete
+                     </a>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <table class="table-responsive table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th class="button-sort-none" id="button_sortname" onclick="toggleSort(this,1);">
+                     Session Name
+                     <span class="icon-sort unsorted">
+                     </span>
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     <span data-original-title="Number of students submitted / Class size" data-placement="top" data-toggle="tooltip" title="">
+                        Response Rate
+                     </span>
+                  </th>
+                  <th class="no-print">
+                     Action(s)
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr id="session6">
+                  <td>
+                     Fourth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation is created but has not yet started" data-placement="top" data-toggle="tooltip" title="">
+                        Awaiting
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fourth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fourth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session7">
+                  <td>
+                     Fifth Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has started and students can submit feedback until the closing time" data-placement="top" data-toggle="tooltip" title="">
+                        Open
+                     </span>
+                  </td>
+                  <td class="session-response-for-test recent">
+                     0 / 4
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Fifth Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&user=CHomeUiT.instructor.tmms" onclick="return toggleRemindStudents('Fifth Eval');" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Fifth+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+               <tr id="session8">
+                  <td>
+                     Third Eval
+                  </td>
+                  <td>
+                     <span data-original-title="The evaluation has finished but the results have not been made available to the students" data-placement="top" data-toggle="tooltip" title="">
+                        Closed
+                     </span>
+                  </td>
+                  <td class="session-response-for-test">
+                     <a href="/page/instructorEvalStatsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" oncontextmenu="return false;">
+                        Show
+                     </a>
+                  </td>
+                  <td class="no-print">
+                     <a class="btn btn-default btn-xs btn-tm-actions session-view-for-test" data-original-title="View the current results of the evaluation" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalResultsPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        View Results
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-edit-for-test" data-original-title="Edit evaluation details" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalEditPage?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" title="">
+                        Edit
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-preview-for-test" data-original-title="Preview evaluation session" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalPreview?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" target="_blank" title="">
+                        Preview
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-delete-for-test" data-original-title="Delete the evaluation" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalDelete?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return toggleDeleteEvaluationConfirmation('CHomeUiT.CS1101','Third Eval');" title="">
+                        Delete
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled" data-original-title="Send e-mails to remind students who have not submitted their evaluations to do so" data-placement="top" data-toggle="tooltip" href="/page/instructorEvalRemind?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&user=CHomeUiT.instructor.tmms" onclick="return false" title="">
+                        Remind
+                     </a>
+                     <a class="btn btn-default btn-xs btn-tm-actions session-publish-for-test" data-original-title="Publish evaluation results for students to view" data-placement="top" data-toggle="tooltip" disabled="disabled" href="/page/instructorEvalPublish?courseid=CHomeUiT.CS1101&evaluationname=Third+Eval&next=%2Fpage%2FinstructorHomePage%3Fuser%3DCHomeUiT.instructor.tmms&user=CHomeUiT.instructor.tmms" onclick="return togglePublishEvaluation('Third Eval');" title="">
+                        Publish
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <br/>
+         </div>
+
+</actual]>>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:822)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:864)
+	at teammates.test.pageobjects.AppPage.verifyHtmlAjax(AppPage.java:907)
+	at teammates.test.cases.ui.browsertests.InstructorHomePageUiTest.testContent(InstructorHomePageUiTest.java:151)
+	at teammates.test.cases.ui.browsertests.InstructorHomePageUiTest.allTests(InstructorHomePageUiTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allTests -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@1c4fe21]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-09-03T15:33:24Z" finished-at="2014-09-03T15:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorHomePageUiTest -->
+      <class name="teammates.test.cases.ui.InstructorEvalAddActionTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorEvalAddActionTest@2a3945]" name="testSetUp" is-config="true" duration-ms="562" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@86a0f]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-03T15:32:44Z" finished-at="2014-09-03T15:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.InstructorEvalAddActionTest@2a3945]" name="testTearDown" is-config="true" duration-ms="16" started-at="2014-09-03T15:33:24Z" finished-at="2014-09-03T15:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@86a0f]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-03T15:33:24Z" finished-at="2014-09-03T15:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.ui.InstructorEvalAddActionTest -->
+    </test> <!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] -->
+</testng-results>

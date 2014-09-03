@@ -1,7 +1,8 @@
 From https://github.com/TEAMMATES/repo
- * [new branch]      Issue2482  -> origin/Issue2482
-D	runtests.bat
-M	src/test/resources/pages/godmode.html
-Branch origin-Issue2482 set up to track remote branch Issue2482 from origin.
-Switched to a new branch 'origin-Issue2482'
-Already up-to-date.
+ * [new branch]      Issue2475  -> origin/Issue2475
+   9bb76bf..c0fe99d  Issue2482  -> origin/Issue2482
+fatal: A branch named 'origin-Issue2482' already exists.
+Updating 9bb76bf..c0fe99d
+Fast-forward
+ .../java/teammates/client/scripts/GenerateLargeScaledData.java | 10 ----------
+ 1 file changed, 10 deletions(-)
