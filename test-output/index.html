@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 12 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+              <span class="suite-name border-failed">Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>D:\Teammates\test-output\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 12 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="hide-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (hide)</a> <!-- hide-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+                      <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (show)</a> <!-- show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+                    </span>
+                    <div class="method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.logic.EvaluationsLogicTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.logic.CommentsLogicTest" hash-for-method="testCreateComment">testCreateComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.storage.CommentsDbTest" hash-for-method="testCreateComment">testCreateComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.storage.CommentsDbTest" hash-for-method="testDeleteComment">testDeleteComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.storage.CommentsDbTest" hash-for-method="testDeleteComments">testDeleteComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.storage.CommentsDbTest" hash-for-method="testGetComment">testGetComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.logic.CommentsLogicTest" hash-for-method="testGetComments">testGetComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.GodModeTest" hash-for-method="testGodMode">testGodMode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.common.CommentAttributesTest" hash-for-method="testSanitize">testSanitize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.logic.CommentsLogicTest" hash-for-method="testUpdateComment">testUpdateComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.storage.CommentsDbTest" hash-for-method="testUpdateComment">testUpdateComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.storage.CommentsDbTest" hash-for-method="testUpdateInstructorEmailAndStudentEmail">testUpdateInstructorEmailAndStudentEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.GodModeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGodMode">
+                  </a> <!-- testGodMode -->
+                  <span class="method-name">testGodMode</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;   &lt;title&gt;
+   &lt;/title&gt;
+   &lt;div id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;
+            &lt;a class=&quot;student-profile-pic-view-link btn-link&quot; data-link=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&quot;&gt;
+         View Photo
+      &lt;/a&gt;
+      &lt;a class=&quot;navLinks&quot; data-unreg=&quot;true&quot; href=&quot;/page/studentCourseJoinAuthentication?key={*}&amp;&quot;&gt;
+         Home
+      &lt;/a&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;start&quot; name=&quot;start&quot; type=&quot;text&quot; value=&quot;{*}&quot;/&gt;
+            &lt;p class=&quot;form-control-static&quot;&gt;
+         {*}
+      &lt;/p&gt;
+      &lt;input name=&quot;commentid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;input name=&quot;questionid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;a class=&quot;btn btn-default btn-xs t_course_archive0&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=testuserm.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorCoursesPage&amp;user=testuser.instructor&quot; title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot;&gt;
+      &lt;/a&gt;
+      &lt;input name=&quot;end&quot; value=&quot;21/05/2001&quot;/&gt;
+            &lt;div&gt;
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&gt; but was:&lt;   &lt;title&gt;
+   &lt;/title&gt;
+   &lt;div id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;
+            &lt;a class=&quot;student-profile-pic-view-link btn-link&quot; data-link=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&quot;&gt;
+         View Photo
+      &lt;/a&gt;
+      &lt;a class=&quot;navLinks&quot; data-unreg=&quot;true&quot; href=&quot;/page/studentCourseJoinAuthentication?key={*}&amp;&quot;&gt;
+         Home
+      &lt;/a&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;start&quot; name=&quot;start&quot; type=&quot;text&quot; value=&quot;07/08/2014&quot;/&gt;
+            &lt;p class=&quot;form-control-static&quot;&gt;
+         07 Aug 2014, 05:35
+      &lt;/p&gt;
+      &lt;input name=&quot;commentid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;input name=&quot;questionid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;a class=&quot;btn btn-default btn-xs t_course_archive0&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=testuserm.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorCoursesPage&amp;user=testuser.instructor&quot; title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot;&gt;
+      &lt;/a&gt;
+      &lt;input name=&quot;end&quot; value=&quot;21/05/2001&quot;/&gt;
+            &lt;div&gt;
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&gt;
+	at teammates.test.cases.ui.browsertests.GodModeTest.verifyOutput(GodModeTest.java:131)
+	at teammates.test.cases.ui.browsertests.GodModeTest.testGodMode(GodModeTest.java:97)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.storage.CommentsDbTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateComment">
+                  </a> <!-- testCreateComment -->
+                  <span class="method-name">testCreateComment</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.test.cases.storage.CommentsDbTest.testCreateComment(CommentsDbTest.java:60)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteComment">
+                  </a> <!-- testDeleteComment -->
+                  <span class="method-name">testDeleteComment</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.test.cases.storage.CommentsDbTest.testDeleteComment(CommentsDbTest.java:323)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteComments">
+                  </a> <!-- testDeleteComments -->
+                  <span class="method-name">testDeleteComments</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.test.cases.storage.CommentsDbTest.testDeleteComments(CommentsDbTest.java:357)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetComment">
+                  </a> <!-- testGetComment -->
+                  <span class="method-name">testGetComment</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.test.cases.storage.CommentsDbTest.testGetComment(CommentsDbTest.java:91)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateComment">
+                  </a> <!-- testUpdateComment -->
+                  <span class="method-name">testUpdateComment</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.test.cases.storage.CommentsDbTest.testUpdateComment(CommentsDbTest.java:175)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateInstructorEmailAndStudentEmail">
+                  </a> <!-- testUpdateInstructorEmailAndStudentEmail -->
+                  <span class="method-name">testUpdateInstructorEmailAndStudentEmail</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.test.cases.storage.CommentsDbTest.testUpdateInstructorEmailAndStudentEmail(CommentsDbTest.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.logic.EvaluationsLogicTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAll">
+                  </a> <!-- testAll -->
+                  <span class="method-name">testAll</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at teammates.test.cases.logic.EvaluationsLogicTest.testGetEvaluationsClosingWithinTimeLimit(EvaluationsLogicTest.java:273)
+	at teammates.test.cases.logic.EvaluationsLogicTest.testAll(EvaluationsLogicTest.java:82)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.logic.CommentsLogicTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateComment">
+                  </a> <!-- testCreateComment -->
+                  <span class="method-name">testCreateComment</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.EntitiesDb.createEntity(EntitiesDb.java:55)
+	at teammates.storage.api.CommentsDb.createEntity(CommentsDb.java:67)
+	at teammates.logic.core.CommentsLogic.createComment(CommentsLogic.java:64)
+	at teammates.test.cases.logic.CommentsLogicTest.testCreateComment(CommentsLogicTest.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetComments">
+                  </a> <!-- testGetComments -->
+                  <span class="method-name">testGetComments</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.CommentsDb.updateComment(CommentsDb.java:244)
+	at teammates.logic.core.CommentsLogic.updateComment(CommentsLogic.java:113)
+	at teammates.test.cases.logic.CommentsLogicTest.testGetComments(CommentsLogicTest.java:138)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateComment">
+                  </a> <!-- testUpdateComment -->
+                  <span class="method-name">testUpdateComment</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.storage.api.CommentsDb.updateComment(CommentsDb.java:244)
+	at teammates.logic.core.CommentsLogic.updateComment(CommentsLogic.java:113)
+	at teammates.test.cases.logic.CommentsLogicTest.testUpdateComment(CommentsLogicTest.java:368)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.common.CommentAttributesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSanitize">
+                  </a> <!-- testSanitize -->
+                  <span class="method-name">testSanitize</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at teammates.common.datatransfer.CommentAttributes.removeIrrelevantVisibilityOptions(CommentAttributes.java:227)
+	at teammates.common.datatransfer.CommentAttributes.sanitizeForSaving(CommentAttributes.java:198)
+	at teammates.test.cases.common.CommentAttributesTest.testSanitize(CommentAttributesTest.java:127)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+        </div> <!-- panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+        <div panel-name="test-xml-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Teammates\test-output\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;teammates.test.util.PriorityInterceptor&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;component-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.storage.CommentsDbTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setupClass&quot;/&gt;
+          &lt;include name=&quot;testUpdateInstructorEmailAndStudentEmail&quot;/&gt;
+          &lt;include name=&quot;testDeleteComment&quot;/&gt;
+          &lt;include name=&quot;caseTearDown&quot;/&gt;
+          &lt;include name=&quot;testGetComment&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testDeleteComments&quot;/&gt;
+          &lt;include name=&quot;testCreateComment&quot;/&gt;
+          &lt;include name=&quot;tearDownClass&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testUpdateComment&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.storage.CommentsDbTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.common.CommentAttributesTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSanitize&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.common.CommentAttributesTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;testAll&quot;/&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.CommentsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testUpdateComment&quot;/&gt;
+          &lt;include name=&quot;testGetComments&quot;/&gt;
+          &lt;include name=&quot;testCreateComment&quot;/&gt;
+          &lt;include name=&quot;setupClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.CommentsLogicTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- component-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+  &lt;test name=&quot;rare-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.storage.CommentsDbTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setupClass&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;tearDownClass&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;caseTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.storage.CommentsDbTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.common.CommentAttributesTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.common.CommentAttributesTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;testGodMode&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.CommentsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setupClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.CommentsLogicTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- rare-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">component-tests(failed)(failed)(failed)(failed)(failed) (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]');
+function tableData_Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAll')
+data.setCell(0, 2, 'teammates.test.cases.logic.EvaluationsLogicTest')
+data.setCell(0, 3, 203);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGodMode')
+data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
+data.setCell(1, 3, 125);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testUpdateComment')
+data.setCell(2, 2, 'teammates.test.cases.logic.CommentsLogicTest')
+data.setCell(2, 3, 16);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGetComments')
+data.setCell(3, 2, 'teammates.test.cases.logic.CommentsLogicTest')
+data.setCell(3, 3, 15);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSanitize')
+data.setCell(4, 2, 'teammates.test.cases.common.CommentAttributesTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDeleteComment')
+data.setCell(5, 2, 'teammates.test.cases.storage.CommentsDbTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetComment')
+data.setCell(6, 2, 'teammates.test.cases.storage.CommentsDbTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCreateComment')
+data.setCell(7, 2, 'teammates.test.cases.logic.CommentsLogicTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testUpdateComment')
+data.setCell(8, 2, 'teammates.test.cases.storage.CommentsDbTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCreateComment')
+data.setCell(9, 2, 'teammates.test.cases.storage.CommentsDbTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDeleteComments')
+data.setCell(10, 2, 'teammates.test.cases.storage.CommentsDbTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testUpdateInstructorEmailAndStudentEmail')
+data.setCell(11, 2, 'teammates.test.cases.storage.CommentsDbTest')
+data.setCell(11, 3, 0);
+window.suiteTableData['Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 359 ms</span>
+              <div id="times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+              </div> <!-- times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">28 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.GodModeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGodMode</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.storage.CommentsDbTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGetComment</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateInstructorEmailAndStudentEmail</span>
+                <br/>
+                <span class="ignored-method-name">testDeleteComment</span>
+                <br/>
+                <span class="ignored-method-name">testDeleteComments</span>
+                <br/>
+                <span class="ignored-method-name">testCreateComment</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateComment</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.logic.EvaluationsLogicTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testTearDown</span>
+                <br/>
+                <span class="ignored-method-name">testTearDown</span>
+                <br/>
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.logic.CommentsLogicTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testUpdateComment</span>
+                <br/>
+                <span class="ignored-method-name">testGetComments</span>
+                <br/>
+                <span class="ignored-method-name">testCreateComment</span>
+                <br/>
+                <span class="ignored-method-name">testTearDown</span>
+                <br/>
+                <span class="ignored-method-name">testTearDown</span>
+                <br/>
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+                <span class="ignored-method-name">testDeleteComment</span>
+                <br/>
+                <span class="ignored-method-name">testDeleteComment</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.common.CommentAttributesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSanitize</span>
+                <br/>
+                <span class="ignored-method-name">testValidate</span>
+                <br/>
+                <span class="ignored-method-name">testValidate</span>
+                <br/>
+                <span class="ignored-method-name">testBasicGetters</span>
+                <br/>
+                <span class="ignored-method-name">testBasicGetters</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">546 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">546 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">caseTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">caseTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">caseTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">caseTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">caseTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">caseTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.common.CommentAttributesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.CommentsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCreateComment</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteComment</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteComments</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetComment</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.common.CommentAttributesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSanitize</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateComment</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateInstructorEmailAndStudentEmail</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.CommentsLogicTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCreateComment</span>
+                <span class="method-start">2528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetComments</span>
+                <span class="method-start">2528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateComment</span>
+                <span class="method-start">2543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">2559 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAll</span>
+                <span class="method-start">3105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">3308 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">3308 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">3308 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGodMode</span>
+                <span class="method-start">8363 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeClass</span>
+                <span class="method-start">8488 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.CommentsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">8488 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">8488 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" parallel="tests">
+  <listeners>
+    <listener class-name="teammates.test.util.PriorityInterceptor"/>
+  </listeners>
+  <test name="component-tests(failed)(failed)(failed)(failed)(failed)" parallel="tests">
+    <classes>
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
+      <class name="teammates.test.cases.storage.CommentsDbTest">
+        <methods>
+          <include name="setupClass"/>
+          <include name="testUpdateInstructorEmailAndStudentEmail"/>
+          <include name="testDeleteComment"/>
+          <include name="caseTearDown"/>
+          <include name="testGetComment"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testDeleteComments"/>
+          <include name="testCreateComment"/>
+          <include name="tearDownClass"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testUpdateComment"/>
+        </methods>
+      </class> <!-- teammates.test.cases.storage.CommentsDbTest -->
+      <class name="teammates.test.cases.common.CommentAttributesTest">
+        <methods>
+          <include name="testSanitize"/>
+          <include name="classTearDown"/>
+          <include name="classSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.common.CommentAttributesTest -->
+      <class name="teammates.test.cases.ui.browsertests.GodModeTest">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="closeClass"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
+      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
+        <methods>
+          <include name="classTearDown"/>
+          <include name="testAll"/>
+          <include name="classSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
+      <class name="teammates.test.cases.logic.CommentsLogicTest">
+        <methods>
+          <include name="testUpdateComment"/>
+          <include name="testGetComments"/>
+          <include name="testCreateComment"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.CommentsLogicTest -->
+    </classes>
+  </test> <!-- component-tests(failed)(failed)(failed)(failed)(failed) -->
+  <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" parallel="classes">
+    <classes>
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
+      <class name="teammates.test.cases.storage.CommentsDbTest">
+        <methods>
+          <include name="setupClass"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="tearDownClass"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="caseTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.storage.CommentsDbTest -->
+      <class name="teammates.test.cases.common.CommentAttributesTest">
+        <methods>
+          <include name="classTearDown"/>
+          <include name="classSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.common.CommentAttributesTest -->
+      <class name="teammates.test.cases.ui.browsertests.GodModeTest">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="testGodMode"/>
+          <include name="closeClass"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
+      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
+        <methods>
+          <include name="classTearDown"/>
+          <include name="classSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
+      <class name="teammates.test.cases.logic.CommentsLogicTest">
+        <methods>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.CommentsLogicTest -->
+    </classes>
+  </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] -->
