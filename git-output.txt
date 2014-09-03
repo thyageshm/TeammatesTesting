@@ -1,0 +1,5 @@
+From https://github.com/TEAMMATES/repo
+   97ae23f..0e770e7  master     -> origin/master
+   11a1e44..857aa14  Issue2452  -> origin/Issue2452
+fatal: Cannot update paths and switch to branch 'Issue-2482' at the same time.
+Did you intend to checkout 'Issue/2482' which can not be resolved as commit?
