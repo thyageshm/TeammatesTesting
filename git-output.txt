@@ -1,0 +1,7 @@
+From https://github.com/TEAMMATES/repo
+ * [new branch]      Issue2420  -> origin/Issue2420
+D	runtests.bat
+M	src/test/resources/pages/godmode.html
+Branch origin-Issue2420 set up to track remote branch Issue2420 from origin.
+Switched to a new branch 'origin-Issue2420'
+Already up-to-date.

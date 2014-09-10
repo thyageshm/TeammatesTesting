@@ -1,0 +1,1394 @@
+<html>
+<head>
+<title>TestNG:  parallel-ui-tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>parallel-ui-tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 10 13:43:58 UTC 2014</td>
+</tr>
+<tr><td>Total time:</td><td>647 seconds (647675 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: a0a336b8-6737-4768-b706-7f6c8bed9bc9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at teammates.test.pageobjects.AppPage.waitForElementToAppear(AppPage.java:231)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.hoverAndViewStudentPhotoOnBody(InstructorFeedbackResultsPage.java:300)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:274)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is no longer attached to the DOM
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7613)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
+	at &lt;anonymous class&gt;.WebElement.isElementDisplayed(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10407)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14897285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14897285'><pre>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: a0a336b8-6737-4768-b706-7f6c8bed9bc9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at teammates.test.pageobjects.AppPage.waitForElementToAppear(AppPage.java:231)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.hoverAndViewStudentPhotoOnBody(InstructorFeedbackResultsPage.java:300)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:274)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is no longer attached to the DOM
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7613)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
+	at &lt;anonymous class&gt;.WebElement.isElementDisplayed(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10407)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3509390697111016864webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+</pre></div></td>
+<td>81</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@137146d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Find Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;
+               &lt;form action=&quot;/page/instructorSearchPage?user=instructorOfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-10&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;input class=&quot;form-control&quot; data-original-title=&quot;Search for student&apos;s name&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; id=&quot;searchbox&quot; name=&quot;searchkey&quot; placeholder=&quot;e.g. Charles Shultz&quot; title=&quot;&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-2 nav&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;
+                              &lt;/span&gt;
+                              Find students
+                           &lt;/button&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;searchstudents&quot; type=&quot;hidden&quot; value=&quot;true&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforstudents&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforresponses&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                                 &lt;/form&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Filter Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot; id=&quot;moreOptionsDiv&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-3&quot;&gt;
+               &lt;div class=&quot;checkbox&quot;&gt;
+                  &lt;input id=&quot;displayArchivedCourses_check&quot; type=&quot;checkbox&quot;/&gt;
+                                    &lt;label for=&quot;displayArchivedCourses_check&quot;&gt;
+                     Display Archived Courses
+                  &lt;/label&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Courses
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;course_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_check-0&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;course_check-0&quot;&gt;
+                        [course1] : Name of Course 1
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Sections
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;section_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;section_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;sectionChoices&quot;&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Teams
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;team_all&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;team_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select All
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;teamChoices&quot;&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Emails
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input checked=&quot;checked&quot; id=&quot;show_email&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;show_email&quot;&gt;
+                        &lt;strong&gt;
+                           Show Emails
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;emails&quot;&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel panel-info&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot; data-target=&quot;#panelBodyCollapse-0&quot; id=&quot;panelHeading-0&quot; style=&quot;cursor: pointer;&quot;&gt;
+            &lt;form action=&quot;/page/instructorStudentListAjaxPage&quot; class=&quot;seeMoreForm-0&quot; id=&quot;seeMore-0&quot; style=&quot;display:none;&quot;&gt;
+               &lt;input name=&quot;courseid&quot; type=&quot;hidden&quot; value=&quot;course1&quot;/&gt;
+                              &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                              &lt;input id=&quot;numStudents-0&quot; type=&quot;hidden&quot; value=&quot;0&quot;/&gt;
+                           &lt;/form&gt;
+            &lt;a class=&quot;btn btn-default btn-xs pull-right pull-down course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=course1&amp;user=instructorOfCourse1&quot; id=&quot;enroll-0&quot; title=&quot;&quot;&gt;
+               &lt;span class=&quot;glyphicon glyphicon-list&quot;&gt;
+               &lt;/span&gt;
+               Enroll
+            &lt;/a&gt;
+            &lt;div class=&quot;display-icon pull-right&quot;&gt;
+            &lt;/div&gt;
+            &lt;strong&gt;
+               [course1] :
+            &lt;/strong&gt;
+            Name of Course 1
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-collapse checked collapse in&quot; id=&quot;panelBodyCollapse-0&quot; style=&quot;height: auto;&quot;&gt;
+            &lt;div class=&quot;panel-body padding-0&quot;&gt;
+               &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                  &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                     &lt;tr&gt;
+                        &lt;th class=&quot;align-center color_white bold&quot;&gt;
+                           There are no students in this course
+                        &lt;/th&gt;
+                     &lt;/tr&gt;
+                  &lt;/thead&gt;
+               &lt;/table&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Find Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;
+               &lt;form action=&quot;/page/instructorSearchPage?user=instructorOfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-10&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;input class=&quot;form-control&quot; data-original-title=&quot;Search for student&apos;s name&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; id=&quot;searchbox&quot; name=&quot;searchkey&quot; placeholder=&quot;e.g. Charles Shultz&quot; title=&quot;&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-2 nav&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;
+                              &lt;/span&gt;
+                              Find students
+                           &lt;/button&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;searchstudents&quot; type=&quot;hidden&quot; value=&quot;true&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforstudents&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforresponses&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                                 &lt;/form&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Filter Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot; id=&quot;moreOptionsDiv&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-3&quot;&gt;
+               &lt;div class=&quot;checkbox&quot;&gt;
+                  &lt;input id=&quot;displayArchivedCourses_check&quot; type=&quot;checkbox&quot;/&gt;
+                                    &lt;label for=&quot;displayArchivedCourses_check&quot;&gt;
+                     Display Archived Courses
+                  &lt;/label&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Courses
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;course_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_check-0&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;course_check-0&quot;&gt;
+                        [course1] : Name of Course 1
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Sections
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;section_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;section_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;sectionChoices&quot;&gt;
+                     &lt;div class=&quot;checkbox&quot;&gt;
+                        &lt;input checked=&quot;checked&quot; class=&quot;section_check&quot; id=&quot;section_check-0-0&quot; type=&quot;checkbox&quot;/&gt;
+                                                &lt;label for=&quot;section_check-0-0&quot;&gt;
+                           [course1] : sect1
+                        &lt;/label&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Teams
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;team_all&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;team_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select All
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;teamChoices&quot;&gt;
+                     &lt;div class=&quot;checkbox&quot;&gt;
+                        &lt;input checked=&quot;checked&quot; class=&quot;team_check&quot; id=&quot;team_check-0-0-0&quot; type=&quot;checkbox&quot;/&gt;
+                                                &lt;label for=&quot;team_check-0-0-0&quot;&gt;
+                           [course1] : t1
+                        &lt;/label&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Emails
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input checked=&quot;checked&quot; id=&quot;show_email&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;show_email&quot;&gt;
+                        &lt;strong&gt;
+                           Show Emails
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;emails&quot;&gt;
+                     &lt;div id=&quot;student_email-c0.0&quot;&gt;
+                        tgsr@gmail.tmt
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel panel-info&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot; data-target=&quot;#panelBodyCollapse-0&quot; id=&quot;panelHeading-0&quot; style=&quot;cursor: pointer;&quot;&gt;
+            &lt;form action=&quot;/page/instructorStudentListAjaxPage&quot; class=&quot;seeMoreForm-0&quot; id=&quot;seeMore-0&quot; style=&quot;display:none;&quot;&gt;
+               &lt;input name=&quot;courseid&quot; type=&quot;hidden&quot; value=&quot;course1&quot;/&gt;
+                              &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                              &lt;input id=&quot;numStudents-0&quot; type=&quot;hidden&quot; value=&quot;1&quot;/&gt;
+                           &lt;/form&gt;
+            &lt;a class=&quot;btn btn-default btn-xs pull-right pull-down course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=course1&amp;user=instructorOfCourse1&quot; id=&quot;enroll-0&quot; title=&quot;&quot;&gt;
+               &lt;span class=&quot;glyphicon glyphicon-list&quot;&gt;
+               &lt;/span&gt;
+               Enroll
+            &lt;/a&gt;
+            &lt;div class=&quot;display-icon pull-right&quot;&gt;
+            &lt;/div&gt;
+            &lt;strong&gt;
+               [course1] :
+            &lt;/strong&gt;
+            Name of Course 1
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-collapse checked collapse in&quot; id=&quot;panelBodyCollapse-0&quot; style=&quot;height: auto;&quot;&gt;
+            &lt;div class=&quot;panel-body padding-0&quot;&gt;
+               &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                  &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                     &lt;tr id=&quot;resultsHeader-0&quot;&gt;
+                        &lt;th&gt;
+                           Photo
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortsection-0&quot; onclick=&quot;toggleSort(this,2)&quot;&gt;
+                           Section
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortteam-0&quot; onclick=&quot;toggleSort(this,3)&quot;&gt;
+                           Team
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortstudentname-0&quot; onclick=&quot;toggleSort(this,4)&quot;&gt;
+                           Student Name
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortemail-0&quot; onclick=&quot;toggleSort(this,5)&quot;&gt;
+                           Email
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th&gt;
+                           Action(s)
+                        &lt;/th&gt;
+                     &lt;/tr&gt;
+                     &lt;tr class=&quot;hidden&quot; id=&quot;searchNoResults-0&quot;&gt;
+                        &lt;th class=&quot;align-center color_white bold&quot;&gt;
+                           Cannot find students in this course
+                        &lt;/th&gt;
+                     &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                     &lt;tr id=&quot;student-c0.0&quot;&gt;
+                        &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
+                           &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=64DEE327C7AB4E1B82671B1D69634BFD&amp;courseid=1FB6F248CFD05196C6EDE09252DE8F4E&amp;user=instructorOfCourse1&quot;&gt;
+                              &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
+                                 View Photo
+                              &lt;/a&gt;
+                              &lt;img alt=&quot;No Image Given&quot; class=&quot;hidden&quot; src=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentsection-c0.0&quot;&gt;
+                           sect1
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentteam-c0.0.0&quot;&gt;
+                           t1
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentname-c0.0&quot;&gt;
+                           name of tgsr student
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentemail-c0.0&quot;&gt;
+                           tgsr@gmail.tmt
+                        &lt;/td&gt;
+                        &lt;td class=&quot;no-print align-center&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                              View
+                           &lt;/a&gt;
+                            
+                           &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                              Edit
+                           &lt;/a&gt;
+                            
+                           &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course1&apos;,&apos;name of tgsr student&apos;)&quot;&gt;
+                              Delete
+                           &lt;/a&gt;
+                            
+                           &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all student&apos;s evaluations and feedbacks&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                              All Records
+                           &lt;/a&gt;
+                            
+                           &lt;div class=&quot;dropdown inline&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                 Add Comment
+                              &lt;/a&gt;
+                              &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu align-left&quot; role=&quot;menu&quot;&gt;
+                                 &lt;li role=&quot;presentation&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                       Comment on name of tgsr student
+                                    &lt;/a&gt;
+                                 &lt;/li&gt;
+                                 &lt;li role=&quot;presentation&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                       Comment on t1
+                                    &lt;/a&gt;
+                                 &lt;/li&gt;
+                                 &lt;li role=&quot;presentation&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                       Comment on sect1
+                                    &lt;/a&gt;
+                                 &lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/div&gt;
+                        &lt;/td&gt;
+                     &lt;/tr&gt;
+                  &lt;/tbody&gt;
+               &lt;/table&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:822)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:864)
+	at teammates.test.pageobjects.AppPage.verifyHtmlAjax(AppPage.java:907)
+	at teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testContent(InstructorStudentListPageUiTest.java:136)
+	at teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll(InstructorStudentListPageUiTest.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22077429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22077429'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Find Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;
+               &lt;form action=&quot;/page/instructorSearchPage?user=instructorOfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-10&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;input class=&quot;form-control&quot; data-original-title=&quot;Search for student&apos;s name&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; id=&quot;searchbox&quot; name=&quot;searchkey&quot; placeholder=&quot;e.g. Charles Shultz&quot; title=&quot;&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-2 nav&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;
+                              &lt;/span&gt;
+                              Find students
+                           &lt;/button&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;searchstudents&quot; type=&quot;hidden&quot; value=&quot;true&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforstudents&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforresponses&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                                 &lt;/form&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Filter Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot; id=&quot;moreOptionsDiv&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-3&quot;&gt;
+               &lt;div class=&quot;checkbox&quot;&gt;
+                  &lt;input id=&quot;displayArchivedCourses_check&quot; type=&quot;checkbox&quot;/&gt;
+                                    &lt;label for=&quot;displayArchivedCourses_check&quot;&gt;
+                     Display Archived Courses
+                  &lt;/label&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Courses
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;course_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_check-0&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;course_check-0&quot;&gt;
+                        [course1] : Name of Course 1
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Sections
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;section_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;section_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;sectionChoices&quot;&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Teams
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;team_all&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;team_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select All
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;teamChoices&quot;&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Emails
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input checked=&quot;checked&quot; id=&quot;show_email&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;show_email&quot;&gt;
+                        &lt;strong&gt;
+                           Show Emails
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;emails&quot;&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel panel-info&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot; data-target=&quot;#panelBodyCollapse-0&quot; id=&quot;panelHeading-0&quot; style=&quot;cursor: pointer;&quot;&gt;
+            &lt;form action=&quot;/page/instructorStudentListAjaxPage&quot; class=&quot;seeMoreForm-0&quot; id=&quot;seeMore-0&quot; style=&quot;display:none;&quot;&gt;
+               &lt;input name=&quot;courseid&quot; type=&quot;hidden&quot; value=&quot;course1&quot;/&gt;
+                              &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                              &lt;input id=&quot;numStudents-0&quot; type=&quot;hidden&quot; value=&quot;0&quot;/&gt;
+                           &lt;/form&gt;
+            &lt;a class=&quot;btn btn-default btn-xs pull-right pull-down course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=course1&amp;user=instructorOfCourse1&quot; id=&quot;enroll-0&quot; title=&quot;&quot;&gt;
+               &lt;span class=&quot;glyphicon glyphicon-list&quot;&gt;
+               &lt;/span&gt;
+               Enroll
+            &lt;/a&gt;
+            &lt;div class=&quot;display-icon pull-right&quot;&gt;
+            &lt;/div&gt;
+            &lt;strong&gt;
+               [course1] :
+            &lt;/strong&gt;
+            Name of Course 1
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-collapse checked collapse in&quot; id=&quot;panelBodyCollapse-0&quot; style=&quot;height: auto;&quot;&gt;
+            &lt;div class=&quot;panel-body padding-0&quot;&gt;
+               &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                  &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                     &lt;tr&gt;
+                        &lt;th class=&quot;align-center color_white bold&quot;&gt;
+                           There are no students in this course
+                        &lt;/th&gt;
+                     &lt;/tr&gt;
+                  &lt;/thead&gt;
+               &lt;/table&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Find Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;
+               &lt;form action=&quot;/page/instructorSearchPage?user=instructorOfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-10&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;input class=&quot;form-control&quot; data-original-title=&quot;Search for student&apos;s name&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; id=&quot;searchbox&quot; name=&quot;searchkey&quot; placeholder=&quot;e.g. Charles Shultz&quot; title=&quot;&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-2 nav&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                              &lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;
+                              &lt;/span&gt;
+                              Find students
+                           &lt;/button&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;searchstudents&quot; type=&quot;hidden&quot; value=&quot;true&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforstudents&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;searchcommentforresponses&quot; type=&quot;hidden&quot; value=&quot;false&quot;/&gt;
+                                    &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                                 &lt;/form&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Filter Students
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot; id=&quot;moreOptionsDiv&quot;&gt;
+         &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-3&quot;&gt;
+               &lt;div class=&quot;checkbox&quot;&gt;
+                  &lt;input id=&quot;displayArchivedCourses_check&quot; type=&quot;checkbox&quot;/&gt;
+                                    &lt;label for=&quot;displayArchivedCourses_check&quot;&gt;
+                     Display Archived Courses
+                  &lt;/label&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Courses
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;course_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot;&gt;
+                     &lt;input id=&quot;course_check-0&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;course_check-0&quot;&gt;
+                        [course1] : Name of Course 1
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Sections
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;section_all&quot; type=&quot;checkbox&quot; value=&quot;&quot;/&gt;
+                                          &lt;label for=&quot;section_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select all
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;sectionChoices&quot;&gt;
+                     &lt;div class=&quot;checkbox&quot;&gt;
+                        &lt;input checked=&quot;checked&quot; class=&quot;section_check&quot; id=&quot;section_check-0-0&quot; type=&quot;checkbox&quot;/&gt;
+                                                &lt;label for=&quot;section_check-0-0&quot;&gt;
+                           [course1] : sect1
+                        &lt;/label&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Teams
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input id=&quot;team_all&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;team_all&quot;&gt;
+                        &lt;strong&gt;
+                           Select All
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;teamChoices&quot;&gt;
+                     &lt;div class=&quot;checkbox&quot;&gt;
+                        &lt;input checked=&quot;checked&quot; class=&quot;team_check&quot; id=&quot;team_check-0-0-0&quot; type=&quot;checkbox&quot;/&gt;
+                                                &lt;label for=&quot;team_check-0-0-0&quot;&gt;
+                           [course1] : t1
+                        &lt;/label&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-sm-3&quot;&gt;
+                  &lt;div class=&quot;text-color-primary&quot;&gt;
+                     &lt;strong&gt;
+                        Emails
+                     &lt;/strong&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;checkbox&quot; style=&quot;&quot;&gt;
+                     &lt;input checked=&quot;checked&quot; id=&quot;show_email&quot; type=&quot;checkbox&quot;/&gt;
+                                          &lt;label for=&quot;show_email&quot;&gt;
+                        &lt;strong&gt;
+                           Show Emails
+                        &lt;/strong&gt;
+                     &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div id=&quot;emails&quot;&gt;
+                     &lt;div id=&quot;student_email-c0.0&quot;&gt;
+                        tgsr@gmail.tmt
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel panel-info&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot; data-target=&quot;#panelBodyCollapse-0&quot; id=&quot;panelHeading-0&quot; style=&quot;cursor: pointer;&quot;&gt;
+            &lt;form action=&quot;/page/instructorStudentListAjaxPage&quot; class=&quot;seeMoreForm-0&quot; id=&quot;seeMore-0&quot; style=&quot;display:none;&quot;&gt;
+               &lt;input name=&quot;courseid&quot; type=&quot;hidden&quot; value=&quot;course1&quot;/&gt;
+                              &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;instructorOfCourse1&quot;/&gt;
+                              &lt;input id=&quot;numStudents-0&quot; type=&quot;hidden&quot; value=&quot;1&quot;/&gt;
+                           &lt;/form&gt;
+            &lt;a class=&quot;btn btn-default btn-xs pull-right pull-down course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=course1&amp;user=instructorOfCourse1&quot; id=&quot;enroll-0&quot; title=&quot;&quot;&gt;
+               &lt;span class=&quot;glyphicon glyphicon-list&quot;&gt;
+               &lt;/span&gt;
+               Enroll
+            &lt;/a&gt;
+            &lt;div class=&quot;display-icon pull-right&quot;&gt;
+            &lt;/div&gt;
+            &lt;strong&gt;
+               [course1] :
+            &lt;/strong&gt;
+            Name of Course 1
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-collapse checked collapse in&quot; id=&quot;panelBodyCollapse-0&quot; style=&quot;height: auto;&quot;&gt;
+            &lt;div class=&quot;panel-body padding-0&quot;&gt;
+               &lt;table class=&quot;table table-responsive table-striped table-bordered margin-0&quot;&gt;
+                  &lt;thead class=&quot;background-color-medium-gray text-color-gray font-weight-normal&quot;&gt;
+                     &lt;tr id=&quot;resultsHeader-0&quot;&gt;
+                        &lt;th&gt;
+                           Photo
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortsection-0&quot; onclick=&quot;toggleSort(this,2)&quot;&gt;
+                           Section
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortteam-0&quot; onclick=&quot;toggleSort(this,3)&quot;&gt;
+                           Team
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortstudentname-0&quot; onclick=&quot;toggleSort(this,4)&quot;&gt;
+                           Student Name
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortemail-0&quot; onclick=&quot;toggleSort(this,5)&quot;&gt;
+                           Email
+                           &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/th&gt;
+                        &lt;th&gt;
+                           Action(s)
+                        &lt;/th&gt;
+                     &lt;/tr&gt;
+                     &lt;tr class=&quot;hidden&quot; id=&quot;searchNoResults-0&quot;&gt;
+                        &lt;th class=&quot;align-center color_white bold&quot;&gt;
+                           Cannot find students in this course
+                        &lt;/th&gt;
+                     &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                     &lt;tr id=&quot;student-c0.0&quot;&gt;
+                        &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
+                           &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=64DEE327C7AB4E1B82671B1D69634BFD&amp;courseid=1FB6F248CFD05196C6EDE09252DE8F4E&amp;user=instructorOfCourse1&quot;&gt;
+                              &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
+                                 View Photo
+                              &lt;/a&gt;
+                              &lt;img alt=&quot;No Image Given&quot; class=&quot;hidden&quot; src=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentsection-c0.0&quot;&gt;
+                           sect1
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentteam-c0.0.0&quot;&gt;
+                           t1
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentname-c0.0&quot;&gt;
+                           name of tgsr student
+                        &lt;/td&gt;
+                        &lt;td id=&quot;studentemail-c0.0&quot;&gt;
+                           tgsr@gmail.tmt
+                        &lt;/td&gt;
+                        &lt;td class=&quot;no-print align-center&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                              View
+                           &lt;/a&gt;
+                            
+                           &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                              Edit
+                           &lt;/a&gt;
+                            
+                           &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course1&apos;,&apos;name of tgsr student&apos;)&quot;&gt;
+                              Delete
+                           &lt;/a&gt;
+                            
+                           &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all student&apos;s evaluations and feedbacks&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                              All Records
+                           &lt;/a&gt;
+                            
+                           &lt;div class=&quot;dropdown inline&quot;&gt;
+                              &lt;a class=&quot;btn btn-default btn-xs dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;javascript:;&quot;&gt;
+                                 Add Comment
+                              &lt;/a&gt;
+                              &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu align-left&quot; role=&quot;menu&quot;&gt;
+                                 &lt;li role=&quot;presentation&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                       Comment on name of tgsr student
+                                    &lt;/a&gt;
+                                 &lt;/li&gt;
+                                 &lt;li role=&quot;presentation&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                       Comment on t1
+                                    &lt;/a&gt;
+                                 &lt;/li&gt;
+                                 &lt;li role=&quot;presentation&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                       Comment on sect1
+                                    &lt;/a&gt;
+                                 &lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/div&gt;
+                        &lt;/td&gt;
+                     &lt;/tr&gt;
+                  &lt;/tbody&gt;
+               &lt;/table&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:822)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:864)
+	at teammates.test.pageobjects.AppPage.verifyHtmlAjax(AppPage.java:907)
+	at teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testContent(InstructorStudentListPageUiTest.java:136)
+	at teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll(InstructorStudentListPageUiTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>24</td>
+<td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@bc7f3f</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testSubmitAction(StudentFeedbackQuestionSubmitPageUiTest.java:109)
+	at teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testAll(StudentFeedbackQuestionSubmitPageUiTest.java:47)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1417204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1417204'><pre>java.lang.NullPointerException
+	at teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testSubmitAction(StudentFeedbackQuestionSubmitPageUiTest.java:109)
+	at teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testAll(StudentFeedbackQuestionSubmitPageUiTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>12</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@a3e755</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminHomePageUiTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1014)
+	at teammates.test.pageobjects.AppPage.changePageType(AppPage.java:207)
+	at teammates.test.pageobjects.InstructorCourseJoinConfirmationPage.clickConfirmButton(InstructorCourseJoinConfirmationPage.java:25)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testCreateInstructorAction(AdminHomePageUiTest.java:136)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll(AdminHomePageUiTest.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1010)
+	... 17 more
+Caused by: java.lang.IllegalStateException: Not in the correct page!
+	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:148)
+	at teammates.test.pageobjects.InstructorHomePage.&lt;init&gt;(InstructorHomePage.java:30)
+	... 22 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11553210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11553210'><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1014)
+	at teammates.test.pageobjects.AppPage.changePageType(AppPage.java:207)
+	at teammates.test.pageobjects.InstructorCourseJoinConfirmationPage.clickConfirmButton(InstructorCourseJoinConfirmationPage.java:25)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testCreateInstructorAction(AdminHomePageUiTest.java:136)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll(AdminHomePageUiTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1010)
+	... 17 more
+Caused by: java.lang.IllegalStateException: Not in the correct page!
+	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:148)
+	at teammates.test.pageobjects.InstructorHomePage.&lt;init&gt;(InstructorHomePage.java:30)
+	... 22 more
+</pre></div></td>
+<td>47</td>
+<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@a88b1c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.StudentProfilePageUiTest</td>
+<td></td>
+<td>56</td>
+<td>teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@12d9a56</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest</td>
+<td></td>
+<td>50</td>
+<td>teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@19b6c59</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest</td>
+<td></td>
+<td>136</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@d3953f</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest</td>
+<td></td>
+<td>79</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest@d4461</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</td>
+<td></td>
+<td>35</td>
+<td>teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest@122fa16</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</td>
+<td></td>
+<td>453</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@e671f1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest</td>
+<td></td>
+<td>556</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@1a14948</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorHomePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorHomePageUiTest</td>
+<td></td>
+<td>260</td>
+<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@405adb</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest.runTestsInOrder()'><b>runTestsInOrder</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest</td>
+<td></td>
+<td>29</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest@1bdd4c</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest.testAdjustmentOfSubsmission()'><b>testAdjustmentOfSubsmission</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest</td>
+<td></td>
+<td>16</td>
+<td>teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest@1d22216</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest</td>
+<td></td>
+<td>55</td>
+<td>teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest@1e5faf</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest</td>
+<td></td>
+<td>41</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest@1451c3a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest</td>
+<td></td>
+<td>7</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest@1c757a1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest</td>
+<td></td>
+<td>20</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest@146421a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest</td>
+<td></td>
+<td>14</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest@a943af</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest</td>
+<td></td>
+<td>19</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@173fbef</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</td>
+<td></td>
+<td>120</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@3423ae</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest@150d9b5</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest</td>
+<td></td>
+<td>71</td>
+<td>teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@19a3b90</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest</td>
+<td></td>
+<td>15</td>
+<td>teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest@1c85b94</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest</td>
+<td></td>
+<td>58</td>
+<td>teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest@c2ffbc</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest</td>
+<td></td>
+<td>7</td>
+<td>teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest@10480e1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</td>
+<td></td>
+<td>24</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@1758ffa</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</td>
+<td></td>
+<td>127</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@10472ac</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testClosedEval()'><b>testClosedEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
+<td></td>
+<td>10</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1548135</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testEvaluationClosingReminders()'><b>testEvaluationClosingReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@1051c99</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testEvaluationOpeningReminders()'><b>testEvaluationOpeningReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@1051c99</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSessionOpeningReminders()'><b>testFeedbackSessionOpeningReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@1051c99</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSessionPublishedReminders()'><b>testFeedbackSessionPublishedReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@1051c99</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSesssionClosingReminders()'><b>testFeedbackSesssionClosingReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@1051c99</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest.testInstructorCourseEnrollPage()'><b>testInstructorCourseEnrollPage</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest</td>
+<td></td>
+<td>53</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest@19dbdb7</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome()'><b>testInstructorHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>8</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testOpenEval()'><b>testOpenEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
+<td></td>
+<td>32</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1548135</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testP2PDisabledEval()'><b>testP2PDisabledEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
+<td></td>
+<td>6</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1548135</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages()'><b>testPubliclyAccessiblePages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>8</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testPublishedEval()'><b>testPublishedEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
+<td></td>
+<td>9</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1548135</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages()'><b>testStudentAccessToAdminPages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>5</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult()'><b>testStudentEvalResult</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>12</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission()'><b>testStudentEvalSubmission</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>18</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome()'><b>testStudentHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>4</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn()'><b>testUserNotLoggedIn</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered()'><b>testUserNotRegistered</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>8</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1465d7d</td></tr>
+</table><p>
+</body>
+</html>
