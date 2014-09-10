@@ -1,16 +1,101 @@
 From https://github.com/TEAMMATES/repo
-   0e770e7..c7d7141  master     -> origin/master
-   b121339..2773bb2  Issue2313  -> origin/Issue2313
-   857aa14..64cd34e  Issue2452  -> origin/Issue2452
- * [new branch]      Issue2454  -> origin/Issue2454
-   3b72c91..898f261  Issue2473  -> origin/Issue2473
- * [new branch]      Issue2485  -> origin/Issue2485
- * [new branch]      Issue2495  -> origin/Issue2495
- * [new branch]      Issue2496  -> origin/Issue2496
-   0295578..330e772  release    -> origin/release
- * [new tag]         V5.15      -> V5.15
+   2773bb2..a73fe1b  Issue2313  -> origin/Issue2313
 fatal: A branch named 'origin-Issue2313' already exists.
-Updating b121339..2773bb2
+Updating 2773bb2..a73fe1b
 Fast-forward
- .../common/datatransfer/CommentAttributes.java     | 23 ++++++++++++++--------
- 1 file changed, 15 insertions(+), 8 deletions(-)
+ .settings/com.google.appengine.eclipse.core.prefs  |    1 -
+ .../scripts/DataRepairForCorruptedResponses.java   |  106 +
+ .../client/scripts/GenerateLargeScaledData.java    |   77 +-
+ .../client/scripts/StatisticsPerInstitute.java     |   67 +-
+ .../java/teammates/common/util/FieldValidator.java |   11 +-
+ .../java/teammates/common/util/StringHelper.java   |   11 +-
+ src/main/java/teammates/logic/api/Logic.java       |    8 +-
+ .../teammates/logic/backdoor/BackDoorLogic.java    |    4 +-
+ .../java/teammates/logic/core/CoursesLogic.java    |    6 +-
+ .../logic/core/FeedbackResponseCommentsLogic.java  |    2 +-
+ .../logic/core/FeedbackSessionsLogic.java          |   26 +-
+ .../teammates/logic/core/InstructorsLogic.java     |   41 +-
+ .../java/teammates/storage/api/InstructorsDb.java  |    3 +-
+ .../java/teammates/storage/entity/Student.java     |    2 +-
+ .../AdminAccountManagementPageAction.java          |    6 +-
+ .../controller/AdminAccountManagementPageData.java |   14 +-
+ .../ui/controller/AdminActivityLogPageAction.java  |    9 +-
+ .../ui/controller/AdminActivityLogPageData.java    |   19 +-
+ .../FeedbackQuestionSubmissionEditSaveAction.java  |    6 +-
+ .../InstructorCourseInstructorAddAction.java       |    6 +-
+ .../InstructorCourseInstructorEditSaveAction.java  |    6 +-
+ ...structorCourseStudentDetailsEditSaveAction.java |    4 +-
+ .../InstructorFeedbackQuestionEditAction.java      |    4 +-
+ src/main/webapp/dev/devman.html                    |    2 +-
+ src/main/webapp/js/index.js                        |    4 +-
+ src/main/webapp/js/instructor.js                   |   38 +-
+ src/main/webapp/js/instructorFeedbacks.js          |   15 +-
+ src/main/webapp/jsp/adminAccountManagement.jsp     |    5 +
+ src/main/webapp/jsp/adminActivityLog.jsp           |    9 +-
+ ...ctorFeedbackResultsByGiverQuestionRecipient.jsp |    2 +-
+ ...ctorFeedbackResultsByGiverRecipientQuestion.jsp |    2 +-
+ .../jsp/instructorFeedbackResultsByQuestion.jsp    |    2 +-
+ ...ctorFeedbackResultsByRecipientGiverQuestion.jsp |    2 +-
+ ...ctorFeedbackResultsByRecipientQuestionGiver.jsp |    2 +-
+ .../test/cases/common/FieldValidatorTest.java      |   35 +-
+ .../test/cases/logic/CoursesLogicTest.java         |   24 +-
+ .../cases/logic/FeedbackSessionsLogicTest.java     |  116 +-
+ .../test/cases/logic/InstructorsLogicTest.java     |   12 +-
+ .../cases/logic/SubmissionsAdjustmentTest.java     |    2 +-
+ .../test/cases/testdriver/BackDoorTest.java        |   15 +-
+ ...structorCourseInstructorEditSaveActionTest.java |   66 +
+ ...ctorCourseStudentDetailsEditSaveActionTest.java |   33 +-
+ ...tructorCourseStudentListDownloadActionTest.java |   36 +-
+ .../InstructorFeedbackQuestionEditActionTest.java  |   53 +-
+ ...edbackQuestionSubmissionEditSaveActionTest.java |   42 +
+ ...nstructorFeedbackResultsDownloadActionTest.java |   34 +-
+ .../AdminAccountManagementPageUiTest.java          |    7 +-
+ .../browsertests/InstructorCommentsPageUiTest.java |    4 +
+ .../InstructorFeedbackResultsPageUiTest.java       |    7 +
+ .../InstructorSubmissionAdjustmentUiTest.java      |    2 +-
+ .../pageobjects/AdminAccountManagementPage.java    |    1 +
+ .../test/pageobjects/InstructorCommentsPage.java   |    6 +
+ .../pageobjects/InstructorFeedbackResultsPage.java |    3 -
+ src/test/javascript/AllJsUnitTests.html            |    2 +
+ src/test/javascript/InstructorFeedbacksJsTest.js   |   11 +
+ .../data/InstructorCourseDetailsPageUiTest.json    |    8 +-
+ ...InstructorCourseJoinConfirmationPageUiTest.json |    4 +-
+ .../InstructorCourseStudentDetailsPageUiTest.json  |    2 +-
+ .../data/InstructorEvalEditPageUiTest.json         |    9 +-
+ .../InstructorEvalSubmissionEditPageUiTest.json    |    9 +-
+ .../InstructorEvalSubmissionViewPageUiTest.json    |   10 +
+ .../resources/data/InstructorEvalsPageUiTest.json  |    4 +-
+ .../data/InstructorSubmissionAdjustmentUiTest.json |    2 +-
+ .../StudentCourseJoinConfirmationPageUiTest.json   |    8 +-
+ src/test/resources/data/StudentHomePageUiTest.json |   38 +-
+ .../resources/data/StudentProfilePageUiTest.json   |    4 +-
+ .../pages/InstructorCourseDetailsWithSections.html |   30 +-
+ ...torCourseDetailsWithSectionsWithHelperView.html |   30 +-
+ .../InstructorCourseDetailsWithoutSections.html    |   26 +-
+ ...ructorCourseDetailsStudentDeleteSuccessful.html |   26 +-
+ .../pages/instructorFeedbackResultsAjaxByGQR.html  | 4199 +++++++++-----------
+ .../pages/instructorFeedbackResultsAjaxByGRQ.html  |   44 +-
+ .../instructorFeedbackResultsAjaxByQuestion.html   |   16 +-
+ ...torFeedbackResultsAjaxByQuestionHelperView.html |  678 ++++
+ .../pages/instructorFeedbackResultsAjaxByRGQ.html  |   42 +-
+ .../pages/instructorFeedbackResultsAjaxByRQG.html  |   42 +-
+ ...nstructorFeedbackResultsFilteredBySectionA.html |   44 +-
+ ...nstructorFeedbackResultsFilteredBySectionB.html |    2 +-
+ .../pages/instructorFeedbackResultsPageOpen.html   |   54 +-
+ ...rFeedbackResultsSortGiverQuestionRecipient.html |   46 +-
+ ...dbackResultsSortGiverQuestionRecipientTeam.html |   46 +-
+ ...rFeedbackResultsSortGiverRecipientQuestion.html |   46 +-
+ ...dbackResultsSortGiverRecipientQuestionTeam.html |   46 +-
+ .../instructorFeedbackResultsSortQuestion.html     |   54 +-
+ ...nstructorFeedbackResultsSortQuestionSearch.html |   54 +-
+ ...rFeedbackResultsSortRecipientGiverQuestion.html |   46 +-
+ ...dbackResultsSortRecipientGiverQuestionTeam.html |   46 +-
+ ...rFeedbackResultsSortRecipientQuestionGiver.html |   46 +-
+ ...dbackResultsSortRecipientQuestionGiverTeam.html |   46 +-
+ .../instructorStudentListPageWithPicture.html      |    4 +-
+ .../pages/studentCourseJoinConfirmationHTML.html   |    6 +-
+ .../pages/studentEvalEditPagePreview.html          |    4 +-
+ 92 files changed, 3867 insertions(+), 2987 deletions(-)
+ create mode 100644 src/main/java/teammates/client/scripts/DataRepairForCorruptedResponses.java
+ create mode 100644 src/test/javascript/InstructorFeedbacksJsTest.js
+ create mode 100644 src/test/resources/pages/instructorFeedbackResultsAjaxByQuestionHelperView.html

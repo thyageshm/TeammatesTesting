@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallel-ui-tests(failed)</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 10 12:56:35 UTC 2014</td>
+<td>Started on:</td><td>Wed Sep 10 13:17:16 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>195 seconds (195647 ms)</td>
+<tr><td>Total time:</td><td>230 seconds (230952 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,6 +74,85 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 3a366893-f5b2-4389-a33c-002c1da26fe9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.clickViewPhotoLink(InstructorFeedbackResultsPage.java:268)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:262)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078170'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 3a366893-f5b2-4389-a33c-002c1da26fe9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.GeneratedConstructorAccessor87.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.clickViewPhotoLink(InstructorFeedbackResultsPage.java:268)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:262)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4857625780006280995webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+</pre></div></td>
+<td>57</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@dfb8e5</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest</td>
 <td><div><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
@@ -389,7 +468,7 @@ function toggleAllBoxes() {
                   &lt;br/&gt;
                                     &lt;div id=&quot;emails&quot;&gt;
                      &lt;div id=&quot;student_email-c0.0&quot;&gt;
-                        tgsr@gmail.com
+                        tgsr@gmail.tmt
                      &lt;/div&gt;
                   &lt;/div&gt;
                &lt;/div&gt;
@@ -458,7 +537,7 @@ function toggleAllBoxes() {
                   &lt;tbody&gt;
                      &lt;tr id=&quot;student-c0.0&quot;&gt;
                         &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
-                           &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=469D032A84564A496C2BB43E0B158FC0&amp;courseid=1FB6F248CFD05196C6EDE09252DE8F4E&amp;user=instructorOfCourse1&quot;&gt;
+                           &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=64DEE327C7AB4E1B82671B1D69634BFD&amp;courseid=1FB6F248CFD05196C6EDE09252DE8F4E&amp;user=instructorOfCourse1&quot;&gt;
                               &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
                                  View Photo
                               &lt;/a&gt;
@@ -475,22 +554,22 @@ function toggleAllBoxes() {
                            name of tgsr student
                         &lt;/td&gt;
                         &lt;td id=&quot;studentemail-c0.0&quot;&gt;
-                           tgsr@gmail.com
+                           tgsr@gmail.tmt
                         &lt;/td&gt;
                         &lt;td class=&quot;no-print align-center&quot;&gt;
-                           &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
                               View
                            &lt;/a&gt;
                             
-                           &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
                               Edit
                            &lt;/a&gt;
                             
-                           &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course1&apos;,&apos;name of tgsr student&apos;)&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course1&apos;,&apos;name of tgsr student&apos;)&quot;&gt;
                               Delete
                            &lt;/a&gt;
                             
-                           &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all student&apos;s evaluations and feedbacks&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all student&apos;s evaluations and feedbacks&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
                               All Records
                            &lt;/a&gt;
                             
@@ -500,17 +579,17 @@ function toggleAllBoxes() {
                               &lt;/a&gt;
                               &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu align-left&quot; role=&quot;menu&quot;&gt;
                                  &lt;li role=&quot;presentation&quot;&gt;
-                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
                                        Comment on name of tgsr student
                                     &lt;/a&gt;
                                  &lt;/li&gt;
                                  &lt;li role=&quot;presentation&quot;&gt;
-                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
                                        Comment on t1
                                     &lt;/a&gt;
                                  &lt;/li&gt;
                                  &lt;li role=&quot;presentation&quot;&gt;
-                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
                                        Comment on sect1
                                     &lt;/a&gt;
                                  &lt;/li&gt;
@@ -537,8 +616,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22070050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace22070050'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6259415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6259415'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -851,7 +930,7 @@ function toggleAllBoxes() {
                   &lt;br/&gt;
                                     &lt;div id=&quot;emails&quot;&gt;
                      &lt;div id=&quot;student_email-c0.0&quot;&gt;
-                        tgsr@gmail.com
+                        tgsr@gmail.tmt
                      &lt;/div&gt;
                   &lt;/div&gt;
                &lt;/div&gt;
@@ -920,7 +999,7 @@ function toggleAllBoxes() {
                   &lt;tbody&gt;
                      &lt;tr id=&quot;student-c0.0&quot;&gt;
                         &lt;td id=&quot;studentphoto-c0.0&quot;&gt;
-                           &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=469D032A84564A496C2BB43E0B158FC0&amp;courseid=1FB6F248CFD05196C6EDE09252DE8F4E&amp;user=instructorOfCourse1&quot;&gt;
+                           &lt;div class=&quot;profile-pic-icon-click align-center&quot; data-link=&quot;/page/studentProfilePic?studentemail=64DEE327C7AB4E1B82671B1D69634BFD&amp;courseid=1FB6F248CFD05196C6EDE09252DE8F4E&amp;user=instructorOfCourse1&quot;&gt;
                               &lt;a class=&quot;student-profile-pic-view-link btn-link&quot;&gt;
                                  View Photo
                               &lt;/a&gt;
@@ -937,22 +1016,22 @@ function toggleAllBoxes() {
                            name of tgsr student
                         &lt;/td&gt;
                         &lt;td id=&quot;studentemail-c0.0&quot;&gt;
-                           tgsr@gmail.com
+                           tgsr@gmail.tmt
                         &lt;/td&gt;
                         &lt;td class=&quot;no-print align-center&quot;&gt;
-                           &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-view-for-test&quot; data-original-title=&quot;View the details of the student&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
                               View
                            &lt;/a&gt;
                             
-                           &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-edit-for-test&quot; data-original-title=&quot;Use this to edit the details of this student. &lt;br&gt;To edit multiple students in one go, you can use the enroll page: &lt;br&gt;Simply enroll students using the updated data and existing data will be updated accordingly&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseStudentDetailsEdit?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
                               Edit
                            &lt;/a&gt;
                             
-                           &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course1&apos;,&apos;name of tgsr student&apos;)&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-delete-for-test&quot; href=&quot;/page/instructorCourseStudentDelete?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; onclick=&quot;return toggleDeleteStudentConfirmation(&apos;course1&apos;,&apos;name of tgsr student&apos;)&quot;&gt;
                               Delete
                            &lt;/a&gt;
                             
-                           &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all student&apos;s evaluations and feedbacks&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
+                           &lt;a class=&quot;btn btn-default btn-xs student-records-for-test&quot; data-original-title=&quot;View all student&apos;s evaluations and feedbacks&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentRecordsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&quot; title=&quot;&quot;&gt;
                               All Records
                            &lt;/a&gt;
                             
@@ -962,17 +1041,17 @@ function toggleAllBoxes() {
                               &lt;/a&gt;
                               &lt;ul aria-labelledby=&quot;dLabel&quot; class=&quot;dropdown-menu align-left&quot; role=&quot;menu&quot;&gt;
                                  &lt;li role=&quot;presentation&quot;&gt;
-                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=student&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
                                        Comment on name of tgsr student
                                     &lt;/a&gt;
                                  &lt;/li&gt;
                                  &lt;li role=&quot;presentation&quot;&gt;
-                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=team&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
                                        Comment on t1
                                     &lt;/a&gt;
                                  &lt;/li&gt;
                                  &lt;li role=&quot;presentation&quot;&gt;
-                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.com&amp;user=instructorOfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
+                                    &lt;a href=&quot;/page/instructorCourseStudentDetailsPage?courseid=course1&amp;studentemail=tgsr@gmail.tmt&amp;user=instructorOfCourse1&amp;addComment=section&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot;&gt;
                                        Comment on sect1
                                     &lt;/a&gt;
                                  &lt;/li&gt;
@@ -1010,8 +1089,57 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>14</td>
-<td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@a0a1cb</td></tr>
+<td>23</td>
+<td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@1ad0070</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminHomePageUiTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1014)
+	at teammates.test.pageobjects.AppPage.getNewPageInstance(AppPage.java:166)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testCreateInstructorAction(AdminHomePageUiTest.java:268)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll(AdminHomePageUiTest.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1010)
+	... 16 more
+Caused by: java.lang.IllegalStateException: Not in the correct page!
+	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:148)
+	at teammates.test.pageobjects.StudentFeedbackResultsPage.&lt;init&gt;(StudentFeedbackResultsPage.java:9)
+	... 21 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2631193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2631193'><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1014)
+	at teammates.test.pageobjects.AppPage.getNewPageInstance(AppPage.java:166)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testCreateInstructorAction(AdminHomePageUiTest.java:268)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll(AdminHomePageUiTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1010)
+	... 16 more
+Caused by: java.lang.IllegalStateException: Not in the correct page!
+	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:148)
+	at teammates.test.pageobjects.StudentFeedbackResultsPage.&lt;init&gt;(StudentFeedbackResultsPage.java:9)
+	... 21 more
+</pre></div></td>
+<td>134</td>
+<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@12a5253</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1021,15 +1149,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
+<td title='teammates.test.cases.ui.browsertests.InstructorHomePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorHomePageUiTest</td>
 <td></td>
-<td>160</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@132aeb3</td></tr>
+<td>145</td>
+<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@9fc626</td></tr>
 <tr>
-<td title='teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminHomePageUiTest</td>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</td>
 <td></td>
-<td>146</td>
-<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@18d6157</td></tr>
+<td>196</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@3423ae</td></tr>
 </table><p>
 </body>
 </html>
