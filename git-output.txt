@@ -1,5 +1,16 @@
-D	runtests.bat
-M	src/test/resources/pages/godmode.html
-Branch origin-Issue2313 set up to track remote branch Issue2313 from origin.
-Switched to a new branch 'origin-Issue2313'
-Already up-to-date.
+From https://github.com/TEAMMATES/repo
+   0e770e7..c7d7141  master     -> origin/master
+   b121339..2773bb2  Issue2313  -> origin/Issue2313
+   857aa14..64cd34e  Issue2452  -> origin/Issue2452
+ * [new branch]      Issue2454  -> origin/Issue2454
+   3b72c91..898f261  Issue2473  -> origin/Issue2473
+ * [new branch]      Issue2485  -> origin/Issue2485
+ * [new branch]      Issue2495  -> origin/Issue2495
+ * [new branch]      Issue2496  -> origin/Issue2496
+   0295578..330e772  release    -> origin/release
+ * [new tag]         V5.15      -> V5.15
+fatal: A branch named 'origin-Issue2313' already exists.
+Updating b121339..2773bb2
+Fast-forward
+ .../common/datatransfer/CommentAttributes.java     | 23 ++++++++++++++--------
+ 1 file changed, 15 insertions(+), 8 deletions(-)
