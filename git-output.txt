@@ -1,2 +1,8 @@
+From https://github.com/TEAMMATES/repo
+   04bdd50..8363d46  Issue2420  -> origin/Issue2420
 fatal: A branch named 'origin-Issue2420' already exists.
-Already up-to-date.
+Updating 04bdd50..8363d46
+Fast-forward
+ src/main/webapp/dev/devman.html | 2 +-
+ src/main/webapp/js/index.js     | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)

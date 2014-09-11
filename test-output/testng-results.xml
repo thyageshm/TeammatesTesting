@@ -2,34 +2,16 @@
 <testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="59316" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:17:36Z">
+  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="63232" started-at="2014-09-11T07:45:07Z" finished-at="2014-09-11T07:46:10Z">
     <groups>
     </groups>
-    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="23343" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:17:00Z">
-      <class name="teammates.test.cases.storage.InstructorsDbTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.storage.InstructorsDbTest@d07f45]" name="testSetUp" is-config="true" duration-ms="561" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@16a6597]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.storage.InstructorsDbTest@d07f45]" name="testTearDown" is-config="true" duration-ms="312" started-at="2014-09-11T06:17:00Z" finished-at="2014-09-11T06:17:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@16a6597]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T06:17:00Z" finished-at="2014-09-11T06:17:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.storage.InstructorsDbTest -->
+    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="24826" started-at="2014-09-11T07:45:07Z" finished-at="2014-09-11T07:45:32Z">
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@be4d44]" name="classSetUp" is-config="true" duration-ms="22376" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:17:00Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@19aed36]" name="classSetUp" is-config="true" duration-ms="23937" started-at="2014-09-11T07:45:08Z" finished-at="2014-09-11T07:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@be4d44]" name="testGodMode" duration-ms="62" started-at="2014-09-11T06:17:00Z" finished-at="2014-09-11T06:17:00Z">
+        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@19aed36]" name="testGodMode" duration-ms="62" started-at="2014-09-11T07:45:32Z" finished-at="2014-09-11T07:45:32Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<   <title>
@@ -155,19 +137,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGodMode -->
-        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@be4d44]" name="closeClass" is-config="true" duration-ms="16" started-at="2014-09-11T06:17:00Z" finished-at="2014-09-11T06:17:00Z">
+        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@19aed36]" name="closeClass" is-config="true" duration-ms="0" started-at="2014-09-11T07:45:32Z" finished-at="2014-09-11T07:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeClass -->
       </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
+      <class name="teammates.test.cases.ui.InstructorStudentRecordsPageActionTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@e124a7]" name="testSetUp" is-config="true" duration-ms="577" started-at="2014-09-11T07:45:07Z" finished-at="2014-09-11T07:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1fe84c6]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-11T07:45:08Z" finished-at="2014-09-11T07:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@e124a7]" name="testTearDown" is-config="true" duration-ms="250" started-at="2014-09-11T07:45:32Z" finished-at="2014-09-11T07:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1fe84c6]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T07:45:32Z" finished-at="2014-09-11T07:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.ui.InstructorStudentRecordsPageActionTest -->
     </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed) -->
-    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="59316" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:17:36Z">
+    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="63232" started-at="2014-09-11T07:45:07Z" finished-at="2014-09-11T07:46:10Z">
       <class name="teammates.test.cases.ui.browsertests.AdminHomePageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@e83a99]" name="classSetup" is-config="true" duration-ms="7193" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:16:44Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1d1a567]" name="classSetup" is-config="true" duration-ms="8286" started-at="2014-09-11T07:45:08Z" finished-at="2014-09-11T07:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@e83a99]" name="testAll" duration-ms="32296" started-at="2014-09-11T06:16:44Z" finished-at="2014-09-11T06:17:17Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1d1a567]" name="testAll" duration-ms="40204" started-at="2014-09-11T07:45:16Z" finished-at="2014-09-11T07:45:56Z">
           <exception class="org.junit.ComparisonFailure">
             <message>
               <![CDATA[expected:<<[expected>
@@ -1228,17 +1228,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@e83a99]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T06:17:17Z" finished-at="2014-09-11T06:17:17Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1d1a567]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T07:45:56Z" finished-at="2014-09-11T07:45:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1a15291]" name="classSetup" is-config="true" duration-ms="14543" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:16:52Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@c75d38]" name="classSetup" is-config="true" duration-ms="15495" started-at="2014-09-11T07:45:08Z" finished-at="2014-09-11T07:45:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1a15291]" name="testAll" duration-ms="44181" started-at="2014-09-11T06:16:52Z" finished-at="2014-09-11T06:17:36Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@c75d38]" name="testAll" duration-ms="47145" started-at="2014-09-11T07:45:23Z" finished-at="2014-09-11T07:46:10Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"css selector","selector":".popover-content > img"}
@@ -1246,7 +1246,7 @@ Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: b687fd1e-df63-403f-ab25-2bd9b978aaea
+Session ID: 9ff35ed9-2fa9-4150-a5be-039f6491a89a
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]]]>
             </message>
@@ -1256,10 +1256,10 @@ Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: b687fd1e-df63-403f-ab25-2bd9b978aaea
+Session ID: 9ff35ed9-2fa9-4150-a5be-039f6491a89a
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.GeneratedConstructorAccessor54.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor57.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
@@ -1289,40 +1289,40 @@ Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unabl
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous5176399610151512062webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous5176399610151512062webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous5176399610151512062webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous5176399610151512062webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous5176399610151512062webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous7934296138582612692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous7934296138582612692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous7934296138582612692webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous7934296138582612692webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous7934296138582612692webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1a15291]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T06:17:36Z" finished-at="2014-09-11T06:17:36Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@c75d38]" name="classTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T07:46:10Z" finished-at="2014-09-11T07:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest -->
-      <class name="teammates.test.cases.storage.InstructorsDbTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.storage.InstructorsDbTest@33ca1f]" name="testSetUp" is-config="true" duration-ms="561" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:16:37Z">
+      <class name="teammates.test.cases.ui.InstructorStudentRecordsPageActionTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@6ac604]" name="testSetUp" is-config="true" duration-ms="577" started-at="2014-09-11T07:45:07Z" finished-at="2014-09-11T07:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@71fd20]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-11T06:16:37Z" finished-at="2014-09-11T06:16:37Z">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1ee30d2]" name="testSetUp" is-config="true" duration-ms="0" started-at="2014-09-11T07:45:08Z" finished-at="2014-09-11T07:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.storage.InstructorsDbTest@33ca1f]" name="testTearDown" is-config="true" duration-ms="15" started-at="2014-09-11T06:17:36Z" finished-at="2014-09-11T06:17:36Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@6ac604]" name="testTearDown" is-config="true" duration-ms="15" started-at="2014-09-11T07:46:10Z" finished-at="2014-09-11T07:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@71fd20]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T06:17:36Z" finished-at="2014-09-11T06:17:36Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1ee30d2]" name="testTearDown" is-config="true" duration-ms="0" started-at="2014-09-11T07:46:10Z" finished-at="2014-09-11T07:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.storage.InstructorsDbTest -->
+      </class> <!-- teammates.test.cases.ui.InstructorStudentRecordsPageActionTest -->
     </test> <!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) -->
   </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] -->
 </testng-results>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallel-ui-tests(failed)</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 11 06:12:25 UTC 2014</td>
+<td>Started on:</td><td>Thu Sep 11 07:39:29 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>68 seconds (68973 ms)</td>
+<tr><td>Total time:</td><td>159 seconds (159689 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -491,8 +491,8 @@ function toggleAllBoxes() {
                      &lt;/span&gt;
                   &lt;/td&gt;
                   &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 9
-                  &lt;/td&gt;
+                     &lt;img src=&quot;/images/ajax-loader.gif&quot;/&gt;
+                                       &lt;/td&gt;
                   &lt;td class=&quot;no-print&quot;&gt;
                      &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
                         View Results
@@ -601,8 +601,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1754644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1754644'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15815921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15815921'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -1017,8 +1017,8 @@ function toggleAllBoxes() {
                      &lt;/span&gt;
                   &lt;/td&gt;
                   &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 9
-                  &lt;/td&gt;
+                     &lt;img src=&quot;/images/ajax-loader.gif&quot;/&gt;
+                                       &lt;/td&gt;
                   &lt;td class=&quot;no-print&quot;&gt;
                      &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
                         View Results
@@ -1138,59 +1138,61 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>40</td>
-<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1241aac</td></tr>
+<td>35</td>
+<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1465d7d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
 System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 14a7abd1-1894-4e1a-bab1-6bb39ad6c5f4
+Session ID: 8b2c8c84-f72a-4819-ade2-61b374714c0c
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:123)
-	at teammates.test.pageobjects.InstructorFeedbackResultsPage.hoverClickAndViewStudentPhotoOnHeading(InstructorFeedbackResultsPage.java:286)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.clickViewPhotoLink(InstructorFeedbackResultsPage.java:268)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:250)
 	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is no longer attached to the DOM
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
 Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
 System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7613)
-	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
-	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10364)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17311651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace17311651'><pre>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace811798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811798'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
 System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 14a7abd1-1894-4e1a-bab1-6bb39ad6c5f4
+Session ID: 8b2c8c84-f72a-4819-ade2-61b374714c0c
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.GeneratedConstructorAccessor86.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:123)
-	at teammates.test.pageobjects.InstructorFeedbackResultsPage.hoverClickAndViewStudentPhotoOnHeading(InstructorFeedbackResultsPage.java:286)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.clickViewPhotoLink(InstructorFeedbackResultsPage.java:268)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:250)
 	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -1205,19 +1207,36 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSele
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is no longer attached to the DOM
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.popover-content &gt; img&quot;}
 Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
 System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7613)
-	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
-	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10364)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2168091076647855843webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 </pre></div></td>
-<td>44</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@a88b1c</td></tr>
+<td>49</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@10a7f17</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorHomePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorHomePageUiTest</td>
+<td></td>
+<td>127</td>
+<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@1e5faf</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome()'><b>testInstructorHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>6</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1934d13</td></tr>
 </table><p>
 </body>
 </html>
