@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallel-ui-tests(failed)</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 11 05:50:19 UTC 2014</td>
+<td>Started on:</td><td>Thu Sep 11 06:12:25 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>208 seconds (208736 ms)</td>
+<tr><td>Total time:</td><td>68 seconds (68973 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -368,9 +368,23 @@ function toggleAllBoxes() {
          &lt;/div&gt;
       &lt;/div&gt;
       &lt;br/&gt;
-            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+         New to TEAMMATES? You may wish to have a look at our
+         &lt;a href=&quot;/instructorHelp.html#gs&quot; target=&quot;_blank&quot;&gt;
+            Getting Started Guide
+         &lt;/a&gt;
+         .
+         &lt;br/&gt;
+                  A video tour is also available in our
+         &lt;a href=&quot;/index.html&quot; target=&quot;_blank&quot;&gt;
+            home page
+         &lt;/a&gt;
+         .
       &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+      &lt;/script&gt;
+      &lt;div class=&quot;row hidden&quot;&gt;
          &lt;div class=&quot;col-md-5 pull-right&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-3 btn-group&quot;&gt;
@@ -401,345 +415,6 @@ function toggleAllBoxes() {
       &lt;/div&gt;
       &lt;br/&gt;
             &lt;div class=&quot;panel panel-primary&quot; id=&quot;course0&quot;&gt;
-         &lt;div class=&quot;panel-heading&quot;&gt;
-            &lt;div class=&quot;row&quot;&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;strong&gt;
-                     [idOfTypicalCourse1.access] :
-                                        Typical Course 1 with 2 Evals
-                  &lt;/strong&gt;
-               &lt;/div&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;span class=&quot;pull-right&quot;&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Enroll
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=idOfTypicalCourse1.access&quot; title=&quot;&quot;&gt;
-                        Add Session
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=idOfTypicalCourse1.access&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
-                        Archive
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
-                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        &lt;span class=&quot;badge&quot;&gt;
-                           0
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
-                        &lt;/span&gt;
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=idOfTypicalCourse1.access&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                  &lt;/span&gt;
-               &lt;/div&gt;
-            &lt;/div&gt;
-         &lt;/div&gt;
-         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
-            &lt;thead&gt;
-               &lt;tr&gt;
-                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
-                     Session Name
-                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     Status
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Response Rate
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th class=&quot;no-print&quot;&gt;
-                     Action(s)
-                  &lt;/th&gt;
-               &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-               &lt;tr id=&quot;session0&quot;&gt;
-                  &lt;td&gt;
-                     evaluation1 In Course1
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     3 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
-                        Preview
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session1&quot;&gt;
-                  &lt;td&gt;
-                     evaluation2 In Course1
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
-                        Preview
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session2&quot;&gt;
-                  &lt;td&gt;
-                     Grace Period Session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     2 / 9
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session3&quot;&gt;
-                  &lt;td&gt;
-                     Second feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     2 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session6&quot;&gt;
-                  &lt;td&gt;
-                     non visible session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, and is waiting to open.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Awaiting
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;non visible session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test disabled&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;This session is not yet opened&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session7&quot;&gt;
-                  &lt;td&gt;
-                     First feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     4 / 9
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session4&quot;&gt;
-                  &lt;td&gt;
-                     Closed Session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Closed
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session5&quot;&gt;
-                  &lt;td&gt;
-                     Empty session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Published
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-            &lt;/tbody&gt;
-         &lt;/table&gt;
-      &lt;/div&gt;
-      &lt;br/&gt;
-            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
          &lt;div class=&quot;panel-heading&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-6&quot;&gt;
@@ -806,7 +481,7 @@ function toggleAllBoxes() {
                &lt;/tr&gt;
             &lt;/thead&gt;
             &lt;tbody&gt;
-               &lt;tr id=&quot;session8&quot;&gt;
+               &lt;tr id=&quot;session0&quot;&gt;
                   &lt;td&gt;
                      Second team feedback session
                   &lt;/td&gt;
@@ -839,7 +514,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session9&quot;&gt;
+               &lt;tr id=&quot;session1&quot;&gt;
                   &lt;td&gt;
                      First team feedback session
                   &lt;/td&gt;
@@ -874,7 +549,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session10&quot;&gt;
+               &lt;tr id=&quot;session2&quot;&gt;
                   &lt;td&gt;
                      Session with different question types
                   &lt;/td&gt;
@@ -926,8 +601,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28202328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace28202328'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1754644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1754644'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -1219,9 +894,23 @@ function toggleAllBoxes() {
          &lt;/div&gt;
       &lt;/div&gt;
       &lt;br/&gt;
-            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+         New to TEAMMATES? You may wish to have a look at our
+         &lt;a href=&quot;/instructorHelp.html#gs&quot; target=&quot;_blank&quot;&gt;
+            Getting Started Guide
+         &lt;/a&gt;
+         .
+         &lt;br/&gt;
+                  A video tour is also available in our
+         &lt;a href=&quot;/index.html&quot; target=&quot;_blank&quot;&gt;
+            home page
+         &lt;/a&gt;
+         .
       &lt;/div&gt;
-      &lt;div class=&quot;row&quot;&gt;
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+      &lt;/script&gt;
+      &lt;div class=&quot;row hidden&quot;&gt;
          &lt;div class=&quot;col-md-5 pull-right&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-3 btn-group&quot;&gt;
@@ -1252,345 +941,6 @@ function toggleAllBoxes() {
       &lt;/div&gt;
       &lt;br/&gt;
             &lt;div class=&quot;panel panel-primary&quot; id=&quot;course0&quot;&gt;
-         &lt;div class=&quot;panel-heading&quot;&gt;
-            &lt;div class=&quot;row&quot;&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;strong&gt;
-                     [idOfTypicalCourse1.access] :
-                                        Typical Course 1 with 2 Evals
-                  &lt;/strong&gt;
-               &lt;/div&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;span class=&quot;pull-right&quot;&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Enroll
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=idOfTypicalCourse1.access&quot; title=&quot;&quot;&gt;
-                        Add Session
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=idOfTypicalCourse1.access&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
-                        Archive
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
-                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        &lt;span class=&quot;badge&quot;&gt;
-                           0
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
-                        &lt;/span&gt;
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=idOfTypicalCourse1.access&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                  &lt;/span&gt;
-               &lt;/div&gt;
-            &lt;/div&gt;
-         &lt;/div&gt;
-         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
-            &lt;thead&gt;
-               &lt;tr&gt;
-                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
-                     Session Name
-                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     Status
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Response Rate
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th class=&quot;no-print&quot;&gt;
-                     Action(s)
-                  &lt;/th&gt;
-               &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-               &lt;tr id=&quot;session0&quot;&gt;
-                  &lt;td&gt;
-                     evaluation1 In Course1
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     3 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
-                        Preview
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session1&quot;&gt;
-                  &lt;td&gt;
-                     evaluation2 In Course1
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
-                        Preview
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session2&quot;&gt;
-                  &lt;td&gt;
-                     Grace Period Session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     2 / 9
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session3&quot;&gt;
-                  &lt;td&gt;
-                     Second feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     2 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session6&quot;&gt;
-                  &lt;td&gt;
-                     non visible session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, and is waiting to open.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Awaiting
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 5
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;non visible session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test disabled&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;This session is not yet opened&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session7&quot;&gt;
-                  &lt;td&gt;
-                     First feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     4 / 9
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session4&quot;&gt;
-                  &lt;td&gt;
-                     Closed Session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Closed
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
-                        Publish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session5&quot;&gt;
-                  &lt;td&gt;
-                     Empty session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Published
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-            &lt;/tbody&gt;
-         &lt;/table&gt;
-      &lt;/div&gt;
-      &lt;br/&gt;
-            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
          &lt;div class=&quot;panel-heading&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-6&quot;&gt;
@@ -1657,7 +1007,7 @@ function toggleAllBoxes() {
                &lt;/tr&gt;
             &lt;/thead&gt;
             &lt;tbody&gt;
-               &lt;tr id=&quot;session8&quot;&gt;
+               &lt;tr id=&quot;session0&quot;&gt;
                   &lt;td&gt;
                      Second team feedback session
                   &lt;/td&gt;
@@ -1690,7 +1040,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session9&quot;&gt;
+               &lt;tr id=&quot;session1&quot;&gt;
                   &lt;td&gt;
                      First team feedback session
                   &lt;/td&gt;
@@ -1725,7 +1075,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session10&quot;&gt;
+               &lt;tr id=&quot;session2&quot;&gt;
                   &lt;td&gt;
                      Session with different question types
                   &lt;/td&gt;
@@ -1788,66 +1138,86 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>53</td>
-<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@15f8156</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest</td>
-<td></td>
-<td>72</td>
-<td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@b2a5f5</td></tr>
+<td>40</td>
+<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1241aac</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
-<td></td>
-<td>171</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@9db94d</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome()'><b>testInstructorHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>8</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages()'><b>testPubliclyAccessiblePages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>4</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages()'><b>testStudentAccessToAdminPages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>6</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult()'><b>testStudentEvalResult</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>46</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission()'><b>testStudentEvalSubmission</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>17</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome()'><b>testStudentHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>4</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn()'><b>testUserNotLoggedIn</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>0</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered()'><b>testUserNotRegistered</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>9</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@124670b</td></tr>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 14a7abd1-1894-4e1a-bab1-6bb39ad6c5f4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:123)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.hoverClickAndViewStudentPhotoOnHeading(InstructorFeedbackResultsPage.java:286)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:249)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is no longer attached to the DOM
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7613)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10364)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17311651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17311651'><pre>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 14a7abd1-1894-4e1a-bab1-6bb39ad6c5f4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:123)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.hoverClickAndViewStudentPhotoOnHeading(InstructorFeedbackResultsPage.java:286)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testViewPhotoAndAjaxForLargeScaledSession(InstructorFeedbackResultsPageUiTest.java:249)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is no longer attached to the DOM
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7613)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10364)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous3188403443463302900webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+</pre></div></td>
+<td>44</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@a88b1c</td></tr>
 </table><p>
 </body>
 </html>

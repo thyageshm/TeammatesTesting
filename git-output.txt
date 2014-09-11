@@ -1,11 +1,2 @@
-From https://github.com/TEAMMATES/repo
-   b0b2c26..04bdd50  Issue2420  -> origin/Issue2420
 fatal: A branch named 'origin-Issue2420' already exists.
-Updating b0b2c26..04bdd50
-Fast-forward
- .../ui/controller/InstructorHomePageAction.java    |  2 +-
- .../cases/ui/InstructorHomePageActionTest.java     | 19 +++++++--
- ...InstructorCourseJoinConfirmationPageUiTest.java |  1 -
- .../instructorStudentListPageWithPicture.html      |  2 +-
- .../pages/newlyJoinedInstructorHomePage.html       | 46 ++++++++++++----------
- 5 files changed, 43 insertions(+), 27 deletions(-)
+Already up-to-date.
