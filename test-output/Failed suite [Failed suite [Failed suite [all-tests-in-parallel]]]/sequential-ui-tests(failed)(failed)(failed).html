@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 10 13:59:31 UTC 2014</td>
+<td>Started on:</td><td>Thu Sep 11 05:55:38 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43050 ms)</td>
+<tr><td>Total time:</td><td>62 seconds (62796 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,30 +75,59 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1014)
-	at teammates.test.pageobjects.AppPage.changePageType(AppPage.java:207)
-	at teammates.test.pageobjects.InstructorCourseJoinConfirmationPage.clickConfirmButton(InstructorCourseJoinConfirmationPage.java:25)
-	at teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest.testJoinConfirmation(InstructorCourseJoinConfirmationPageUiTest.java:84)
-	at teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest.testAll(InstructorCourseJoinConfirmationPageUiTest.java:47)
+<td title='teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 1.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 11126d4b-3230-45cf-9269-fde10d1a25be
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at teammates.test.pageobjects.InstructorCommentsPage.clickCommentsPageLinkInHeader(InstructorCommentsPage.java:41)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.testActions(InstructorCommentsPageUiTest.java:178)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.allTests(InstructorCommentsPageUiTest.java:34)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1010)
-	... 24 more
-Caused by: java.lang.IllegalStateException: Not in the correct page!
-	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:148)
-	at teammates.test.pageobjects.InstructorHomePage.&lt;init&gt;(InstructorHomePage.java:30)
-	... 29 more
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8940138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace8940138'><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1014)
-	at teammates.test.pageobjects.AppPage.changePageType(AppPage.java:207)
-	at teammates.test.pageobjects.InstructorCourseJoinConfirmationPage.clickConfirmButton(InstructorCourseJoinConfirmationPage.java:25)
-	at teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest.testJoinConfirmation(InstructorCourseJoinConfirmationPageUiTest.java:84)
-	at teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest.testAll(InstructorCourseJoinConfirmationPageUiTest.java:47)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element not found in the cache - perhaps the page has changed since it was looked up
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7610)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8223)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10867)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4075003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4075003'><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 1.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 11126d4b-3230-45cf-9269-fde10d1a25be
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at teammates.test.pageobjects.InstructorCommentsPage.clickCommentsPageLinkInHeader(InstructorCommentsPage.java:41)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.testActions(InstructorCommentsPageUiTest.java:178)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.allTests(InstructorCommentsPageUiTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,20 +148,20 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1010)
-	... 24 more
-Caused by: java.lang.IllegalStateException: Not in the correct page!
-	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:148)
-	at teammates.test.pageobjects.InstructorHomePage.&lt;init&gt;(InstructorHomePage.java:30)
-	... 29 more
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element not found in the cache - perhaps the page has changed since it was looked up
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web_element_cache.js:7610)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7210)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8223)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10867)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4753519446460362218webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 </pre></div></td>
-<td>14</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseJoinConfirmationPageUiTest@48d00d</td></tr>
+<td>46</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest@119efa7</td></tr>
 </table><p>
 </body>
 </html>

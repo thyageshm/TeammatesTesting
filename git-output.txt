@@ -1,7 +1,11 @@
 From https://github.com/TEAMMATES/repo
- * [new branch]      Issue2420  -> origin/Issue2420
-D	runtests.bat
-M	src/test/resources/pages/godmode.html
-Branch origin-Issue2420 set up to track remote branch Issue2420 from origin.
-Switched to a new branch 'origin-Issue2420'
-Already up-to-date.
+   b0b2c26..04bdd50  Issue2420  -> origin/Issue2420
+fatal: A branch named 'origin-Issue2420' already exists.
+Updating b0b2c26..04bdd50
+Fast-forward
+ .../ui/controller/InstructorHomePageAction.java    |  2 +-
+ .../cases/ui/InstructorHomePageActionTest.java     | 19 +++++++--
+ ...InstructorCourseJoinConfirmationPageUiTest.java |  1 -
+ .../instructorStudentListPageWithPicture.html      |  2 +-
+ .../pages/newlyJoinedInstructorHomePage.html       | 46 ++++++++++++----------
+ 5 files changed, 43 insertions(+), 27 deletions(-)
