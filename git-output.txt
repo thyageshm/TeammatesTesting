@@ -1,8 +1,90 @@
 From https://github.com/TEAMMATES/repo
-   04bdd50..8363d46  Issue2420  -> origin/Issue2420
+   c7d7141..6f45c1b  master     -> origin/master
+   8363d46..c3df4a6  Issue2420  -> origin/Issue2420
+   64cd34e..f053a35  Issue2452  -> origin/Issue2452
+   e546aee..d14d677  Issue2496  -> origin/Issue2496
+ * [new branch]      Issue2521  -> origin/Issue2521
+ * [new branch]      Issue2527  -> origin/Issue2527
+   330e772..04443ce  release    -> origin/release
+ * [new tag]         V5.16      -> V5.16
 fatal: A branch named 'origin-Issue2420' already exists.
-Updating 04bdd50..8363d46
+Updating 8363d46..c3df4a6
 Fast-forward
- src/main/webapp/dev/devman.html | 2 +-
- src/main/webapp/js/index.js     | 4 ++--
- 2 files changed, 3 insertions(+), 3 deletions(-)
+ .../client/scripts/StatisticsPerInstitute.java     |    2 +-
+ .../common/datatransfer/CommentAttributes.java     |   24 +
+ src/main/java/teammates/common/util/Const.java     |    3 +
+ .../logic/core/FeedbackSessionsLogic.java          |   11 +-
+ .../teammates/ui/controller/ActionFactory.java     |    1 +
+ .../controller/InstructorCommentsPageAction.java   |   79 +-
+ .../ui/controller/InstructorCommentsPageData.java  |    4 +-
+ .../controller/InstructorCourseEditPageAction.java |   19 +-
+ .../controller/InstructorCourseEditPageData.java   |    3 +
+ ...structorFeedbackResponseCommentsLoadAction.java |  101 +
+ ...ructorFeedbackResponseCommentsLoadPageData.java |   28 +
+ .../resources/newInstructorAccountWelcome.html     |    2 +-
+ src/main/webapp/js/contextualcomments.js           |   15 +-
+ src/main/webapp/js/feedbackResponseComments.js     |  205 +-
+ src/main/webapp/js/instructorCourseEdit.js         |   19 +-
+ src/main/webapp/js/instructorCourseEditAjax.js     |   42 +
+ src/main/webapp/js/instructorFeedbackEdit.js       |   12 +-
+ src/main/webapp/jsp/instructorComments.jsp         |  635 +-----
+ src/main/webapp/jsp/instructorCourseEdit.jsp       |   26 +-
+ src/main/webapp/jsp/instructorFeedbackEdit.jsp     |   12 +-
+ .../jsp/instructorFeedbackResponseCommentsLoad.jsp |  784 +++++++
+ src/main/webapp/stylesheets/omniComment.css        |    2 +-
+ .../browsertests/InstructorCommentsPageUiTest.java |   21 +-
+ .../InstructorCourseEditPageUiTest.java            |    6 +-
+ .../InstructorFeedbackEditPageUiTest.java          |   25 +-
+ .../test/pageobjects/InstructorCommentsPage.java   |   23 +-
+ .../test/pageobjects/InstructorCourseEditPage.java |    4 +-
+ .../pageobjects/InstructorFeedbackEditPage.java    |   36 +
+ .../pages/NJIfeedbackSessionSuccessEdited.html     |   52 +-
+ ...ForTypicalCourseWithCommentsWithHelperView.html |   56 +
+ .../pages/instructorCommentsPageAddFrc.html        | 1665 +++++++-------
+ .../pages/instructorCommentsPageDeleteFrc.html     | 1476 ++++++------
+ .../pages/instructorCommentsPageEditFrc.html       | 1671 +++++++-------
+ ...orCommentsPageForTypicalCourseWithComments.html | 1476 ++++++------
+ .../instructorCommentsPageShowCommentsForAll.html  | 1476 ++++++------
+ ...structorCommentsPageShowCommentsForPrivate.html | 1476 ++++++------
+ ...nstructorCommentsPageShowCommentsForPublic.html | 1476 ++++++------
+ ...entsPageShowCommentsForSessionCommentPanel.html | 1476 ++++++------
+ ...entsPageShowCommentsForStudentCommentPanel.html | 1476 ++++++------
+ .../instructorCommentsPageShowCommentsFromAll.html | 1476 ++++++------
+ ...uctorCommentsPageShowCommentsFromAllStatus.html | 1476 ++++++------
+ ...structorCommentsPageShowCommentsFromOthers.html | 1476 ++++++------
+ .../instructorCommentsPageShowCommentsFromYou.html | 1476 ++++++------
+ .../pages/instructorCourseEditCoowner.html         | 1982 +++-------------
+ ...seEditEditInstructorPrivilegesBeforeSubmit.html | 1985 +++-------------
+ ...torCourseEditEditInstructorPrivilegesModal.html | 1985 +++-------------
+ ...urseEditEditInstructorPrivilegesSuccessful.html | 2389 +++-----------------
+ .../pages/instructorCourseEditHelper.html          | 1983 +++-------------
+ .../pages/instructorFeedbackAddSuccess.html        |    2 +-
+ ...orFeedbackConstSumOptionQuestionAddSuccess.html |   22 +-
+ ...rFeedbackConstSumOptionQuestionEditSuccess.html |   22 +-
+ ...eedbackConstSumRecipientQuestionAddSuccess.html |   22 +-
+ ...edbackConstSumRecipientQuestionEditSuccess.html |   22 +-
+ ...nstructorFeedbackContribQuestionAddSuccess.html |   12 +-
+ .../instructorFeedbackContribQuestionEdit.html     |   12 +-
+ ...structorFeedbackContribQuestionEditSuccess.html |   12 +-
+ .../instructorFeedbackCopyQuestionSuccess.html     |   24 +-
+ .../pages/instructorFeedbackCopySuccess.html       |    2 +-
+ .../pages/instructorFeedbackEditEmpty.html         |    2 +-
+ .../pages/instructorFeedbackEditSuccess.html       |    2 +-
+ .../instructorFeedbackMcqQuestionAddSuccess.html   |   22 +-
+ .../instructorFeedbackMcqQuestionEditSuccess.html  |   22 +-
+ .../instructorFeedbackMsqQuestionAddSuccess.html   |   22 +-
+ .../instructorFeedbackMsqQuestionEditSuccess.html  |   22 +-
+ ...structorFeedbackNumScaleQuestionAddSuccess.html |   22 +-
+ ...tructorFeedbackNumScaleQuestionEditSuccess.html |   22 +-
+ .../instructorFeedbackQuestionAddSuccess.html      |   12 +-
+ ...instructorFeedbackQuestionEditToTeamToTeam.html |   12 +-
+ ...nstructorFeedbackQuestionVisibilityOptions.html |   12 +-
+ ...nstructorFeedbackQuestionVisibilityPreview.html |   12 +-
+ ...ctorFeedbackTeamPeerEvalTemplateAddSuccess.html |   52 +-
+ .../pages/newlyJoinedInstructorCommentsPage.html   |  265 +--
+ .../pages/newlyJoinedInstructorCourseEditPage.html |  329 +--
+ 73 files changed, 13074 insertions(+), 20056 deletions(-)
+ create mode 100644 src/main/java/teammates/ui/controller/InstructorFeedbackResponseCommentsLoadAction.java
+ create mode 100644 src/main/java/teammates/ui/controller/InstructorFeedbackResponseCommentsLoadPageData.java
+ create mode 100644 src/main/webapp/js/instructorCourseEditAjax.js
+ create mode 100644 src/main/webapp/jsp/instructorFeedbackResponseCommentsLoad.jsp
