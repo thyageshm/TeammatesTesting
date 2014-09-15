@@ -1,7 +1,5 @@
 From https://github.com/TEAMMATES/repo
- * [new branch]      Issue2509  -> origin/Issue2509
-D	runtests.bat
-M	src/test/resources/pages/godmode.html
-Branch origin-Issue2509 set up to track remote branch Issue2509 from origin.
-Switched to a new branch 'origin-Issue2509'
+   29071d4..f0262e8  master     -> origin/master
+   4becfab..c038a9b  Issue2452  -> origin/Issue2452
+fatal: A branch named 'origin-Issue2509' already exists.
 Already up-to-date.

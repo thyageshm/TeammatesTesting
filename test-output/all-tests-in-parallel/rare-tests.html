@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 14 14:41:52 UTC 2014</td>
+<td>Started on:</td><td>Mon Sep 15 10:28:06 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>62 seconds (62027 ms)</td>
+<tr><td>Total time:</td><td>90 seconds (90072 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,71 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='teammates.test.cases.testdriver.BackDoorTest.testEditEvaluation()'><b>testEditEvaluation</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
-<td><div><pre>java.lang.AssertionError: expected:&lt;{
-  &quot;courseId&quot;: &quot;idOfTypicalCourse2&quot;,
-  &quot;name&quot;: &quot;evaluation1 In Course2&quot;,
-  &quot;instructions&quot;: {
-    &quot;value&quot;: &quot;\u003cText: Please please fill in the first evaluation in Course2\u003ex&quot;
-  },
-  &quot;startTime&quot;: &quot;2014-09-12 2:42 PM +0000&quot;,
-  &quot;endTime&quot;: &quot;2014-09-13 2:42 PM +0000&quot;,
-  &quot;timeZone&quot;: 1.0,
-  &quot;gracePeriod&quot;: 21,
-  &quot;p2pEnabled&quot;: false,
-  &quot;published&quot;: true,
-  &quot;activated&quot;: false
-}&gt; but was:&lt;{
-  &quot;courseId&quot;: &quot;idOfTypicalCourse2&quot;,
-  &quot;name&quot;: &quot;evaluation1 In Course2&quot;,
-  &quot;instructions&quot;: {
-    &quot;value&quot;: &quot;Please please fill in the first evaluation in Course2&quot;
-  },
-  &quot;startTime&quot;: &quot;2012-04-01 11:59 PM +0000&quot;,
-  &quot;endTime&quot;: &quot;2017-04-30 11:59 PM +0000&quot;,
-  &quot;timeZone&quot;: 0.0,
-  &quot;gracePeriod&quot;: 20,
-  &quot;p2pEnabled&quot;: true,
-  &quot;published&quot;: false,
-  &quot;activated&quot;: true
-}&gt;
-	at teammates.test.cases.testdriver.BackDoorTest.verifyPresentInDatastore(BackDoorTest.java:611)
-	at teammates.test.cases.testdriver.BackDoorTest.testEditEvaluation(BackDoorTest.java:459)
+<td title='teammates.test.cases.testdriver.BackDoorTest.testCreateCourse()'><b>testCreateCourse</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at teammates.test.cases.testdriver.BackDoorTest.verifyPresentInDatastore(BackDoorTest.java:630)
+	at teammates.test.cases.testdriver.BackDoorTest.testCreateCourse(BackDoorTest.java:306)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23844251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23844251'><pre>java.lang.AssertionError: expected:&lt;{
-  &quot;courseId&quot;: &quot;idOfTypicalCourse2&quot;,
-  &quot;name&quot;: &quot;evaluation1 In Course2&quot;,
-  &quot;instructions&quot;: {
-    &quot;value&quot;: &quot;\u003cText: Please please fill in the first evaluation in Course2\u003ex&quot;
-  },
-  &quot;startTime&quot;: &quot;2014-09-12 2:42 PM +0000&quot;,
-  &quot;endTime&quot;: &quot;2014-09-13 2:42 PM +0000&quot;,
-  &quot;timeZone&quot;: 1.0,
-  &quot;gracePeriod&quot;: 21,
-  &quot;p2pEnabled&quot;: false,
-  &quot;published&quot;: true,
-  &quot;activated&quot;: false
-}&gt; but was:&lt;{
-  &quot;courseId&quot;: &quot;idOfTypicalCourse2&quot;,
-  &quot;name&quot;: &quot;evaluation1 In Course2&quot;,
-  &quot;instructions&quot;: {
-    &quot;value&quot;: &quot;Please please fill in the first evaluation in Course2&quot;
-  },
-  &quot;startTime&quot;: &quot;2012-04-01 11:59 PM +0000&quot;,
-  &quot;endTime&quot;: &quot;2017-04-30 11:59 PM +0000&quot;,
-  &quot;timeZone&quot;: 0.0,
-  &quot;gracePeriod&quot;: 20,
-  &quot;p2pEnabled&quot;: true,
-  &quot;published&quot;: false,
-  &quot;activated&quot;: true
-}&gt;
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
-	at teammates.test.cases.testdriver.BackDoorTest.verifyPresentInDatastore(BackDoorTest.java:611)
-	at teammates.test.cases.testdriver.BackDoorTest.testEditEvaluation(BackDoorTest.java:459)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5319723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5319723'><pre>java.lang.NullPointerException
+	at teammates.test.cases.testdriver.BackDoorTest.verifyPresentInDatastore(BackDoorTest.java:630)
+	at teammates.test.cases.testdriver.BackDoorTest.testCreateCourse(BackDoorTest.java:306)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,7 +101,7 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.GodModeTest.testGodMode()'><b>testGodMode</b><br>Test class: teammates.test.cases.ui.browsertests.GodModeTest</td>
 <td><div><pre>java.lang.AssertionError: expected:&lt;   &lt;title&gt;
@@ -212,8 +158,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23308999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23308999'><pre>java.lang.AssertionError: expected:&lt;   &lt;title&gt;
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22533996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22533996'><pre>java.lang.AssertionError: expected:&lt;   &lt;title&gt;
    &lt;/title&gt;
    &lt;div id=&quot;frameBodyWrapper&quot;&gt;
       &lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;
@@ -281,7 +227,7 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
 <td>0</td>
-<td>teammates.test.cases.ui.browsertests.GodModeTest@174e14</td></tr>
+<td>teammates.test.cases.ui.browsertests.GodModeTest@1da1fb8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -293,58 +239,58 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testAccounts()'><b>testAccounts</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
-<td>1</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
-<tr>
-<td title='teammates.test.cases.testdriver.BackDoorTest.testCreateCourse()'><b>testCreateCourse</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
-<td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateEvaluation()'><b>testCreateEvaluation</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateInstructor()'><b>testCreateInstructor</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateStudent()'><b>testCreateStudent</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testDeletion()'><b>testDeletion</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>4</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.BackDoorTest.testEditEvaluation()'><b>testEditEvaluation</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testEditStudent()'><b>testEditStudent</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testEditSubmission()'><b>testEditSubmission</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testGetCoursesByInstructorId()'><b>testGetCoursesByInstructorId</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testGetKeyForStudent()'><b>testGetKeyForStudent</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testPersistence()'><b>testPersistence</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@1b79ebf</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@6ce79d</td></tr>
 </table><p>
 </body>
 </html>
