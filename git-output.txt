@@ -1,5 +1,35 @@
 From https://github.com/TEAMMATES/repo
-   29071d4..f0262e8  master     -> origin/master
-   4becfab..c038a9b  Issue2452  -> origin/Issue2452
+   f0262e8..3fd102b  master     -> origin/master
+   f69e2be..b6b4270  Issue2509  -> origin/Issue2509
 fatal: A branch named 'origin-Issue2509' already exists.
-Already up-to-date.
+Updating f69e2be..b6b4270
+Fast-forward
+ src/main/java/teammates/common/util/Const.java     |   2 +
+ src/main/java/teammates/ui/controller/Action.java  |  22 +-
+ .../ui/controller/InstructorHomePageAction.java    |   7 +
+ src/main/webapp/WEB-INF/queue.xml                  |   6 +-
+ src/main/webapp/js/instructor.js                   |   9 +-
+ src/main/webapp/jsp/instructorHome.jsp             | 487 +++++++++----------
+ .../test/cases/ui/AllActionsAccessControlTest.java |  14 +-
+ .../cases/ui/InstructorHomePageActionTest.java     |  19 +-
+ ...InstructorCourseJoinConfirmationPageUiTest.java |   1 -
+ .../ui/browsertests/InstructorHomePageUiTest.java  |  35 +-
+ .../ui/browsertests/StudentHomePageUiTest.java     |  14 +
+ src/test/resources/pages/InstructorHomeHTML.html   | 516 ++++++++++-----------
+ .../pages/InstructorHomeHTMLPersistenceCheck.html  | 323 +++++++++++++
+ .../pages/InstructorHomeHTMLResponseRateFail.html  | 512 ++++++++++----------
+ .../pages/InstructorHomeHTMLSortByDate.html        | 516 ++++++++++-----------
+ .../pages/InstructorHomeHTMLSortById.html          | 516 ++++++++++-----------
+ .../pages/InstructorHomeHTMLSortByName.html        | 516 ++++++++++-----------
+ .../pages/InstructorHomeHTMLWithHelperView.html    | 516 ++++++++++-----------
+ ...nstructorHomeNewInstructorWithSampleCourse.html |  46 +-
+ .../pages/StudentHomeHTMLPersistenceCheck.html     |  65 +++
+ .../pages/instructorCommentsPageEditFrc.html       |   4 +-
+ .../instructorHomeCourseArchiveSuccessful.html     | 320 ++++++-------
+ .../pages/instructorHomeEvalDeleteSuccessful.html  | 492 ++++++++++----------
+ .../pages/instructorHomeHTMLResponseRatePass.html  | 512 ++++++++++----------
+ .../instructorStudentListPageWithPicture.html      |   2 +-
+ .../pages/newlyJoinedInstructorHomePage.html       |  46 +-
+ 26 files changed, 2999 insertions(+), 2519 deletions(-)
+ create mode 100644 src/test/resources/pages/InstructorHomeHTMLPersistenceCheck.html
+ create mode 100644 src/test/resources/pages/StudentHomeHTMLPersistenceCheck.html
