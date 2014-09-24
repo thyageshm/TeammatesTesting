@@ -14,4 +14,4 @@ enhance:
   [enhance] DataNucleus Enhancer completed with success for 12 classes. Timings : input=156 ms, enhance=140 ms, total=296 ms. Consult the log for full details
 
 BUILD SUCCESSFUL
-Total time: 20 seconds
+Total time: 13 seconds

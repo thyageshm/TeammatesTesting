@@ -1,10 +1,8 @@
 From https://github.com/TEAMMATES/repo
-   71d3ff6..233eac9  Issue2562  -> origin/Issue2562
- * [new branch]      Issue2566  -> origin/Issue2566
-   088e629..410feab  release    -> origin/release
- * [new tag]         V5.18      -> V5.18
+   233eac9..8a91150  Issue2562  -> origin/Issue2562
 fatal: A branch named 'origin-Issue2562' already exists.
-Updating 71d3ff6..233eac9
+Updating 233eac9..8a91150
 Fast-forward
- .../teammates/logic/core/FeedbackSessionsLogic.java  | 20 ++++++++++++++------
- 1 file changed, 14 insertions(+), 6 deletions(-)
+ .../java/teammates/logic/core/FeedbackSessionsLogic.java     | 12 ++++++------
+ .../InstructorFeedbackResponseCommentsLoadAction.java        |  2 +-
+ 2 files changed, 7 insertions(+), 7 deletions(-)
