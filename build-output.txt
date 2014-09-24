@@ -11,7 +11,7 @@ compile:
 
 enhance:
   [enhance] DataNucleus Enhancer (version 1.1.4) : Enhancement of classes
-  [enhance] DataNucleus Enhancer completed with success for 12 classes. Timings : input=172 ms, enhance=156 ms, total=328 ms. Consult the log for full details
+  [enhance] DataNucleus Enhancer completed with success for 12 classes. Timings : input=156 ms, enhance=140 ms, total=296 ms. Consult the log for full details
 
 BUILD SUCCESSFUL
-Total time: 21 seconds
+Total time: 20 seconds
