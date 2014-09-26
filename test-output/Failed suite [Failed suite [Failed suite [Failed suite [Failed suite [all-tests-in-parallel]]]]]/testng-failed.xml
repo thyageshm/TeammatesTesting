@@ -6,25 +6,15 @@
   </listeners>
   <test name="rare-tests(failed)(failed)(failed)(failed)(failed)(failed)" parallel="classes">
     <classes>
-      <class name="teammates.test.automated.FeedbackSessionClosingReminderTest">
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
         <methods>
           <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
           <include name="testTearDown"/>
         </methods>
-      </class> <!-- teammates.test.automated.FeedbackSessionClosingReminderTest -->
-      <class name="teammates.test.cases.ui.browsertests.InstructorHomePageUiTest">
-        <methods>
-          <include name="classTearDown"/>
-          <include name="classSetup"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorHomePageUiTest -->
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
       <class name="teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest">
         <methods>
           <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
           <include name="testSetUp"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest -->
