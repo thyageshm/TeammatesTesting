@@ -1,8 +1,13 @@
 From https://github.com/TEAMMATES/repo
-   233eac9..8a91150  Issue2562  -> origin/Issue2562
+   410feab..1df82ae  master     -> origin/master
+   8a91150..a33cef7  Issue2562  -> origin/Issue2562
+ * [new branch]      Issue2568  -> origin/Issue2568
+ * [new branch]      Issue2570  -> origin/Issue2570
 fatal: A branch named 'origin-Issue2562' already exists.
-Updating 233eac9..8a91150
+Updating 8a91150..a33cef7
 Fast-forward
- .../java/teammates/logic/core/FeedbackSessionsLogic.java     | 12 ++++++------
- .../InstructorFeedbackResponseCommentsLoadAction.java        |  2 +-
- 2 files changed, 7 insertions(+), 7 deletions(-)
+ .../java/teammates/test/pageobjects/AppPage.java   |   1 -
+ ...torFeedbackResultsAjaxByQuestionHelperView.html | 113 ++++++++-
+ ...ctorFeedbackResultsPageOpenWithHelperView1.html | 259 ++++++++++++++++++++-
+ ...ctorFeedbackResultsPageOpenWithHelperView2.html |  45 ++++
+ 4 files changed, 406 insertions(+), 12 deletions(-)
