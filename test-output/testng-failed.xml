@@ -6,6 +6,18 @@
   </listeners>
   <test name="rare-tests(failed)(failed)(failed)(failed)(failed)(failed)" parallel="classes">
     <classes>
+      <class name="teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest -->
+      <class name="teammates.test.cases.storage.SubmissionsDbTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.storage.SubmissionsDbTest -->
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
         <methods>
           <include name="classSetUp"/>
@@ -13,18 +25,6 @@
           <include name="closeClass"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
-      <class name="teammates.test.cases.ui.InstructorCourseInstructorDeleteActionTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.InstructorCourseInstructorDeleteActionTest -->
-      <class name="teammates.test.cases.logic.SubmissionTaskQueueLogicTest">
-        <methods>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.cases.logic.SubmissionTaskQueueLogicTest -->
     </classes>
   </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]] -->

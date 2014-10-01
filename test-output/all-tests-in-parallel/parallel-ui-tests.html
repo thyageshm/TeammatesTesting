@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallel-ui-tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>44/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>36/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 01 12:14:29 UTC 2014</td>
+<td>Started on:</td><td>Wed Oct 01 12:51:12 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>894 seconds (894495 ms)</td>
+<tr><td>Total time:</td><td>11609 seconds (11609417 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -1120,8 +1120,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31246623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace31246623'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2988146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2988146'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -2176,8 +2176,89 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>33</td>
-<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@10ce311</td></tr>
+<td>31</td>
+<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@10fa7ff</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;span&quot;}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 0bbad957-7365-4d2b-b980-7d9d896b90bb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:260)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:330)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.verifyCommentFormErrorMessage(InstructorFeedbackResultsPage.java:234)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testFeedbackResponseCommentActions(InstructorFeedbackResultsPageUiTest.java:353)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:56)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;span&quot;}
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findChildElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8917)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27144524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27144524'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;span&quot;}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 0bbad957-7365-4d2b-b980-7d9d896b90bb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.GeneratedConstructorAccessor134.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:260)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:330)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.verifyCommentFormErrorMessage(InstructorFeedbackResultsPage.java:234)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testFeedbackResponseCommentActions(InstructorFeedbackResultsPageUiTest.java:353)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;span&quot;}
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findChildElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8917)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous9192884046537152201webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+</pre></div></td>
+<td>136</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@eb691</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminHomePageUiTest</td>
 <td><div><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
@@ -2509,180 +2590,6 @@ function toggleAllBoxes() {
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-6&quot;&gt;
                   &lt;strong&gt;
-                     [AHPUiT.instr1.gma-demo] :
-                                        Sample Course 101
-                  &lt;/strong&gt;
-               &lt;/div&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;span class=&quot;pull-right&quot;&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Enroll
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=AHPUiT.instr1.gma-demo&quot; title=&quot;&quot;&gt;
-                        Add Session
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=AHPUiT.instr1.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
-                        Archive
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
-                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        &lt;span class=&quot;badge&quot;&gt;
-                           0
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
-                        &lt;/span&gt;
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=AHPUiT.instr1.gma-demo&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                  &lt;/span&gt;
-               &lt;/div&gt;
-            &lt;/div&gt;
-         &lt;/div&gt;
-         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
-            &lt;thead&gt;
-               &lt;tr&gt;
-                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
-                     Session Name
-                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     Status
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Response Rate
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th class=&quot;no-print&quot;&gt;
-                     Action(s)
-                  &lt;/th&gt;
-               &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-               &lt;tr id=&quot;session0&quot;&gt;
-                  &lt;td&gt;
-                     Second team feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 9
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session1&quot;&gt;
-                  &lt;td&gt;
-                     First team feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Published
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session2&quot;&gt;
-                  &lt;td&gt;
-                     Session with different question types
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Published
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-            &lt;/tbody&gt;
-         &lt;/table&gt;
-      &lt;/div&gt;
-      &lt;br/&gt;
-            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
-         &lt;div class=&quot;panel-heading&quot;&gt;
-            &lt;div class=&quot;row&quot;&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;strong&gt;
                      [idOfTypicalCourse1.access] :
                                         Typical Course 1 with 2 Evals
                   &lt;/strong&gt;
@@ -2745,7 +2652,7 @@ function toggleAllBoxes() {
                &lt;/tr&gt;
             &lt;/thead&gt;
             &lt;tbody&gt;
-               &lt;tr id=&quot;session3&quot;&gt;
+               &lt;tr id=&quot;session0&quot;&gt;
                   &lt;td&gt;
                      evaluation1 In Course1
                   &lt;/td&gt;
@@ -2778,7 +2685,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session4&quot;&gt;
+               &lt;tr id=&quot;session1&quot;&gt;
                   &lt;td&gt;
                      evaluation2 In Course1
                   &lt;/td&gt;
@@ -2811,7 +2718,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session5&quot;&gt;
+               &lt;tr id=&quot;session2&quot;&gt;
                   &lt;td&gt;
                      Grace Period Session
                   &lt;/td&gt;
@@ -2844,7 +2751,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session6&quot;&gt;
+               &lt;tr id=&quot;session3&quot;&gt;
                   &lt;td&gt;
                      Second feedback session
                   &lt;/td&gt;
@@ -2877,7 +2784,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session9&quot;&gt;
+               &lt;tr id=&quot;session6&quot;&gt;
                   &lt;td&gt;
                      non visible session
                   &lt;/td&gt;
@@ -2910,7 +2817,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session10&quot;&gt;
+               &lt;tr id=&quot;session7&quot;&gt;
                   &lt;td&gt;
                      First feedback session
                   &lt;/td&gt;
@@ -2943,7 +2850,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session7&quot;&gt;
+               &lt;tr id=&quot;session4&quot;&gt;
                   &lt;td&gt;
                      Closed Session
                   &lt;/td&gt;
@@ -2978,7 +2885,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session8&quot;&gt;
+               &lt;tr id=&quot;session5&quot;&gt;
                   &lt;td&gt;
                      Empty session
                   &lt;/td&gt;
@@ -3017,6 +2924,180 @@ function toggleAllBoxes() {
          &lt;/table&gt;
       &lt;/div&gt;
       &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;strong&gt;
+                     [AHPUiT.instr1.gma-demo] :
+                                        Sample Course 101
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;span class=&quot;pull-right&quot;&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Enroll
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=AHPUiT.instr1.gma-demo&quot; title=&quot;&quot;&gt;
+                        Add Session
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=AHPUiT.instr1.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
+                        Archive
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        &lt;span class=&quot;badge&quot;&gt;
+                           0
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=AHPUiT.instr1.gma-demo&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
+                     Session Name
+                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Status
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Response Rate
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th class=&quot;no-print&quot;&gt;
+                     Action(s)
+                  &lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               &lt;tr id=&quot;session8&quot;&gt;
+                  &lt;td&gt;
+                     Second team feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     0 / 9
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session9&quot;&gt;
+                  &lt;td&gt;
+                     First team feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session10&quot;&gt;
+                  &lt;td&gt;
+                     Session with different question types
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
          &lt;/div&gt;
 
 &lt;/actual]&gt;&gt;
@@ -3030,8 +3111,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11051109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11051109'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31269450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31269450'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -3360,180 +3441,6 @@ function toggleAllBoxes() {
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-6&quot;&gt;
                   &lt;strong&gt;
-                     [AHPUiT.instr1.gma-demo] :
-                                        Sample Course 101
-                  &lt;/strong&gt;
-               &lt;/div&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;span class=&quot;pull-right&quot;&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Enroll
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=AHPUiT.instr1.gma-demo&quot; title=&quot;&quot;&gt;
-                        Add Session
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=AHPUiT.instr1.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
-                        Archive
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
-                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        &lt;span class=&quot;badge&quot;&gt;
-                           0
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
-                        &lt;/span&gt;
-                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
-                        &lt;/span&gt;
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=AHPUiT.instr1.gma-demo&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                  &lt;/span&gt;
-               &lt;/div&gt;
-            &lt;/div&gt;
-         &lt;/div&gt;
-         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
-            &lt;thead&gt;
-               &lt;tr&gt;
-                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
-                     Session Name
-                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     Status
-                  &lt;/th&gt;
-                  &lt;th&gt;
-                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Response Rate
-                     &lt;/span&gt;
-                  &lt;/th&gt;
-                  &lt;th class=&quot;no-print&quot;&gt;
-                     Action(s)
-                  &lt;/th&gt;
-               &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-               &lt;tr id=&quot;session0&quot;&gt;
-                  &lt;td&gt;
-                     Second team feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Open
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     0 / 9
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session1&quot;&gt;
-                  &lt;td&gt;
-                     First team feedback session
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Published
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-               &lt;tr id=&quot;session2&quot;&gt;
-                  &lt;td&gt;
-                     Session with different question types
-                  &lt;/td&gt;
-                  &lt;td&gt;
-                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
-                        Published
-                     &lt;/span&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;session-response-for-test&quot;&gt;
-                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
-                        Show
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-                  &lt;td class=&quot;no-print&quot;&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        View Results
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Edit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
-                        Delete
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
-                        Submit
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
-                        Remind
-                     &lt;/a&gt;
-                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
-                        Unpublish
-                     &lt;/a&gt;
-                  &lt;/td&gt;
-               &lt;/tr&gt;
-            &lt;/tbody&gt;
-         &lt;/table&gt;
-      &lt;/div&gt;
-      &lt;br/&gt;
-            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
-         &lt;div class=&quot;panel-heading&quot;&gt;
-            &lt;div class=&quot;row&quot;&gt;
-               &lt;div class=&quot;col-md-6&quot;&gt;
-                  &lt;strong&gt;
                      [idOfTypicalCourse1.access] :
                                         Typical Course 1 with 2 Evals
                   &lt;/strong&gt;
@@ -3596,7 +3503,7 @@ function toggleAllBoxes() {
                &lt;/tr&gt;
             &lt;/thead&gt;
             &lt;tbody&gt;
-               &lt;tr id=&quot;session3&quot;&gt;
+               &lt;tr id=&quot;session0&quot;&gt;
                   &lt;td&gt;
                      evaluation1 In Course1
                   &lt;/td&gt;
@@ -3629,7 +3536,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session4&quot;&gt;
+               &lt;tr id=&quot;session1&quot;&gt;
                   &lt;td&gt;
                      evaluation2 In Course1
                   &lt;/td&gt;
@@ -3662,7 +3569,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session5&quot;&gt;
+               &lt;tr id=&quot;session2&quot;&gt;
                   &lt;td&gt;
                      Grace Period Session
                   &lt;/td&gt;
@@ -3695,7 +3602,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session6&quot;&gt;
+               &lt;tr id=&quot;session3&quot;&gt;
                   &lt;td&gt;
                      Second feedback session
                   &lt;/td&gt;
@@ -3728,7 +3635,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session9&quot;&gt;
+               &lt;tr id=&quot;session6&quot;&gt;
                   &lt;td&gt;
                      non visible session
                   &lt;/td&gt;
@@ -3761,7 +3668,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session10&quot;&gt;
+               &lt;tr id=&quot;session7&quot;&gt;
                   &lt;td&gt;
                      First feedback session
                   &lt;/td&gt;
@@ -3794,7 +3701,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session7&quot;&gt;
+               &lt;tr id=&quot;session4&quot;&gt;
                   &lt;td&gt;
                      Closed Session
                   &lt;/td&gt;
@@ -3829,7 +3736,7 @@ function toggleAllBoxes() {
                      &lt;/a&gt;
                   &lt;/td&gt;
                &lt;/tr&gt;
-               &lt;tr id=&quot;session8&quot;&gt;
+               &lt;tr id=&quot;session5&quot;&gt;
                   &lt;td&gt;
                      Empty session
                   &lt;/td&gt;
@@ -3868,6 +3775,180 @@ function toggleAllBoxes() {
          &lt;/table&gt;
       &lt;/div&gt;
       &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;strong&gt;
+                     [AHPUiT.instr1.gma-demo] :
+                                        Sample Course 101
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;span class=&quot;pull-right&quot;&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Enroll
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=AHPUiT.instr1.gma-demo&quot; title=&quot;&quot;&gt;
+                        Add Session
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=AHPUiT.instr1.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
+                        Archive
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=AHPUiT.instr1.gma-demo&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        &lt;span class=&quot;badge&quot;&gt;
+                           0
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=AHPUiT.instr1.gma-demo&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;)&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
+                     Session Name
+                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Status
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Response Rate
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th class=&quot;no-print&quot;&gt;
+                     Action(s)
+                  &lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               &lt;tr id=&quot;session8&quot;&gt;
+                  &lt;td&gt;
+                     Second team feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     0 / 9
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Second team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session9&quot;&gt;
+                  &lt;td&gt;
+                     First team feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;First team feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session10&quot;&gt;
+                  &lt;td&gt;
+                     Session with different question types
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Session with different question types&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
          &lt;/div&gt;
 
 &lt;/actual]&gt;&gt;
@@ -3892,8 +3973,612 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>61</td>
-<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@d73384</td></tr>
+<td>56</td>
+<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@19a9406</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages()'><b>testPubliclyAccessiblePages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.navigateTo(AppPage.java:197)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages(AllAccessControlUiTests.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:223)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:682)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:322)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:301)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	... 16 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32833548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32833548'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.navigateTo(AppPage.java:197)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages(AllAccessControlUiTests.java:312)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:223)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:682)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:322)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:301)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	... 16 more
+</pre></div></td>
+<td>10808</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages()'><b>testStudentAccessToAdminPages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 3.54 seconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages(AllAccessControlUiTests.java:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15154961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15154961'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 3.54 seconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages(AllAccessControlUiTests.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+</pre></div></td>
+<td>3</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult()'><b>testStudentEvalResult</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 343 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult(AllAccessControlUiTests.java:241)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18747153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18747153'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 343 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult(AllAccessControlUiTests.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+</pre></div></td>
+<td>33</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission()'><b>testStudentEvalSubmission</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 452 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission(AllAccessControlUiTests.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12816245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12816245'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 452 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission(AllAccessControlUiTests.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+</pre></div></td>
+<td>10</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome()'><b>testStudentHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 218 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome(AllAccessControlUiTests.java:145)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6730754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6730754'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 218 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome(AllAccessControlUiTests.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+</pre></div></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn()'><b>testUserNotLoggedIn</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 297 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn(AllAccessControlUiTests.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6722690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6722690'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 297 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn(AllAccessControlUiTests.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+</pre></div></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered()'><b>testUserNotRegistered</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 187 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered(AllAccessControlUiTests.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16629200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16629200'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 187 milliseconds
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Session ID: 5cddb770-f599-4862-ad59-bbba69e30392
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
+	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered(AllAccessControlUiTests.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous4644575895831195147webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+</pre></div></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -3905,83 +4590,78 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.StudentProfilePageUiTest</td>
 <td></td>
-<td>58</td>
-<td>teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@c137df</td></tr>
+<td>53</td>
+<td>teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@eed1b8</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest</td>
 <td></td>
-<td>89</td>
-<td>teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@14f895c</td></tr>
+<td>73</td>
+<td>teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@12bafe4</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest</td>
 <td></td>
-<td>103</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest@1bb4fce</td></tr>
+<td>115</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest@14e96c</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest</td>
 <td></td>
-<td>263</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@1ead007</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</td>
-<td></td>
-<td>600</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@c30f48</td></tr>
+<td>227</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@ff9738</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</td>
 <td></td>
-<td>62</td>
-<td>teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest@fee56</td></tr>
+<td>48</td>
+<td>teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest@1e86299</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</td>
+<td></td>
+<td>743</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@128bbfa</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest</td>
 <td></td>
-<td>776</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@289d8f</td></tr>
+<td>740</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@6d2114</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest.runTestsInOrder()'><b>runTestsInOrder</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest</td>
 <td></td>
-<td>36</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest@1d44c3</td></tr>
+<td>41</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest@23a27e</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest.testAdjustmentOfSubsmission()'><b>testAdjustmentOfSubsmission</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest</td>
 <td></td>
-<td>29</td>
-<td>teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest@13b4526</td></tr>
+<td>30</td>
+<td>teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest@10aaf84</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest</td>
 <td></td>
-<td>39</td>
+<td>35</td>
 <td>teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest@ceb790</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest</td>
 <td></td>
-<td>204</td>
+<td>173</td>
 <td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@1f115ce</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest</td>
 <td></td>
-<td>43</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest@1e09add</td></tr>
+<td>39</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest@119e736</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest</td>
 <td></td>
-<td>7</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest@1d135b6</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
-<td></td>
-<td>388</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@b535fe</td></tr>
+<td>10</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest@c2ffbc</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest</td>
 <td></td>
-<td>39</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest@774999</td></tr>
+<td>36</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest@16c1ad7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest</td>
 <td></td>
-<td>31</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest@38e759</td></tr>
+<td>21</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest@89140e</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest</td>
 <td></td>
@@ -3991,137 +4671,102 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest</td>
 <td></td>
 <td>4</td>
-<td>teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest@746573</td></tr>
+<td>teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest@e8b38b</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest</td>
 <td></td>
-<td>87</td>
-<td>teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@30f455</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</td>
-<td></td>
-<td>149</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@180f3a4</td></tr>
+<td>74</td>
+<td>teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@1f904db</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest</td>
 <td></td>
-<td>20</td>
+<td>22</td>
 <td>teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest@405adb</td></tr>
 <tr>
-<td title='teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest</td>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</td>
 <td></td>
-<td>105</td>
-<td>teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest@127e404</td></tr>
+<td>152</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@561b02</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</td>
 <td></td>
-<td>30</td>
-<td>teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@16525f7</td></tr>
+<td>41</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@1bf07d6</td></tr>
 <tr>
-<td title='teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest</td>
+<td title='teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest</td>
 <td></td>
-<td>8</td>
-<td>teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest@1dcae3b</td></tr>
+<td>109</td>
+<td>teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest@1eaee49</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest</td>
 <td></td>
-<td>53</td>
-<td>teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@19f9684</td></tr>
+<td>64</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@9b9b81</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest</td>
+<td></td>
+<td>11</td>
+<td>teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest@183c649</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</td>
 <td></td>
-<td>164</td>
-<td>teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1339522</td></tr>
+<td>166</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@2a865a</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testClosedEval()'><b>testClosedEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>10</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1724060</td></tr>
+<td>14</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@7e68ea</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testEvaluationClosingReminders()'><b>testEvaluationClosingReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
-<td>1</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@ff9738</td></tr>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@2103ff</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testEvaluationOpeningReminders()'><b>testEvaluationOpeningReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
-<td>1</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@ff9738</td></tr>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@2103ff</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSessionOpeningReminders()'><b>testFeedbackSessionOpeningReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
-<td>3</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@ff9738</td></tr>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@2103ff</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSessionPublishedReminders()'><b>testFeedbackSessionPublishedReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
-<td>0</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@ff9738</td></tr>
+<td>1</td>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@2103ff</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSesssionClosingReminders()'><b>testFeedbackSesssionClosingReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@ff9738</td></tr>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@2103ff</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest.testInstructorCourseEnrollPage()'><b>testInstructorCourseEnrollPage</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest</td>
 <td></td>
-<td>86</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest@fba110</td></tr>
+<td>78</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest@1073812</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome()'><b>testInstructorHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
 <td></td>
-<td>15</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
+<td>18</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1fe358a</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testOpenEval()'><b>testOpenEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>50</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1724060</td></tr>
+<td>46</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@7e68ea</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testP2PDisabledEval()'><b>testP2PDisabledEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>5</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1724060</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages()'><b>testPubliclyAccessiblePages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>9</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
+<td>6</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@7e68ea</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testPublishedEval()'><b>testPublishedEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>19</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1724060</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages()'><b>testStudentAccessToAdminPages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>9</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult()'><b>testStudentEvalResult</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>19</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission()'><b>testStudentEvalSubmission</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>21</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome()'><b>testStudentHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>5</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn()'><b>testUserNotLoggedIn</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>1</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered()'><b>testUserNotRegistered</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td></td>
-<td>11</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@52b5f7</td></tr>
+<td>13</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@7e68ea</td></tr>
 </table><p>
 </body>
 </html>
