@@ -1,0 +1,13 @@
+From https://github.com/TEAMMATES/repo
+   1df82ae..0688a59  master     -> origin/master
+ * [new branch]      Issue2510  -> origin/Issue2510
+ * [new branch]      Issue2565  -> origin/Issue2565
+   00cff12..4765639  Issue2568  -> origin/Issue2568
+ * [new branch]      Issue2575  -> origin/Issue2575
+   410feab..6d72b19  release    -> origin/release
+ * [new tag]         V5.19      -> V5.19
+D	runtests.bat
+M	src/test/resources/pages/godmode.html
+Branch origin-Issue2565 set up to track remote branch Issue2565 from origin.
+Switched to a new branch 'origin-Issue2565'
+Already up-to-date.
