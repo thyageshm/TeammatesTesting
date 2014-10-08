@@ -1,0 +1,22 @@
+From https://github.com/TEAMMATES/repo
+   8099178..235b4fb  master     -> origin/master
+   99dbeff..f71ba64  Issue2201  -> origin/Issue2201
+ * [new branch]      Issue2368  -> origin/Issue2368
+ * [new branch]      Issue2541  -> origin/Issue2541
+ * [new branch]      Issue2569  -> origin/Issue2569
+ * [new branch]      Issue2586  -> origin/Issue2586
+ * [new branch]      Issue2597  -> origin/Issue2597
+ * [new branch]      Issue2598  -> origin/Issue2598
+ * [new branch]      Issue2599  -> origin/Issue2599
+ * [new branch]      Issue2617  -> origin/Issue2617
+ * [new branch]      Issue2623  -> origin/Issue2623
+ * [new branch]      Issue2627  -> origin/Issue2627
+   6d72b19..a40be3f  release    -> origin/release
+ * [new tag]         V5.22      -> V5.22
+ * [new tag]         V5.20      -> V5.20
+ * [new tag]         V5.21      -> V5.21
+D	runtests.bat
+M	src/test/resources/pages/godmode.html
+Branch origin-Issue2368 set up to track remote branch Issue2368 from origin.
+Switched to a new branch 'origin-Issue2368'
+Already up-to-date.

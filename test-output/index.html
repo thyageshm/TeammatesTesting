@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+              <span class="suite-name border-failed">Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>D:\Teammates\test-output\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="hide-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (hide)</a> <!-- hide-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+                      <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (show)</a> <!-- show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+                    </span>
+                    <div class="method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest" hash-for-method="allTests">allTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest" hash-for-method="allTests">allTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.GodModeTest" hash-for-method="testGodMode">testGodMode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAll">
+                  </a> <!-- testAll -->
+                  <span class="method-name">testAll</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: [[[[FirefoxDriver: firefox on XP (25a2b971-b0bf-413a-9bf2-9db1ba338015)] -&gt; id: showResponseCommentAddForm-0-1-1]] -&gt; tag name: textarea]
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.addFeedbackResponseComment(InstructorFeedbackResultsPage.java:168)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testFeedbackResponseCommentActions(InstructorFeedbackResultsPageUiTest.java:359)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:56)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allTests">
+                  </a> <!-- allTests -->
+                  <span class="method-name">allTests</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=searchUI.idOfInstructor1OfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;comment&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;searchUI.idOfInstructor1OfCourse1&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Comments for responses
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;row &quot;&gt;
+               &lt;div class=&quot;col-md-2&quot;&gt;
+                  &lt;strong&gt;
+                     Session: searchUI.First feedback session (searchUI.idOfTypicalCourse1)
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-10&quot;&gt;
+                  &lt;div class=&quot;panel panel-info&quot;&gt;
+                     &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;b&gt;
+                           Question 1
+                        &lt;/b&gt;
+                        :
+                                What is the best selling point of your product?
+                     &lt;/div&gt;
+                     &lt;table class=&quot;table&quot;&gt;
+                        &lt;tbody&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;b&gt;
+                                    From:
+                                 &lt;/b&gt;
+                                 student1 In Course1 (Team 1.1)
+                                 &lt;b&gt;
+                                    To:
+                                 &lt;/b&gt;
+                                 student1 In Course1 (Team 1.1)
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;strong&gt;
+                                    Response:
+                                 &lt;/strong&gt;
+                                 Student 1 self feedback.
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr class=&quot;active&quot;&gt;
+                              &lt;td&gt;
+                                 Comment(s):
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;ul class=&quot;list-group comments&quot; id=&quot;responseCommentTable-1-1-1&quot; style=&quot;&quot;&gt;
+                                    &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;responseCommentRow-1-1-1-1&quot;&gt;
+                                       &lt;div id=&quot;commentBar-1-1-1-1&quot;&gt;
+                                          &lt;span class=&quot;text-muted&quot;&gt;
+                                             From:
+                                             &lt;b&gt;
+                                                Instructor Instructor1 Course1
+                                             &lt;/b&gt;
+                                             on 01 Mar 2016, 23:59
+                                          &lt;/span&gt;
+                                          &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=searchUI.idOfInstructor1OfCourse1&amp;courseid=searchUI.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                                             &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                                             &lt;/span&gt;
+                                          &lt;/a&gt;
+                                       &lt;/div&gt;
+                                       &lt;div id=&quot;plainCommentText-1-1-1-1&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                                          Instructor 1 comment to student 1 self feedback
+                                       &lt;/div&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                     &lt;/table&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;panel panel-info&quot;&gt;
+                     &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;b&gt;
+                           Question 2
+                        &lt;/b&gt;
+                        :
+                                Rate 1 other student&apos;s product
+                     &lt;/div&gt;
+                     &lt;table class=&quot;table&quot;&gt;
+                        &lt;tbody&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;b&gt;
+                                    From:
+                                 &lt;/b&gt;
+                                 student3 In Course1 (Team 1.2)
+                                 &lt;b&gt;
+                                    To:
+                                 &lt;/b&gt;
+                                 searchUI.student2InCourse1@gmail.tmt
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;strong&gt;
+                                    Response:
+                                 &lt;/strong&gt;
+                                 Response from student 3 &quot;to&quot; student 2.
+Multiline test.
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr class=&quot;active&quot;&gt;
+                              &lt;td&gt;
+                                 Comment(s):
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;ul class=&quot;list-group comments&quot; id=&quot;responseCommentTable-1-2-1&quot; style=&quot;&quot;&gt;
+                                    &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;responseCommentRow-1-2-1-1&quot;&gt;
+                                       &lt;div id=&quot;commentBar-1-2-1-1&quot;&gt;
+                                          &lt;span class=&quot;text-muted&quot;&gt;
+                                             From:
+                                             &lt;b&gt;
+                                                Instructor Instructor1 Course1
+                                             &lt;/b&gt;
+                                             on 01 Feb 2016, 23:59
+                                          &lt;/span&gt;
+                                          &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=searchUI.idOfInstructor1OfCourse1&amp;courseid=searchUI.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                                             &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                                             &lt;/span&gt;
+                                          &lt;/a&gt;
+                                       &lt;/div&gt;
+                                       &lt;div id=&quot;plainCommentText-1-2-1-1&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                                          Instructor 1 comment to feedback Question 2
+                                       &lt;/div&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;responseCommentRow-1-2-1-2&quot;&gt;
+                                       &lt;div id=&quot;commentBar-1-2-1-2&quot;&gt;
+                                          &lt;span class=&quot;text-muted&quot;&gt;
+                                             From:
+                                             &lt;b&gt;
+                                                Anonymous
+                                             &lt;/b&gt;
+                                             on 02 Feb 2016, 23:59
+                                          &lt;/span&gt;
+                                          &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=searchUI.idOfInstructor1OfCourse1&amp;courseid=searchUI.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                                             &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                                             &lt;/span&gt;
+                                          &lt;/a&gt;
+                                       &lt;/div&gt;
+                                       &lt;div id=&quot;plainCommentText-1-2-1-2&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                                          Anonymous comment to feedback Question 2
+                                       &lt;/div&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;responseCommentRow-1-2-1-3&quot;&gt;
+                                       &lt;div id=&quot;commentBar-1-2-1-3&quot;&gt;
+                                          &lt;span class=&quot;text-muted&quot;&gt;
+                                             From:
+                                             &lt;b&gt;
+                                                Instructor Instructor2 Course1
+                                             &lt;/b&gt;
+                                             on 03 Feb 2016, 23:59
+                                          &lt;/span&gt;
+                                          &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=searchUI.idOfInstructor1OfCourse1&amp;courseid=searchUI.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                                             &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                                             &lt;/span&gt;
+                                          &lt;/a&gt;
+                                       &lt;/div&gt;
+                                       &lt;div id=&quot;plainCommentText-1-2-1-3&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                                          Instructor 2 comment to feedback Question 2 (Student 3 see this as anonymous comment)
+                                       &lt;/div&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                     &lt;/table&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=searchUI.idOfInstructor1OfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;comment&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;searchUI.idOfInstructor1OfCourse1&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+         No results found.
+      &lt;/div&gt;
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+      &lt;/script&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Comments for responses
+            &lt;/strong&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:822)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:864)
+	at teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.testSearch(InstructorSearchPageUiTest.java:84)
+	at teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.allTests(InstructorSearchPageUiTest.java:47)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allTests">
+                  </a> <!-- allTests -->
+                  <span class="method-name">allTests</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=comments.idOfInstructor1OfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;comments&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;comments.idOfInstructor1OfCourse1&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Comments for students
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;panel panel-info student-record-comments&quot;&gt;
+               &lt;div class=&quot;panel-heading&quot;&gt;
+                  From
+                  &lt;b&gt;
+                     Instructor Instructor1 Course1 (comments.idOfTypicalCourse1)
+                  &lt;/b&gt;
+               &lt;/div&gt;
+               &lt;ul class=&quot;list-group comments&quot;&gt;
+                  &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;form_commentedit-1&quot;&gt;
+                     &lt;div id=&quot;commentBar-1&quot;&gt;
+                        &lt;span class=&quot;text-muted&quot;&gt;
+                           To
+                           &lt;b&gt;
+                              student1 In Course1 (Team 1.1, comments.student1InCourse1@gmail.tmt)
+                           &lt;/b&gt;
+                           on
+                                        06 May 2012, 08:55
+                        &lt;/span&gt;
+                        &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&amp;courseid=comments.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                           &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/a&gt;
+                     &lt;/div&gt;
+                     &lt;div id=&quot;plainCommentText1&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                        Other students in this course can see this comment without giver and recipient&apos;s name
+                     &lt;/div&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;form_commentedit-2&quot;&gt;
+                     &lt;div id=&quot;commentBar-2&quot;&gt;
+                        &lt;span class=&quot;text-muted&quot;&gt;
+                           To
+                           &lt;b&gt;
+                              Team 1.1
+                           &lt;/b&gt;
+                           on
+                                        07 May 2012, 08:54
+                        &lt;/span&gt;
+                        &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&amp;courseid=comments.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                           &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/a&gt;
+                     &lt;/div&gt;
+                     &lt;div id=&quot;plainCommentText2&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                        team can see this comment without giver&apos;s name
+                     &lt;/div&gt;
+                  &lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Comments for responses
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;row &quot;&gt;
+               &lt;div class=&quot;col-md-2&quot;&gt;
+                  &lt;strong&gt;
+                     Session: comments.First feedback session (comments.idOfTypicalCourse1)
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-10&quot;&gt;
+                  &lt;div class=&quot;panel panel-info&quot;&gt;
+                     &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;b&gt;
+                           Question 1
+                        &lt;/b&gt;
+                        :
+                                What is the best selling point of your product?
+                     &lt;/div&gt;
+                     &lt;table class=&quot;table&quot;&gt;
+                        &lt;tbody&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;b&gt;
+                                    From:
+                                 &lt;/b&gt;
+                                 student1 In Course1 (Team 1.1)
+                                 &lt;b&gt;
+                                    To:
+                                 &lt;/b&gt;
+                                 student1 In Course1 (Team 1.1)
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;strong&gt;
+                                    Response:
+                                 &lt;/strong&gt;
+                                 Student 1 self feedback.
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr class=&quot;active&quot;&gt;
+                              &lt;td&gt;
+                                 Comment(s):
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;ul class=&quot;list-group comments&quot; id=&quot;responseCommentTable-1-1-1&quot; style=&quot;&quot;&gt;
+                                    &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;responseCommentRow-1-1-1-1&quot;&gt;
+                                       &lt;div id=&quot;commentBar-1-1-1-1&quot;&gt;
+                                          &lt;span class=&quot;text-muted&quot;&gt;
+                                             From:
+                                             &lt;b&gt;
+                                                Instructor Instructor1 Course1
+                                             &lt;/b&gt;
+                                             on 01 Mar 2016, 23:59
+                                          &lt;/span&gt;
+                                          &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&amp;courseid=comments.idOfTypicalCourse1#{*}&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                                             &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                                             &lt;/span&gt;
+                                          &lt;/a&gt;
+                                       &lt;/div&gt;
+                                       &lt;div id=&quot;plainCommentText-1-1-1-1&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                                          Instructor 1 comment to student 1 self feedback
+                                       &lt;/div&gt;
+                                    &lt;/li&gt;
+                                 &lt;/ul&gt;
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                     &lt;/table&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div&gt;
+         &lt;h1&gt;
+            Search
+         &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div&gt;
+         &lt;form action=&quot;/page/instructorSearchPage?user=comments.idOfInstructor1OfCourse1&quot; method=&quot;get&quot; name=&quot;search_form&quot;&gt;
+            &lt;div class=&quot;well well-plain&quot;&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;
+                     &lt;input class=&quot;form-control&quot; id=&quot;searchBox&quot; name=&quot;searchkey&quot; placeholder=&quot;Your search keyword&quot; title=&quot;Search for comment&quot; type=&quot;text&quot; value=&quot;comments&quot;/&gt;
+                                          &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-primary&quot; id=&quot;buttonSearch&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+                           Search
+                        &lt;/button&gt;
+                     &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;comments.idOfInstructor1OfCourse1&quot;/&gt;
+                                 &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                     &lt;li&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-info-sign&quot; data-original-title=&quot;Tick the checkboxes to limit your search to certain categories&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;comments-for-student-check&quot; name=&quot;searchcommentforstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-student-check&quot;&gt;
+                           Comments for students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input checked=&quot;&quot; id=&quot;comments-for-responses-check&quot; name=&quot;searchcommentforresponses&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;comments-for-responses-check&quot;&gt;
+                           Comments for responses
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                        &lt;input id=&quot;students-check&quot; name=&quot;searchstudents&quot; type=&quot;checkbox&quot; value=&quot;true&quot;/&gt;
+                                                &lt;label for=&quot;students-check&quot;&gt;
+                           Students
+                        &lt;/label&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Comments for students
+            &lt;/strong&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;div class=&quot;panel panel-info student-record-comments&quot;&gt;
+               &lt;div class=&quot;panel-heading&quot;&gt;
+                  From
+                  &lt;b&gt;
+                     Instructor Instructor1 Course1 (comments.idOfTypicalCourse1)
+                  &lt;/b&gt;
+               &lt;/div&gt;
+               &lt;ul class=&quot;list-group comments&quot;&gt;
+                  &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;form_commentedit-1&quot;&gt;
+                     &lt;div id=&quot;commentBar-1&quot;&gt;
+                        &lt;span class=&quot;text-muted&quot;&gt;
+                           To
+                           &lt;b&gt;
+                              student1 In Course1 (Team 1.1, comments.student1InCourse1@gmail.tmt)
+                           &lt;/b&gt;
+                           on
+                                        06 May 2012, 08:55
+                        &lt;/span&gt;
+                        &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&amp;courseid=comments.idOfTypicalCourse1#6190817400061952&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                           &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/a&gt;
+                     &lt;/div&gt;
+                     &lt;div id=&quot;plainCommentText1&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                        Other students in this course can see this comment without giver and recipient&apos;s name
+                     &lt;/div&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;list-group-item list-group-item-warning&quot; id=&quot;form_commentedit-2&quot;&gt;
+                     &lt;div id=&quot;commentBar-2&quot;&gt;
+                        &lt;span class=&quot;text-muted&quot;&gt;
+                           To
+                           &lt;b&gt;
+                              Team 1.1
+                           &lt;/b&gt;
+                           on
+                                        07 May 2012, 08:54
+                        &lt;/span&gt;
+                        &lt;a class=&quot;btn btn-default btn-xs icon-button pull-right&quot; data-original-title=&quot;Edit comment in the Comments page&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCommentsPage?user=comments.idOfInstructor1OfCourse1&amp;courseid=comments.idOfTypicalCourse1#6194115934945280&quot; style=&quot;display:none;&quot; target=&quot;_blank&quot; type=&quot;button&quot;&gt;
+                           &lt;span class=&quot;glyphicon glyphicon-new-window glyphicon-primary&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/a&gt;
+                     &lt;/div&gt;
+                     &lt;div id=&quot;plainCommentText2&quot; style=&quot;margin-left: 15px;&quot;&gt;
+                        team can see this comment without giver&apos;s name
+                     &lt;/div&gt;
+                  &lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               Comments for responses
+            &lt;/strong&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:822)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:864)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.testSearch(InstructorCommentsPageUiTest.java:209)
+	at teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest.allTests(InstructorCommentsPageUiTest.java:35)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.GodModeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGodMode">
+                  </a> <!-- testGodMode -->
+                  <span class="method-name">testGodMode</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;   &lt;title&gt;
+   &lt;/title&gt;
+   &lt;div id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;
+            &lt;a class=&quot;student-profile-pic-view-link btn-link&quot; data-link=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&quot;&gt;
+         View Photo
+      &lt;/a&gt;
+      &lt;a class=&quot;navLinks&quot; data-unreg=&quot;true&quot; href=&quot;/page/studentCourseJoinAuthentication?key={*}&amp;&quot;&gt;
+         Home
+      &lt;/a&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;start&quot; name=&quot;start&quot; type=&quot;text&quot; value=&quot;{*}&quot;/&gt;
+            &lt;p class=&quot;form-control-static&quot;&gt;
+         {*}
+      &lt;/p&gt;
+      &lt;input name=&quot;commentid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;input name=&quot;questionid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;a class=&quot;btn btn-default btn-xs t_course_archive0&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=testuserm.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorCoursesPage&amp;user=testuser.instructor&quot; title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot;&gt;
+      &lt;/a&gt;
+      &lt;input name=&quot;end&quot; value=&quot;21/05/2001&quot;/&gt;
+            &lt;div&gt;
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&gt; but was:&lt;   &lt;title&gt;
+   &lt;/title&gt;
+   &lt;div id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;
+            &lt;a class=&quot;student-profile-pic-view-link btn-link&quot; data-link=&quot;/page/studentProfilePic?studentemail={*}&amp;courseid={*}&quot;&gt;
+         View Photo
+      &lt;/a&gt;
+      &lt;a class=&quot;navLinks&quot; data-unreg=&quot;true&quot; href=&quot;/page/studentCourseJoinAuthentication?key={*}&amp;&quot;&gt;
+         Home
+      &lt;/a&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;start&quot; name=&quot;start&quot; type=&quot;text&quot; value=&quot;07/08/2014&quot;/&gt;
+            &lt;p class=&quot;form-control-static&quot;&gt;
+         07 Aug 2014, 05:35
+      &lt;/p&gt;
+      &lt;input name=&quot;commentid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;input name=&quot;questionid&quot; type=&quot;hidden&quot; value=&quot;{*}&quot;/&gt;
+            &lt;a class=&quot;btn btn-default btn-xs t_course_archive0&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=testuserm.gma-demo&amp;archive=true&amp;next=%2Fpage%2FinstructorCoursesPage&amp;user=testuser.instructor&quot; title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot;&gt;
+      &lt;/a&gt;
+      &lt;input name=&quot;end&quot; value=&quot;21/05/2001&quot;/&gt;
+            &lt;div&gt;
+         yourGoogleId_123teammates.coord_123alice.tmms_123charlie.tmms_123teammates.unreg_123app_admin@gmail.com
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+&gt;
+	at teammates.test.cases.ui.browsertests.GodModeTest.verifyOutput(GodModeTest.java:131)
+	at teammates.test.cases.ui.browsertests.GodModeTest.testGodMode(GodModeTest.java:97)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+        </div> <!-- panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+        <div panel-name="test-xml-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Teammates\test-output\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;teammates.test.util.PriorityInterceptor&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;rare-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;testGodMode&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- rare-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+  &lt;test name=&quot;sequential-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;allTests&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sequential-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+  &lt;test name=&quot;parallel-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;allTests&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;testAll&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">sequential-ui-tests(failed)(failed)(failed)(failed)(failed) (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]');
+function tableData_Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAll')
+data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest')
+data.setCell(0, 3, 110168);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'allTests')
+data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest')
+data.setCell(1, 3, 66771);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'allTests')
+data.setCell(2, 2, 'teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest')
+data.setCell(2, 3, 11325);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGodMode')
+data.setCell(3, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
+data.setCell(3, 3, 141);
+window.suiteTableData['Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+              </div> <!-- times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">14 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.logic.EvaluationsLogicTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+                <span class="ignored-method-name">testAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">allTests</span>
+                <br/>
+                <span class="ignored-method-name">allTests</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">allTests</span>
+                <br/>
+                <span class="ignored-method-name">allTests</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.GodModeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testGodMode</span>
+                <br/>
+                <span class="ignored-method-name">testGodMode</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">562 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">562 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">562 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">562 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">577 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">577 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">577 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGodMode</span>
+                <span class="method-start">8644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeClass</span>
+                <span class="method-start">8785 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">8785 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">9050 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">allTests</span>
+                <span class="method-start">9518 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAll</span>
+                <span class="method-start">17179 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">allTests</span>
+                <span class="method-start">37134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">48459 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorCommentsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">76289 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">76289 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">76289 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">127347 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">127347 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">127347 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
