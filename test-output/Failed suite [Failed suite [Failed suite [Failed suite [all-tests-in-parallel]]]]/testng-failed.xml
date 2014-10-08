@@ -6,6 +6,14 @@
   </listeners>
   <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" parallel="classes">
     <classes>
+      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
         <methods>
           <include name="classSetUp"/>
@@ -19,26 +27,26 @@
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest -->
-      <class name="teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest -->
-      <class name="teammates.test.cases.logic.SubmissionTaskQueueLogicTest">
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
         <methods>
           <include name="testSetUp"/>
           <include name="testSetUp"/>
           <include name="testTearDown"/>
           <include name="testTearDown"/>
         </methods>
-      </class> <!-- teammates.test.cases.logic.SubmissionTaskQueueLogicTest -->
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
     </classes>
   </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed) -->
   <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" parallel="classes">
     <classes>
+      <class name="teammates.test.cases.logic.EvaluationsLogicTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
         <methods>
           <include name="classSetUp"/>
@@ -52,22 +60,14 @@
           <include name="classTearDown"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest -->
-      <class name="teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest">
-        <methods>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest -->
-      <class name="teammates.test.cases.logic.SubmissionTaskQueueLogicTest">
+      <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
         <methods>
           <include name="testSetUp"/>
           <include name="testSetUp"/>
           <include name="testTearDown"/>
           <include name="testTearDown"/>
         </methods>
-      </class> <!-- teammates.test.cases.logic.SubmissionTaskQueueLogicTest -->
+      </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
     </classes>
   </test> <!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] -->
