@@ -1,0 +1,2399 @@
+<html>
+<head>
+<title>TestNG:  component-tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>component-tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>464/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 09 14:11:13 UTC 2014</td>
+</tr>
+<tr><td>Total time:</td><td>482 seconds (482674 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminAccountDelete()'><b>AdminAccountDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminAccountDetailsPage()'><b>AdminAccountDetailsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminAccountManagementPage()'><b>AdminAccountManagementPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminActivityLogPage()'><b>AdminActivityLogPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminExceptionTest()'><b>AdminExceptionTest</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminHomePage()'><b>AdminHomePage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminInstructorAccountAdd()'><b>AdminInstructorAccountAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.AdminSearchPage()'><b>AdminSearchPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCommentsPage()'><b>InstructorCommentsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseAdd()'><b>InstructorCourseAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseArchive()'><b>InstructorCourseArchive</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseDelete()'><b>InstructorCourseDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseDetailsPage()'><b>InstructorCourseDetailsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseEdit()'><b>InstructorCourseEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseEnrollPage()'><b>InstructorCourseEnrollPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseEnrollSave()'><b>InstructorCourseEnrollSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseInstructorAdd()'><b>InstructorCourseInstructorAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseInstructorDelete()'><b>InstructorCourseInstructorDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseInstructorEditSave()'><b>InstructorCourseInstructorEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseJoin()'><b>InstructorCourseJoin</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseJoinAuthenticated()'><b>InstructorCourseJoinAuthenticated</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseRemind()'><b>InstructorCourseRemind</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseStudentDelete()'><b>InstructorCourseStudentDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseStudentDetailsEdit()'><b>InstructorCourseStudentDetailsEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseStudentDetailsEditSave()'><b>InstructorCourseStudentDetailsEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseStudentDetailsPage()'><b>InstructorCourseStudentDetailsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCourseStudentListDownload()'><b>InstructorCourseStudentListDownload</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorCoursesPage()'><b>InstructorCoursesPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationAdd()'><b>InstructorEvaluationAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationDelete()'><b>InstructorEvaluationDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationEditPage()'><b>InstructorEvaluationEditPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationEditSave()'><b>InstructorEvaluationEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationPage()'><b>InstructorEvaluationPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationPreview()'><b>InstructorEvaluationPreview</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationPublish()'><b>InstructorEvaluationPublish</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationRemind()'><b>InstructorEvaluationRemind</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationResultsDownload()'><b>InstructorEvaluationResultsDownload</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationResultsPage()'><b>InstructorEvaluationResultsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationStatsPage()'><b>InstructorEvaluationStatsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationSubmissionEdit()'><b>InstructorEvaluationSubmissionEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationSubmissionEditSave()'><b>InstructorEvaluationSubmissionEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationSubmissionPage()'><b>InstructorEvaluationSubmissionPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorEvaluationUnpublish()'><b>InstructorEvaluationUnpublish</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackAdd()'><b>InstructorFeedbackAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackDelete()'><b>InstructorFeedbackDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackEditPage()'><b>InstructorFeedbackEditPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackEditSave()'><b>InstructorFeedbackEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackPreviewAsInstructor()'><b>InstructorFeedbackPreviewAsInstructor</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackPreviewAsStudent()'><b>InstructorFeedbackPreviewAsStudent</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackPublish()'><b>InstructorFeedbackPublish</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackQuestionAdd()'><b>InstructorFeedbackQuestionAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackQuestionEdit()'><b>InstructorFeedbackQuestionEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackQuestionSubmissionEdit()'><b>InstructorFeedbackQuestionSubmissionEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackQuestionSubmissionEditSave()'><b>InstructorFeedbackQuestionSubmissionEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackRemind()'><b>InstructorFeedbackRemind</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackResponseCommentAdd()'><b>InstructorFeedbackResponseCommentAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackResponseCommentDelete()'><b>InstructorFeedbackResponseCommentDelete</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackResponseCommentEdit()'><b>InstructorFeedbackResponseCommentEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackResultsDownload()'><b>InstructorFeedbackResultsDownload</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackResultsPage()'><b>InstructorFeedbackResultsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackStatsPage()'><b>InstructorFeedbackStatsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackSubmissionEditPage()'><b>InstructorFeedbackSubmissionEditPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackSubmissionEditSave()'><b>InstructorFeedbackSubmissionEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbackUnpublish()'><b>InstructorFeedbackUnpublish</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorFeedbacksPage()'><b>InstructorFeedbacksPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorHomePage()'><b>InstructorHomePage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorStudentCommentAdd()'><b>InstructorStudentCommentAdd</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorStudentCommentEdit()'><b>InstructorStudentCommentEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorStudentListPage()'><b>InstructorStudentListPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.InstructorStudentRecordsPage()'><b>InstructorStudentRecordsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentCommentsPage()'><b>StudentCommentsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentCourseDetailsPage()'><b>StudentCourseDetailsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentCourseJoin()'><b>StudentCourseJoin</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentCourseJoinAuthenticated()'><b>StudentCourseJoinAuthenticated</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentCourseJoinLegacyLink()'><b>StudentCourseJoinLegacyLink</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentEvaluationResultsPage()'><b>StudentEvaluationResultsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentEvaluationSubmissionEditPage()'><b>StudentEvaluationSubmissionEditPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentEvaluationSubmissionEditSave()'><b>StudentEvaluationSubmissionEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentFeedbackQuestionSubmissionEditPage()'><b>StudentFeedbackQuestionSubmissionEditPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentFeedbackQuestionSubmissionEditSave()'><b>StudentFeedbackQuestionSubmissionEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentFeedbackResultsPage()'><b>StudentFeedbackResultsPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentFeedbackSubmissionEditPage()'><b>StudentFeedbackSubmissionEditPage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentFeedbackSubmissionEditSave()'><b>StudentFeedbackSubmissionEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentHomePage()'><b>StudentHomePage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentProfileEditSave()'><b>StudentProfileEditSave</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentProfilePage()'><b>StudentProfilePage</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AllActionsAccessControlTest.StudentProfilePictureEdit()'><b>StudentProfilePictureEdit</b><br>Test class: teammates.test.cases.ui.AllActionsAccessControlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AllActionsAccessControlTest@d9e78</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.TestGetValidityInfo_INSTRUCTOR_ROLE()'><b>TestGetValidityInfo_INSTRUCTOR_ROLE</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CourseRosterTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.common.CourseRosterTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CourseRosterTest@6355af</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackQuestionsLogicTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.logic.FeedbackQuestionsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.FeedbackQuestionsLogicTest@438e1e</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackResponsesLogicTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.logic.FeedbackResponsesLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.FeedbackResponsesLogicTest@acd989</td></tr>
+<tr>
+<td title='teammates.test.cases.common.BuildPropertiesTest.checkPresence()'><b>checkPresence</b><br>Test class: teammates.test.cases.common.BuildPropertiesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.BuildPropertiesTest@1c86489</td></tr>
+<tr>
+<td title='teammates.test.cases.common.BuildPropertiesTest.checkReadingEmailTemplates()'><b>checkReadingEmailTemplates</b><br>Test class: teammates.test.cases.common.BuildPropertiesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.BuildPropertiesTest@1c86489</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackCopyActionTest.testAccessControl()'><b>testAccessControl</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackCopyActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackCopyActionTest@1771fdd</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest.testAccessControl()'><b>testAccessControl</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest@4bb6f5</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testAccountFunctions()'><b>testAccountFunctions</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.ActivityLogTest.testActivityLogEntryClass()'><b>testActivityLogEntryClass</b><br>Test class: teammates.test.cases.ui.ActivityLogTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.ActivityLogTest@f42466</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testAddSectionWithDefaultPrivilegesToSectionLevel()'><b>testAddSectionWithDefaultPrivilegesToSectionLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testAddSessionWithDefaultPrivilegesToSessionLevel()'><b>testAddSessionWithDefaultPrivilegesToSessionLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.automated.FeedbackSessionPublishedReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.FeedbackSessionPublishedReminderTest</td>
+<td></td>
+<td>3</td>
+<td>teammates.test.automated.FeedbackSessionPublishedReminderTest@1a9629b</td></tr>
+<tr>
+<td title='teammates.test.automated.EvaluationClosingReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.EvaluationClosingReminderTest</td>
+<td></td>
+<td>5</td>
+<td>teammates.test.automated.EvaluationClosingReminderTest@17ea934</td></tr>
+<tr>
+<td title='teammates.test.automated.EvaluationOpeningReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.EvaluationOpeningReminderTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.automated.EvaluationOpeningReminderTest@121409a</td></tr>
+<tr>
+<td title='teammates.test.automated.FeedbackSessionClosingReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.FeedbackSessionClosingReminderTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.automated.FeedbackSessionClosingReminderTest@3206c3</td></tr>
+<tr>
+<td title='teammates.test.automated.FeedbackSessionOpeningReminderTest.testAdditionOfTaskToTaskQueue()'><b>testAdditionOfTaskToTaskQueue</b><br>Test class: teammates.test.automated.FeedbackSessionOpeningReminderTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.automated.FeedbackSessionOpeningReminderTest@a65066</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.SubmissionsAdjustmentTest.testAdjustmentOfResponses()'><b>testAdjustmentOfResponses</b><br>Test class: teammates.test.cases.logic.SubmissionsAdjustmentTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.SubmissionsAdjustmentTest@81e4a1</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponseCommentsDbTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.storage.FeedbackResponseCommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponseCommentsDbTest@1c2ed7</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.CoursesLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.CoursesLogicTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.logic.CoursesLogicTest@6d8240</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EvaluationsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.EvaluationsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EvaluationsLogicTest@c32a5d</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest</td>
+<td></td>
+<td>3</td>
+<td>teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest@439b01</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackSessionsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.FeedbackSessionsLogicTest</td>
+<td></td>
+<td>4</td>
+<td>teammates.test.cases.logic.FeedbackSessionsLogicTest@e1d9e</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.InstructorsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.InstructorsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.InstructorsLogicTest@c2ea31</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.StudentsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.StudentsLogicTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.logic.StudentsLogicTest@6addb8</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.SubmissionsLogicTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.logic.SubmissionsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.SubmissionsLogicTest@1dea27e</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackSessionsDbTest.testAllGetFeedbackSessions()'><b>testAllGetFeedbackSessions</b><br>Test class: teammates.test.cases.storage.FeedbackSessionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackSessionsDbTest@56cd93</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.ActionResultTest.testAppendParameters()'><b>testAppendParameters</b><br>Test class: teammates.test.cases.ui.ActionResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.ActionResultTest@9d5b42</td></tr>
+<tr>
+<td title='teammates.test.cases.BaseTestCaseTest.testAssertContains()'><b>testAssertContains</b><br>Test class: teammates.test.cases.BaseTestCaseTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.BaseTestCaseTest@1f1e093</td></tr>
+<tr>
+<td title='teammates.test.cases.BaseTestCaseTest.testAssertContainsRegex()'><b>testAssertContainsRegex</b><br>Test class: teammates.test.cases.BaseTestCaseTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.BaseTestCaseTest@1f1e093</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testAverageColumns()'><b>testAverageColumns</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CommentAttributesTest.testBasicGetters()'><b>testBasicGetters</b><br>Test class: teammates.test.cases.common.CommentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CommentAttributesTest@b7d0ec</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FeedbackSessionAttributesTest.testBasicGetters()'><b>testBasicGetters</b><br>Test class: teammates.test.cases.common.FeedbackSessionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FeedbackSessionAttributesTest@1e2eace</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testCalculateEvalStatus()'><b>testCalculateEvalStatus</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testCalculatePerceivedForStudent()'><b>testCalculatePerceivedForStudent</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testCalculatePoints()'><b>testCalculatePoints</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.common.TimeHelperTest.testCombineDateTime()'><b>testCombineDateTime</b><br>Test class: teammates.test.cases.common.TimeHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.TimeHelperTest@7da1fc</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.HtmlHelperTest.testComparison()'><b>testComparison</b><br>Test class: teammates.test.cases.testdriver.HtmlHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.HtmlHelperTest@fd8890</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.TestPropertiesTest.testConstruction()'><b>testConstruction</b><br>Test class: teammates.test.cases.testdriver.TestPropertiesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.TestPropertiesTest@beb8f0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testConstructor()'><b>testConstructor</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testConstructor()'><b>testConstructor</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesFactoryTest.testConstructor()'><b>testConstructor</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@c1a108</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.HtmlHelperTest.testConvertToStandardHtml()'><b>testConvertToStandardHtml</b><br>Test class: teammates.test.cases.testdriver.HtmlHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.HtmlHelperTest@fd8890</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.HtmlHelperTest.testConvertToStandardHtmlPart()'><b>testConvertToStandardHtmlPart</b><br>Test class: teammates.test.cases.testdriver.HtmlHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.HtmlHelperTest@fd8890</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.AccountsDbTest.testCreateAccount()'><b>testCreateAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.storage.AccountsDbTest@1b1db9a</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testCreateAccount()'><b>testCreateAccount</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CommentsDbTest.testCreateComment()'><b>testCreateComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CommentsDbTest@128493c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.CommentsLogicTest.testCreateComment()'><b>testCreateComment</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.CommentsLogicTest@130a764</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CoursesDbTest.testCreateCourse()'><b>testCreateCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CoursesDbTest@11ac0df</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testCreateDeleteFeedbackQuestion()'><b>testCreateDeleteFeedbackQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackQuestionsDbTest@2699b</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testCreateDeleteFeedbackResponse()'><b>testCreateDeleteFeedbackResponse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackSessionsDbTest.testCreateDeleteFeedbackSession()'><b>testCreateDeleteFeedbackSession</b><br>Test class: teammates.test.cases.storage.FeedbackSessionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackSessionsDbTest@56cd93</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.EntitiesDbTest.testCreateEntity()'><b>testCreateEntity</b><br>Test class: teammates.test.cases.storage.EntitiesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.EntitiesDbTest@3198c4</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.EvaluationsDbTest.testCreateEvaluation()'><b>testCreateEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.EvaluationsDbTest@c3081</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testCreateInstructor()'><b>testCreateInstructor</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FeedbackResponseDetailsTest.testCreateResponseDetails()'><b>testCreateResponseDetails</b><br>Test class: teammates.test.cases.common.FeedbackResponseDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FeedbackResponseDetailsTest@7581aa</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.StudentsDbTest.testCreateStudent()'><b>testCreateStudent</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.StudentsDbTest@1997447</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.SubmissionsDbTest.testCreateSubmission()'><b>testCreateSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.SubmissionsDbTest@64e8ad</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testCreateSubmission()'><b>testCreateSubmission</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.SubmissionTaskQueueLogicTest.testCreationOfSubmissions()'><b>testCreationOfSubmissions</b><br>Test class: teammates.test.cases.logic.SubmissionTaskQueueLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.SubmissionTaskQueueLogicTest@1c3666a</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.DataBundleTest.testDataBundle()'><b>testDataBundle</b><br>Test class: teammates.test.cases.testdriver.DataBundleTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.DataBundleTest@146e7cc</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.AccountsDbTest.testDeleteAccount()'><b>testDeleteAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.storage.AccountsDbTest@1b1db9a</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testDeleteAccountCascade()'><b>testDeleteAccountCascade</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CommentsDbTest.testDeleteComment()'><b>testDeleteComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CommentsDbTest@128493c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.CommentsLogicTest.testDeleteComment()'><b>testDeleteComment</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.CommentsLogicTest@130a764</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CommentsDbTest.testDeleteComments()'><b>testDeleteComments</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CommentsDbTest@128493c</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CoursesDbTest.testDeleteCourse()'><b>testDeleteCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CoursesDbTest@11ac0df</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.EvaluationsDbTest.testDeleteEvaluation()'><b>testDeleteEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.EvaluationsDbTest@c3081</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testDeleteInstructor()'><b>testDeleteInstructor</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testDeleteInstructorsForCourse()'><b>testDeleteInstructorsForCourse</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testDeleteInstructorsForGoogleId()'><b>testDeleteInstructorsForGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testDeletePicture()'><b>testDeletePicture</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.ProfilesDbTest.testDeleteProfilePicture()'><b>testDeleteProfilePicture</b><br>Test class: teammates.test.cases.storage.ProfilesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.ProfilesDbTest@1090c0</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.StudentsDbTest.testDeleteStudent()'><b>testDeleteStudent</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.StudentsDbTest@1997447</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.SubmissionsDbTest.testDeleteSubmission()'><b>testDeleteSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.SubmissionsDbTest@64e8ad</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testDeleteSubmission()'><b>testDeleteSubmission</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.AccountsDbTest.testEditAccount()'><b>testEditAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.AccountsDbTest@1b1db9a</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.SubmissionsDbTest.testEditSubmission()'><b>testEditSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.SubmissionsDbTest@64e8ad</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.SubmissionsAdjustmentTest.testEnrollStudentsWithScheduledSubmissionAdjustment()'><b>testEnrollStudentsWithScheduledSubmissionAdjustment</b><br>Test class: teammates.test.cases.logic.SubmissionsAdjustmentTest</td>
+<td></td>
+<td>16</td>
+<td>teammates.test.cases.logic.SubmissionsAdjustmentTest@81e4a1</td></tr>
+<tr>
+<td title='teammates.test.automated.EvaluationClosingReminderTest.testEvaluationClosingMailAction()'><b>testEvaluationClosingMailAction</b><br>Test class: teammates.test.automated.EvaluationClosingReminderTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.automated.EvaluationClosingReminderTest@17ea934</td></tr>
+<tr>
+<td title='teammates.test.automated.EvaluationOpeningReminderTest.testEvaluationOpeningMailAction()'><b>testEvaluationOpeningMailAction</b><br>Test class: teammates.test.automated.EvaluationOpeningReminderTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.automated.EvaluationOpeningReminderTest@121409a</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EvaluationsEmailTaskQueueTest.testEvaluationsPublishEmail()'><b>testEvaluationsPublishEmail</b><br>Test class: teammates.test.cases.logic.EvaluationsEmailTaskQueueTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.logic.EvaluationsEmailTaskQueueTest@a5a87c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EvaluationsEmailTaskQueueTest.testEvaluationsRemindEmail()'><b>testEvaluationsRemindEmail</b><br>Test class: teammates.test.cases.logic.EvaluationsEmailTaskQueueTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.logic.EvaluationsEmailTaskQueueTest@a5a87c</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackResponseCommentAddActionTest.testExcecuteAndPostProcess()'><b>testExcecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResponseCommentAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentAddActionTest@21f9dd</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest.testExcecuteAndPostProcess()'><b>testExcecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentDeleteActionTest@a01a84</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest.testExcecuteAndPostProcess()'><b>testExcecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackResponseCommentEditActionTest@16bcf8a</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testExcludeSelfRatings()'><b>testExcludeSelfRatings</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseAddActionTest.testExecute()'><b>testExecute</b><br>Test class: teammates.test.cases.ui.InstructorCourseAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseAddActionTest@1fdec30</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCommentsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCommentsPageActionTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.ui.InstructorCommentsPageActionTest@8a4b96</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminAccountDeletePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminAccountDeletePageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminAccountDeletePageActionTest@1d5c1ed</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminAccountDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminAccountDetailsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminAccountDetailsPageActionTest@9aee72</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminAccountManagementPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminAccountManagementPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminAccountManagementPageActionTest@10e2829</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminActivityLogPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminActivityLogPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminActivityLogPageActionTest@1264fa9</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminExceptionTestActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminExceptionTestActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminExceptionTestActionTest@17e0655</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminHomePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminHomePageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminHomePageActionTest@1ed76ce</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminInstructorAccountAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminInstructorAccountAddActionTest</td>
+<td></td>
+<td>15</td>
+<td>teammates.test.cases.ui.AdminInstructorAccountAddActionTest@1c32b0f</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminSearchPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.AdminSearchPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminSearchPageActionTest@1628981</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.EvaluationStatsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.EvaluationStatsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.EvaluationStatsPageActionTest@13afac7</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.FeedbackSessionStatsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.FeedbackSessionStatsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.FeedbackSessionStatsPageActionTest@128bb36</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseArchiveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseArchiveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseArchiveActionTest@1e017e4</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseDeleteActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseDeleteActionTest@469fea</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseDetailsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseDetailsPageActionTest@ee7723</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseEditPageActionTest@18e7e6a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseEnrollPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseEnrollPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseEnrollPageActionTest@178ddf4</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseEnrollSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseEnrollSaveActionTest</td>
+<td></td>
+<td>4</td>
+<td>teammates.test.cases.ui.InstructorCourseEnrollSaveActionTest@1dfedaf</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseInstructorAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseInstructorAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseInstructorAddActionTest@136bf67</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseInstructorDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseInstructorDeleteActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseInstructorDeleteActionTest@173d391</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseInstructorEditSaveActionTest@16c58fe</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseJoinActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseJoinActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseJoinActionTest@c5581</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseJoinAuthenticatedActionTest@1e1680</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseRemindActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseRemindActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseRemindActionTest@93d9c7</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseStudentDeleteActionTest@172be65</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseStudentDetailsEditPageActionTest@10bc6c8</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.ui.InstructorCourseStudentDetailsEditSaveActionTest@3be6ac</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCourseStudentDetailsPageActionTest@f7cd36</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest</td>
+<td></td>
+<td>3</td>
+<td>teammates.test.cases.ui.InstructorCourseStudentListDownloadActionTest@12561dc</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorCoursesPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorCoursesPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorCoursesPageActionTest@e7cca0</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalAddActionTest@33f652</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalDeleteActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalDeleteActionTest@d92404</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalEditPageActionTest@d1e874</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalEditSaveActionTest@441260</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalPreviewActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalPreviewActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalPreviewActionTest@1eba081</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalPublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalPublishActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalPublishActionTest@127706d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalRemindActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalRemindActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalRemindActionTest@123ade0</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalResultsDownloadActionTest@8dc3c3</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalResultsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalResultsPageActionTest@19df700</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest@13205e1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalSubmissionEditSaveActionTest@d11693</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalSubmissionPageActionTest@135c387</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalUnpublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorEvalUnpublishActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalUnpublishActionTest@475ec1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackAddActionTest@847410</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackCopyActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackCopyActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackCopyActionTest@1771fdd</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackDeleteActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackDeleteActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackDeleteActionTest@65f515</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackEditPageActionTest@148410b</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest@2f784b</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackPreviewAsInstructorActionTest@10f2591</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackPreviewAsStudentActionTest@2de670</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackPublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackPublishActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackPublishActionTest@1e554d5</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest@4bb6f5</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditPageActionTest@1e21f45</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionSubmissionEditSaveActionTest@9a90b9</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackRemindActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackRemindActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackRemindActionTest@b50694</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest</td>
+<td></td>
+<td>3</td>
+<td>teammates.test.cases.ui.InstructorFeedbackResultsDownloadActionTest@a5fce7</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackResultsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackResultsPageActionTest@1134237</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackSubmissionEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackSubmissionEditPageActionTest@e4804a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest</td>
+<td></td>
+<td>4</td>
+<td>teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest@1d919aa</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackUnpublishActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackUnpublishActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackUnpublishActionTest@11eef55</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbacksPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbacksPageActionTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.ui.InstructorFeedbacksPageActionTest@25f12d</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorHomePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorHomePageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorHomePageActionTest@1b04fbf</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorStudentCommentAddActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentCommentAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorStudentCommentAddActionTest@332f47</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorStudentCommentEditActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentCommentEditActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorStudentCommentEditActionTest@1247834</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorStudentListAjaxPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentListAjaxPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorStudentListAjaxPageActionTest@8a71d2</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorStudentListPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentListPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorStudentListPageActionTest@fcf912</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorStudentRecordsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorStudentRecordsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorStudentRecordsPageActionTest@1f2e11b</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentCommentsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCommentsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentCommentsPageActionTest@125c6bd</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentCourseDetailsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCourseDetailsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentCourseDetailsPageActionTest@16c7d59</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentCourseJoinActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCourseJoinActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentCourseJoinActionTest@baa77e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentCourseJoinAuthenticatedActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentCourseJoinAuthenticatedActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentCourseJoinAuthenticatedActionTest@1bd5093</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentEvalResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentEvalResultsPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentEvalResultsPageActionTest@186d33</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentEvalSubmissionEditPageActionTest@15faa7c</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest@3cdebe</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditPageActionTest@80dc07</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentFeedbackQuestionSubmissionEditSaveActionTest@96af55</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentFeedbackResultsPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackResultsPageActionTest</td>
+<td></td>
+<td>5</td>
+<td>teammates.test.cases.ui.StudentFeedbackResultsPageActionTest@1cd0090</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest</td>
+<td></td>
+<td>4</td>
+<td>teammates.test.cases.ui.StudentFeedbackSubmissionEditPageActionTest@1ff8cef</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest</td>
+<td></td>
+<td>3</td>
+<td>teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest@1662250</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentHomePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentHomePageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentHomePageActionTest@76ae8e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentProfileCreateFormUrlActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfileCreateFormUrlActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentProfileCreateFormUrlActionTest@174a7a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentProfileEditSaveActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfileEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentProfileEditSaveActionTest@93b9ea</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentProfilePageActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfilePageActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentProfilePageActionTest@1afe37f</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentProfilePictureActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfilePictureActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentProfilePictureActionTest@df11d5</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentProfilePictureEditActionTest.testExecuteAndPostProcess()'><b>testExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentProfilePictureEditActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentProfilePictureEditActionTest@862557</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessConstSumOption()'><b>testExecuteAndPostProcessConstSumOption</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessConstSumOption()'><b>testExecuteAndPostProcessConstSumOption</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessConstSumRecipient()'><b>testExecuteAndPostProcessConstSumRecipient</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessConstSumRecipient()'><b>testExecuteAndPostProcessConstSumRecipient</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessContributionQuestion()'><b>testExecuteAndPostProcessContributionQuestion</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessContributionQuestion()'><b>testExecuteAndPostProcessContributionQuestion</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessMcq()'><b>testExecuteAndPostProcessMcq</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessMcq()'><b>testExecuteAndPostProcessMcq</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessMsq()'><b>testExecuteAndPostProcessMsq</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessMsq()'><b>testExecuteAndPostProcessMsq</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest.testExecuteAndPostProcessNumScale()'><b>testExecuteAndPostProcessNumScale</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionAddActionTest@d11fa6</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest.testExecuteAndPostProcessNumScale()'><b>testExecuteAndPostProcessNumScale</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.ui.InstructorFeedbackQuestionEditActionTest@1eb789e</td></tr>
+<tr>
+<td title='teammates.test.cases.testdriver.TestPropertiesTest.testExtractVersionNumber()'><b>testExtractVersionNumber</b><br>Test class: teammates.test.cases.testdriver.TestPropertiesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.testdriver.TestPropertiesTest@beb8f0</td></tr>
+<tr>
+<td title='teammates.test.automated.FeedbackSessionClosingReminderTest.testFeedbackSessionClosingMailAction()'><b>testFeedbackSessionClosingMailAction</b><br>Test class: teammates.test.automated.FeedbackSessionClosingReminderTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.automated.FeedbackSessionClosingReminderTest@3206c3</td></tr>
+<tr>
+<td title='teammates.test.automated.FeedbackSessionPublishedReminderTest.testFeedbackSessionOpeningMailAction()'><b>testFeedbackSessionOpeningMailAction</b><br>Test class: teammates.test.automated.FeedbackSessionPublishedReminderTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.automated.FeedbackSessionPublishedReminderTest@1a9629b</td></tr>
+<tr>
+<td title='teammates.test.automated.FeedbackSessionOpeningReminderTest.testFeedbackSessionOpeningMailAction()'><b>testFeedbackSessionOpeningMailAction</b><br>Test class: teammates.test.automated.FeedbackSessionOpeningReminderTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.automated.FeedbackSessionOpeningReminderTest@a65066</td></tr>
+<tr>
+<td title='teammates.test.cases.common.TimeHelperTest.testFormatTimeForEvaluation()'><b>testFormatTimeForEvaluation</b><br>Test class: teammates.test.cases.common.TimeHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.TimeHelperTest@7da1fc</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmailBase()'><b>testGenerateEvaluationEmailBase</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmails()'><b>testGenerateEvaluationEmails</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testGenerateFeedbackEmailBase()'><b>testGenerateFeedbackEmailBase</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testGenerateFeedbackSessionEmails()'><b>testGenerateFeedbackSessionEmails</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.AdminInstructorAccountAddActionTest.testGenerateNextDemoCourseId()'><b>testGenerateNextDemoCourseId</b><br>Test class: teammates.test.cases.ui.AdminInstructorAccountAddActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.AdminInstructorAccountAddActionTest@1c32b0f</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testGenerateStringOfLength()'><b>testGenerateStringOfLength</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testGenerateStudentCourseJoinEmail()'><b>testGenerateStudentCourseJoinEmail</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.AccountsDbTest.testGetAccount()'><b>testGetAccount</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.AccountsDbTest@1b1db9a</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.ActivityLogTest.testGetActionName()'><b>testGetActionName</b><br>Test class: teammates.test.cases.ui.ActivityLogTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.ActivityLogTest@f42466</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CommentsDbTest.testGetComment()'><b>testGetComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CommentsDbTest@128493c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.CommentsLogicTest.testGetComments()'><b>testGetComments</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.logic.CommentsLogicTest@130a764</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CoursesDbTest.testGetCourse()'><b>testGetCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CoursesDbTest@11ac0df</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testGetCurrentUser()'><b>testGetCurrentUser</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testGetEmailInfo()'><b>testGetEmailInfo</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testGetEntityTypeAsString()'><b>testGetEntityTypeAsString</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentProfileAttributesTest.testGetEntityTypeAsString()'><b>testGetEntityTypeAsString</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentProfileAttributesTest@1068452</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.EvaluationsDbTest.testGetEvaluation()'><b>testGetEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.EvaluationsDbTest@c3081</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testGetFeedbackQuestions()'><b>testGetFeedbackQuestions</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackQuestionsDbTest@2699b</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testGetFeedbackQuestionsForGiverType()'><b>testGetFeedbackQuestionsForGiverType</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackQuestionsDbTest@2699b</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testGetFeedbackQuestionsForSession()'><b>testGetFeedbackQuestionsForSession</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackQuestionsDbTest@2699b</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponses()'><b>testGetFeedbackResponses</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForQuestion()'><b>testGetFeedbackResponsesForQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForQuestionInSection()'><b>testGetFeedbackResponsesForQuestionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForReceiverForCourse()'><b>testGetFeedbackResponsesForReceiverForCourse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForReceiverForQuestion()'><b>testGetFeedbackResponsesForReceiverForQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForReceiverForQuestionInSection()'><b>testGetFeedbackResponsesForReceiverForQuestionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSession()'><b>testGetFeedbackResponsesForSession</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionFromSection()'><b>testGetFeedbackResponsesForSessionFromSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionInSection()'><b>testGetFeedbackResponsesForSessionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionToSection()'><b>testGetFeedbackResponsesForSessionToSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesForSessionWithinRange()'><b>testGetFeedbackResponsesForSessionWithinRange</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesFromGiverForCourse()'><b>testGetFeedbackResponsesFromGiverForCourse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesFromGiverForQuestion()'><b>testGetFeedbackResponsesFromGiverForQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testGetFeedbackResponsesFromGiverForQuestionInSection()'><b>testGetFeedbackResponsesFromGiverForQuestionInSection</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testGetIdentificationString()'><b>testGetIdentificationString</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.AccountsDbTest.testGetInstructorAccounts()'><b>testGetInstructorAccounts</b><br>Test class: teammates.test.cases.storage.AccountsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.AccountsDbTest@1b1db9a</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testGetInstructorAccounts()'><b>testGetInstructorAccounts</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorForEmail()'><b>testGetInstructorForEmail</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorForGoogleId()'><b>testGetInstructorForGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorForRegistrationKey()'><b>testGetInstructorForRegistrationKey</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorsForCourse()'><b>testGetInstructorsForCourse</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorsForEmail()'><b>testGetInstructorsForEmail</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testGetInstructorsForGoogleId()'><b>testGetInstructorsForGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testGetInvalidStateInfo()'><b>testGetInvalidStateInfo</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testGetInvalidStateInfo()'><b>testGetInvalidStateInfo</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SubmissionAttributesTest.testGetInvalidStateInfo()'><b>testGetInvalidStateInfo</b><br>Test class: teammates.test.cases.common.SubmissionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SubmissionAttributesTest@1129113</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testGetInvalidityInfo()'><b>testGetInvalidityInfo</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentProfileAttributesTest.testGetInvalidityInfo()'><b>testGetInvalidityInfo</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentProfileAttributesTest@1068452</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testGetLoginUrl()'><b>testGetLoginUrl</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testGetLogoutUrl()'><b>testGetLogoutUrl</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testGetPublicProfilePictureUrl()'><b>testGetPublicProfilePictureUrl</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testGetRegistrationLink()'><b>testGetRegistrationLink</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.StudentsDbTest.testGetStudent()'><b>testGetStudent</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.StudentsDbTest@1997447</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.ProfilesDbTest.testGetStudentProfile()'><b>testGetStudentProfile</b><br>Test class: teammates.test.cases.storage.ProfilesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.ProfilesDbTest@1090c0</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.SubmissionsDbTest.testGetSubmission()'><b>testGetSubmission</b><br>Test class: teammates.test.cases.storage.SubmissionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.SubmissionsDbTest@64e8ad</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.BackDoorLogicTest.testGetSubmission()'><b>testGetSubmission</b><br>Test class: teammates.test.cases.logic.BackDoorLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.BackDoorLogicTest@732b94</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testGetSubmissionsForEvaluationFromStudent()'><b>testGetSubmissionsForEvaluationFromStudent</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorEvalsPageDataTest.testGetTimeOptions()'><b>testGetTimeOptions</b><br>Test class: teammates.test.cases.ui.InstructorEvalsPageDataTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorEvalsPageDataTest@15735c4</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CourseAttributesTest.testGetValidityInfo()'><b>testGetValidityInfo</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CourseAttributesTest@489c86</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testGetValidityInfo()'><b>testGetValidityInfo</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfoForAllowedName()'><b>testGetValidityInfoForAllowedName</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfoForSizeCappedNonEmptyString()'><b>testGetValidityInfoForSizeCappedNonEmptyString</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfoForSizeCappedPossiblyEmptyString()'><b>testGetValidityInfoForSizeCappedPossiblyEmptyString</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_COUNTRY()'><b>testGetValidityInfo_COUNTRY</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_COURSE_ID()'><b>testGetValidityInfo_COURSE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_COURSE_NAME()'><b>testGetValidityInfo_COURSE_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_EMAIL()'><b>testGetValidityInfo_EMAIL</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_EVALUATION_NAME()'><b>testGetValidityInfo_EVALUATION_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_GENDER()'><b>testGetValidityInfo_GENDER</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_GOOGLE_ID()'><b>testGetValidityInfo_GOOGLE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_INSTITUTE_NAME()'><b>testGetValidityInfo_INSTITUTE_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_PERSON_NAME()'><b>testGetValidityInfo_PERSON_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_STUDENT_ROLE_COMMENTS()'><b>testGetValidityInfo_STUDENT_ROLE_COMMENTS</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.testGetValidityInfo_TEAM_NAME()'><b>testGetValidityInfo_TEAM_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest.testGracePeriodExecuteAndPostProcess()'><b>testGracePeriodExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest@1d919aa</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest.testGracePeriodExecuteAndPostProcess()'><b>testGracePeriodExecuteAndPostProcess</b><br>Test class: teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentFeedbackSubmissionEditSaveActionTest@1662250</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testHasStudentSubmittedEvaluation()'><b>testHasStudentSubmittedEvaluation</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testIsAllowedForPrivilege()'><b>testIsAllowedForPrivilege</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testIsAllowedForPrivilege()'><b>testIsAllowedForPrivilege</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testIsEnrollInfoSameAs()'><b>testIsEnrollInfoSameAs</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testIsEqualToAnotherInstructor()'><b>testIsEqualToAnotherInstructor</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testIsMatching()'><b>testIsMatching</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testIsPrivilegeNameValid()'><b>testIsPrivilegeNameValid</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testIsReady()'><b>testIsReady</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testIsRegistered()'><b>testIsRegistered</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testIsRegistered()'><b>testIsRegistered</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testIsSanitized()'><b>testIsSanitized</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SubmissionAttributesTest.testIsSelfvaluation()'><b>testIsSelfvaluation</b><br>Test class: teammates.test.cases.common.SubmissionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SubmissionAttributesTest@1129113</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CourseAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CourseAttributesTest@489c86</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SubmissionAttributesTest.testIsValid()'><b>testIsValid</b><br>Test class: teammates.test.cases.common.SubmissionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SubmissionAttributesTest@1129113</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testIsWhiteSpace()'><b>testIsWhiteSpace</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForInstructor()'><b>testJoinCourseForInstructor</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testJoinCourseForStudent()'><b>testJoinCourseForStudent</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testKeyEncryption()'><b>testKeyEncryption</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testLegacyAccountEntityToAttributes()'><b>testLegacyAccountEntityToAttributes</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesFactoryTest.testLocateColumnIndexes()'><b>testLocateColumnIndexes</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@c1a108</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesFactoryTest.testMakeStudent()'><b>testMakeStudent</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@c1a108</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testNormalizeValues()'><b>testNormalizeValues</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.BackDoorLogicTest.testPersistDataBundle()'><b>testPersistDataBundle</b><br>Test class: teammates.test.cases.logic.BackDoorLogicTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.logic.BackDoorLogicTest@732b94</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testPurgeValuesCorrespondingToSpecialValuesInFilter()'><b>testPurgeValuesCorrespondingToSpecialValuesInFilter</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testRecoverFromSanitizedText()'><b>testRecoverFromSanitizedText</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testRemoveExtraSpace()'><b>testRemoveExtraSpace</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FeedbackQuestionAttributesTest.testRemoveIrrelevantVisibilityOptions()'><b>testRemoveIrrelevantVisibilityOptions</b><br>Test class: teammates.test.cases.common.FeedbackQuestionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FeedbackQuestionAttributesTest@106b18e</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CommentAttributesTest.testSanitize()'><b>testSanitize</b><br>Test class: teammates.test.cases.common.CommentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CommentAttributesTest@b7d0ec</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeEmail()'><b>testSanitizeEmail</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeForCsv()'><b>testSanitizeForCsv</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeForHtml()'><b>testSanitizeForHtml</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeForJs()'><b>testSanitizeForJs</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeForRichText()'><b>testSanitizeForRichText</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentProfileAttributesTest.testSanitizeForSaving()'><b>testSanitizeForSaving</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentProfileAttributesTest@1068452</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeGoogleId()'><b>testSanitizeGoogleId</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeListForCsv()'><b>testSanitizeListForCsv</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeName()'><b>testSanitizeName</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeTextField()'><b>testSanitizeTextField</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SanitizerTest.testSanitizeTitle()'><b>testSanitizeTitle</b><br>Test class: teammates.test.cases.common.SanitizerTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SanitizerTest@98e5da</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest.testScheduleFeedbackSessionClosingEmails()'><b>testScheduleFeedbackSessionClosingEmails</b><br>Test class: teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest@439b01</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest.testScheduleFeedbackSessionOpeningEmails()'><b>testScheduleFeedbackSessionOpeningEmails</b><br>Test class: teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest</td>
+<td></td>
+<td>3</td>
+<td>teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest@439b01</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest.testScheduleFeedbackSessionPublishedEmails()'><b>testScheduleFeedbackSessionPublishedEmails</b><br>Test class: teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.logic.FeedbackSessionEmailTaskQueueTest@439b01</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.SubmissionTaskQueueLogicTest.testSchedulingOfCreationOfSubmissions()'><b>testSchedulingOfCreationOfSubmissions</b><br>Test class: teammates.test.cases.logic.SubmissionTaskQueueLogicTest</td>
+<td></td>
+<td>2</td>
+<td>teammates.test.cases.logic.SubmissionTaskQueueLogicTest@1c3666a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testSetDefault()'><b>testSetDefault</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testSetDerivedAttributes()'><b>testSetDerivedAttributes</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SessionAttributesTest.testSort()'><b>testSort</b><br>Test class: teammates.test.cases.common.SessionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SessionAttributesTest@1935089</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testSortByNameAndThenByEmail()'><b>testSortByNameAndThenByEmail</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testSortBySection()'><b>testSortBySection</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.TeamResultBundleTest.testSortByStudentNameAscending()'><b>testSortByStudentNameAscending</b><br>Test class: teammates.test.cases.common.TeamResultBundleTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.TeamResultBundleTest@1289df1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testSortByTeam()'><b>testSortByTeam</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentResultBundleTest.testSortIncomingByFeedbackAscending()'><b>testSortIncomingByFeedbackAscending</b><br>Test class: teammates.test.cases.common.StudentResultBundleTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentResultBundleTest@19c9b66</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentResultBundleTest.testSortIncomingByStudentNameAscending()'><b>testSortIncomingByStudentNameAscending</b><br>Test class: teammates.test.cases.common.StudentResultBundleTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentResultBundleTest@19c9b66</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentResultBundleTest.testSortOutgoingByStudentNameAscending()'><b>testSortOutgoingByStudentNameAscending</b><br>Test class: teammates.test.cases.common.StudentResultBundleTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentResultBundleTest@19c9b66</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesFactoryTest.testSplitLineIntoColumns()'><b>testSplitLineIntoColumns</b><br>Test class: teammates.test.cases.common.StudentAttributesFactoryTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesFactoryTest@c1a108</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testSplitName()'><b>testSplitName</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testStudentConstructor()'><b>testStudentConstructor</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.AccountsLogicTest.testStudentProfileFunctions()'><b>testStudentProfileFunctions</b><br>Test class: teammates.test.cases.logic.AccountsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.AccountsLogicTest@1689243</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.TeamEvalResultTest.testSum()'><b>testSum</b><br>Test class: teammates.test.cases.logic.TeamEvalResultTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.TeamEvalResultTest@241702</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.EmailsTest.testSystemCrashReportEmailContent()'><b>testSystemCrashReportEmailContent</b><br>Test class: teammates.test.cases.logic.EmailsTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.EmailsTest@188ef97</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testToEnrollmentString()'><b>testToEnrollmentString</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testToEntity()'><b>testToEntity</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorAttributesTest.testToEntity()'><b>testToEntity</b><br>Test class: teammates.test.cases.common.InstructorAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorAttributesTest@12cf455</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentProfileAttributesTest.testToEntity()'><b>testToEntity</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentProfileAttributesTest@1068452</td></tr>
+<tr>
+<td title='teammates.test.cases.common.AccountAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.AccountAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.AccountAttributesTest@14fc78a</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CourseAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CourseAttributesTest@489c86</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentProfileAttributesTest.testToString()'><b>testToString</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentProfileAttributesTest@1068452</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StringHelperTest.testToStringForStringLists()'><b>testToStringForStringLists</b><br>Test class: teammates.test.cases.common.StringHelperTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StringHelperTest@1708eee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.UrlTest.testTrimTrailingSlash()'><b>testTrimTrailingSlash</b><br>Test class: teammates.test.cases.common.UrlTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.UrlTest@fcc796</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CommentsDbTest.testUpdateComment()'><b>testUpdateComment</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CommentsDbTest@128493c</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.CommentsLogicTest.testUpdateComment()'><b>testUpdateComment</b><br>Test class: teammates.test.cases.logic.CommentsLogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.CommentsLogicTest@130a764</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CoursesDbTest.testUpdateCourse()'><b>testUpdateCourse</b><br>Test class: teammates.test.cases.storage.CoursesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CoursesDbTest@11ac0df</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.EvaluationsDbTest.testUpdateEvaluation()'><b>testUpdateEvaluation</b><br>Test class: teammates.test.cases.storage.EvaluationsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.EvaluationsDbTest@c3081</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackQuestionsDbTest.testUpdateFeedbackQuestion()'><b>testUpdateFeedbackQuestion</b><br>Test class: teammates.test.cases.storage.FeedbackQuestionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackQuestionsDbTest@2699b</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackResponsesDbTest.testUpdateFeedbackResponse()'><b>testUpdateFeedbackResponse</b><br>Test class: teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest@2798e8</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.FeedbackSessionsDbTest.testUpdateFeedbackSession()'><b>testUpdateFeedbackSession</b><br>Test class: teammates.test.cases.storage.FeedbackSessionsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.FeedbackSessionsDbTest@56cd93</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testUpdateInstructorByEmail()'><b>testUpdateInstructorByEmail</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>1</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.InstructorsDbTest.testUpdateInstructorByGoogleId()'><b>testUpdateInstructorByGoogleId</b><br>Test class: teammates.test.cases.storage.InstructorsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.InstructorsDbTest@b54e50</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.CommentsDbTest.testUpdateInstructorEmailAndStudentEmail()'><b>testUpdateInstructorEmailAndStudentEmail</b><br>Test class: teammates.test.cases.storage.CommentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.CommentsDbTest@128493c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testUpdatePrivilegeInCourseLevel()'><b>testUpdatePrivilegeInCourseLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testUpdatePrivilegeInSectionLevel()'><b>testUpdatePrivilegeInSectionLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testUpdatePrivilegeInSessionLevel()'><b>testUpdatePrivilegeInSessionLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testUpdatePrivilegesInSectionLevel()'><b>testUpdatePrivilegesInSectionLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testUpdatePrivilegesInSessionLevel()'><b>testUpdatePrivilegesInSessionLevel</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testUpdateStatusEnum()'><b>testUpdateStatusEnum</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.ProfilesDbTest.testUpdateStudentProfile()'><b>testUpdateStudentProfile</b><br>Test class: teammates.test.cases.storage.ProfilesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.ProfilesDbTest@1090c0</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.ProfilesDbTest.testUpdateStudentProfilePicture()'><b>testUpdateStudentProfilePicture</b><br>Test class: teammates.test.cases.storage.ProfilesDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.ProfilesDbTest@1090c0</td></tr>
+<tr>
+<td title='teammates.test.cases.logic.LogicTest.testUpdateSubmissions()'><b>testUpdateSubmissions</b><br>Test class: teammates.test.cases.logic.LogicTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.logic.LogicTest@1d8860c</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CommentAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.CommentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CommentAttributesTest@b7d0ec</td></tr>
+<tr>
+<td title='teammates.test.cases.common.CourseAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.CourseAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.CourseAttributesTest@489c86</td></tr>
+<tr>
+<td title='teammates.test.cases.common.EvaluationAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.EvaluationAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.EvaluationAttributesTest@14078ee</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FeedbackQuestionAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.FeedbackQuestionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FeedbackQuestionAttributesTest@106b18e</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FeedbackSessionAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.FeedbackSessionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FeedbackSessionAttributesTest@1e2eace</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.StudentAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentAttributesTest@16b70e1</td></tr>
+<tr>
+<td title='teammates.test.cases.common.SubmissionAttributesTest.testValidate()'><b>testValidate</b><br>Test class: teammates.test.cases.common.SubmissionAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.SubmissionAttributesTest@1129113</td></tr>
+<tr>
+<td title='teammates.test.cases.common.InstructorPrivilegesTest.testValidatePrivileges()'><b>testValidatePrivileges</b><br>Test class: teammates.test.cases.common.InstructorPrivilegesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.InstructorPrivilegesTest@11c239c</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest.testValidation()'><b>testValidation</b><br>Test class: teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.StudentEvalSubmissionEditSaveActionTest@3cdebe</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_COURSE_ID()'><b>test_REGEX_COURSE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_EMAIL()'><b>test_REGEX_EMAIL</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_GOOGLE_ID_NON_EMAIL()'><b>test_REGEX_GOOGLE_ID_NON_EMAIL</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_NAME()'><b>test_REGEX_NAME</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.FieldValidatorTest.test_REGEX_SAMPLE_COURSE_ID()'><b>test_REGEX_SAMPLE_COURSE_ID</b><br>Test class: teammates.test.cases.common.FieldValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.FieldValidatorTest@12b97c0</td></tr>
+<tr>
+<td title='teammates.test.cases.common.StudentProfileAttributesTest.testeGetIdentificationString()'><b>testeGetIdentificationString</b><br>Test class: teammates.test.cases.common.StudentProfileAttributesTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.common.StudentProfileAttributesTest@1068452</td></tr>
+<tr>
+<td title='teammates.test.cases.storage.StudentsDbTest.testupdateStudentWithoutDocument()'><b>testupdateStudentWithoutDocument</b><br>Test class: teammates.test.cases.storage.StudentsDbTest</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.storage.StudentsDbTest@1997447</td></tr>
+</table><p>
+</body>
+</html>
