@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.StudentHomePageUiTest" hash-for-method="allTests">allTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -121,6 +126,205 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.StudentHomePageUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allTests">
+                  </a> <!-- allTests -->
+                  <span class="method-name">allTests</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;
+         Student Home
+      &lt;/h2&gt;
+      &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               [SHomeUiT.CS2104] : Programming Language Concepts
+            &lt;/strong&gt;
+            &lt;span class=&quot;pull-right&quot;&gt;
+               &lt;a class=&quot;btn btn-primary btn-xs&quot; data-original-title=&quot;View and edit information regarding your team&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentCourseDetailsPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&quot; title=&quot;&quot;&gt;
+                  View Team
+               &lt;/a&gt;
+            &lt;/span&gt;
+         &lt;/div&gt;
+         &lt;table class=&quot;table-responsive table table-striped&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th&gt;
+                     Session Name
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Deadline
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Status
+                  &lt;/th&gt;
+                  &lt;th class=&quot;studentHomeActions&quot;&gt;
+                     Action(s)
+                  &lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               &lt;tr id=&quot;evaluation0&quot;&gt;
+                  &lt;td&gt;
+                     Second Eval
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     02 Apr 2012, 23:59
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation has finished and you can check the results&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;studentHomeActions&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentEvalResultsPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&amp;evaluationname=Second+Eval&quot; id=&quot;viewEvaluationResults0&quot; name=&quot;viewEvaluationResults0&quot; role=&quot;button&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions disabled&quot; data-original-title=&quot;Edit submitted evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentEvalSubmissionEditPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&amp;evaluationname=Second+Eval&quot; id=&quot;editEvaluationSubmission0&quot; name=&quot;editEvaluationSubmission0&quot; onclick=&quot;return false&quot; role=&quot;button&quot; title=&quot;&quot;&gt;
+                        Edit/View Submission
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;evaluation1&quot;&gt;
+                  &lt;td&gt;
+                     First Eval
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     01 Apr 2017, 23:59
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation is yet to be completed by you&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Pending
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;studentHomeActions&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions&quot; data-original-title=&quot;Start evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentEvalSubmissionEditPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&amp;evaluationname=First+Eval&quot; id=&quot;submitEvaluation1&quot; title=&quot;&quot;&gt;
+                        Start Submission
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;br/&gt;
+         &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;
+         Student Home
+      &lt;/h2&gt;
+      &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;strong&gt;
+               [SHomeUiT.CS2104] : Programming Language Concepts
+            &lt;/strong&gt;
+            &lt;span class=&quot;pull-right&quot;&gt;
+               &lt;a class=&quot;btn btn-primary btn-xs&quot; data-original-title=&quot;View and edit information regarding your team&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentCourseDetailsPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&quot; title=&quot;&quot;&gt;
+                  View Team
+               &lt;/a&gt;
+            &lt;/span&gt;
+         &lt;/div&gt;
+         &lt;table class=&quot;table-responsive table table-striped&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th&gt;
+                     Session Name
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Deadline
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Status
+                  &lt;/th&gt;
+                  &lt;th class=&quot;studentHomeActions&quot;&gt;
+                     Action(s)
+                  &lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               &lt;tr id=&quot;evaluation1&quot;&gt;
+                  &lt;td&gt;
+                     Second Eval
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     02 Apr 2012, 23:59
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation has finished and you can check the results&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;studentHomeActions&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentEvalResultsPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&amp;evaluationname=Second+Eval&quot; id=&quot;viewEvaluationResults1&quot; name=&quot;viewEvaluationResults1&quot; role=&quot;button&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions disabled&quot; data-original-title=&quot;Edit submitted evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentEvalSubmissionEditPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&amp;evaluationname=Second+Eval&quot; id=&quot;editEvaluationSubmission1&quot; name=&quot;editEvaluationSubmission1&quot; onclick=&quot;return false&quot; role=&quot;button&quot; title=&quot;&quot;&gt;
+                        Edit/View Submission
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;evaluation0&quot;&gt;
+                  &lt;td&gt;
+                     First Eval
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     01 Apr 2017, 23:59
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation is yet to be completed by you&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Pending
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;studentHomeActions&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions&quot; data-original-title=&quot;Start evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/studentEvalSubmissionEditPage?user=unreg_user&amp;courseid=SHomeUiT.CS2104&amp;evaluationname=First+Eval&quot; id=&quot;submitEvaluation0&quot; title=&quot;&quot;&gt;
+                        Start Submission
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;br/&gt;
+         &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:821)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:863)
+	at teammates.test.cases.ui.browsertests.StudentHomePageUiTest.testContentAndLogin(StudentHomePageUiTest.java:75)
+	at teammates.test.cases.ui.browsertests.StudentHomePageUiTest.allTests(StudentHomePageUiTest.java:51)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
           <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -195,7 +399,7 @@
           <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</span>
+              <span class="class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -203,13 +407,1298 @@
                   <a name="testAll">
                   </a> <!-- testAll -->
                   <span class="method-name">testAll</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testDownloadAction(InstructorFeedbackResultsPageUiTest.java:433)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:58)
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+
+   &lt;html&gt;
+      &lt;head&gt;
+         &lt;link href=&quot;/favicon.png&quot; rel=&quot;shortcut icon&quot;/&gt;
+                  &lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
+                  &lt;meta content=&quot;IE=edge&quot; http-equiv=&quot;X-UA-Compatible&quot;/&gt;
+                  &lt;meta content=&quot;width=device-width, initial-scale=1&quot; name=&quot;viewport&quot;/&gt;
+                  &lt;title&gt;
+            TEAMMATES - Submit Feedback
+         &lt;/title&gt;
+         &lt;#comment         &lt;/#comment&gt;
+         &lt;link href=&quot;/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+                  &lt;#comment         &lt;/#comment&gt;
+         &lt;link href=&quot;/bootstrap/css/bootstrap-theme.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+                  &lt;link href=&quot;/stylesheets/teammatesCommon.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+                  &lt;script async=&quot;&quot; src=&quot;https://ssl.google-analytics.com/ga.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/googleAnalytics.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/jquery-minified.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/common.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/additionalQuestionInfo.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/student.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;#comment         &lt;/#comment&gt;
+         &lt;script src=&quot;/bootstrap/js/bootstrap.min.js&quot;&gt;
+         &lt;/script&gt;
+         &lt;#comment         &lt;/#comment&gt;
+         &lt;#comment         &lt;/#comment&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+         &lt;div class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+               &lt;div class=&quot;navbar-header&quot;&gt;
+                  &lt;button class=&quot;navbar-toggle&quot; data-target=&quot;#contentLinks&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;
+                     &lt;span class=&quot;sr-only&quot;&gt;
+                        Toggle navigation
+                     &lt;/span&gt;
+                     &lt;span class=&quot;icon-bar&quot;&gt;
+                     &lt;/span&gt;
+                     &lt;span class=&quot;icon-bar&quot;&gt;
+                     &lt;/span&gt;
+                     &lt;span class=&quot;icon-bar&quot;&gt;
+                     &lt;/span&gt;
+                  &lt;/button&gt;
+                  &lt;a class=&quot;navbar-brand&quot; href=&quot;/index.html&quot;&gt;
+                     TEAMMATES
+                  &lt;/a&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;contentLinks&quot;&gt;
+                  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;navLinks&quot; href=&quot;/page/studentHomePage?user=SFResultsUiT.alice.b&quot; id=&quot;studentHomeNavLink&quot;&gt;
+                           Home
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;navLinks&quot; href=&quot;/page/studentProfilePage?user=SFResultsUiT.alice.b&quot; id=&quot;studentProfileNavLink&quot;&gt;
+                           Profile
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;navLinks&quot; href=&quot;/page/studentCommentsPage?user=SFResultsUiT.alice.b&quot; id=&quot;studentCommentsNavLink&quot;&gt;
+                           Comments
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;nav&quot; href=&quot;/studentHelp.html&quot; id=&quot;studentHelpLink&quot; target=&quot;_blank&quot;&gt;
+                           Help
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
+                     &lt;li&gt;
+                        &lt;a class=&quot;nav logout&quot; href=&quot;/logout.jsp&quot;&gt;
+                           Logout
+                                (
+                           &lt;span class=&quot;text-info&quot; data-original-title=&quot;SFResultsUiT.alice.b&quot; data-placement=&quot;bottom&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              SFResultsUiT.alice.b
+                           &lt;/span&gt;
+                           )
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;frameBody&quot;&gt;
+            &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+               &lt;div id=&quot;topOfPage&quot;&gt;
+               &lt;/div&gt;
+               &lt;h1&gt;
+                  Feedback Results - Student
+               &lt;/h1&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;well well-plain&quot;&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                     &lt;div class=&quot;form-horizontal&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Course:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    SFResultsUiT.CS2104
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Session:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    NUMSCALE Session
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Opening time:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    01 Apr 2012, 23:59
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Closing time:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    30 Apr 2016, 23:59
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+                  You have received feedback from others. Please see below.
+               &lt;/div&gt;
+               &lt;script type=&quot;text/javascript&quot;&gt;
+                  document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+               &lt;/script&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 1:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate your product? 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-1-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;1-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-1-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: 1. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           You
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    1
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 2:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate others&apos; product? 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-2-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;2-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-2-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: 1. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           Benny Charles
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           Danny Engrid
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    3.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 3:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate your team&apos;s product? 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-3-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;3-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-3-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: 1. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-4 text-color-gray&quot;&gt;
+                              &lt;strong&gt;
+                                 Summary of responses received by you
+                              &lt;/strong&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;form class=&quot;form-horizontal col-sm-12&quot; role=&quot;form&quot;&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Average:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2.25
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Minimum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Maximum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2.5
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                           &lt;/form&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           You
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Benny Charles
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    2.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Danny Engrid
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    2
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 4:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate the class 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-4-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;4-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-4-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: -5. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-4 text-color-gray&quot;&gt;
+                              &lt;strong&gt;
+                                 Response Summary
+                              &lt;/strong&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;form class=&quot;form-horizontal col-sm-12&quot; role=&quot;form&quot;&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Average:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       0.25
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Minimum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       -2
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Maximum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2.5
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                           &lt;/form&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           -
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    2.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Anonymous student 410339386
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    -2
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 5:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate other team&apos;s products 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-5-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;5-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-5-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: -5. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-4 text-color-gray&quot;&gt;
+                              &lt;strong&gt;
+                                 Summary of responses received by your team
+                              &lt;/strong&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;form class=&quot;form-horizontal col-sm-12&quot; role=&quot;form&quot;&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Average:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       3.75
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Minimum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       3.5
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Maximum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       4
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                           &lt;/form&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           Your Team (Team 1)
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Your Team (Team 1)
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    3.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Team 2
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    4
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                           &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;frameBottom&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot; id=&quot;footerComponent&quot;&gt;
+               &lt;div class=&quot;container&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;span&gt;
+                           [
+                           &lt;a href=&quot;/index.html&quot;&gt;
+                              TEAMMATES
+                           &lt;/a&gt;
+                           V4.99]
+                        &lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-4&quot;&gt;
+                        [for
+                        &lt;span class=&quot;highlight-white&quot;&gt;
+                           &lt;span class=&quot;color_white&quot;&gt;
+                              TEAMMATES Test Institute 1
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                        ]
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;span&gt;
+                           [Send
+                           &lt;a class=&quot;link&quot; href=&quot;../contact.html&quot; target=&quot;_blank&quot;&gt;
+                              Feedback
+                           &lt;/a&gt;
+                           ]
+                        &lt;/span&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/body&gt;
+   &lt;/html&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+
+   &lt;html&gt;
+      &lt;head&gt;
+         &lt;link href=&quot;/favicon.png&quot; rel=&quot;shortcut icon&quot;/&gt;
+                  &lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
+                  &lt;meta content=&quot;IE=edge&quot; http-equiv=&quot;X-UA-Compatible&quot;/&gt;
+                  &lt;meta content=&quot;width=device-width, initial-scale=1&quot; name=&quot;viewport&quot;/&gt;
+                  &lt;title&gt;
+            TEAMMATES - Submit Feedback
+         &lt;/title&gt;
+         &lt;#comment         &lt;/#comment&gt;
+         &lt;link href=&quot;/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+                  &lt;#comment         &lt;/#comment&gt;
+         &lt;link href=&quot;/bootstrap/css/bootstrap-theme.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+                  &lt;link href=&quot;/stylesheets/teammatesCommon.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+                  &lt;script async=&quot;&quot; src=&quot;https://ssl.google-analytics.com/ga.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/googleAnalytics.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/jquery-minified.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/common.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/additionalQuestionInfo.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;script src=&quot;/js/student.js&quot; type=&quot;text/javascript&quot;&gt;
+         &lt;/script&gt;
+         &lt;#comment         &lt;/#comment&gt;
+         &lt;script src=&quot;/bootstrap/js/bootstrap.min.js&quot;&gt;
+         &lt;/script&gt;
+         &lt;#comment         &lt;/#comment&gt;
+         &lt;#comment         &lt;/#comment&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+         &lt;div class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+               &lt;div class=&quot;navbar-header&quot;&gt;
+                  &lt;button class=&quot;navbar-toggle&quot; data-target=&quot;#contentLinks&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;
+                     &lt;span class=&quot;sr-only&quot;&gt;
+                        Toggle navigation
+                     &lt;/span&gt;
+                     &lt;span class=&quot;icon-bar&quot;&gt;
+                     &lt;/span&gt;
+                     &lt;span class=&quot;icon-bar&quot;&gt;
+                     &lt;/span&gt;
+                     &lt;span class=&quot;icon-bar&quot;&gt;
+                     &lt;/span&gt;
+                  &lt;/button&gt;
+                  &lt;a class=&quot;navbar-brand&quot; href=&quot;/index.html&quot;&gt;
+                     TEAMMATES
+                  &lt;/a&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;contentLinks&quot;&gt;
+                  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;navLinks&quot; href=&quot;/page/studentHomePage?user=SFResultsUiT.alice.b&quot; id=&quot;studentHomeNavLink&quot;&gt;
+                           Home
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;navLinks&quot; href=&quot;/page/studentProfilePage?user=SFResultsUiT.alice.b&quot; id=&quot;studentProfileNavLink&quot;&gt;
+                           Profile
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;navLinks&quot; href=&quot;/page/studentCommentsPage?user=SFResultsUiT.alice.b&quot; id=&quot;studentCommentsNavLink&quot;&gt;
+                           Comments
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                     &lt;li class=&quot;&quot;&gt;
+                        &lt;a class=&quot;nav&quot; href=&quot;/studentHelp.html&quot; id=&quot;studentHelpLink&quot; target=&quot;_blank&quot;&gt;
+                           Help
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
+                     &lt;li&gt;
+                        &lt;a class=&quot;nav logout&quot; href=&quot;/logout.jsp&quot;&gt;
+                           Logout
+                                (
+                           &lt;span class=&quot;text-info&quot; data-original-title=&quot;SFResultsUiT.alice.b&quot; data-placement=&quot;bottom&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              SFResultsUiT.alice.b
+                           &lt;/span&gt;
+                           )
+                        &lt;/a&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;frameBody&quot;&gt;
+            &lt;div class=&quot;container&quot; id=&quot;frameBodyWrapper&quot;&gt;
+               &lt;div id=&quot;topOfPage&quot;&gt;
+               &lt;/div&gt;
+               &lt;h1&gt;
+                  Feedback Results - Student
+               &lt;/h1&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;well well-plain&quot;&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                     &lt;div class=&quot;form-horizontal&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Course:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    SFResultsUiT.CS2104
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Session:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    NUMSCALE Session
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Opening time:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    01 Apr 2012, 23:59
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;div class=&quot;form-group&quot;&gt;
+                              &lt;label class=&quot;col-sm-2 control-label&quot;&gt;
+                                 Closing time:
+                              &lt;/label&gt;
+                              &lt;div class=&quot;col-sm-10&quot;&gt;
+                                 &lt;p class=&quot;form-control-static&quot;&gt;
+                                    30 Apr 2016, 23:59
+                                 &lt;/p&gt;
+                              &lt;/div&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+                  You have received feedback from others. Please see below.
+               &lt;/div&gt;
+               &lt;script type=&quot;text/javascript&quot;&gt;
+                  document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+               &lt;/script&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 1:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate your product? 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-1-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;1-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-1-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: 1. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           You
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    1
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 2:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate others&apos; product? 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-2-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;2-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-2-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: 1. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           Benny Charles
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           Danny Engrid
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    3.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 3:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate your team&apos;s product? 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-3-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;3-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-3-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: 1. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-4 text-color-gray&quot;&gt;
+                              &lt;strong&gt;
+                                 Response Summary
+                              &lt;/strong&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;form class=&quot;form-horizontal col-sm-12&quot; role=&quot;form&quot;&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Average:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2.25
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Minimum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Maximum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2.5
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                           &lt;/form&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           You
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Benny Charles
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    2.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Danny Engrid
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    2
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 4:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate the class 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-4-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;4-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-4-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: -5. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-4 text-color-gray&quot;&gt;
+                              &lt;strong&gt;
+                                 Response Summary
+                              &lt;/strong&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;form class=&quot;form-horizontal col-sm-12&quot; role=&quot;form&quot;&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Average:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       0.25
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Minimum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       -2
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Maximum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       2.5
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                           &lt;/form&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           -
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    You
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    2.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Anonymous student 410339386
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    -2
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                              &lt;div class=&quot;panel panel-default&quot;&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                     &lt;h4&gt;
+                        Question 5:
+                        &lt;span class=&quot;text-preserve-space&quot;&gt;
+                           Rate other team&apos;s products 
+                           &lt;span style=&quot; white-space: normal;&quot;&gt;
+                              &lt;a class=&quot;color_gray&quot; data-less=&quot;[less]&quot; data-more=&quot;[more]&quot; href=&quot;javascript:;&quot; id=&quot;questionAdditionalInfoButton-5-&quot; onclick=&quot;toggleAdditionalQuestionInfo(&apos;5-&apos;)&quot;&gt;
+                                 [more]
+                              &lt;/a&gt;
+                              &lt;br/&gt;
+                                                            &lt;span id=&quot;questionAdditionalInfo-5-&quot; style=&quot;display:none;&quot;&gt;
+                                 Numerical-scale question:
+                                 &lt;br/&gt;
+                                                                  Minimum value: -5. Increment: 0.5. Maximum value: 5.
+                              &lt;/span&gt;
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                     &lt;/h4&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-4 text-color-gray&quot;&gt;
+                              &lt;strong&gt;
+                                 Response Summary
+                              &lt;/strong&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;form class=&quot;form-horizontal col-sm-12&quot; role=&quot;form&quot;&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Average:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       3.75
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Minimum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       3.5
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;form-group margin-0&quot;&gt;
+                                 &lt;label class=&quot;col-sm-2 control-label font-weight-normal&quot;&gt;
+                                    Maximum:
+                                 &lt;/label&gt;
+                                 &lt;div class=&quot;col-sm-3&quot;&gt;
+                                    &lt;p class=&quot;form-control-static&quot;&gt;
+                                       4
+                                    &lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                           &lt;/form&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel panel-primary&quot;&gt;
+                        &lt;div class=&quot;panel-heading&quot;&gt;
+                           &lt;b&gt;
+                              To:
+                           &lt;/b&gt;
+                           Your Team (Team 1)
+                        &lt;/div&gt;
+                        &lt;table class=&quot;table&quot;&gt;
+                           &lt;tbody&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Your Team (Team 1)
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    3.5
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr class=&quot;resultSubheader&quot;&gt;
+                                 &lt;td&gt;
+                                    &lt;span class=&quot;bold&quot;&gt;
+                                       &lt;b&gt;
+                                          From:
+                                       &lt;/b&gt;
+                                    &lt;/span&gt;
+                                    Team 2
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td class=&quot;text-preserve-space&quot;&gt;
+                                    4
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                        &lt;/table&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;br/&gt;
+                           &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;frameBottom&quot;&gt;
+            &lt;div class=&quot;container-fluid&quot; id=&quot;footerComponent&quot;&gt;
+               &lt;div class=&quot;container&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;span&gt;
+                           [
+                           &lt;a href=&quot;/index.html&quot;&gt;
+                              TEAMMATES
+                           &lt;/a&gt;
+                           V4.99]
+                        &lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-4&quot;&gt;
+                        [for
+                        &lt;span class=&quot;highlight-white&quot;&gt;
+                           &lt;span class=&quot;color_white&quot;&gt;
+                              TEAMMATES Test Institute 1
+                           &lt;/span&gt;
+                        &lt;/span&gt;
+                        ]
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;span&gt;
+                           [Send
+                           &lt;a class=&quot;link&quot; href=&quot;../contact.html&quot; target=&quot;_blank&quot;&gt;
+                              Feedback
+                           &lt;/a&gt;
+                           ]
+                        &lt;/span&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/body&gt;
+   &lt;/html&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtml(HtmlHelper.java:34)
+	at teammates.test.pageobjects.AppPage.verifyHtml(AppPage.java:722)
+	at teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest.testAll(StudentFeedbackResultsPageUiTest.java:94)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 15 stack frames
+... Removed 10 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -230,20 +1719,12 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;rare-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentHomePageUiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetup&quot;/&gt;
           &lt;include name=&quot;classTearDown&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentHomePageUiTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetUp&quot;/&gt;
@@ -251,47 +1732,118 @@
           &lt;include name=&quot;closeClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
-      &lt;class name=&quot;teammates.test.automated.FeedbackSessionOpeningReminderTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.automated.FeedbackSessionClosingReminderTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionOpeningReminderTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionClosingReminderTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.storage.FeedbackSessionsDbTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.storage.FeedbackSessionsDbTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- rare-tests(failed)(failed)(failed)(failed)(failed) --&gt;
-  &lt;test name=&quot;parallel-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test name=&quot;sequential-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentHomePageUiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetup&quot;/&gt;
-          &lt;include name=&quot;testAll&quot;/&gt;
           &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;allTests&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentHomePageUiTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetUp&quot;/&gt;
           &lt;include name=&quot;closeClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
-      &lt;class name=&quot;teammates.test.automated.FeedbackSessionOpeningReminderTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.automated.FeedbackSessionClosingReminderTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionOpeningReminderTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionClosingReminderTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.storage.FeedbackSessionsDbTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.storage.FeedbackSessionsDbTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sequential-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
+  &lt;test name=&quot;parallel-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentHomePageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentHomePageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetUp&quot;/&gt;
+          &lt;include name=&quot;closeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
+      &lt;class name=&quot;teammates.test.automated.FeedbackSessionClosingReminderTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionClosingReminderTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.storage.FeedbackSessionsDbTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.storage.FeedbackSessionsDbTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;testAll&quot;/&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]] --&gt;
@@ -305,10 +1857,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (4 classes)</span>
+                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (5 classes)</span>
               </li>
               <li>
-                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (4 classes)</span>
+                <span class="test-name">sequential-ui-tests(failed)(failed)(failed)(failed)(failed) (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -334,20 +1889,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testAll')
-data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest')
-data.setCell(0, 3, 160865);
+data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest')
+data.setCell(0, 3, 12948);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGodMode')
-data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
-data.setCell(1, 3, 140);
+data.setCell(1, 1, 'allTests')
+data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.StudentHomePageUiTest')
+data.setCell(1, 3, 7474);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGodMode')
+data.setCell(2, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
+data.setCell(2, 3, 140);
 window.suiteTableData['Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
               </div> <!-- times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
             </div> <!-- times-div -->
@@ -362,19 +1921,55 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">21 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.automated.FeedbackSessionOpeningReminderTest</span>
+              <span class="ignored-class-name">teammates.test.cases.storage.FeedbackSessionsDbTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testUpdateFeedbackSession</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateFeedbackSession</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateFeedbackSession</span>
+                <br/>
+                <span class="ignored-method-name">testAllGetFeedbackSessions</span>
+                <br/>
+                <span class="ignored-method-name">testAllGetFeedbackSessions</span>
+                <br/>
+                <span class="ignored-method-name">testAllGetFeedbackSessions</span>
+                <br/>
+                <span class="ignored-method-name">testCreateDeleteFeedbackSession</span>
+                <br/>
+                <span class="ignored-method-name">testCreateDeleteFeedbackSession</span>
+                <br/>
+                <span class="ignored-method-name">testCreateDeleteFeedbackSession</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.StudentHomePageUiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">allTests</span>
+                <br/>
+                <span class="ignored-method-name">allTests</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.automated.FeedbackSessionClosingReminderTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testAdditionOfTaskToTaskQueue</span>
                 <br/>
                 <span class="ignored-method-name">testAdditionOfTaskToTaskQueue</span>
                 <br/>
-                <span class="ignored-method-name">testFeedbackSessionOpeningMailAction</span>
+                <span class="ignored-method-name">testAdditionOfTaskToTaskQueue</span>
                 <br/>
-                <span class="ignored-method-name">testFeedbackSessionOpeningMailAction</span>
+                <span class="ignored-method-name">testFeedbackSessionClosingMailAction</span>
+                <br/>
+                <span class="ignored-method-name">testFeedbackSessionClosingMailAction</span>
+                <br/>
+                <span class="ignored-method-name">testFeedbackSessionClosingMailAction</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -383,21 +1978,16 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testGodMode</span>
                 <br/>
+                <span class="ignored-method-name">testGodMode</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</span>
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testAll</span>
                 <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testExecuteAndPostProcess</span>
-                <br/>
-                <span class="ignored-method-name">testExecuteAndPostProcess</span>
+                <span class="ignored-method-name">testAll</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -409,7 +1999,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.storage.FeedbackSessionsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
                 <span class="method-start">0 ms</span>
@@ -420,82 +2014,123 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionOpeningReminderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionClosingReminderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">592 ms</span>
+                <span class="method-start">593 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
-                <span class="method-start">592 ms</span>
+                <span class="method-start">593 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">593 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentHomePageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">classSetup</span>
-                <span class="method-start">592 ms</span>
+                <span class="method-start">609 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">classSetUp</span>
-                <span class="method-start">592 ms</span>
+                <span class="method-start">609 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">609 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testGodMode</span>
-                <span class="method-start">10937 ms</span>
+                <span class="method-start">8364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeClass</span>
-                <span class="method-start">11077 ms</span>
+                <span class="method-start">8504 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.storage.FeedbackSessionsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">8504 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionClosingReminderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">8738 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentHomePageUiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">allTests</span>
+                <span class="method-start">10205 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">17679 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.storage.FeedbackSessionsDbTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">20346 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAll</span>
-                <span class="method-start">17366 ms</span>
+                <span class="method-start">20346 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionClosingReminderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">17382 ms</span>
+                <span class="method-start">20346 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionOpeningReminderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">17678 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">classTearDown</span>
-                <span class="method-start">178231 ms</span>
+                <span class="method-start">33294 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.InstructorEvalSubmissionEditPageActionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.storage.FeedbackSessionsDbTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">178231 ms</span>
+                <span class="method-start">33294 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionOpeningReminderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionClosingReminderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">178231 ms</span>
+                <span class="method-start">33294 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
