@@ -12,14 +12,6 @@
           <include name="classSetup"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest -->
-      <class name="teammates.test.automated.FeedbackSessionClosingReminderTest">
-        <methods>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.automated.FeedbackSessionClosingReminderTest -->
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
         <methods>
           <include name="classSetUp"/>
@@ -27,18 +19,32 @@
           <include name="closeClass"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
-      <class name="teammates.test.cases.storage.CoursesDbTest">
+      <class name="teammates.test.cases.ui.StudentEvalResultsPageActionTest">
         <methods>
           <include name="testTearDown"/>
           <include name="testTearDown"/>
           <include name="testSetUp"/>
           <include name="testSetUp"/>
         </methods>
-      </class> <!-- teammates.test.cases.storage.CoursesDbTest -->
+      </class> <!-- teammates.test.cases.ui.StudentEvalResultsPageActionTest -->
+      <class name="teammates.test.cases.logic.SubmissionsAdjustmentTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.SubmissionsAdjustmentTest -->
     </classes>
   </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed)(failed) -->
   <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)(failed)" parallel="classes">
     <classes>
+      <class name="teammates.test.cases.ui.browsertests.GodModeTest">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="closeClass"/>
+        </methods>
+      </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest">
         <methods>
           <include name="classTearDown"/>
@@ -46,28 +52,22 @@
           <include name="classSetup"/>
         </methods>
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest -->
-      <class name="teammates.test.automated.FeedbackSessionClosingReminderTest">
-        <methods>
-          <include name="testSetUp"/>
-          <include name="testSetUp"/>
-          <include name="testTearDown"/>
-          <include name="testTearDown"/>
-        </methods>
-      </class> <!-- teammates.test.automated.FeedbackSessionClosingReminderTest -->
-      <class name="teammates.test.cases.ui.browsertests.GodModeTest">
-        <methods>
-          <include name="classSetUp"/>
-          <include name="closeClass"/>
-        </methods>
-      </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
-      <class name="teammates.test.cases.storage.CoursesDbTest">
+      <class name="teammates.test.cases.ui.StudentEvalResultsPageActionTest">
         <methods>
           <include name="testTearDown"/>
           <include name="testTearDown"/>
           <include name="testSetUp"/>
           <include name="testSetUp"/>
         </methods>
-      </class> <!-- teammates.test.cases.storage.CoursesDbTest -->
+      </class> <!-- teammates.test.cases.ui.StudentEvalResultsPageActionTest -->
+      <class name="teammates.test.cases.logic.SubmissionsAdjustmentTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testSetUp"/>
+          <include name="testTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- teammates.test.cases.logic.SubmissionsAdjustmentTest -->
     </classes>
   </test> <!-- parallel-ui-tests(failed)(failed)(failed)(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]] -->

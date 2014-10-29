@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallel-ui-tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>34/12/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>42/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 29 13:57:42 UTC 2014</td>
+<td>Started on:</td><td>Wed Oct 29 17:22:51 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>11657 seconds (11657690 ms)</td>
+<tr><td>Total time:</td><td>678 seconds (678507 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,38 +74,6 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.StudentProfilePageUiTest</td>
-<td><div><pre>java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.verifyPictureIsDeleted(StudentProfilePageUiTest.java:211)
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.testActions(StudentProfilePageUiTest.java:140)
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests(StudentProfilePageUiTest.java:45)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32182417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace32182417'><pre>java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.verifyPictureIsDeleted(StudentProfilePageUiTest.java:211)
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.testActions(StudentProfilePageUiTest.java:140)
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests(StudentProfilePageUiTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>131</td>
-<td>teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@145fed7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorHomePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorHomePageUiTest</td>
 <td><div><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
@@ -1152,8 +1120,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29356622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace29356622'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12644234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12644234'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -2208,8 +2176,48 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>26</td>
-<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@1d135b6</td></tr>
+<td>34</td>
+<td>teammates.test.cases.ui.browsertests.InstructorHomePageUiTest@1d44c3</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: [[[[FirefoxDriver: firefox on XP (3a214aa1-edd4-46ec-96e3-afc1a2b33453)] -&gt; id: showResponseCommentAddForm-0-1-1]] -&gt; tag name: textarea]
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.addFeedbackResponseComment(InstructorFeedbackResultsPage.java:169)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testFeedbackResponseCommentActions(InstructorFeedbackResultsPageUiTest.java:362)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1524042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1524042'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: [[[[FirefoxDriver: firefox on XP (3a214aa1-edd4-46ec-96e3-afc1a2b33453)] -&gt; id: showResponseCommentAddForm-0-1-1]] -&gt; tag name: textarea]
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
+System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at teammates.test.pageobjects.InstructorFeedbackResultsPage.addFeedbackResponseComment(InstructorFeedbackResultsPage.java:169)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testFeedbackResponseCommentActions(InstructorFeedbackResultsPageUiTest.java:362)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll(InstructorFeedbackResultsPageUiTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>239</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1d9954b</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</td>
 <td><div><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
@@ -3503,8 +3511,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25904965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace25904965'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24439203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24439203'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
 
    &lt;html&gt;
       &lt;head&gt;
@@ -4806,8 +4814,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>23</td>
-<td>teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@19a8bd1</td></tr>
+<td>24</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@151516b</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminHomePageUiTest</td>
 <td><div><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
@@ -5102,23 +5110,9 @@ function toggleAllBoxes() {
          &lt;/div&gt;
       &lt;/div&gt;
       &lt;br/&gt;
-            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
-         New to TEAMMATES? You may wish to have a look at our
-         &lt;a href=&quot;/instructorHelp.html#gs&quot; target=&quot;_blank&quot;&gt;
-            Getting Started Guide
-         &lt;/a&gt;
-         .
-         &lt;br/&gt;
-                  A video tour is also available in our
-         &lt;a href=&quot;/index.html&quot; target=&quot;_blank&quot;&gt;
-            home page
-         &lt;/a&gt;
-         .
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
       &lt;/div&gt;
-      &lt;script type=&quot;text/javascript&quot;&gt;
-         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
-      &lt;/script&gt;
-      &lt;div class=&quot;row hidden&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
          &lt;div class=&quot;col-md-5 pull-right&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-3 btn-group&quot;&gt;
@@ -5225,8 +5219,8 @@ function toggleAllBoxes() {
                      &lt;/span&gt;
                   &lt;/td&gt;
                   &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     &lt;img src=&quot;/images/ajax-loader.gif&quot;/&gt;
-                                       &lt;/td&gt;
+                     0 / 9
+                  &lt;/td&gt;
                   &lt;td class=&quot;no-print&quot;&gt;
                      &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
                         View Results
@@ -5322,6 +5316,345 @@ function toggleAllBoxes() {
          &lt;/table&gt;
       &lt;/div&gt;
       &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;strong&gt;
+                     [idOfTypicalCourse1.access] :
+                                        Typical Course 1 with 2 Evals
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;span class=&quot;pull-right&quot;&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Enroll
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=idOfTypicalCourse1.access&quot; title=&quot;&quot;&gt;
+                        Add Session
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=idOfTypicalCourse1.access&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
+                        Archive
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        &lt;span class=&quot;badge&quot;&gt;
+                           0
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=idOfTypicalCourse1.access&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
+                     Session Name
+                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Status
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Response Rate
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th class=&quot;no-print&quot;&gt;
+                     Action(s)
+                  &lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               &lt;tr id=&quot;session3&quot;&gt;
+                  &lt;td&gt;
+                     evaluation1 In Course1
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     3 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
+                        Preview
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session4&quot;&gt;
+                  &lt;td&gt;
+                     evaluation2 In Course1
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     0 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
+                        Preview
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session5&quot;&gt;
+                  &lt;td&gt;
+                     Grace Period Session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     2 / 9
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session6&quot;&gt;
+                  &lt;td&gt;
+                     Second feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     2 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session9&quot;&gt;
+                  &lt;td&gt;
+                     non visible session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, and is waiting to open.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Awaiting
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     0 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;non visible session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test disabled&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;This session is not yet opened&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session10&quot;&gt;
+                  &lt;td&gt;
+                     First feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     4 / 9
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session7&quot;&gt;
+                  &lt;td&gt;
+                     Closed Session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Closed
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session8&quot;&gt;
+                  &lt;td&gt;
+                     Empty session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
          &lt;/div&gt;
 
 &lt;/actual]&gt;&gt;
@@ -5335,8 +5668,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21022435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace21022435'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30195736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30195736'><pre>org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
    &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
       &lt;div id=&quot;topOfPage&quot;&gt;
       &lt;/div&gt;
@@ -5628,23 +5961,9 @@ function toggleAllBoxes() {
          &lt;/div&gt;
       &lt;/div&gt;
       &lt;br/&gt;
-            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
-         New to TEAMMATES? You may wish to have a look at our
-         &lt;a href=&quot;/instructorHelp.html#gs&quot; target=&quot;_blank&quot;&gt;
-            Getting Started Guide
-         &lt;/a&gt;
-         .
-         &lt;br/&gt;
-                  A video tour is also available in our
-         &lt;a href=&quot;/index.html&quot; target=&quot;_blank&quot;&gt;
-            home page
-         &lt;/a&gt;
-         .
+            &lt;div id=&quot;statusMessage&quot; style=&quot;display: none;&quot;&gt;
       &lt;/div&gt;
-      &lt;script type=&quot;text/javascript&quot;&gt;
-         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
-      &lt;/script&gt;
-      &lt;div class=&quot;row hidden&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
          &lt;div class=&quot;col-md-5 pull-right&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;
                &lt;div class=&quot;col-md-3 btn-group&quot;&gt;
@@ -5751,8 +6070,8 @@ function toggleAllBoxes() {
                      &lt;/span&gt;
                   &lt;/td&gt;
                   &lt;td class=&quot;session-response-for-test recent&quot;&gt;
-                     &lt;img src=&quot;/images/ajax-loader.gif&quot;/&gt;
-                                       &lt;/td&gt;
+                     0 / 9
+                  &lt;/td&gt;
                   &lt;td class=&quot;no-print&quot;&gt;
                      &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
                         View Results
@@ -5848,6 +6167,345 @@ function toggleAllBoxes() {
          &lt;/table&gt;
       &lt;/div&gt;
       &lt;br/&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;course1&quot;&gt;
+         &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;strong&gt;
+                     [idOfTypicalCourse1.access] :
+                                        Typical Course 1 with 2 Evals
+                  &lt;/strong&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;col-md-6&quot;&gt;
+                  &lt;span class=&quot;pull-right&quot;&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-enroll-for-test&quot; data-original-title=&quot;Enroll student into the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEnrollPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Enroll
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-view-for-test&quot; data-original-title=&quot;View, edit and send invitation emails to the students in the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDetailsPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-edit-for-test&quot; data-original-title=&quot;Edit Course information and instructor list&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseEditPage?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-add-eval-for-test&quot; data-original-title=&quot;Add a feedback session for the course&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbacksPage?user=teammates.coord_123&amp;courseid=idOfTypicalCourse1.access&quot; title=&quot;&quot;&gt;
+                        Add Session
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-archive-for-test&quot; data-original-title=&quot;Archive the course so that it will not be shown in the home page any more (you can still access it from the &apos;Courses&apos; tab)&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseArchive?courseid=idOfTypicalCourse1.access&amp;archive=true&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleArchiveCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
+                        Archive
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-notify-pending-comments-for-test
+                                            hidden&quot; data-original-title=&quot;Send email notification to recipients of 0 pending comment&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorStudentCommentClearPending?courseid=idOfTypicalCourse1.access&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        &lt;span class=&quot;badge&quot;&gt;
+                           0
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-arrow-right&quot;&gt;
+                        &lt;/span&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;
+                        &lt;/span&gt;
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-primary btn-xs btn-tm-actions course-delete-for-test&quot; data-original-title=&quot;Delete the course and its corresponding students and sessions&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorCourseDelete?courseid=idOfTypicalCourse1.access&amp;next=%2Fpage%2FinstructorHomePage&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteCourseConfirmation(&apos;idOfTypicalCourse1.access&apos;)&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;table class=&quot;table-responsive table table-striped table-bordered&quot;&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
+                     Session Name
+                     &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     Status
+                  &lt;/th&gt;
+                  &lt;th&gt;
+                     &lt;span data-original-title=&quot;Number of students submitted / Class size&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Response Rate
+                     &lt;/span&gt;
+                  &lt;/th&gt;
+                  &lt;th class=&quot;no-print&quot;&gt;
+                     Action(s)
+                  &lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+               &lt;tr id=&quot;session3&quot;&gt;
+                  &lt;td&gt;
+                     evaluation1 In Course1
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     3 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
+                        Preview
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation1 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation1+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session4&quot;&gt;
+                  &lt;td&gt;
+                     evaluation2 In Course1
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The evaluation has started and students can submit feedback until the closing time&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     0 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the current results of the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalResultsPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit evaluation details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalEditPage?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-preview-for-test&quot; data-original-title=&quot;Preview evaluation session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPreview?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;
+                        Preview
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the evaluation&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalDelete?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteEvaluationConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students who have not submitted their evaluations to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalRemind?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;evaluation2 In Course1&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;Publish evaluation results for students to view&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorEvalPublish?courseid=idOfTypicalCourse1.access&amp;evaluationname=evaluation2+In+Course1&amp;next=%2Fpage%2FinstructorHomePage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session5&quot;&gt;
+                  &lt;td&gt;
+                     Grace Period Session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     2 / 9
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Grace+Period+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Grace Period Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session6&quot;&gt;
+                  &lt;td&gt;
+                     Second feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     2 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Second+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Second feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session9&quot;&gt;
+                  &lt;td&gt;
+                     non visible session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, and is waiting to open.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Awaiting
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     0 / 5
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;non visible session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test disabled&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test disabled&quot; data-original-title=&quot;This session is not yet opened&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=non+visible+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session10&quot;&gt;
+                  &lt;td&gt;
+                     First feedback session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and is open for submissions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Open
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                     4 / 9
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=First+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;First feedback session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session7&quot;&gt;
+                  &lt;td&gt;
+                     Closed Session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Closed
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-publish-for-test&quot; data-original-title=&quot;Make session responses available for viewing&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackPublish?courseid=idOfTypicalCourse1.access&amp;fsname=Closed+Session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return togglePublishEvaluation(&apos;Closed Session&apos;);&quot; title=&quot;&quot;&gt;
+                        Publish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr id=&quot;session8&quot;&gt;
+                  &lt;td&gt;
+                     Empty session
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                     &lt;span data-original-title=&quot;The feedback session has been created, is visible, and has ended.&lt;br /&gt;The responses for this session are visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        Published
+                     &lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;session-response-for-test&quot;&gt;
+                     &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                        Show
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;no-print&quot;&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-original-title=&quot;View the submitted responses for this feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        View Results
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-original-title=&quot;Edit feedback session details&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Edit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-original-title=&quot;Delete the feedback session&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;idOfTypicalCourse1.access&apos;,&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
+                        Delete
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-original-title=&quot;Start submitting feedback&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; title=&quot;&quot;&gt;
+                        Submit
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-original-title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;&quot;&gt;
+                        Remind
+                     &lt;/a&gt;
+                     &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-original-title=&quot;Make responses no longer visible&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=idOfTypicalCourse1.access&amp;fsname=Empty+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Empty session&apos;);&quot; title=&quot;&quot;&gt;
+                        Unpublish
+                     &lt;/a&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
          &lt;/div&gt;
 
 &lt;/actual]&gt;&gt;
@@ -5872,663 +6530,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>43</td>
-<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@38e759</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome()'><b>testInstructorHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1013)
-	at teammates.test.pageobjects.AppPage.changePageType(AppPage.java:206)
-	at teammates.test.pageobjects.DevServerLoginPage.loginAsInstructor(DevServerLoginPage.java:37)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginInstructor(AllAccessControlUiTests.java:337)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome(AllAccessControlUiTests.java:271)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1009)
-	... 17 more
-Caused by: java.lang.IllegalStateException: Not in the correct page!
-	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:147)
-	at teammates.test.pageobjects.InstructorHomePage.&lt;init&gt;(InstructorHomePage.java:30)
-	... 22 more
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20901424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace20901424'><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1013)
-	at teammates.test.pageobjects.AppPage.changePageType(AppPage.java:206)
-	at teammates.test.pageobjects.DevServerLoginPage.loginAsInstructor(DevServerLoginPage.java:37)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginInstructor(AllAccessControlUiTests.java:337)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome(AllAccessControlUiTests.java:271)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1009)
-	... 17 more
-Caused by: java.lang.IllegalStateException: Not in the correct page!
-	at teammates.test.pageobjects.AppPage.&lt;init&gt;(AppPage.java:147)
-	at teammates.test.pageobjects.InstructorHomePage.&lt;init&gt;(InstructorHomePage.java:30)
-	... 22 more
-</pre></div></td>
-<td>14</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages()'><b>testPubliclyAccessiblePages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.navigateTo(AppPage.java:197)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages(AllAccessControlUiTests.java:312)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.read(SocketInputStream.java:152)
-	at java.net.SocketInputStream.read(SocketInputStream.java:122)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
-	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
-	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
-	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:223)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:682)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:322)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:301)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
-	... 16 more
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13474524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13474524'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.navigateTo(AppPage.java:197)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages(AllAccessControlUiTests.java:312)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.read(SocketInputStream.java:152)
-	at java.net.SocketInputStream.read(SocketInputStream.java:122)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
-	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
-	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
-	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:223)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:682)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:322)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:301)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
-	... 16 more
-</pre></div></td>
-<td>10806</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages()'><b>testStudentAccessToAdminPages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 2.08 seconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages(AllAccessControlUiTests.java:139)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4875589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace4875589'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 2.08 seconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages(AllAccessControlUiTests.java:139)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-</pre></div></td>
-<td>2</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult()'><b>testStudentEvalResult</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 156 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult(AllAccessControlUiTests.java:241)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22426651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace22426651'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 156 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult(AllAccessControlUiTests.java:241)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-</pre></div></td>
-<td>17</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission()'><b>testStudentEvalSubmission</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 62 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission(AllAccessControlUiTests.java:158)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23084870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23084870'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 62 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission(AllAccessControlUiTests.java:158)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-</pre></div></td>
-<td>8</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome()'><b>testStudentHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 109 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome(AllAccessControlUiTests.java:145)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20358240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace20358240'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 109 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome(AllAccessControlUiTests.java:145)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-</pre></div></td>
-<td>0</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn()'><b>testUserNotLoggedIn</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 63 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn(AllAccessControlUiTests.java:86)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28012636", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace28012636'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 63 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn(AllAccessControlUiTests.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-</pre></div></td>
-<td>0</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered()'><b>testUserNotRegistered</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 62 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered(AllAccessControlUiTests.java:110)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10152641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace10152641'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 62 milliseconds
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Session ID: 4dda27dd-916e-4035-a3e4-9e75ff39230e
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:405)
-	at teammates.test.pageobjects.AppPage.logout(AppPage.java:397)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.loginStudent(AllAccessControlUiTests.java:323)
-	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered(AllAccessControlUiTests.java:110)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:17:32&apos;
-System info: host: &apos;soccf-tr5-001&apos;, ip: &apos;172.26.191.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10954)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
-	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8657719367612642535webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
-</pre></div></td>
-<td>0</td>
-<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1813ee4</td></tr>
+<td>53</td>
+<td>teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1dcae3b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -6538,175 +6541,215 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.StudentProfilePageUiTest</td>
+<td></td>
+<td>37</td>
+<td>teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@1bd3260</td></tr>
+<tr>
 <td title='teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest</td>
 <td></td>
-<td>96</td>
-<td>teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@163cf5d</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest</td>
-<td></td>
-<td>90</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest@81ee8b</td></tr>
+<td>38</td>
+<td>teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@1c85130</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest</td>
 <td></td>
-<td>228</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@19bade4</td></tr>
+<td>160</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@1b5900e</td></tr>
 <tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</td>
+<td title='teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest</td>
 <td></td>
-<td>39</td>
-<td>teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest@23a27e</td></tr>
+<td>77</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCoursesPageUiTest@da7ebb</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest</td>
 <td></td>
-<td>717</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@194164c</td></tr>
+<td>340</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@5aaa1f</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest</td>
+<td></td>
+<td>44</td>
+<td>teammates.test.cases.ui.browsertests.InstructorSearchPageUiTest@1813ee4</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest.allTests()'><b>allTests</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest</td>
 <td></td>
-<td>789</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@3f3ce5</td></tr>
+<td>513</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@5de33e</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest.runTestsInOrder()'><b>runTestsInOrder</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest</td>
 <td></td>
-<td>34</td>
+<td>30</td>
 <td>teammates.test.cases.ui.browsertests.InstructorEvalEditPageUiTest@e54052</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest.testAdjustmentOfSubsmission()'><b>testAdjustmentOfSubsmission</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest</td>
 <td></td>
-<td>20</td>
-<td>teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest@481697</td></tr>
+<td>21</td>
+<td>teammates.test.cases.ui.browsertests.InstructorSubmissionAdjustmentUiTest@c31ff5</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest</td>
 <td></td>
-<td>38</td>
-<td>teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest@1fc9a67</td></tr>
+<td>39</td>
+<td>teammates.test.cases.ui.browsertests.AdminAccountManagementPageUiTest@1e731c</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest</td>
 <td></td>
-<td>263</td>
-<td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@18d6157</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest</td>
-<td></td>
-<td>384</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1798826</td></tr>
+<td>155</td>
+<td>teammates.test.cases.ui.browsertests.InstructorStudentListPageUiTest@f1cdeb</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest</td>
 <td></td>
-<td>31</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest@1440272</td></tr>
+<td>27</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsEditPageUiTest@56da6e</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest</td>
 <td></td>
-<td>6</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest@6b9056</td></tr>
+<td>5</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest@1d135b6</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest</td>
 <td></td>
-<td>24</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest@e1ce1b</td></tr>
+<td>25</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionEditPageUiTest@a25e73</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest</td>
 <td></td>
-<td>24</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest@146421a</td></tr>
+<td>22</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalSubmissionViewPageUiTest@19dbdb7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest</td>
 <td></td>
-<td>24</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@1d44c3</td></tr>
+<td>17</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@18d6157</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest</td>
 <td></td>
-<td>4</td>
-<td>teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest@1b70371</td></tr>
-<tr>
-<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</td>
-<td></td>
-<td>128</td>
-<td>teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@13b4526</td></tr>
+<td>3</td>
+<td>teammates.test.cases.ui.browsertests.StudentCourseDetailsPageUiTest@1f203d7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest</td>
 <td></td>
-<td>98</td>
-<td>teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@7dd4e5</td></tr>
+<td>102</td>
+<td>teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@166bddc</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest</td>
 <td></td>
-<td>20</td>
-<td>teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest@1d086e3</td></tr>
+<td>24</td>
+<td>teammates.test.cases.ui.browsertests.StudentEvalResultsPageUiTest@81ee8b</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest</td>
+<td></td>
+<td>143</td>
+<td>teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@38e759</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest</td>
 <td></td>
-<td>104</td>
-<td>teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest@1e5be85</td></tr>
+<td>99</td>
+<td>teammates.test.cases.ui.browsertests.StudentEvalEditSubmissionPageUiTest@145fed7</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest</td>
 <td></td>
-<td>62</td>
-<td>teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@19a3b90</td></tr>
+<td>52</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@bc7f3f</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest</td>
 <td></td>
-<td>11</td>
-<td>teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest@bc7f3f</td></tr>
+<td>13</td>
+<td>teammates.test.cases.ui.browsertests.AdminAccountDetailsPageUiTest@146421a</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest.testAll()'><b>testAll</b><br>Test class: teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest</td>
 <td></td>
-<td>119</td>
-<td>teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@147b78e</td></tr>
+<td>133</td>
+<td>teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@53f43e</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testClosedEval()'><b>testClosedEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>11</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1958905</td></tr>
+<td>10</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@56c0b1</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testEvaluationClosingReminders()'><b>testEvaluationClosingReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@53f43e</td></tr>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@b63f05</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testEvaluationOpeningReminders()'><b>testEvaluationOpeningReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@53f43e</td></tr>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@b63f05</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSessionOpeningReminders()'><b>testFeedbackSessionOpeningReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@53f43e</td></tr>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@b63f05</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSessionPublishedReminders()'><b>testFeedbackSessionPublishedReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@53f43e</td></tr>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@b63f05</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest.testFeedbackSesssionClosingReminders()'><b>testFeedbackSesssionClosingReminders</b><br>Test class: teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@53f43e</td></tr>
+<td>teammates.test.cases.ui.browsertests.AutomatedSessionRemindersTest@b63f05</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest.testInstructorCourseEnrollPage()'><b>testInstructorCourseEnrollPage</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest</td>
 <td></td>
-<td>86</td>
-<td>teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest@151516b</td></tr>
+<td>62</td>
+<td>teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest@1b8738f</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testInstructorHome()'><b>testInstructorHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>5</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testOpenEval()'><b>testOpenEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>35</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1958905</td></tr>
+<td>32</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@56c0b1</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testP2PDisabledEval()'><b>testP2PDisabledEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
 <td>5</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1958905</td></tr>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@56c0b1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages()'><b>testPubliclyAccessiblePages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>6</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest.testPublishedEval()'><b>testPublishedEval</b><br>Test class: teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest</td>
 <td></td>
-<td>9</td>
-<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@1958905</td></tr>
+<td>14</td>
+<td>teammates.test.cases.ui.browsertests.InstructorEvalResultsPageUiTest@56c0b1</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentAccessToAdminPages()'><b>testStudentAccessToAdminPages</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>6</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalResult()'><b>testStudentEvalResult</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>15</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentEvalSubmission()'><b>testStudentEvalSubmission</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>20</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testStudentHome()'><b>testStudentHome</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>4</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotLoggedIn()'><b>testUserNotLoggedIn</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>0</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
+<tr>
+<td title='teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testUserNotRegistered()'><b>testUserNotRegistered</b><br>Test class: teammates.test.cases.ui.browsertests.AllAccessControlUiTests</td>
+<td></td>
+<td>8</td>
+<td>teammates.test.cases.ui.browsertests.AllAccessControlUiTests@481697</td></tr>
 </table><p>
 </body>
 </html>

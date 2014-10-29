@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 29 13:57:42 UTC 2014</td>
+<td>Started on:</td><td>Wed Oct 29 17:22:51 UTC 2014</td>
 </tr>
-<tr><td>Total time:</td><td>106 seconds (106176 ms)</td>
+<tr><td>Total time:</td><td>68 seconds (68451 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,15 @@ function toggleAllBoxes() {
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testGetCoursesByInstructorId()'><b>testGetCoursesByInstructorId</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td><div><pre>java.lang.AssertionError: expected:&lt;[BACKDOOR_STATUS_SUCCESS]&gt; but was:&lt;[BACKDOOR_STATUS_FAILURE]java.lang.NullPointerException	at teammates.storage.api.InstructorsDb.putDocument(InstructorsDb.java:52)	at teammates.storage.api.InstructorsDb.createInstructors(InstructorsDb.java:103)	at teammates.logic.backdoor.BackDoorLogic.persistDataBundle(BackDoorLogic.java:122)	at teammates.logic.backdoor.BackDoorServlet.executeBackendAction(BackDoorServlet.java:223)	at teammates.logic.backdoor.BackDoorServlet.doPost(BackDoorServlet.java:127)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)	at teammates.storage.datastore.DatastoreFilter.doFilter(DatastoreFilter.java:28)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.socket.dev.DevSocketFilter.doFilter(DevSocketFilter.java:74)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.ResponseRewriterFilter.doFilter(ResponseRewriterFilter.java:127)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.HeaderVerificationFilter.doFilter(HeaderVerificationFilter.java:34)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.blobstore.dev.ServeBlobFilter.doFilter(ServeBlobFilter.java:63)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.apphosting.utils.servlet.TransactionCleanupFilter.doFilter(TransactionCleanupFilter.java:43)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.StaticFileFilter.doFilter(StaticFileFilter.java:125)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectRequest(DevAppServerModulesFilter.java:366)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectModuleRequest(DevAppServerModulesFilter.java:349)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doFilter(DevAppServerModulesFilter.java:116)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)	at com.google.appengine.tools.development.DevAppEngineWebAppContext.handle(DevAppEngineWebAppContext.java:98)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at com.google.appengine.tools.development.JettyContainerService$ApiProxyHandler.handle(JettyContainerService.java:491)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at org.mortbay.jetty.Server.handle(Server.java:326)	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:938)	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:755)	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)&gt;
-	at teammates.test.cases.testdriver.BackDoorTest.testGetCoursesByInstructorId(BackDoorTest.java:269)
+	at teammates.test.cases.testdriver.BackDoorTest.testGetCoursesByInstructorId(BackDoorTest.java:267)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24344596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace24344596'><pre>java.lang.AssertionError: expected:&lt;[BACKDOOR_STATUS_SUCCESS]&gt; but was:&lt;[BACKDOOR_STATUS_FAILURE]java.lang.NullPointerException	at teammates.storage.api.InstructorsDb.putDocument(InstructorsDb.java:52)	at teammates.storage.api.InstructorsDb.createInstructors(InstructorsDb.java:103)	at teammates.logic.backdoor.BackDoorLogic.persistDataBundle(BackDoorLogic.java:122)	at teammates.logic.backdoor.BackDoorServlet.executeBackendAction(BackDoorServlet.java:223)	at teammates.logic.backdoor.BackDoorServlet.doPost(BackDoorServlet.java:127)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)	at teammates.storage.datastore.DatastoreFilter.doFilter(DatastoreFilter.java:28)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.socket.dev.DevSocketFilter.doFilter(DevSocketFilter.java:74)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.ResponseRewriterFilter.doFilter(ResponseRewriterFilter.java:127)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.HeaderVerificationFilter.doFilter(HeaderVerificationFilter.java:34)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.blobstore.dev.ServeBlobFilter.doFilter(ServeBlobFilter.java:63)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.apphosting.utils.servlet.TransactionCleanupFilter.doFilter(TransactionCleanupFilter.java:43)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.StaticFileFilter.doFilter(StaticFileFilter.java:125)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectRequest(DevAppServerModulesFilter.java:366)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectModuleRequest(DevAppServerModulesFilter.java:349)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doFilter(DevAppServerModulesFilter.java:116)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)	at com.google.appengine.tools.development.DevAppEngineWebAppContext.handle(DevAppEngineWebAppContext.java:98)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at com.google.appengine.tools.development.JettyContainerService$ApiProxyHandler.handle(JettyContainerService.java:491)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at org.mortbay.jetty.Server.handle(Server.java:326)	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:938)	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:755)	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)&gt;
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18713752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18713752'><pre>java.lang.AssertionError: expected:&lt;[BACKDOOR_STATUS_SUCCESS]&gt; but was:&lt;[BACKDOOR_STATUS_FAILURE]java.lang.NullPointerException	at teammates.storage.api.InstructorsDb.putDocument(InstructorsDb.java:52)	at teammates.storage.api.InstructorsDb.createInstructors(InstructorsDb.java:103)	at teammates.logic.backdoor.BackDoorLogic.persistDataBundle(BackDoorLogic.java:122)	at teammates.logic.backdoor.BackDoorServlet.executeBackendAction(BackDoorServlet.java:223)	at teammates.logic.backdoor.BackDoorServlet.doPost(BackDoorServlet.java:127)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)	at teammates.storage.datastore.DatastoreFilter.doFilter(DatastoreFilter.java:28)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.socket.dev.DevSocketFilter.doFilter(DevSocketFilter.java:74)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.ResponseRewriterFilter.doFilter(ResponseRewriterFilter.java:127)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.HeaderVerificationFilter.doFilter(HeaderVerificationFilter.java:34)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.api.blobstore.dev.ServeBlobFilter.doFilter(ServeBlobFilter.java:63)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.apphosting.utils.servlet.TransactionCleanupFilter.doFilter(TransactionCleanupFilter.java:43)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.StaticFileFilter.doFilter(StaticFileFilter.java:125)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectRequest(DevAppServerModulesFilter.java:366)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doDirectModuleRequest(DevAppServerModulesFilter.java:349)	at com.google.appengine.tools.development.DevAppServerModulesFilter.doFilter(DevAppServerModulesFilter.java:116)	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)	at com.google.appengine.tools.development.DevAppEngineWebAppContext.handle(DevAppEngineWebAppContext.java:98)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at com.google.appengine.tools.development.JettyContainerService$ApiProxyHandler.handle(JettyContainerService.java:491)	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)	at org.mortbay.jetty.Server.handle(Server.java:326)	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:938)	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:755)	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)&gt;
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
-	at teammates.test.cases.testdriver.BackDoorTest.testGetCoursesByInstructorId(BackDoorTest.java:269)
+	at teammates.test.cases.testdriver.BackDoorTest.testGetCoursesByInstructorId(BackDoorTest.java:267)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,8 +100,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>1</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>0</td>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.ui.browsertests.GodModeTest.testGodMode()'><b>testGodMode</b><br>Test class: teammates.test.cases.ui.browsertests.GodModeTest</td>
 <td><div><pre>java.lang.AssertionError: expected:&lt;   &lt;title&gt;
@@ -158,8 +158,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7676673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7676673'><pre>java.lang.AssertionError: expected:&lt;   &lt;title&gt;
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2334597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2334597'><pre>java.lang.AssertionError: expected:&lt;   &lt;title&gt;
    &lt;/title&gt;
    &lt;div id=&quot;frameBodyWrapper&quot;&gt;
       &lt;input type=&quot;text&quot; value=&quot;&quot;/&gt;
@@ -227,7 +227,7 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
 <td>0</td>
-<td>teammates.test.cases.ui.browsertests.GodModeTest@1e3bb60</td></tr>
+<td>teammates.test.cases.ui.browsertests.GodModeTest@6fd42b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -240,57 +240,57 @@ function toggleAllBoxes() {
 <td title='teammates.test.cases.testdriver.BackDoorTest.testAccounts()'><b>testAccounts</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>1</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateCourse()'><b>testCreateCourse</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateEvaluation()'><b>testCreateEvaluation</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateInstructor()'><b>testCreateInstructor</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testCreateStudent()'><b>testCreateStudent</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testDeletion()'><b>testDeletion</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
-<td>7</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>4</td>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testEditEvaluation()'><b>testEditEvaluation</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testEditStudent()'><b>testEditStudent</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testEditSubmission()'><b>testEditSubmission</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testGetKeyForStudent()'><b>testGetKeyForStudent</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 <tr>
 <td title='teammates.test.cases.testdriver.BackDoorTest.testPersistence()'><b>testPersistence</b><br>Test class: teammates.test.cases.testdriver.BackDoorTest</td>
 <td></td>
 <td>0</td>
-<td>teammates.test.cases.testdriver.BackDoorTest@5a892c</td></tr>
+<td>teammates.test.cases.testdriver.BackDoorTest@180ca84</td></tr>
 </table><p>
 </body>
 </html>
