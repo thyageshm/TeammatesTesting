@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]"> (show)</a> <!-- show-methods failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
                     </span>
                     <div class="method-list-content failed suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.AdminHomePageUiTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" title="teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest" hash-for-method="testAll">testAll</a> <!-- method navigator-link -->
@@ -1500,6 +1505,2036 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
+          <div class="suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">teammates.test.cases.ui.browsertests.AdminHomePageUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAll">
+                  </a> <!-- testAll -->
+                  <span class="method-name">testAll</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&lt;[expected&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Add New Feedback Session
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot;&gt;
+         &lt;form action=&quot;/page/instructorFeedbackAdd&quot; class=&quot;form-group&quot; method=&quot;post&quot; name=&quot;form_addfeedbacksession&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;h4 class=&quot;label-control col-md-2 text-md&quot;&gt;
+                  Create new
+               &lt;/h4&gt;
+               &lt;div class=&quot;col-md-5&quot;&gt;
+                  &lt;div class=&quot;col-md-10&quot; data-original-title=&quot;Select a session type here.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                     &lt;select class=&quot;form-control&quot; id=&quot;fstype&quot; name=&quot;fstype&quot;&gt;
+                        &lt;option value=&quot;STANDARD&quot;&gt;
+                           Session with your own questions
+                        &lt;/option&gt;
+                        &lt;option selected=&quot;selected&quot; value=&quot;TEAMEVALUATION&quot;&gt;
+                           Team peer evaluation session
+                        &lt;/option&gt;
+                     &lt;/select&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;col-md-1&quot;&gt;
+                     &lt;h5&gt;
+                        &lt;a href=&quot;/instructorHelp.html#fbSetupSession&quot; target=&quot;_blank&quot;&gt;
+                           &lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/a&gt;
+                     &lt;/h5&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;h4 class=&quot;label-control col-md-1 text-md&quot;&gt;
+                  Or:
+               &lt;/h4&gt;
+               &lt;div class=&quot;col-md-3&quot;&gt;
+                  &lt;a class=&quot;btn btn-info&quot; id=&quot;button_copy&quot; style=&quot;vertical-align:middle;&quot;&gt;
+                     Copy
+                            from previous feedback sessions
+                  &lt;/a&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br/&gt;
+                        &lt;div class=&quot;panel panel-primary&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Please select the course for which the feedback session is to be created.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-4&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;courseid&quot;&gt;
+                                 Course
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-8&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;courseid&quot; name=&quot;courseid&quot;&gt;
+                                 &lt;option value=&quot;AHPUiT.instr1.gma-demo&quot;&gt;
+                                    AHPUiT.instr1.gma-demo
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;You should not need to change this as your timezone is auto-detected. &lt;br /&gt;&lt;br /&gt;However, note that daylight saving is not taken into account i.e. if you are in UTC -8:00 and there is daylight saving, you should choose UTC -7:00 and its corresponding timings.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-4&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;timezone&quot;&gt;
+                                 Timezone
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-8&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;timezone&quot; name=&quot;timezone&quot;&gt;
+                                 &lt;option value=&quot;-12&quot;&gt;
+                                    (UTC -12:00) Baker Island, Howland Island
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-11&quot;&gt;
+                                    (UTC -11:00) American Samoa, Niue
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-10&quot;&gt;
+                                    (UTC -10:00) Hawaii, Cook Islands, Marquesas Islands
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-9&quot;&gt;
+                                    (UTC -09:00) Gambier Islands, Alaska
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-8&quot;&gt;
+                                    (UTC -08:00) Los Angeles, Vancouver, Tijuana
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-7&quot;&gt;
+                                    (UTC -07:00) Phoenix, Calgary, Ciudad Juárez
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-6&quot;&gt;
+                                    (UTC -06:00) Chicago, Guatemala City, Mexico City, San José, San Salvador, Tegucigalpa, Winnipeg
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-5&quot;&gt;
+                                    (UTC -05:00) New York, Lima, Toronto, Bogotá, Havana, Kingston
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-4.5&quot;&gt;
+                                    (UTC -04:30) Caracas
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-4&quot;&gt;
+                                    (UTC -04:00) Santiago, La Paz, San Juan de Puerto Rico, Manaus, Halifax
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-3.5&quot;&gt;
+                                    (UTC -03:30) St. John&apos;s
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-3&quot;&gt;
+                                    (UTC -03:00) Buenos Aires, Montevideo, São Paulo
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-2&quot;&gt;
+                                    (UTC -02:00) Fernando de Noronha, South Georgia and the South Sandwich Islands
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-1&quot;&gt;
+                                    (UTC -01:00) Cape Verde, Greenland, Azores islands
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;0&quot;&gt;
+                                    (UTC) Accra, Abidjan, Casablanca, Dakar, Dublin, Lisbon, London
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    (UTC +01:00) Belgrade, Berlin, Brussels, Lagos, Madrid, Paris, Rome, Tunis, Vienna, Warsaw
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    (UTC +02:00) Athens, Sofia, Cairo, Kiev, Istanbul, Beirut, Helsinki, Jerusalem, Johannesburg, Bucharest
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    (UTC +03:00) Nairobi, Baghdad, Doha, Khartoum, Minsk, Riyadh
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3.5&quot;&gt;
+                                    (UTC +03:30) Tehran
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    (UTC +04:00) Baku, Dubai, Moscow
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4.5&quot;&gt;
+                                    (UTC +04:30) Kabul
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    (UTC +05:00) Karachi, Tashkent
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5.5&quot;&gt;
+                                    (UTC +05:30) Colombo, Delhi
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5.75&quot;&gt;
+                                    (UTC +05:45) Kathmandu
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    (UTC +06:00) Almaty, Dhaka, Yekaterinburg
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    (UTC +07:00) Jakarta, Bangkok, Novosibirsk, Hanoi
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    (UTC +08:00) Perth, Beijing, Manila, Singapore, Kuala Lumpur, Denpasar, Krasnoyarsk
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    (UTC +09:00) Seoul, Tokyo, Pyongyang, Ambon, Irkutsk
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    (UTC +10:00) Canberra, Yakutsk, Port Moresby
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    (UTC +11:00) Vladivostok, Noumea
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    (UTC +12:00) Auckland, Suva
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    (UTC +13:00) Phoenix Islands, Tokelau, Tonga
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-12&quot; data-original-title=&quot;Enter the name of the feedback session e.g. Feedback Session 1.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-2&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;fsname&quot;&gt;
+                                 Session
+                                            name
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-10&quot;&gt;
+                              &lt;input class=&quot;form-control&quot; id=&quot;fsname&quot; maxlength=&quot;38&quot; name=&quot;fsname&quot; placeholder=&quot;e.g. Feedback for Project Presentation 1&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;row&quot; id=&quot;instructionsRow&quot;&gt;
+                     &lt;div class=&quot;col-md-12&quot; data-original-title=&quot;Enter instructions for this feedback session. e.g. Avoid comments which are too critical.&lt;br /&gt; It will be displayed at the top of the page when users respond to the session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-2&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;instructions&quot;&gt;
+                                 Instructions
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-10&quot;&gt;
+                              &lt;textarea class=&quot;form-control&quot; cols=&quot;100%&quot; id=&quot;instructions&quot; name=&quot;instructions&quot; placeholder=&quot;e.g. Please answer all the given questions.&quot; rows=&quot;4&quot;&gt;
+                                 Please answer all the given questions.
+                              &lt;/textarea&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;timeFramePanel&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-5&quot; data-original-title=&quot;Please select the date and time for which users can start submitting responses for the feedback session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;label class=&quot;label-control&quot; for=&quot;startdate&quot;&gt;
+                                 Submission opening time
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;input class=&quot;form-control col-sm-2 hasDatepicker&quot; id=&quot;startdate&quot; name=&quot;startdate&quot; placeholder=&quot;Date&quot; type=&quot;text&quot; value=&quot;{*}&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;starttime&quot; name=&quot;starttime&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-5 border-left-gray&quot; data-original-title=&quot;Please select the date and time after which the feedback session will no longer accept submissions from users.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;label class=&quot;label-control&quot; for=&quot;enddate&quot;&gt;
+                                 Submission
+                                            closing time
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;input class=&quot;form-control col-sm-2 hasDatepicker&quot; id=&quot;enddate&quot; name=&quot;enddate&quot; placeholder=&quot;Date&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;endtime&quot; name=&quot;endtime&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-2 border-left-gray&quot; data-original-title=&quot;Please select the amount of time that the system will continue accepting &lt;br /&gt;submissions after the specified deadline.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-12&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;graceperiod&quot;&gt;
+                                 Grace period
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-12&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;graceperiod&quot; name=&quot;graceperiod&quot;&gt;
+                                 &lt;option value=&quot;0&quot;&gt;
+                                    0 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    5 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    10 mins
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;15&quot;&gt;
+                                    15 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    20 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;25&quot;&gt;
+                                    25 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;30&quot;&gt;
+                                    30 mins
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot; id=&quot;uncommonSettingsInfo&quot;&gt;
+               &lt;div class=&quot;col-md-12 text-muted&quot;&gt;
+                  &lt;span id=&quot;uncommonSettingsInfoText&quot;&gt;
+                     Session is visible at submission opening time, responses are only visible when you publish the results.
+                     &lt;br/&gt;
+                                          Emails are sent when session opens (within 15 mins), 24 hrs before session closes and when results are published.
+                  &lt;/span&gt;
+                  &lt;a data-done=&quot;[Done]&quot; data-edit=&quot;[Edit]&quot; id=&quot;editUncommonSettingsButton&quot;&gt;
+                     [Edit]
+                  &lt;/a&gt;
+                  &lt;br/&gt;
+                                    &lt;br/&gt;
+                                 &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;sessionResponsesVisiblePanel&quot; style=&quot;display:none;&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Please select when you want the questions for the feedback session to be visible to users who need to participate. Note that users cannot submit their responses until the submissions opening time set below.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label class=&quot;label-control&quot;&gt;
+                                 Session visible from
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-2&quot; data-original-title=&quot;Select this option to enter in a custom date and time for which the feedback session will become visible.&lt;br /&gt;Note that you can make a session visible before it is open for submissions so that users can preview the questions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;sessionVisibleFromButton_custom&quot;&gt;
+                                 At
+                              &lt;/label&gt;
+                              &lt;input id=&quot;sessionVisibleFromButton_custom&quot; name=&quot;sessionVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;custom&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-5&quot;&gt;
+                              &lt;input class=&quot;form-control col-sm-2 hasDatepicker&quot; disabled=&quot;disabled&quot; id=&quot;visibledate&quot; name=&quot;visibledate&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-4&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; disabled=&quot;disabled&quot; id=&quot;visibletime&quot; name=&quot;visibletime&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Select this option to have the feedback session become visible when it is open for submissions (as selected above).&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;sessionVisibleFromButton_atopen&quot;&gt;
+                                 Submission
+                                            opening time
+                              &lt;/label&gt;
+                              &lt;input checked=&quot;checked&quot; id=&quot;sessionVisibleFromButton_atopen&quot; name=&quot;sessionVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;atopen&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Select this option if you want the feedback session to never be visible. Use this option if you want to use this as a private feedback session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;sessionVisibleFromButton_never&quot;&gt;
+                                 Never
+                                            (this is a private session)
+                              &lt;/label&gt;
+                              &lt;input id=&quot;sessionVisibleFromButton_never&quot; name=&quot;sessionVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;never&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-6 border-left-gray&quot; id=&quot;responsesVisibleFromColumn&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Please select when the responses for the feedback session will be visible to the designated recipients.&lt;br /&gt;You can select the response visibility for each type of user and question later.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label class=&quot;label-control&quot;&gt;
+                                 Responses
+                                            visible from
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-2&quot; data-original-title=&quot;Select this option to use a custom time for when the responses of the feedback session&lt;br /&gt;will be visible to the designated recipients.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_custom&quot;&gt;
+                                 At
+                              &lt;/label&gt;
+                              &lt;input id=&quot;resultsVisibleFromButton_custom&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;custom&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-5&quot;&gt;
+                              &lt;input class=&quot;form-control hasDatepicker&quot; disabled=&quot;disabled&quot; id=&quot;publishdate&quot; name=&quot;publishdate&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-4&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; data-original-title=&quot;Select this option to enter in a custom date and time for which&lt;/br&gt;the responses for this feedback session will become visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; disabled=&quot;disabled&quot; id=&quot;publishtime&quot; name=&quot;publishtime&quot; title=&quot;&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-3&quot; data-original-title=&quot;Select this option to have the feedback responses be immediately visible&lt;br /&gt;when the session becomes visible to users.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_atvisible&quot;&gt;
+                                 Immediately
+                              &lt;/label&gt;
+                              &lt;input id=&quot;resultsVisibleFromButton_atvisible&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;atvisible&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-4&quot; data-original-title=&quot;Select this option if you intend to manually publish the session later on.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_later&quot;&gt;
+                                 Publish
+                                            manually
+                              &lt;/label&gt;
+                              &lt;input checked=&quot;checked&quot; id=&quot;resultsVisibleFromButton_later&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;later&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-2&quot; data-original-title=&quot;Select this option if you intend never to publish the responses.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_never&quot;&gt;
+                                 Never
+                              &lt;/label&gt;
+                              &lt;input id=&quot;resultsVisibleFromButton_never&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;never&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;sendEmailsForPanel&quot; style=&quot;display:none;&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-12&quot;&gt;
+                        &lt;label class=&quot;control-label&quot;&gt;
+                           Send
+                                    emails for
+                        &lt;/label&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-sm-3&quot; data-original-title=&quot;Select this option to automatically send an email to students to notify them when the session is open for submission.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                           &lt;label&gt;
+                              Session opening
+                                        reminder
+                           &lt;/label&gt;
+                           &lt;input checked=&quot;checked&quot; id=&quot;sendreminderemail_open&quot; name=&quot;sendreminderemail&quot; type=&quot;checkbox&quot; value=&quot;FEEDBACK_OPENING&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-sm-3&quot; data-original-title=&quot;Select this option to automatically send an email to students to remind them to submit 24 hours before the end of the session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                           &lt;label for=&quot;sendreminderemail_closing&quot;&gt;
+                              Session
+                                        closing reminder
+                           &lt;/label&gt;
+                           &lt;input checked=&quot;checked&quot; id=&quot;sendreminderemail_closing&quot; name=&quot;sendreminderemail&quot; type=&quot;checkbox&quot; value=&quot;FEEDBACK_CLOSING&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-sm-4&quot; data-original-title=&quot;Select this option to automatically send an email to students to notify them when the session results is published.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                           &lt;label for=&quot;sendreminderemail_published&quot;&gt;
+                              Results
+                                        published announcement
+                           &lt;/label&gt;
+                           &lt;input checked=&quot;checked&quot; id=&quot;sendreminderemail_published&quot; name=&quot;sendreminderemail&quot; type=&quot;checkbox&quot; value=&quot;FEEDBACK_PUBLISHED&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+               &lt;div class=&quot;col-md-offset-5 col-md-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary&quot; id=&quot;button_submit&quot; type=&quot;submit&quot;&gt;
+                     Create Feedback Session
+                  &lt;/button&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;teammates.coord_123&quot;/&gt;
+                     &lt;/form&gt;
+         &lt;form action=&quot;/page/instructorFeedbacksPage&quot; class=&quot;ajaxForSessionsForm&quot; id=&quot;ajaxForSessions&quot; style=&quot;display:none;&quot;&gt;
+            &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;teammates.coord_123&quot;/&gt;
+                        &lt;input name=&quot;isusingAjax&quot; type=&quot;hidden&quot; value=&quot;on&quot;/&gt;
+                     &lt;/form&gt;
+         &lt;br/&gt;
+                  &lt;br/&gt;
+               &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+         Reminder e-mails have been sent out to those students and instructors. Please allow up to 1 hour for all the notification emails to be sent out.
+      &lt;/div&gt;
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+      &lt;/script&gt;
+      &lt;br/&gt;
+            &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;copyModalTitle&quot; class=&quot;modal fade&quot; id=&quot;copyModal&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot;&gt;
+         &lt;div class=&quot;modal-dialog&quot;&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+               &lt;div class=&quot;modal-header&quot;&gt;
+                  &lt;button class=&quot;close&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;
+                     &lt;span aria-hidden=&quot;true&quot;&gt;
+                        ×
+                     &lt;/span&gt;
+                     &lt;span class=&quot;sr-only&quot;&gt;
+                        Close
+                     &lt;/span&gt;
+                  &lt;/button&gt;
+                  &lt;h4 class=&quot;modal-title&quot; id=&quot;copyModalTitle&quot;&gt;
+                     Creating a new session by copying a previous session
+                  &lt;/h4&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;modal-body&quot; id=&quot;copySessionsBody&quot;&gt;
+                  &lt;form action=&quot;/page/instructorFeedbackCopy&quot; class=&quot;form&quot; id=&quot;copyModalForm&quot; method=&quot;post&quot; role=&quot;form&quot;&gt;
+                     &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;control-label&quot; for=&quot;modalCopiedCourseId&quot;&gt;
+                           Create in course
+                        &lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot; id=&quot;modalCopiedCourseId&quot; name=&quot;copiedcourseid&quot;&gt;
+                           &lt;option value=&quot;AHPUiT.instr1.gma-demo&quot;&gt;
+                              AHPUiT.instr1.gma-demo
+                           &lt;/option&gt;
+                        &lt;/select&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;control-label&quot; for=&quot;modalCopiedSessionName&quot;&gt;
+                           Name for new session
+                        &lt;/label&gt;
+                        &lt;input class=&quot;form-control&quot; id=&quot;modalCopiedSessionName&quot; maxlength=&quot;38&quot; name=&quot;copiedfsname&quot; placeholder=&quot;e.g. Feedback for Project Presentation 1&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                             &lt;/div&gt;
+                     &lt;label&gt;
+                        Copy sessions/questions from
+                     &lt;/label&gt;
+                     &lt;table class=&quot;table-responsive table table-bordered table-hover margin-0&quot; id=&quot;copyTableModal&quot;&gt;
+                        &lt;thead class=&quot;fill-primary&quot;&gt;
+                           &lt;tr&gt;
+                              &lt;th style=&quot;width:20px;&quot;&gt;
+                                  
+                              &lt;/th&gt;
+                              &lt;th&gt;
+                                 Course ID
+                              &lt;/th&gt;
+                              &lt;th&gt;
+                                 Feedback Session Name
+                              &lt;/th&gt;
+                           &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                           &lt;tr style=&quot;cursor:pointer;&quot;&gt;
+                              &lt;td&gt;
+                                 &lt;input type=&quot;radio&quot;/&gt;
+                                                               &lt;/td&gt;
+                              &lt;td&gt;
+                                 AHPUiT.instr1.gma-demo
+                              &lt;/td&gt;
+                              &lt;td&gt;
+                                 Second team feedback session
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr style=&quot;cursor:pointer;&quot;&gt;
+                              &lt;td&gt;
+                                 &lt;input type=&quot;radio&quot;/&gt;
+                                                               &lt;/td&gt;
+                              &lt;td&gt;
+                                 AHPUiT.instr1.gma-demo
+                              &lt;/td&gt;
+                              &lt;td&gt;
+                                 First team feedback session
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr style=&quot;cursor:pointer;&quot;&gt;
+                              &lt;td&gt;
+                                 &lt;input type=&quot;radio&quot;/&gt;
+                                                               &lt;/td&gt;
+                              &lt;td&gt;
+                                 AHPUiT.instr1.gma-demo
+                              &lt;/td&gt;
+                              &lt;td&gt;
+                                 Session with different question types
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                     &lt;/table&gt;
+                     &lt;input id=&quot;modalSessionName&quot; name=&quot;fsname&quot; type=&quot;hidden&quot; value=&quot;&quot;/&gt;
+                                          &lt;input id=&quot;modalCourseId&quot; name=&quot;courseid&quot; type=&quot;hidden&quot; value=&quot;&quot;/&gt;
+                                          &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;teammates.coord_123&quot;/&gt;
+                                       &lt;/form&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;modal-footer margin-0&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary&quot; disabled=&quot;disabled&quot; id=&quot;button_copy_submit&quot; type=&quot;button&quot;&gt;
+                     Copy
+                  &lt;/button&gt;
+                  &lt;button class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;
+                     Cancel
+                  &lt;/button&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;table class=&quot;table-responsive table table-striped table-bordered&quot; id=&quot;table-sessions&quot;&gt;
+         &lt;thead&gt;
+            &lt;tr class=&quot;fill-primary&quot;&gt;
+               &lt;th class=&quot;button-sort-ascending&quot; id=&quot;button_sortid&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
+                  Course ID
+                  &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                  &lt;/span&gt;
+               &lt;/th&gt;
+               &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,2)&quot;&gt;
+                  Session Name
+                  &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                  &lt;/span&gt;
+               &lt;/th&gt;
+               &lt;th&gt;
+                  Status
+               &lt;/th&gt;
+               &lt;th&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;Number of students submitted / Class size&quot;&gt;
+                     Response Rate
+                  &lt;/span&gt;
+               &lt;/th&gt;
+               &lt;th class=&quot;no-print&quot;&gt;
+                  Action(s)
+               &lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr class=&quot;sessionsRow&quot; id=&quot;session0&quot;&gt;
+               &lt;td&gt;
+                  AHPUiT.instr1.gma-demo
+               &lt;/td&gt;
+               &lt;td&gt;
+                  Second team feedback session
+               &lt;/td&gt;
+               &lt;td&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;The feedback session has been created, is visible, and is open for submissions.&lt;br &gt;&lt;/span&gt;The responses for this session are visible.&quot;&gt;
+                     Open
+                  &lt;/span&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                  0 / 9
+               &lt;/td&gt;
+               &lt;td class=&quot;no-print&quot;&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;View the submitted responses for this feedback session&quot;&gt;
+                     View Results
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Edit feedback session details&quot;&gt;
+                     Edit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Second team feedback session&apos;);&quot; title=&quot;Delete the feedback session&quot;&gt;
+                     Delete
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Start submitting feedback&quot;&gt;
+                     Submit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second team feedback session&apos;);&quot; title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot;&gt;
+                     Remind
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Second team feedback session&apos;);&quot; title=&quot;Make responses no longer visible&quot;&gt;
+                     Unpublish
+                  &lt;/a&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;sessionsRow&quot; id=&quot;session1&quot;&gt;
+               &lt;td&gt;
+                  AHPUiT.instr1.gma-demo
+               &lt;/td&gt;
+               &lt;td&gt;
+                  First team feedback session
+               &lt;/td&gt;
+               &lt;td&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;The feedback session has been created, is visible, and has ended.&lt;br &gt;&lt;/span&gt;The responses for this session are visible.&quot;&gt;
+                     Published
+                  &lt;/span&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;session-response-for-test&quot;&gt;
+                  &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                     Show
+                  &lt;/a&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;no-print&quot;&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;View the submitted responses for this feedback session&quot;&gt;
+                     View Results
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Edit feedback session details&quot;&gt;
+                     Edit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;First team feedback session&apos;);&quot; title=&quot;Delete the feedback session&quot;&gt;
+                     Delete
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Start submitting feedback&quot;&gt;
+                     Submit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot;&gt;
+                     Remind
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;First team feedback session&apos;);&quot; title=&quot;Make responses no longer visible&quot;&gt;
+                     Unpublish
+                  &lt;/a&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;sessionsRow&quot; id=&quot;session2&quot;&gt;
+               &lt;td&gt;
+                  AHPUiT.instr1.gma-demo
+               &lt;/td&gt;
+               &lt;td&gt;
+                  Session with different question types
+               &lt;/td&gt;
+               &lt;td&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;The feedback session has been created, is visible, and has ended.&lt;br &gt;&lt;/span&gt;The responses for this session are visible.&quot;&gt;
+                     Published
+                  &lt;/span&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;session-response-for-test&quot;&gt;
+                  &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                     Show
+                  &lt;/a&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;no-print&quot;&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;View the submitted responses for this feedback session&quot;&gt;
+                     View Results
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;Edit feedback session details&quot;&gt;
+                     Edit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Session with different question types&apos;);&quot; title=&quot;Delete the feedback session&quot;&gt;
+                     Delete
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;Start submitting feedback&quot;&gt;
+                     Submit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot;&gt;
+                     Remind
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Session with different question types&apos;);&quot; title=&quot;Make responses no longer visible&quot;&gt;
+                     Unpublish
+                  &lt;/a&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;br/&gt;
+            &lt;br/&gt;
+            &lt;br/&gt;
+         &lt;/div&gt;
+
+&lt;/expected]&gt;&gt; but was:&lt;&lt;[actual&gt;
+   &lt;div class=&quot;container theme-showcase&quot; id=&quot;frameBodyWrapper&quot;&gt;
+      &lt;div id=&quot;topOfPage&quot;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;
+         Add New Feedback Session
+      &lt;/h1&gt;
+      &lt;div class=&quot;well well-plain&quot;&gt;
+         &lt;form action=&quot;/page/instructorFeedbackAdd&quot; class=&quot;form-group&quot; method=&quot;post&quot; name=&quot;form_addfeedbacksession&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+               &lt;h4 class=&quot;label-control col-md-2 text-md&quot;&gt;
+                  Create new
+               &lt;/h4&gt;
+               &lt;div class=&quot;col-md-5&quot;&gt;
+                  &lt;div class=&quot;col-md-10&quot; data-original-title=&quot;Select a session type here.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                     &lt;select class=&quot;form-control&quot; id=&quot;fstype&quot; name=&quot;fstype&quot;&gt;
+                        &lt;option value=&quot;STANDARD&quot;&gt;
+                           Session with your own questions
+                        &lt;/option&gt;
+                        &lt;option selected=&quot;selected&quot; value=&quot;TEAMEVALUATION&quot;&gt;
+                           Team peer evaluation session
+                        &lt;/option&gt;
+                     &lt;/select&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;col-md-1&quot;&gt;
+                     &lt;h5&gt;
+                        &lt;a href=&quot;/instructorHelp.html#fbSetupSession&quot; target=&quot;_blank&quot;&gt;
+                           &lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;
+                           &lt;/span&gt;
+                        &lt;/a&gt;
+                     &lt;/h5&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;h4 class=&quot;label-control col-md-1 text-md&quot;&gt;
+                  Or:
+               &lt;/h4&gt;
+               &lt;div class=&quot;col-md-3&quot;&gt;
+                  &lt;a class=&quot;btn btn-info&quot; id=&quot;button_copy&quot; style=&quot;vertical-align:middle;&quot;&gt;
+                     Copy
+                            from previous feedback sessions
+                  &lt;/a&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br/&gt;
+                        &lt;div class=&quot;panel panel-primary&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Please select the course for which the feedback session is to be created.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-4&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;courseid&quot;&gt;
+                                 Course
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-8&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;courseid&quot; name=&quot;courseid&quot;&gt;
+                                 &lt;option value=&quot;AHPUiT.instr1.gma-demo&quot;&gt;
+                                    AHPUiT.instr1.gma-demo
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;You should not need to change this as your timezone is auto-detected. &lt;br /&gt;&lt;br /&gt;However, note that daylight saving is not taken into account i.e. if you are in UTC -8:00 and there is daylight saving, you should choose UTC -7:00 and its corresponding timings.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-4&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;timezone&quot;&gt;
+                                 Timezone
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-8&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;timezone&quot; name=&quot;timezone&quot;&gt;
+                                 &lt;option value=&quot;-12&quot;&gt;
+                                    (UTC -12:00) Baker Island, Howland Island
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-11&quot;&gt;
+                                    (UTC -11:00) American Samoa, Niue
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-10&quot;&gt;
+                                    (UTC -10:00) Hawaii, Cook Islands, Marquesas Islands
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-9&quot;&gt;
+                                    (UTC -09:00) Gambier Islands, Alaska
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-8&quot;&gt;
+                                    (UTC -08:00) Los Angeles, Vancouver, Tijuana
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-7&quot;&gt;
+                                    (UTC -07:00) Phoenix, Calgary, Ciudad Juárez
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-6&quot;&gt;
+                                    (UTC -06:00) Chicago, Guatemala City, Mexico City, San José, San Salvador, Tegucigalpa, Winnipeg
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-5&quot;&gt;
+                                    (UTC -05:00) New York, Lima, Toronto, Bogotá, Havana, Kingston
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-4.5&quot;&gt;
+                                    (UTC -04:30) Caracas
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-4&quot;&gt;
+                                    (UTC -04:00) Santiago, La Paz, San Juan de Puerto Rico, Manaus, Halifax
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-3.5&quot;&gt;
+                                    (UTC -03:30) St. John&apos;s
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-3&quot;&gt;
+                                    (UTC -03:00) Buenos Aires, Montevideo, São Paulo
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-2&quot;&gt;
+                                    (UTC -02:00) Fernando de Noronha, South Georgia and the South Sandwich Islands
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;-1&quot;&gt;
+                                    (UTC -01:00) Cape Verde, Greenland, Azores islands
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;0&quot;&gt;
+                                    (UTC) Accra, Abidjan, Casablanca, Dakar, Dublin, Lisbon, London
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    (UTC +01:00) Belgrade, Berlin, Brussels, Lagos, Madrid, Paris, Rome, Tunis, Vienna, Warsaw
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    (UTC +02:00) Athens, Sofia, Cairo, Kiev, Istanbul, Beirut, Helsinki, Jerusalem, Johannesburg, Bucharest
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    (UTC +03:00) Nairobi, Baghdad, Doha, Khartoum, Minsk, Riyadh
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3.5&quot;&gt;
+                                    (UTC +03:30) Tehran
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    (UTC +04:00) Baku, Dubai, Moscow
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4.5&quot;&gt;
+                                    (UTC +04:30) Kabul
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    (UTC +05:00) Karachi, Tashkent
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5.5&quot;&gt;
+                                    (UTC +05:30) Colombo, Delhi
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5.75&quot;&gt;
+                                    (UTC +05:45) Kathmandu
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    (UTC +06:00) Almaty, Dhaka, Yekaterinburg
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    (UTC +07:00) Jakarta, Bangkok, Novosibirsk, Hanoi
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    (UTC +08:00) Perth, Beijing, Manila, Singapore, Kuala Lumpur, Denpasar, Krasnoyarsk
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    (UTC +09:00) Seoul, Tokyo, Pyongyang, Ambon, Irkutsk
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    (UTC +10:00) Canberra, Yakutsk, Port Moresby
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    (UTC +11:00) Vladivostok, Noumea
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    (UTC +12:00) Auckland, Suva
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    (UTC +13:00) Phoenix Islands, Tokelau, Tonga
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-12&quot; data-original-title=&quot;Enter the name of the feedback session e.g. Feedback Session 1.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-2&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;fsname&quot;&gt;
+                                 Session
+                                            name
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-10&quot;&gt;
+                              &lt;input class=&quot;form-control&quot; id=&quot;fsname&quot; maxlength=&quot;38&quot; name=&quot;fsname&quot; placeholder=&quot;e.g. Feedback for Project Presentation 1&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;br/&gt;
+                                    &lt;div class=&quot;row&quot; id=&quot;instructionsRow&quot;&gt;
+                     &lt;div class=&quot;col-md-12&quot; data-original-title=&quot;Enter instructions for this feedback session. e.g. Avoid comments which are too critical.&lt;br /&gt; It will be displayed at the top of the page when users respond to the session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;h5 class=&quot;col-sm-2&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;instructions&quot;&gt;
+                                 Instructions
+                              &lt;/label&gt;
+                           &lt;/h5&gt;
+                           &lt;div class=&quot;col-sm-10&quot;&gt;
+                              &lt;textarea class=&quot;form-control&quot; cols=&quot;100%&quot; id=&quot;instructions&quot; name=&quot;instructions&quot; placeholder=&quot;e.g. Please answer all the given questions.&quot; rows=&quot;4&quot;&gt;
+                                 Please answer all the given questions.
+                              &lt;/textarea&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;timeFramePanel&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-5&quot; data-original-title=&quot;Please select the date and time for which users can start submitting responses for the feedback session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;label class=&quot;label-control&quot; for=&quot;startdate&quot;&gt;
+                                 Submission opening time
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;input class=&quot;form-control col-sm-2 hasDatepicker&quot; id=&quot;startdate&quot; name=&quot;startdate&quot; placeholder=&quot;Date&quot; type=&quot;text&quot; value=&quot;05/11/2014&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;starttime&quot; name=&quot;starttime&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-5 border-left-gray&quot; data-original-title=&quot;Please select the date and time after which the feedback session will no longer accept submissions from users.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;label class=&quot;label-control&quot; for=&quot;enddate&quot;&gt;
+                                 Submission
+                                            closing time
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;input class=&quot;form-control col-sm-2 hasDatepicker&quot; id=&quot;enddate&quot; name=&quot;enddate&quot; placeholder=&quot;Date&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-6&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;endtime&quot; name=&quot;endtime&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-2 border-left-gray&quot; data-original-title=&quot;Please select the amount of time that the system will continue accepting &lt;br /&gt;submissions after the specified deadline.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-12&quot;&gt;
+                              &lt;label class=&quot;control-label&quot; for=&quot;graceperiod&quot;&gt;
+                                 Grace period
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-sm-12&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; id=&quot;graceperiod&quot; name=&quot;graceperiod&quot;&gt;
+                                 &lt;option value=&quot;0&quot;&gt;
+                                    0 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    5 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    10 mins
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;15&quot;&gt;
+                                    15 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    20 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;25&quot;&gt;
+                                    25 mins
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;30&quot;&gt;
+                                    30 mins
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot; id=&quot;uncommonSettingsInfo&quot;&gt;
+               &lt;div class=&quot;col-md-12 text-muted&quot;&gt;
+                  &lt;span id=&quot;uncommonSettingsInfoText&quot;&gt;
+                     Session is visible at submission opening time, responses are only visible when you publish the results.
+                     &lt;br/&gt;
+                                          Emails are sent when session opens (within 15 mins), 24 hrs before session closes and when results are published.
+                  &lt;/span&gt;
+                  &lt;a data-done=&quot;[Done]&quot; data-edit=&quot;[Edit]&quot; id=&quot;editUncommonSettingsButton&quot;&gt;
+                     [Edit]
+                  &lt;/a&gt;
+                  &lt;br/&gt;
+                                    &lt;br/&gt;
+                                 &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;sessionResponsesVisiblePanel&quot; style=&quot;display:none;&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Please select when you want the questions for the feedback session to be visible to users who need to participate. Note that users cannot submit their responses until the submissions opening time set below.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label class=&quot;label-control&quot;&gt;
+                                 Session visible from
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-2&quot; data-original-title=&quot;Select this option to enter in a custom date and time for which the feedback session will become visible.&lt;br /&gt;Note that you can make a session visible before it is open for submissions so that users can preview the questions.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;sessionVisibleFromButton_custom&quot;&gt;
+                                 At
+                              &lt;/label&gt;
+                              &lt;input id=&quot;sessionVisibleFromButton_custom&quot; name=&quot;sessionVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;custom&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-5&quot;&gt;
+                              &lt;input class=&quot;form-control col-sm-2 hasDatepicker&quot; disabled=&quot;disabled&quot; id=&quot;visibledate&quot; name=&quot;visibledate&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-4&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; disabled=&quot;disabled&quot; id=&quot;visibletime&quot; name=&quot;visibletime&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Select this option to have the feedback session become visible when it is open for submissions (as selected above).&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;sessionVisibleFromButton_atopen&quot;&gt;
+                                 Submission
+                                            opening time
+                              &lt;/label&gt;
+                              &lt;input checked=&quot;checked&quot; id=&quot;sessionVisibleFromButton_atopen&quot; name=&quot;sessionVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;atopen&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Select this option if you want the feedback session to never be visible. Use this option if you want to use this as a private feedback session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;sessionVisibleFromButton_never&quot;&gt;
+                                 Never
+                                            (this is a private session)
+                              &lt;/label&gt;
+                              &lt;input id=&quot;sessionVisibleFromButton_never&quot; name=&quot;sessionVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;never&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-md-6 border-left-gray&quot; id=&quot;responsesVisibleFromColumn&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                           &lt;div class=&quot;col-md-6&quot; data-original-title=&quot;Please select when the responses for the feedback session will be visible to the designated recipients.&lt;br /&gt;You can select the response visibility for each type of user and question later.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label class=&quot;label-control&quot;&gt;
+                                 Responses
+                                            visible from
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-2&quot; data-original-title=&quot;Select this option to use a custom time for when the responses of the feedback session&lt;br /&gt;will be visible to the designated recipients.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_custom&quot;&gt;
+                                 At
+                              &lt;/label&gt;
+                              &lt;input id=&quot;resultsVisibleFromButton_custom&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;custom&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-5&quot;&gt;
+                              &lt;input class=&quot;form-control hasDatepicker&quot; disabled=&quot;disabled&quot; id=&quot;publishdate&quot; name=&quot;publishdate&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                                         &lt;/div&gt;
+                           &lt;div class=&quot;col-md-4&quot;&gt;
+                              &lt;select class=&quot;form-control&quot; data-original-title=&quot;Select this option to enter in a custom date and time for which&lt;/br&gt;the responses for this feedback session will become visible.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; disabled=&quot;disabled&quot; id=&quot;publishtime&quot; name=&quot;publishtime&quot; title=&quot;&quot;&gt;
+                                 &lt;option value=&quot;1&quot;&gt;
+                                    0100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;2&quot;&gt;
+                                    0200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;3&quot;&gt;
+                                    0300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;4&quot;&gt;
+                                    0400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;5&quot;&gt;
+                                    0500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;6&quot;&gt;
+                                    0600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;7&quot;&gt;
+                                    0700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;8&quot;&gt;
+                                    0800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;9&quot;&gt;
+                                    0900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;10&quot;&gt;
+                                    1000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;11&quot;&gt;
+                                    1100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;12&quot;&gt;
+                                    1200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;13&quot;&gt;
+                                    1300H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;14&quot;&gt;
+                                    1400H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;15&quot;&gt;
+                                    1500H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;16&quot;&gt;
+                                    1600H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;17&quot;&gt;
+                                    1700H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;18&quot;&gt;
+                                    1800H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;19&quot;&gt;
+                                    1900H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;20&quot;&gt;
+                                    2000H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;21&quot;&gt;
+                                    2100H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;22&quot;&gt;
+                                    2200H
+                                 &lt;/option&gt;
+                                 &lt;option value=&quot;23&quot;&gt;
+                                    2300H
+                                 &lt;/option&gt;
+                                 &lt;option selected=&quot;selected&quot; value=&quot;24&quot;&gt;
+                                    2359H
+                                 &lt;/option&gt;
+                              &lt;/select&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-3&quot; data-original-title=&quot;Select this option to have the feedback responses be immediately visible&lt;br /&gt;when the session becomes visible to users.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_atvisible&quot;&gt;
+                                 Immediately
+                              &lt;/label&gt;
+                              &lt;input id=&quot;resultsVisibleFromButton_atvisible&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;atvisible&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-4&quot; data-original-title=&quot;Select this option if you intend to manually publish the session later on.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_later&quot;&gt;
+                                 Publish
+                                            manually
+                              &lt;/label&gt;
+                              &lt;input checked=&quot;checked&quot; id=&quot;resultsVisibleFromButton_later&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;later&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row radio&quot;&gt;
+                           &lt;div class=&quot;col-md-2&quot; data-original-title=&quot;Select this option if you intend never to publish the responses.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                              &lt;label for=&quot;resultsVisibleFromButton_never&quot;&gt;
+                                 Never
+                              &lt;/label&gt;
+                              &lt;input id=&quot;resultsVisibleFromButton_never&quot; name=&quot;resultsVisibleFromButton&quot; type=&quot;radio&quot; value=&quot;never&quot;/&gt;
+                                                         &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel panel-primary&quot; id=&quot;sendEmailsForPanel&quot; style=&quot;display:none;&quot;&gt;
+               &lt;div class=&quot;panel-body&quot;&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-md-12&quot;&gt;
+                        &lt;label class=&quot;control-label&quot;&gt;
+                           Send
+                                    emails for
+                        &lt;/label&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;row&quot;&gt;
+                     &lt;div class=&quot;col-sm-3&quot; data-original-title=&quot;Select this option to automatically send an email to students to notify them when the session is open for submission.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                           &lt;label&gt;
+                              Session opening
+                                        reminder
+                           &lt;/label&gt;
+                           &lt;input checked=&quot;checked&quot; id=&quot;sendreminderemail_open&quot; name=&quot;sendreminderemail&quot; type=&quot;checkbox&quot; value=&quot;FEEDBACK_OPENING&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-sm-3&quot; data-original-title=&quot;Select this option to automatically send an email to students to remind them to submit 24 hours before the end of the session.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                           &lt;label for=&quot;sendreminderemail_closing&quot;&gt;
+                              Session
+                                        closing reminder
+                           &lt;/label&gt;
+                           &lt;input checked=&quot;checked&quot; id=&quot;sendreminderemail_closing&quot; name=&quot;sendreminderemail&quot; type=&quot;checkbox&quot; value=&quot;FEEDBACK_CLOSING&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;col-sm-4&quot; data-original-title=&quot;Select this option to automatically send an email to students to notify them when the session results is published.&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;&quot;&gt;
+                        &lt;div class=&quot;checkbox&quot;&gt;
+                           &lt;label for=&quot;sendreminderemail_published&quot;&gt;
+                              Results
+                                        published announcement
+                           &lt;/label&gt;
+                           &lt;input checked=&quot;checked&quot; id=&quot;sendreminderemail_published&quot; name=&quot;sendreminderemail&quot; type=&quot;checkbox&quot; value=&quot;FEEDBACK_PUBLISHED&quot;/&gt;
+                                                   &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+               &lt;div class=&quot;col-md-offset-5 col-md-3&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary&quot; id=&quot;button_submit&quot; type=&quot;submit&quot;&gt;
+                     Create Feedback Session
+                  &lt;/button&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;teammates.coord_123&quot;/&gt;
+                     &lt;/form&gt;
+         &lt;form action=&quot;/page/instructorFeedbacksPage&quot; class=&quot;ajaxForSessionsForm&quot; id=&quot;ajaxForSessions&quot; style=&quot;display:none;&quot;&gt;
+            &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;teammates.coord_123&quot;/&gt;
+                        &lt;input name=&quot;isusingAjax&quot; type=&quot;hidden&quot; value=&quot;on&quot;/&gt;
+                     &lt;/form&gt;
+         &lt;br/&gt;
+                  &lt;br/&gt;
+               &lt;/div&gt;
+      &lt;br/&gt;
+            &lt;div class=&quot;alert alert-warning&quot; id=&quot;statusMessage&quot;&gt;
+         Reminder e-mails have been sent out to those students and instructors. Please allow up to 1 hour for all the notification emails to be sent out.
+      &lt;/div&gt;
+      &lt;script type=&quot;text/javascript&quot;&gt;
+         document.getElementById( &apos;statusMessage&apos; ).scrollIntoView();
+      &lt;/script&gt;
+      &lt;br/&gt;
+            &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;copyModalTitle&quot; class=&quot;modal fade&quot; id=&quot;copyModal&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot;&gt;
+         &lt;div class=&quot;modal-dialog&quot;&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+               &lt;div class=&quot;modal-header&quot;&gt;
+                  &lt;button class=&quot;close&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;
+                     &lt;span aria-hidden=&quot;true&quot;&gt;
+                        ×
+                     &lt;/span&gt;
+                     &lt;span class=&quot;sr-only&quot;&gt;
+                        Close
+                     &lt;/span&gt;
+                  &lt;/button&gt;
+                  &lt;h4 class=&quot;modal-title&quot; id=&quot;copyModalTitle&quot;&gt;
+                     Creating a new session by copying a previous session
+                  &lt;/h4&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;modal-body&quot; id=&quot;copySessionsBody&quot;&gt;
+                  &lt;form action=&quot;/page/instructorFeedbackCopy&quot; class=&quot;form&quot; id=&quot;copyModalForm&quot; method=&quot;post&quot; role=&quot;form&quot;&gt;
+                     &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;control-label&quot; for=&quot;modalCopiedCourseId&quot;&gt;
+                           Create in course
+                        &lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot; id=&quot;modalCopiedCourseId&quot; name=&quot;copiedcourseid&quot;&gt;
+                           &lt;option value=&quot;AHPUiT.instr1.gma-demo&quot;&gt;
+                              AHPUiT.instr1.gma-demo
+                           &lt;/option&gt;
+                        &lt;/select&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;control-label&quot; for=&quot;modalCopiedSessionName&quot;&gt;
+                           Name for new session
+                        &lt;/label&gt;
+                        &lt;input class=&quot;form-control&quot; id=&quot;modalCopiedSessionName&quot; maxlength=&quot;38&quot; name=&quot;copiedfsname&quot; placeholder=&quot;e.g. Feedback for Project Presentation 1&quot; type=&quot;text&quot; value=&quot;&quot;/&gt;
+                                             &lt;/div&gt;
+                     &lt;label&gt;
+                        Copy sessions/questions from
+                     &lt;/label&gt;
+                     &lt;table class=&quot;table-responsive table table-bordered table-hover margin-0&quot; id=&quot;copyTableModal&quot;&gt;
+                        &lt;thead class=&quot;fill-primary&quot;&gt;
+                           &lt;tr&gt;
+                              &lt;th style=&quot;width:20px;&quot;&gt;
+                                  
+                              &lt;/th&gt;
+                              &lt;th&gt;
+                                 Course ID
+                              &lt;/th&gt;
+                              &lt;th&gt;
+                                 Feedback Session Name
+                              &lt;/th&gt;
+                           &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                           &lt;tr style=&quot;cursor:pointer;&quot;&gt;
+                              &lt;td&gt;
+                                 &lt;input type=&quot;radio&quot;/&gt;
+                                                               &lt;/td&gt;
+                              &lt;td&gt;
+                                 AHPUiT.instr1.gma-demo
+                              &lt;/td&gt;
+                              &lt;td&gt;
+                                 Second team feedback session
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr style=&quot;cursor:pointer;&quot;&gt;
+                              &lt;td&gt;
+                                 &lt;input type=&quot;radio&quot;/&gt;
+                                                               &lt;/td&gt;
+                              &lt;td&gt;
+                                 AHPUiT.instr1.gma-demo
+                              &lt;/td&gt;
+                              &lt;td&gt;
+                                 First team feedback session
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr style=&quot;cursor:pointer;&quot;&gt;
+                              &lt;td&gt;
+                                 &lt;input type=&quot;radio&quot;/&gt;
+                                                               &lt;/td&gt;
+                              &lt;td&gt;
+                                 AHPUiT.instr1.gma-demo
+                              &lt;/td&gt;
+                              &lt;td&gt;
+                                 Session with different question types
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                     &lt;/table&gt;
+                     &lt;input id=&quot;modalSessionName&quot; name=&quot;fsname&quot; type=&quot;hidden&quot; value=&quot;&quot;/&gt;
+                                          &lt;input id=&quot;modalCourseId&quot; name=&quot;courseid&quot; type=&quot;hidden&quot; value=&quot;&quot;/&gt;
+                                          &lt;input name=&quot;user&quot; type=&quot;hidden&quot; value=&quot;teammates.coord_123&quot;/&gt;
+                                       &lt;/form&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;modal-footer margin-0&quot;&gt;
+                  &lt;button class=&quot;btn btn-primary&quot; disabled=&quot;disabled&quot; id=&quot;button_copy_submit&quot; type=&quot;button&quot;&gt;
+                     Copy
+                  &lt;/button&gt;
+                  &lt;button class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;
+                     Cancel
+                  &lt;/button&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;table class=&quot;table-responsive table table-striped table-bordered&quot; id=&quot;table-sessions&quot;&gt;
+         &lt;thead&gt;
+            &lt;tr class=&quot;fill-primary&quot;&gt;
+               &lt;th class=&quot;button-sort-ascending&quot; id=&quot;button_sortid&quot; onclick=&quot;toggleSort(this,1);&quot;&gt;
+                  Course ID
+                  &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                  &lt;/span&gt;
+               &lt;/th&gt;
+               &lt;th class=&quot;button-sort-none&quot; id=&quot;button_sortname&quot; onclick=&quot;toggleSort(this,2)&quot;&gt;
+                  Session Name
+                  &lt;span class=&quot;icon-sort unsorted&quot;&gt;
+                  &lt;/span&gt;
+               &lt;/th&gt;
+               &lt;th&gt;
+                  Status
+               &lt;/th&gt;
+               &lt;th&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;Number of students submitted / Class size&quot;&gt;
+                     Response Rate
+                  &lt;/span&gt;
+               &lt;/th&gt;
+               &lt;th class=&quot;no-print&quot;&gt;
+                  Action(s)
+               &lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr class=&quot;sessionsRow&quot; id=&quot;session0&quot;&gt;
+               &lt;td&gt;
+                  AHPUiT.instr1.gma-demo
+               &lt;/td&gt;
+               &lt;td&gt;
+                  Second team feedback session
+               &lt;/td&gt;
+               &lt;td&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;The feedback session has been created, is visible, and is open for submissions.&lt;br &gt;&lt;/span&gt;The responses for this session are visible.&quot;&gt;
+                     Open
+                  &lt;/span&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;session-response-for-test recent&quot;&gt;
+                  &lt;img src=&quot;/images/ajax-loader.gif&quot;/&gt;
+                                 &lt;/td&gt;
+               &lt;td class=&quot;no-print&quot;&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;View the submitted responses for this feedback session&quot;&gt;
+                     View Results
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Edit feedback session details&quot;&gt;
+                     Edit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Second team feedback session&apos;);&quot; title=&quot;Delete the feedback session&quot;&gt;
+                     Delete
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Start submitting feedback&quot;&gt;
+                     Submit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleRemindStudents(&apos;Second team feedback session&apos;);&quot; title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot;&gt;
+                     Remind
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Second+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Second team feedback session&apos;);&quot; title=&quot;Make responses no longer visible&quot;&gt;
+                     Unpublish
+                  &lt;/a&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;sessionsRow&quot; id=&quot;session1&quot;&gt;
+               &lt;td&gt;
+                  AHPUiT.instr1.gma-demo
+               &lt;/td&gt;
+               &lt;td&gt;
+                  First team feedback session
+               &lt;/td&gt;
+               &lt;td&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;The feedback session has been created, is visible, and has ended.&lt;br &gt;&lt;/span&gt;The responses for this session are visible.&quot;&gt;
+                     Published
+                  &lt;/span&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;session-response-for-test&quot;&gt;
+                  &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                     Show
+                  &lt;/a&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;no-print&quot;&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;View the submitted responses for this feedback session&quot;&gt;
+                     View Results
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Edit feedback session details&quot;&gt;
+                     Edit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;First team feedback session&apos;);&quot; title=&quot;Delete the feedback session&quot;&gt;
+                     Delete
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; title=&quot;Start submitting feedback&quot;&gt;
+                     Submit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot;&gt;
+                     Remind
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=First+team+feedback+session&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;First team feedback session&apos;);&quot; title=&quot;Make responses no longer visible&quot;&gt;
+                     Unpublish
+                  &lt;/a&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;sessionsRow&quot; id=&quot;session2&quot;&gt;
+               &lt;td&gt;
+                  AHPUiT.instr1.gma-demo
+               &lt;/td&gt;
+               &lt;td&gt;
+                  Session with different question types
+               &lt;/td&gt;
+               &lt;td&gt;
+                  &lt;span data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; title=&quot;The feedback session has been created, is visible, and has ended.&lt;br &gt;&lt;/span&gt;The responses for this session are visible.&quot;&gt;
+                     Published
+                  &lt;/span&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;session-response-for-test&quot;&gt;
+                  &lt;a href=&quot;/page/feedbackSessionStatsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; oncontextmenu=&quot;return false;&quot;&gt;
+                     Show
+                  &lt;/a&gt;
+               &lt;/td&gt;
+               &lt;td class=&quot;no-print&quot;&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-view-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackResultsPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;View the submitted responses for this feedback session&quot;&gt;
+                     View Results
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-edit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;Edit feedback session details&quot;&gt;
+                     Edit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-delete-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackDelete?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleDeleteFeedbackSessionConfirmation(&apos;AHPUiT.instr1.gma-demo&apos;,&apos;Session with different question types&apos;);&quot; title=&quot;Delete the feedback session&quot;&gt;
+                     Delete
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-submit-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackSubmissionEditPage?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; title=&quot;Start submitting feedback&quot;&gt;
+                     Submit
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-remind-for-test disabled&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackRemind?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;user=teammates.coord_123&quot; onclick=&quot;return false&quot; title=&quot;Send e-mails to remind students and instructors who have not submitted their feedbacks to do so&quot;&gt;
+                     Remind
+                  &lt;/a&gt;
+                  &lt;a class=&quot;btn btn-default btn-xs btn-tm-actions session-unpublish-for-test&quot; data-placement=&quot;top&quot; data-toggle=&quot;tooltip&quot; href=&quot;/page/instructorFeedbackUnpublish?courseid=AHPUiT.instr1.gma-demo&amp;fsname=Session+with+different+question+types&amp;next=%2Fpage%2FinstructorFeedbacksPage%3Fuser%3Dteammates.coord_123&amp;user=teammates.coord_123&quot; onclick=&quot;return toggleUnpublishEvaluation(&apos;Session with different question types&apos;);&quot; title=&quot;Make responses no longer visible&quot;&gt;
+                     Unpublish
+                  &lt;/a&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;br/&gt;
+            &lt;br/&gt;
+            &lt;br/&gt;
+         &lt;/div&gt;
+
+&lt;/actual]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:821)
+	at teammates.test.pageobjects.AppPage.verifyHtmlMainContent(AppPage.java:863)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testCreateInstructorAction(AdminHomePageUiTest.java:219)
+	at teammates.test.cases.ui.browsertests.AdminHomePageUiTest.testAll(AdminHomePageUiTest.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]-class-failed -->
         </div> <!-- panel Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
         <div panel-name="test-xml-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -1515,6 +3550,20 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;rare-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.AdminHomePageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetUp&quot;/&gt;
@@ -1522,22 +3571,14 @@
           &lt;include name=&quot;closeClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.automated.FeedbackSessionPublishedReminderTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionPublishedReminderTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classTearDown&quot;/&gt;
@@ -1548,28 +3589,35 @@
   &lt;/test&gt; &lt;!-- rare-tests(failed)(failed)(failed)(failed)(failed) --&gt;
   &lt;test name=&quot;parallel-ui-tests(failed)(failed)(failed)(failed)(failed)&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.browsertests.AdminHomePageUiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;classSetup&quot;/&gt;
+          &lt;include name=&quot;classTearDown&quot;/&gt;
+          &lt;include name=&quot;testAll&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest --&gt;
+      &lt;class name=&quot;teammates.test.cases.logic.FeedbackSessionsLogicTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testSetUp&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+          &lt;include name=&quot;testTearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.FeedbackSessionsLogicTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.GodModeTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classSetUp&quot;/&gt;
           &lt;include name=&quot;closeClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- teammates.test.cases.ui.browsertests.GodModeTest --&gt;
-      &lt;class name=&quot;teammates.test.cases.logic.EvaluationsLogicTest&quot;&gt;
+      &lt;class name=&quot;teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testTearDown&quot;/&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
           &lt;include name=&quot;testSetUp&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.cases.logic.EvaluationsLogicTest --&gt;
-      &lt;class name=&quot;teammates.test.automated.FeedbackSessionPublishedReminderTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testSetUp&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-          &lt;include name=&quot;testTearDown&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- teammates.test.automated.FeedbackSessionPublishedReminderTest --&gt;
+      &lt;/class&gt; &lt;!-- teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest --&gt;
       &lt;class name=&quot;teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;classTearDown&quot;/&gt;
@@ -1590,10 +3638,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (4 classes)</span>
+                <span class="test-name">rare-tests(failed)(failed)(failed)(failed)(failed) (5 classes)</span>
               </li>
               <li>
-                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (4 classes)</span>
+                <span class="test-name">parallel-ui-tests(failed)(failed)(failed)(failed)(failed) (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1619,20 +3667,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testAll')
-data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest')
-data.setCell(0, 3, 13057);
+data.setCell(0, 2, 'teammates.test.cases.ui.browsertests.AdminHomePageUiTest')
+data.setCell(0, 3, 82497);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGodMode')
-data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
-data.setCell(1, 3, 156);
+data.setCell(1, 1, 'testAll')
+data.setCell(1, 2, 'teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest')
+data.setCell(1, 3, 17020);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGodMode')
+data.setCell(2, 2, 'teammates.test.cases.ui.browsertests.GodModeTest')
+data.setCell(2, 3, 187);
 window.suiteTableData['Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]">
               </div> <!-- times-div-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]] -->
             </div> <!-- times-div -->
@@ -1647,9 +3699,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[Failed_suite_[all-tests-in-parallel]]]]]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testExecuteAndPostProcess</span>
+                <br/>
+                <span class="ignored-method-name">testExecuteAndPostProcess</span>
+                <br/>
+                <span class="ignored-method-name">testAccessControl</span>
+                <br/>
+                <span class="ignored-method-name">testAccessControl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">teammates.test.cases.ui.browsertests.GodModeTest</span>
               <div class="ignored-methods-div">
@@ -1658,7 +3723,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.cases.logic.EvaluationsLogicTest</span>
+              <span class="ignored-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testAll</span>
                 <br/>
@@ -1674,15 +3739,9 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">teammates.test.automated.FeedbackSessionPublishedReminderTest</span>
+              <span class="ignored-class-name">teammates.test.cases.ui.browsertests.AdminHomePageUiTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAdditionOfTaskToTaskQueue</span>
-                <br/>
-                <span class="ignored-method-name">testAdditionOfTaskToTaskQueue</span>
-                <br/>
-                <span class="ignored-method-name">testFeedbackSessionOpeningMailAction</span>
-                <br/>
-                <span class="ignored-method-name">testFeedbackSessionOpeningMailAction</span>
+                <span class="ignored-method-name">testAll</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -1694,7 +3753,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
                 <span class="method-start">0 ms</span>
@@ -1705,7 +3764,7 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionPublishedReminderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testSetUp</span>
                 <span class="method-start">562 ms</span>
@@ -1714,13 +3773,6 @@ return data;
                 <span class="method-name">testSetUp</span>
                 <span class="method-start">562 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">classSetUp</span>
-                <span class="method-start">577 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
@@ -1731,30 +3783,36 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">577 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.AdminHomePageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetup</span>
+                <span class="method-start">577 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAll</span>
+                <span class="method-start">7833 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.GodModeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testGodMode</span>
-                <span class="method-start">7895 ms</span>
+                <span class="method-start">14512 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeClass</span>
-                <span class="method-start">8051 ms</span>
+                <span class="method-start">14699 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">8067 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionPublishedReminderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">testTearDown</span>
-                <span class="method-start">8285 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
@@ -1762,25 +3820,49 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAll</span>
-                <span class="method-start">14699 ms</span>
+                <span class="method-start">22345 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">classTearDown</span>
-                <span class="method-start">27756 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.cases.logic.EvaluationsLogicTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">27756 ms</span>
+                <span class="method-start">22345 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">teammates.test.automated.FeedbackSessionPublishedReminderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">testTearDown</span>
-                <span class="method-start">27756 ms</span>
+                <span class="method-start">22579 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">39365 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.browsertests.AdminHomePageUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">90330 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.ui.InstructorFeedbackQuestionCopyActionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">90330 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">teammates.test.cases.logic.FeedbackSessionsLogicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">90330 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

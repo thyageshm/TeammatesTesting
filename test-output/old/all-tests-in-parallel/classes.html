@@ -306,32 +306,6 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>teammates.test.cases.ui.InstructorFeedbackPublishActionTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>testExecuteAndPostProcess</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>classSetUp</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
 <td>teammates.test.cases.BaseTestCaseTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -348,6 +322,32 @@
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>teammates.test.cases.ui.InstructorFeedbackPublishActionTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>testExecuteAndPostProcess</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>classSetUp</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
@@ -609,11 +609,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testUpdateFeedbackQuestion</td>
+<td>testGetFeedbackQuestionsForGiverType</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetFeedbackQuestionsForGiverType</td>
+<td>testUpdateFeedbackQuestion</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -1512,32 +1512,6 @@
 <td>classTearDown</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>testExecuteAndPostProcess</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>classSetUp</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
 <td>teammates.test.cases.common.CourseAttributesTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -1579,6 +1553,32 @@
 <td>&nbsp;</td>
 <td>tearDown</td>
 <td>&nbsp;</td></tr>
+<tr>
+<td>teammates.test.cases.ui.InstructorFeedbackEditSaveActionTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>testExecuteAndPostProcess</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>classSetUp</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
 <tr>
 <td>teammates.test.cases.ui.browsertests.InstructorCourseEnrollPageUiTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -2497,11 +2497,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetCurrentUser</td>
+<td>testHasStudentSubmittedEvaluation</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testHasStudentSubmittedEvaluation</td>
+<td>testGetCurrentUser</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -3156,6 +3156,100 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
+<td>teammates.test.cases.storage.FeedbackResponsesDbTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForSessionInSection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForSessionWithinRange</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForSessionToSection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForQuestionInSection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesFromGiverForCourse</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForReceiverForQuestion</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForSession</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesFromGiverForQuestion</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForQuestion</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testCreateDeleteFeedbackResponse</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponses</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForReceiverForCourse</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesFromGiverForQuestionInSection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testUpdateFeedbackResponse</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForReceiverForQuestionInSection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>testGetFeedbackResponsesForSessionFromSection</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>classSetUp</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>caseTearDown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>classTearDown</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td>teammates.test.cases.storage.CommentsDbTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -3208,100 +3302,6 @@
 <tr>
 <td>&nbsp;</td>
 <td>tearDownClass</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>teammates.test.cases.storage.FeedbackResponsesDbTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForSessionInSection</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForSessionToSection</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForSessionWithinRange</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForQuestionInSection</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesFromGiverForCourse</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForSession</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForReceiverForQuestion</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesFromGiverForQuestion</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForQuestion</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testCreateDeleteFeedbackResponse</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponses</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForReceiverForCourse</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testUpdateFeedbackResponse</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesFromGiverForQuestionInSection</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForReceiverForQuestionInSection</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testGetFeedbackResponsesForSessionFromSection</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>classSetUp</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>caseTearDown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>classTearDown</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>teammates.test.automated.FeedbackSessionClosingReminderTest</td>
@@ -3593,11 +3593,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetEntityTypeAsString</td>
+<td>testSanitizeForSaving</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testSanitizeForSaving</td>
+<td>testGetEntityTypeAsString</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -3899,11 +3899,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testIsValid</td>
+<td>testSanitizeForSaving</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testSanitizeForSaving</td>
+<td>testIsValid</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -3911,11 +3911,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testCalculateEvalStatus</td>
+<td>testValidate</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testValidate</td>
+<td>testCalculateEvalStatus</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -4203,11 +4203,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testExcludeSelfRatings</td>
+<td>testSum</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testSum</td>
+<td>testExcludeSelfRatings</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -4228,6 +4228,36 @@
 <tr>
 <td>&nbsp;</td>
 <td>tearDownClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>teammates.test.cases.ui.browsertests.SystemErrorEmailReportTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>testAll</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>classSetUp</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>classTearDown</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>teammates.test.cases.ui.InstructorFeedbackSubmissionEditSaveActionTest</td>
@@ -4272,52 +4302,6 @@
 <tr>
 <td>&nbsp;</td>
 <td>testAll</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>classSetUp</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>classTearDown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>teammates.test.cases.ui.browsertests.SystemErrorEmailReportTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>testEntityDoesNotExistException</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testUnauthorizedAccessException</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testAssertionError</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testDeadlineExceededException</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testNullPointerException</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -4850,7 +4834,7 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>teammates.test.cases.ui.InstructorFeedbackDeleteActionTest</td>
+<td>teammates.test.cases.ui.AdminAccountDetailsPageActionTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
@@ -4876,7 +4860,7 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>teammates.test.cases.ui.AdminAccountDetailsPageActionTest</td>
+<td>teammates.test.cases.ui.InstructorFeedbackDeleteActionTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
@@ -4913,11 +4897,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetInstructorsForCourse</td>
+<td>testUpdateInstructorByGoogleId</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testUpdateInstructorByGoogleId</td>
+<td>testGetInstructorsForCourse</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -4925,11 +4909,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetInstructorForEmail</td>
+<td>testGetInstructorForRegistrationKey</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetInstructorForRegistrationKey</td>
+<td>testGetInstructorForEmail</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -4937,11 +4921,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testDeleteInstructor</td>
+<td>testGetInstructorForGoogleId</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetInstructorForGoogleId</td>
+<td>testDeleteInstructor</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5083,11 +5067,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testToString</td>
+<td>testToEnrollmentString</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testToEnrollmentString</td>
+<td>testToString</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5435,19 +5419,19 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorCourseInstructorAdd</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>InstructorCourseRemind</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>StudentCourseJoin</td>
+<td>InstructorCourseInstructorAdd</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>StudentEvaluationResultsPage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>StudentCourseJoin</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5475,19 +5459,19 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>StudentHomePage</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>InstructorEvaluationResultsPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>AdminAccountDetailsPage</td>
+<td>StudentHomePage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>InstructorEvaluationStatsPage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>AdminAccountDetailsPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5531,19 +5515,19 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorFeedbackQuestionEdit</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>InstructorFeedbackEditPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorCourseAdd</td>
+<td>InstructorFeedbackQuestionEdit</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>InstructorFeedbackResponseCommentEdit</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>InstructorCourseAdd</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5555,15 +5539,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorCourseStudentListDownload</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>InstructorCourseDelete</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>AdminAccountDelete</td>
+<td>InstructorCourseStudentListDownload</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5572,6 +5552,10 @@
 <tr>
 <td>&nbsp;</td>
 <td>InstructorStudentCommentAdd</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>AdminAccountDelete</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5603,11 +5587,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>AdminActivityLogPage</td>
+<td>InstructorCourseInstructorEditSave</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorCourseInstructorEditSave</td>
+<td>AdminActivityLogPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5615,11 +5599,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>AdminHomePage</td>
+<td>InstructorFeedbackQuestionAdd</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorFeedbackQuestionAdd</td>
+<td>AdminHomePage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5651,11 +5635,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorCourseInstructorDelete</td>
+<td>InstructorFeedbackStatsPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorFeedbackStatsPage</td>
+<td>InstructorCourseInstructorDelete</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5687,15 +5671,15 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>StudentFeedbackQuestionSubmissionEditSave</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>StudentFeedbackSubmissionEditSave</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>StudentCourseJoinAuthenticated</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>StudentFeedbackQuestionSubmissionEditSave</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5711,11 +5695,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorEvaluationEditPage</td>
+<td>InstructorEvaluationPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorEvaluationPage</td>
+<td>InstructorEvaluationEditPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5723,15 +5707,15 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorEvaluationDelete</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>InstructorEvaluationUnpublish</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorFeedbackQuestionSubmissionEditSave</td>
+<td>InstructorEvaluationDelete</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>InstructorEvaluationRemind</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5739,7 +5723,7 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorEvaluationRemind</td>
+<td>InstructorFeedbackQuestionSubmissionEditSave</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5767,11 +5751,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorHomePage</td>
+<td>InstructorCourseStudentDelete</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>InstructorCourseStudentDelete</td>
+<td>InstructorHomePage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -5907,11 +5891,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testEditSubmission</td>
+<td>testAccounts</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testAccounts</td>
+<td>testEditSubmission</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -6139,11 +6123,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testValidatePrivileges</td>
+<td>testAddSessionWithDefaultPrivilegesToSessionLevel</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testAddSessionWithDefaultPrivilegesToSessionLevel</td>
+<td>testValidatePrivileges</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -6585,11 +6569,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGenerateFeedbackSessionEmails</td>
+<td>testGenerateFeedbackEmailBase</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGenerateFeedbackEmailBase</td>
+<td>testGenerateFeedbackSessionEmails</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -6631,11 +6615,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testGetEntityTypeAsString</td>
+<td>testSanitizeForSaving</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testSanitizeForSaving</td>
+<td>testGetEntityTypeAsString</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -6651,6 +6635,36 @@
 <tr>
 <td>&nbsp;</td>
 <td>setupClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>tearDown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>teammates.test.cases.ui.browsertests.AllJsTests</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>executeJsTests</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>setUp</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
@@ -6695,11 +6709,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testAdditionOfTaskToTaskQueue</td>
+<td>testEvaluationClosingMailAction</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testEvaluationClosingMailAction</td>
+<td>testAdditionOfTaskToTaskQueue</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -6720,36 +6734,6 @@
 <tr>
 <td>&nbsp;</td>
 <td>classTearDown</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>teammates.test.cases.ui.browsertests.AllJsTests</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>executeJsTests</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>setUp</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>tearDown</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>teammates.test.cases.ui.browsertests.InstructorCourseStudentDetailsPageUiTest</td>
