@@ -1,90 +1,11 @@
 From https://github.com/TEAMMATES/repo
-   f9cfadb..c2980e9  master     -> origin/master
-   edfe7d6..3ab75cb  Issue2201  -> origin/Issue2201
-   14fc04e..6a67bd8  Issue2577  -> origin/Issue2577
-   afd3626..6c8fd39  Issue2587  -> origin/Issue2587
- * [new branch]      Issue2680  -> origin/Issue2680
- * [new branch]      Issue2692  -> origin/Issue2692
- * [new branch]      Issue2695  -> origin/Issue2695
-   6606666..203e576  release    -> origin/release
- * [new tag]         V5.25      -> V5.25
+   c2980e9..b7ecd4c  master     -> origin/master
+   6a67bd8..47a687a  Issue2577  -> origin/Issue2577
 fatal: A branch named 'origin-Issue2577' already exists.
-Updating 14fc04e..6a67bd8
+Updating 6a67bd8..47a687a
 Fast-forward
- .gitignore                                         |    1 -
- BackupFiles/runbackup.bat                          |    9 +
- BackupFiles/scheduleBackup.bat                     |    6 +
- README.md                                          |    7 +-
- .../client/scripts/DownloadAllCourseData.java      |   40 +
- .../teammates/client/scripts/OfflineBackup.java    |  482 +++++++
- .../teammates/client/scripts/UploadBackupData.java |  300 ++++
- .../common/datatransfer/AccountAttributes.java     |   10 +
- .../common/datatransfer/CommentAttributes.java     |   12 +
- .../common/datatransfer/CourseAttributes.java      |   12 +
- .../teammates/common/datatransfer/DataBundle.java  |    1 +
- .../common/datatransfer/EntityAttributes.java      |   10 +
- .../common/datatransfer/EvaluationAttributes.java  |   12 +-
- .../datatransfer/FeedbackQuestionAttributes.java   |   12 +
- .../datatransfer/FeedbackResponseAttributes.java   |   11 +
- .../FeedbackResponseCommentAttributes.java         |   12 +
- .../datatransfer/FeedbackSessionAttributes.java    |   10 +
- .../common/datatransfer/InstructorAttributes.java  |   10 +
- .../common/datatransfer/StudentAttributes.java     |   11 +
- .../datatransfer/StudentProfileAttributes.java     |   12 +-
- .../common/datatransfer/SubmissionAttributes.java  |   13 +-
- src/main/java/teammates/common/util/Const.java     |    6 +-
- .../logic/automated/EntityModifiedLogsServlet.java |   64 +
- .../java/teammates/storage/api/AccountsDb.java     |    2 +-
- .../java/teammates/storage/api/CommentsDb.java     |   22 +-
- src/main/java/teammates/storage/api/CoursesDb.java |    1 +
- .../java/teammates/storage/api/EntitiesDb.java     |   11 +-
- .../java/teammates/storage/api/EvaluationsDb.java  |    1 +
- .../teammates/storage/api/FeedbackQuestionsDb.java |   31 +
- .../storage/api/FeedbackResponseCommentsDb.java    |   32 +-
- .../teammates/storage/api/FeedbackResponsesDb.java |   21 +
- .../teammates/storage/api/FeedbackSessionsDb.java  |   11 +-
- .../java/teammates/storage/api/InstructorsDb.java  |    2 +
- .../java/teammates/storage/api/StudentsDb.java     |    1 +
- .../java/teammates/storage/api/SubmissionsDb.java  |    5 +-
- .../java/teammates/storage/entity/Evaluation.java  |    4 +
- .../java/teammates/storage/entity/Submission.java  |    4 +
- .../ui/controller/AdminActivityLogPageAction.java  |    2 +-
- .../ui/controller/AdminExceptionTestAction.java    |    3 +
- .../teammates/ui/controller/ControllerServlet.java |   12 +-
- ...nstructorFeedbackPreviewAsInstructorAction.java |    5 +-
- .../InstructorFeedbackPreviewAsStudentAction.java  |    6 +-
- .../controller/InstructorFeedbacksPageAction.java  |    5 +
- .../ui/controller/InstructorFeedbacksPageData.java |   22 +-
- src/main/webapp/WEB-INF/web.xml                    |    9 +
- src/main/webapp/js/adminActivityLog.js             |   10 +-
- src/main/webapp/js/ajaxResponseRate.js             |   23 +-
- src/main/webapp/js/instructorFeedbacks.js          |   40 +-
- src/main/webapp/js/instructorFeedbacksAjax.js      |   26 +
- src/main/webapp/jsp/adminActivityLog.jsp           |   29 +-
- src/main/webapp/jsp/instructorFeedbacks.jsp        |   77 +-
- ...uctorFeedbackPreviewAsInstructorActionTest.java |   63 +-
- ...structorFeedbackPreviewAsStudentActionTest.java |   30 +-
- .../ui/InstructorFeedbacksPageActionTest.java      |   10 +-
- .../browsertests/InstructorFeedbackPageUiTest.java |   19 +-
- .../browsertests/SystemErrorEmailReportTest.java   |   26 +-
- .../test/pageobjects/InstructorFeedbacksPage.java  |    6 +-
- src/test/java/teammates/test/util/FileHelper.java  |   29 +-
- .../pages/NJIfeedbackSessionPublished.html         | 1519 +++++++++++++-------
- .../resources/pages/NJIfeedbackSessionRemind.html  | 1519 +++++++++++++-------
- .../pages/NJIfeedbackSessionUnpublished.html       | 1519 +++++++++++++-------
- .../pages/instructorFeedbackAllSessionTypes.html   |  221 +--
- .../pages/instructorFeedbackDeleteSuccessful.html  |  309 ++--
- .../pages/instructorFeedbackEmptyAll.html          |   80 +-
- .../pages/instructorFeedbackEmptySession.html      |   80 +-
- .../pages/instructorFeedbackPublishSuccessful.html |  309 ++--
- .../instructorFeedbackUnpublishSuccessful.html     |  309 ++--
- ...ctorFeedbacksAllSessionTypesWithHelperView.html |  213 +--
- .../pages/newlyJoinedInstructorFeedbacksPage.html  |  131 +-
- 69 files changed, 5322 insertions(+), 2550 deletions(-)
- create mode 100644 BackupFiles/runbackup.bat
- create mode 100644 BackupFiles/scheduleBackup.bat
- create mode 100644 src/main/java/teammates/client/scripts/DownloadAllCourseData.java
- create mode 100644 src/main/java/teammates/client/scripts/OfflineBackup.java
- create mode 100644 src/main/java/teammates/client/scripts/UploadBackupData.java
- create mode 100644 src/main/java/teammates/logic/automated/EntityModifiedLogsServlet.java
- create mode 100644 src/main/webapp/js/instructorFeedbacksAjax.js
+ src/main/java/teammates/common/util/Const.java     |  3 +-
+ .../StudentProfilePictureUploadAction.java         | 44 +++++++++++-----------
+ .../ui/browsertests/StudentProfilePageUiTest.java  | 11 ++++++
+ .../test/pageobjects/StudentProfilePage.java       |  8 +++-
+ 4 files changed, 41 insertions(+), 25 deletions(-)
