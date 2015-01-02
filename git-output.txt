@@ -1,0 +1,7 @@
+From https://github.com/TEAMMATES/repo
+   b57074f..2f5f785  master     -> origin/master
+   f869fee..497edb0  Issue2535  -> origin/Issue2535
+ * [new branch]      Issue2800  -> origin/Issue2800
+   5d734ff..7f43847  Issue2804  -> origin/Issue2804
+fatal: Cannot update paths and switch to branch 'orgin-master' at the same time.
+Did you intend to checkout 'orgin/master' which can not be resolved as commit?
