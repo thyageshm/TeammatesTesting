@@ -1,0 +1,45 @@
+From https://github.com/TEAMMATES/repo
+   b7ecd4c..b57074f  master     -> origin/master
+ * [new branch]      Issue1480  -> origin/Issue1480
+ * [new branch]      Issue2264  -> origin/Issue2264
+ * [new branch]      Issue2300  -> origin/Issue2300
+ * [new branch]      Issue2303  -> origin/Issue2303
+ * [new branch]      Issue2306  -> origin/Issue2306
+ * [new branch]      Issue2371  -> origin/Issue2371
+ * [new branch]      Issue2389  -> origin/Issue2389
+ * [new branch]      Issue2406  -> origin/Issue2406
+ * [new branch]      Issue2535  -> origin/Issue2535
+ * [new branch]      Issue2600  -> origin/Issue2600
+   b4d2121..6bd4d2f  Issue2680  -> origin/Issue2680
+ * [new branch]      Issue2683  -> origin/Issue2683
+ * [new branch]      Issue2693  -> origin/Issue2693
+ * [new branch]      Issue2698  -> origin/Issue2698
+ * [new branch]      Issue2706  -> origin/Issue2706
+ * [new branch]      Issue2715  -> origin/Issue2715
+ * [new branch]      Issue2721  -> origin/Issue2721
+ * [new branch]      Issue2739  -> origin/Issue2739
+ * [new branch]      Issue2741  -> origin/Issue2741
+ * [new branch]      Issue2744  -> origin/Issue2744
+ * [new branch]      Issue2748  -> origin/Issue2748
+ * [new branch]      Issue2757  -> origin/Issue2757
+ * [new branch]      Issue2760  -> origin/Issue2760
+ * [new branch]      Issue2767  -> origin/Issue2767
+ * [new branch]      Issue2768  -> origin/Issue2768
+ * [new branch]      Issue2780  -> origin/Issue2780
+ * [new branch]      Issue2795  -> origin/Issue2795
+ * [new branch]      Issue2798  -> origin/Issue2798
+ * [new branch]      Issue2802  -> origin/Issue2802
+ * [new branch]      Issue2804  -> origin/Issue2804
+ * [new branch]      Issue2807  -> origin/Issue2807
+ * [new branch]      Issue2808  -> origin/Issue2808
+ * [new branch]      Issues2582 -> origin/Issues2582
+   203e576..c43f7b3  release    -> origin/release
+ * [new tag]         V5.29      -> V5.29
+ * [new tag]         V5.26      -> V5.26
+ * [new tag]         V5.27      -> V5.27
+ * [new tag]         V5.28      -> V5.28
+D	runtests.bat
+M	src/test/resources/pages/godmode.html
+Branch origin-Issue2306 set up to track remote branch Issue2306 from origin.
+Switched to a new branch 'origin-Issue2306'
+Already up-to-date.
