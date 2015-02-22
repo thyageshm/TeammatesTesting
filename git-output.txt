@@ -1,0 +1,42 @@
+From https://github.com/TEAMMATES/repo
+   2f5f785..1da2fe7  master     -> origin/master
+ * [new branch]      Issue1711  -> origin/Issue1711
+   a766a4e..3af3c37  Issue2306  -> origin/Issue2306
+ * [new branch]      Issue2431  -> origin/Issue2431
+ * [new branch]      Issue2511  -> origin/Issue2511
+ * [new branch]      Issue2703  -> origin/Issue2703
+ * [new branch]      Issue2705  -> origin/Issue2705
+ * [new branch]      Issue2722  -> origin/Issue2722
+ * [new branch]      Issue2755  -> origin/Issue2755
+ + 394e7fe...5cd1283 Issue2767  -> origin/Issue2767  (forced update)
+ * [new branch]      Issue2784  -> origin/Issue2784
+ * [new branch]      Issue2859  -> origin/Issue2859
+ * [new branch]      Issue2869  -> origin/Issue2869
+ * [new branch]      Issue2880  -> origin/Issue2880
+ * [new branch]      Issue2886  -> origin/Issue2886
+ * [new branch]      Issue2896  -> origin/Issue2896
+ * [new branch]      Issue2900  -> origin/Issue2900
+ * [new branch]      Issue2907  -> origin/Issue2907
+ * [new branch]      Issue2932  -> origin/Issue2932
+ * [new branch]      Issue2944  -> origin/Issue2944
+ * [new branch]      Issue2948  -> origin/Issue2948
+ * [new branch]      Issue2968  -> origin/Issue2968
+ * [new branch]      Issue2975  -> origin/Issue2975
+ * [new branch]      Issue2987  -> origin/Issue2987
+ * [new branch]      Issue3006  -> origin/Issue3006
+ * [new branch]      Issue3008  -> origin/Issue3008
+ * [new branch]      Issue3012  -> origin/Issue3012
+ * [new branch]      contributors -> origin/contributors
+   c43f7b3..b9a7153  release    -> origin/release
+ * [new tag]         V5.36      -> V5.36
+ * [new tag]         V5.30      -> V5.30
+ * [new tag]         V5.31      -> V5.31
+ * [new tag]         V5.32      -> V5.32
+ * [new tag]         V5.33      -> V5.33
+ * [new tag]         V5.34      -> V5.34
+ * [new tag]         V5.35      -> V5.35
+D	runtests.bat
+M	src/test/resources/pages/godmode.html
+Branch origin-Issue3012 set up to track remote branch Issue3012 from origin.
+Switched to a new branch 'origin-Issue3012'
+Already up-to-date.
