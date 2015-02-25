@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="38" total="38" passed="0">
+<testng-results skipped="0" failed="39" total="39" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="117464" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:34:33Z">
+  <suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [all-tests-in-parallel]]]]]" duration-ms="167711" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:21:14Z">
     <groups>
     </groups>
-    <test name="component-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="12217" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:32:48Z">
+    <test name="component-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="18081" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:18:45Z">
       <class name="teammates.test.cases.logic.FeedbackSessionsLogicTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@5ddccb]" name="classSetUp" is-config="true" duration-ms="624" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:40Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1ba0f74]" name="classSetUp" is-config="true" duration-ms="577" started-at="2015-02-25T13:18:30Z" finished-at="2015-02-25T13:18:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@5ddccb]" name="testAll" duration-ms="110" started-at="2015-02-22T13:32:40Z" finished-at="2015-02-22T13:32:40Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1ba0f74]" name="testAll" duration-ms="187" started-at="2015-02-25T13:18:31Z" finished-at="2015-02-25T13:18:31Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<1> but was:<0>]]>
@@ -51,17 +51,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@5ddccb]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:40Z" finished-at="2015-02-22T13:32:40Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.FeedbackSessionsLogicTest@1ba0f74]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:31Z" finished-at="2015-02-25T13:18:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.logic.FeedbackSessionsLogicTest -->
       <class name="teammates.test.cases.logic.StudentsLogicTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@182ac61]" name="classSetUp" is-config="true" duration-ms="812" started-at="2015-02-22T13:32:41Z" finished-at="2015-02-22T13:32:42Z">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@16ba29]" name="testSetUp" is-config="true" duration-ms="858" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1a9fe14]" name="testSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@16ba29]" name="classSetUp" is-config="true" duration-ms="655" started-at="2015-02-25T13:18:35Z" finished-at="2015-02-25T13:18:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@182ac61]" name="testAll" duration-ms="593" started-at="2015-02-22T13:32:42Z" finished-at="2015-02-22T13:32:43Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@16ba29]" name="testAll" duration-ms="796" started-at="2015-02-25T13:18:35Z" finished-at="2015-02-25T13:18:36Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -98,17 +106,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@182ac61]" name="classTearDown" is-config="true" duration-ms="63" started-at="2015-02-22T13:32:43Z" finished-at="2015-02-22T13:32:43Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@16ba29]" name="classTearDown" is-config="true" duration-ms="62" started-at="2015-02-25T13:18:36Z" finished-at="2015-02-25T13:18:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1a9fe14]" name="testTearDown" is-config="true" duration-ms="16" started-at="2015-02-25T13:18:45Z" finished-at="2015-02-25T13:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@16ba29]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:45Z" finished-at="2015-02-25T13:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
       </class> <!-- teammates.test.cases.logic.StudentsLogicTest -->
       <class name="teammates.test.cases.logic.InstructorsLogicTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.InstructorsLogicTest@1cf0f2e]" name="classSetUp" is-config="true" duration-ms="577" started-at="2015-02-22T13:32:40Z" finished-at="2015-02-22T13:32:41Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.InstructorsLogicTest@4fcb33]" name="classSetUp" is-config="true" duration-ms="702" started-at="2015-02-25T13:18:31Z" finished-at="2015-02-25T13:18:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.InstructorsLogicTest@1cf0f2e]" name="testAll" duration-ms="686" started-at="2015-02-22T13:32:41Z" finished-at="2015-02-22T13:32:41Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.InstructorsLogicTest@4fcb33]" name="testAll" duration-ms="3011" started-at="2015-02-25T13:18:32Z" finished-at="2015-02-25T13:18:35Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -145,21 +161,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.InstructorsLogicTest@1cf0f2e]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:41Z" finished-at="2015-02-22T13:32:41Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.InstructorsLogicTest@4fcb33]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:35Z" finished-at="2015-02-25T13:18:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.logic.InstructorsLogicTest -->
       <class name="teammates.test.automated.FeedbackSessionClosingReminderTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@d91c60]" name="classSetUp" is-config="true" duration-ms="499" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1a9fe14]" name="classSetUp" is-config="true" duration-ms="483" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@d91c60]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classTearDown -->
-        <test-method status="FAIL" signature="testFeedbackSessionClosingMailAction()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@d91c60]" name="testFeedbackSessionClosingMailAction" duration-ms="0" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="FAIL" signature="testFeedbackSessionClosingMailAction()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1a9fe14]" name="testFeedbackSessionClosingMailAction" duration-ms="0" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -196,13 +208,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFeedbackSessionClosingMailAction -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1a9fe14]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.automated.FeedbackSessionClosingReminderTest -->
       <class name="teammates.test.cases.ui.InstructorCourseInstructorAddActionTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorCourseInstructorAddActionTest@27b534]" name="classSetUp" is-config="true" duration-ms="717" started-at="2015-02-22T13:32:47Z" finished-at="2015-02-22T13:32:47Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorCourseInstructorAddActionTest@17da0d1]" name="classSetUp" is-config="true" duration-ms="686" started-at="2015-02-25T13:18:43Z" finished-at="2015-02-25T13:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testExecuteAndPostProcess()[pri:0, instance:teammates.test.cases.ui.InstructorCourseInstructorAddActionTest@27b534]" name="testExecuteAndPostProcess" duration-ms="31" started-at="2015-02-22T13:32:47Z" finished-at="2015-02-22T13:32:47Z">
+        <test-method status="FAIL" signature="testExecuteAndPostProcess()[pri:0, instance:teammates.test.cases.ui.InstructorCourseInstructorAddActionTest@17da0d1]" name="testExecuteAndPostProcess" duration-ms="31" started-at="2015-02-25T13:18:44Z" finished-at="2015-02-25T13:18:44Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -243,19 +259,11 @@
         </test-method> <!-- testExecuteAndPostProcess -->
       </class> <!-- teammates.test.cases.ui.InstructorCourseInstructorAddActionTest -->
       <class name="teammates.test.cases.ui.AllActionsAccessControlTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@bb1311]" name="testSetUp" is-config="true" duration-ms="609" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@e0a1b9]" name="testSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@bb1311]" name="classSetUp" is-config="true" duration-ms="764" started-at="2015-02-22T13:32:46Z" finished-at="2015-02-22T13:32:47Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@2d67b4]" name="classSetUp" is-config="true" duration-ms="733" started-at="2015-02-25T13:18:42Z" finished-at="2015-02-25T13:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="InstructorCourseInstructorAdd()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@bb1311]" name="InstructorCourseInstructorAdd" duration-ms="47" started-at="2015-02-22T13:32:47Z" finished-at="2015-02-22T13:32:47Z">
+        <test-method status="FAIL" signature="InstructorCourseInstructorAdd()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@2d67b4]" name="InstructorCourseInstructorAdd" duration-ms="110" started-at="2015-02-25T13:18:43Z" finished-at="2015-02-25T13:18:43Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -297,7 +305,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InstructorCourseInstructorAdd -->
-        <test-method status="FAIL" signature="InstructorCourseRemind()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@bb1311]" name="InstructorCourseRemind" duration-ms="16" started-at="2015-02-22T13:32:47Z" finished-at="2015-02-22T13:32:47Z">
+        <test-method status="FAIL" signature="InstructorCourseRemind()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@2d67b4]" name="InstructorCourseRemind" duration-ms="31" started-at="2015-02-25T13:18:43Z" finished-at="2015-02-25T13:18:43Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -340,25 +348,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InstructorCourseRemind -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@bb1311]" name="classTearDown" is-config="true" duration-ms="47" started-at="2015-02-22T13:32:47Z" finished-at="2015-02-22T13:32:47Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@2d67b4]" name="classTearDown" is-config="true" duration-ms="31" started-at="2015-02-25T13:18:43Z" finished-at="2015-02-25T13:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@bb1311]" name="testTearDown" is-config="true" duration-ms="15" started-at="2015-02-22T13:32:48Z" finished-at="2015-02-22T13:32:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@e0a1b9]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:48Z" finished-at="2015-02-22T13:32:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
       </class> <!-- teammates.test.cases.ui.AllActionsAccessControlTest -->
       <class name="teammates.test.automated.FeedbackSessionOpeningReminderTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@e0a1b9]" name="classSetUp" is-config="true" duration-ms="671" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:45Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@1b7465a]" name="classSetUp" is-config="true" duration-ms="468" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testFeedbackSessionOpeningMailAction()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@e0a1b9]" name="testFeedbackSessionOpeningMailAction" duration-ms="16" started-at="2015-02-22T13:32:45Z" finished-at="2015-02-22T13:32:45Z">
+        <test-method status="FAIL" signature="testFeedbackSessionOpeningMailAction()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@1b7465a]" name="testFeedbackSessionOpeningMailAction" duration-ms="16" started-at="2015-02-25T13:18:38Z" finished-at="2015-02-25T13:18:38Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -395,13 +395,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFeedbackSessionOpeningMailAction -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@e0a1b9]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:45Z" finished-at="2015-02-22T13:32:45Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@1b7465a]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:38Z" finished-at="2015-02-25T13:18:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.automated.FeedbackSessionOpeningReminderTest -->
       <class name="teammates.test.cases.ui.AdminInstructorAccountAddActionTest">
-        <test-method status="FAIL" signature="testExecuteAndPostProcess()[pri:0, instance:teammates.test.cases.ui.AdminInstructorAccountAddActionTest@e1c2c5]" name="testExecuteAndPostProcess" duration-ms="999" started-at="2015-02-22T13:32:45Z" finished-at="2015-02-22T13:32:46Z">
+        <test-method status="FAIL" signature="testExecuteAndPostProcess()[pri:0, instance:teammates.test.cases.ui.AdminInstructorAccountAddActionTest@1653a8e]" name="testExecuteAndPostProcess" duration-ms="4477" started-at="2015-02-25T13:18:38Z" finished-at="2015-02-25T13:18:42Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -440,13 +440,255 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExecuteAndPostProcess -->
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.AdminInstructorAccountAddActionTest@e1c2c5]" name="classSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:45Z" finished-at="2015-02-22T13:32:45Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.AdminInstructorAccountAddActionTest@1653a8e]" name="classSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:38Z" finished-at="2015-02-25T13:18:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
       </class> <!-- teammates.test.cases.ui.AdminInstructorAccountAddActionTest -->
+      <class name="teammates.test.cases.logic.EmailsTest">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="classSetUp" is-config="true" duration-ms="15" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="caseSetUp" is-config="true" duration-ms="16" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSetUp -->
+        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSetUp -->
+        <test-method status="FAIL" signature="testGenerateFeedbackSessionEmails()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="testGenerateFeedbackSessionEmails" duration-ms="1856" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:29Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
+	at teammates.logic.core.Emails.generateFeedbackSessionOpeningEmails(Emails.java:374)
+	at teammates.test.cases.logic.EmailsTest.testGenerateFeedbackSessionEmails(EmailsTest.java:553)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateFeedbackSessionEmails -->
+        <test-method status="FAIL" signature="testGenerateEvaluationEmails()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="testGenerateEvaluationEmails" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
+	at teammates.logic.core.Emails.generateEvaluationOpeningEmails(Emails.java:137)
+	at teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmails(EmailsTest.java:482)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateEvaluationEmails -->
+        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSetUp -->
+        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSetUp -->
+        <test-method status="FAIL" signature="testGenerateEvaluationEmailBase()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="testGenerateEvaluationEmailBase" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
+	at teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmailBase(EmailsTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateEvaluationEmailBase -->
+        <test-method status="FAIL" signature="testGenerateFeedbackEmailBase()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="testGenerateFeedbackEmailBase" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
+	at teammates.test.cases.logic.EmailsTest.testGenerateFeedbackEmailBase(EmailsTest.java:266)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateFeedbackEmailBase -->
+        <test-method status="FAIL" signature="testGenerateStudentCourseJoinEmail()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="testGenerateStudentCourseJoinEmail" duration-ms="16" started-at="2015-02-25T13:18:29Z" finished-at="2015-02-25T13:18:29Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
+	at teammates.logic.core.Emails.generateStudentCourseJoinEmail(Emails.java:731)
+	at teammates.test.cases.logic.EmailsTest.testGenerateStudentCourseJoinEmail(EmailsTest.java:410)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenerateStudentCourseJoinEmail -->
+        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:29Z" finished-at="2015-02-25T13:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSetUp -->
+        <test-method status="FAIL" signature="testSystemCrashReportEmailContent()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="testSystemCrashReportEmailContent" duration-ms="0" started-at="2015-02-25T13:18:29Z" finished-at="2015-02-25T13:18:29Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
+	at teammates.logic.core.Emails.generateSystemErrorEmail(Emails.java:845)
+	at teammates.test.cases.logic.EmailsTest.testSystemCrashReportEmailContent(EmailsTest.java:612)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSystemCrashReportEmailContent -->
+        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:29Z" finished-at="2015-02-25T13:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSetUp -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.EmailsTest@16469e8]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:29Z" finished-at="2015-02-25T13:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- teammates.test.cases.logic.EmailsTest -->
       <class name="teammates.test.cases.common.BuildPropertiesTest">
-        <test-method status="FAIL" signature="checkReadingEmailTemplates()[pri:0, instance:teammates.test.cases.common.BuildPropertiesTest@1325d6b]" name="checkReadingEmailTemplates" duration-ms="31" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
+        <test-method status="FAIL" signature="checkReadingEmailTemplates()[pri:0, instance:teammates.test.cases.common.BuildPropertiesTest@19104e3]" name="checkReadingEmailTemplates" duration-ms="31" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
           <exception class="java.lang.ExceptionInInitializerError">
             <full-stacktrace>
               <![CDATA[java.lang.ExceptionInInitializerError
@@ -485,254 +727,12 @@ Caused by: java.lang.NullPointerException: source
           </reporter-output>
         </test-method> <!-- checkReadingEmailTemplates -->
       </class> <!-- teammates.test.cases.common.BuildPropertiesTest -->
-      <class name="teammates.test.cases.logic.EmailsTest">
-        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="caseSetUp" is-config="true" duration-ms="31" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- caseSetUp -->
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="classSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testGenerateFeedbackEmailBase()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="testGenerateFeedbackEmailBase" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
-	at teammates.test.cases.logic.EmailsTest.testGenerateFeedbackEmailBase(EmailsTest.java:266)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGenerateFeedbackEmailBase -->
-        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- caseSetUp -->
-        <test-method status="FAIL" signature="testGenerateFeedbackSessionEmails()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="testGenerateFeedbackSessionEmails" duration-ms="1825" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:38Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
-	at teammates.logic.core.Emails.generateFeedbackSessionOpeningEmails(Emails.java:374)
-	at teammates.test.cases.logic.EmailsTest.testGenerateFeedbackSessionEmails(EmailsTest.java:553)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGenerateFeedbackSessionEmails -->
-        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- caseSetUp -->
-        <test-method status="FAIL" signature="testGenerateEvaluationEmailBase()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="testGenerateEvaluationEmailBase" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
-	at teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmailBase(EmailsTest.java:114)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGenerateEvaluationEmailBase -->
-        <test-method status="FAIL" signature="testGenerateEvaluationEmails()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="testGenerateEvaluationEmails" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
-	at teammates.logic.core.Emails.generateEvaluationOpeningEmails(Emails.java:137)
-	at teammates.test.cases.logic.EmailsTest.testGenerateEvaluationEmails(EmailsTest.java:482)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGenerateEvaluationEmails -->
-        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- caseSetUp -->
-        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:38Z" finished-at="2015-02-22T13:32:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- caseSetUp -->
-        <test-method status="FAIL" signature="testGenerateStudentCourseJoinEmail()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="testGenerateStudentCourseJoinEmail" duration-ms="16" started-at="2015-02-22T13:32:38Z" finished-at="2015-02-22T13:32:39Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
-	at teammates.logic.core.Emails.generateStudentCourseJoinEmail(Emails.java:731)
-	at teammates.test.cases.logic.EmailsTest.testGenerateStudentCourseJoinEmail(EmailsTest.java:410)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGenerateStudentCourseJoinEmail -->
-        <test-method status="FAIL" signature="testSystemCrashReportEmailContent()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="testSystemCrashReportEmailContent" duration-ms="0" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:39Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class teammates.common.util.EmailTemplates
-	at teammates.logic.core.Emails.generateSystemErrorEmail(Emails.java:845)
-	at teammates.test.cases.logic.EmailsTest.testSystemCrashReportEmailContent(EmailsTest.java:612)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSystemCrashReportEmailContent -->
-        <test-method status="PASS" signature="caseSetUp()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="caseSetUp" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- caseSetUp -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.EmailsTest@1110caf]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classTearDown -->
-      </class> <!-- teammates.test.cases.logic.EmailsTest -->
       <class name="teammates.test.automated.EvaluationClosingReminderTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.EvaluationClosingReminderTest@1e08f43]" name="classSetUp" is-config="true" duration-ms="31" started-at="2015-02-22T13:32:43Z" finished-at="2015-02-22T13:32:43Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.EvaluationClosingReminderTest@491a97]" name="classSetUp" is-config="true" duration-ms="16" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testEvaluationClosingMailAction()[pri:0, instance:teammates.test.automated.EvaluationClosingReminderTest@1e08f43]" name="testEvaluationClosingMailAction" duration-ms="125" started-at="2015-02-22T13:32:43Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="FAIL" signature="testEvaluationClosingMailAction()[pri:0, instance:teammates.test.automated.EvaluationClosingReminderTest@491a97]" name="testEvaluationClosingMailAction" duration-ms="15" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -770,17 +770,17 @@ Caused by: java.lang.NullPointerException: source
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEvaluationClosingMailAction -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.EvaluationClosingReminderTest@1e08f43]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.EvaluationClosingReminderTest@491a97]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.automated.EvaluationClosingReminderTest -->
       <class name="teammates.test.automated.FeedbackSessionPublishedReminderTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@902a8b]" name="classSetUp" is-config="true" duration-ms="530" started-at="2015-02-22T13:32:43Z" finished-at="2015-02-22T13:32:43Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@194c37c]" name="classSetUp" is-config="true" duration-ms="484" started-at="2015-02-25T13:18:36Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testFeedbackSessionOpeningMailAction()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@902a8b]" name="testFeedbackSessionOpeningMailAction" duration-ms="47" started-at="2015-02-22T13:32:43Z" finished-at="2015-02-22T13:32:43Z">
+        <test-method status="FAIL" signature="testFeedbackSessionOpeningMailAction()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@194c37c]" name="testFeedbackSessionOpeningMailAction" duration-ms="78" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -817,17 +817,17 @@ Caused by: java.lang.NullPointerException: source
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFeedbackSessionOpeningMailAction -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@902a8b]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:43Z" finished-at="2015-02-22T13:32:43Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionPublishedReminderTest@194c37c]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.automated.FeedbackSessionPublishedReminderTest -->
       <class name="teammates.test.automated.EvaluationOpeningReminderTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@14339ed]" name="classSetUp" is-config="true" duration-ms="15" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@d1692c]" name="classSetUp" is-config="true" duration-ms="16" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testEvaluationOpeningMailAction()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@14339ed]" name="testEvaluationOpeningMailAction" duration-ms="16" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="FAIL" signature="testEvaluationOpeningMailAction()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@d1692c]" name="testEvaluationOpeningMailAction" duration-ms="0" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -865,17 +865,17 @@ Caused by: java.lang.NullPointerException: source
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEvaluationOpeningMailAction -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@14339ed]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:44Z" finished-at="2015-02-22T13:32:44Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.automated.EvaluationOpeningReminderTest@d1692c]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:37Z" finished-at="2015-02-25T13:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.automated.EvaluationOpeningReminderTest -->
       <class name="teammates.test.cases.ui.InstructorCourseRemindActionTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorCourseRemindActionTest@1d61032]" name="classSetUp" is-config="true" duration-ms="749" started-at="2015-02-22T13:32:47Z" finished-at="2015-02-22T13:32:48Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.InstructorCourseRemindActionTest@1ae04c0]" name="classSetUp" is-config="true" duration-ms="719" started-at="2015-02-25T13:18:44Z" finished-at="2015-02-25T13:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testExecuteAndPostProcess()[pri:0, instance:teammates.test.cases.ui.InstructorCourseRemindActionTest@1d61032]" name="testExecuteAndPostProcess" duration-ms="16" started-at="2015-02-22T13:32:48Z" finished-at="2015-02-22T13:32:48Z">
+        <test-method status="FAIL" signature="testExecuteAndPostProcess()[pri:0, instance:teammates.test.cases.ui.InstructorCourseRemindActionTest@1ae04c0]" name="testExecuteAndPostProcess" duration-ms="0" started-at="2015-02-25T13:18:45Z" finished-at="2015-02-25T13:18:45Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -916,11 +916,11 @@ Caused by: java.lang.NullPointerException: source
         </test-method> <!-- testExecuteAndPostProcess -->
       </class> <!-- teammates.test.cases.ui.InstructorCourseRemindActionTest -->
       <class name="teammates.test.cases.logic.EvaluationsLogicTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@5ba5d]" name="classSetUp" is-config="true" duration-ms="828" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:39Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@1e890b4]" name="classSetUp" is-config="true" duration-ms="842" started-at="2015-02-25T13:18:29Z" finished-at="2015-02-25T13:18:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@5ba5d]" name="testAll" duration-ms="46" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:39Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@1e890b4]" name="testAll" duration-ms="47" started-at="2015-02-25T13:18:30Z" finished-at="2015-02-25T13:18:30Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[Could not initialize class teammates.common.util.EmailTemplates]]>
@@ -957,37 +957,37 @@ Caused by: java.lang.NullPointerException: source
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@5ba5d]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:32:39Z" finished-at="2015-02-22T13:32:39Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.logic.EvaluationsLogicTest@1e890b4]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:30Z" finished-at="2015-02-25T13:18:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.logic.EvaluationsLogicTest -->
     </test> <!-- component-tests(failed)(failed)(failed)(failed)(failed) -->
-    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="40414" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:33:16Z">
-      <class name="teammates.test.cases.ui.AllActionsAccessControlTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@1b220a3]" name="testSetUp" is-config="true" duration-ms="593" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:32:37Z">
+    <test name="rare-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="82302" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:19:49Z">
+      <class name="teammates.test.cases.logic.StudentsLogicTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@193509d]" name="testSetUp" is-config="true" duration-ms="858" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@18add5e]" name="testSetUp" is-config="true" duration-ms="16" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@173cf45]" name="testSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@1b220a3]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:16Z" finished-at="2015-02-22T13:33:16Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@193509d]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@18add5e]" name="testTearDown" is-config="true" duration-ms="16" started-at="2015-02-22T13:33:16Z" finished-at="2015-02-22T13:33:16Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@173cf45]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.ui.AllActionsAccessControlTest -->
+      </class> <!-- teammates.test.cases.logic.StudentsLogicTest -->
       <class name="teammates.test.cases.ui.browsertests.GodModeTest">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@bdd3e7]" name="classSetUp" is-config="true" duration-ms="7973" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:45Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@9625ac]" name="classSetUp" is-config="true" duration-ms="23276" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@bdd3e7]" name="testGodMode" duration-ms="187" started-at="2015-02-22T13:32:45Z" finished-at="2015-02-22T13:32:45Z">
+        <test-method status="FAIL" signature="testGodMode()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@9625ac]" name="testGodMode" duration-ms="172" started-at="2015-02-25T13:18:51Z" finished-at="2015-02-25T13:18:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<   <title>
@@ -1113,19 +1113,19 @@ Caused by: java.lang.NullPointerException: source
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGodMode -->
-        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@bdd3e7]" name="closeClass" is-config="true" duration-ms="31614" started-at="2015-02-22T13:32:45Z" finished-at="2015-02-22T13:33:16Z">
+        <test-method status="PASS" signature="closeClass()[pri:0, instance:teammates.test.cases.ui.browsertests.GodModeTest@9625ac]" name="closeClass" is-config="true" duration-ms="57981" started-at="2015-02-25T13:18:51Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeClass -->
       </class> <!-- teammates.test.cases.ui.browsertests.GodModeTest -->
     </test> <!-- rare-tests(failed)(failed)(failed)(failed)(failed) -->
-    <test name="sequential-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="67841" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:33:44Z">
+    <test name="sequential-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="142798" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:20:49Z">
       <class name="teammates.test.cases.ui.browsertests.StudentHomePageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentHomePageUiTest@1a0ad]" name="classSetup" is-config="true" duration-ms="11122" started-at="2015-02-22T13:33:25Z" finished-at="2015-02-22T13:33:36Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentHomePageUiTest@1e5b5f1]" name="classSetup" is-config="true" duration-ms="10265" started-at="2015-02-25T13:20:31Z" finished-at="2015-02-25T13:20:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentHomePageUiTest@1a0ad]" name="allTests" duration-ms="7816" started-at="2015-02-22T13:33:36Z" finished-at="2015-02-22T13:33:44Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentHomePageUiTest@1e5b5f1]" name="allTests" duration-ms="7987" started-at="2015-02-25T13:20:41Z" finished-at="2015-02-25T13:20:49Z">
           <exception class="org.junit.ComparisonFailure">
             <message>
               <![CDATA[expected:<<[expected>
@@ -1505,57 +1505,56 @@ Caused by: java.lang.NullPointerException: source
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentHomePageUiTest@1a0ad]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:44Z" finished-at="2015-02-22T13:33:44Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentHomePageUiTest@1e5b5f1]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:49Z" finished-at="2015-02-25T13:20:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.StudentHomePageUiTest -->
-      <class name="teammates.test.cases.ui.AllActionsAccessControlTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@1c4cc78]" name="testSetUp" is-config="true" duration-ms="593" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:32:37Z">
+      <class name="teammates.test.cases.logic.StudentsLogicTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@14dc149]" name="testSetUp" is-config="true" duration-ms="858" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@83bbd2]" name="testSetUp" is-config="true" duration-ms="16" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1652209]" name="testSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@83bbd2]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:44Z" finished-at="2015-02-22T13:33:44Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1652209]" name="testTearDown" is-config="true" duration-ms="15" started-at="2015-02-25T13:20:49Z" finished-at="2015-02-25T13:20:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@1c4cc78]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:44Z" finished-at="2015-02-22T13:33:44Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@14dc149]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:49Z" finished-at="2015-02-25T13:20:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.ui.AllActionsAccessControlTest -->
+      </class> <!-- teammates.test.cases.logic.StudentsLogicTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest@1345237]" name="classSetup" is-config="true" duration-ms="14012" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:51Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest@c5898a]" name="classSetup" is-config="true" duration-ms="81429" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest@1345237]" name="allTests" duration-ms="28867" started-at="2015-02-22T13:32:51Z" finished-at="2015-02-22T13:33:19Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest@c5898a]" name="allTests" duration-ms="39389" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:20:28Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"id","selector":"button_remind"}
-Command duration or timeout: 15 milliseconds
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: 9b55c8a2-10c7-4b03-89e0-0939a2afec64
+Session ID: 9b9454a3-b8bf-43c4-b14d-538eb5de59af
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"button_remind"}
-Command duration or timeout: 15 milliseconds
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: 9b55c8a2-10c7-4b03-89e0-0939a2afec64
+Session ID: 9b9454a3-b8bf-43c4-b14d-538eb5de59af
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.GeneratedConstructorAccessor86.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
@@ -1597,83 +1596,30 @@ Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unabl
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8429141078756212488webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8429141078756212488webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8429141078756212488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8429141078756212488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8429141078756212488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous151829549221280693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous151829549221280693webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous151829549221280693webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous151829549221280693webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous151829549221280693webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest@1345237]" name="classTearDown" is-config="true" duration-ms="5415" started-at="2015-02-22T13:33:19Z" finished-at="2015-02-22T13:33:25Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest@c5898a]" name="classTearDown" is-config="true" duration-ms="2855" started-at="2015-02-25T13:20:28Z" finished-at="2015-02-25T13:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorCourseDetailsPageUiTest -->
     </test> <!-- sequential-ui-tests(failed)(failed)(failed)(failed)(failed) -->
-    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="117449" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:34:33Z">
-      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@2bd560]" name="classSetup" is-config="true" duration-ms="29882" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:33:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@2bd560]" name="allTests" duration-ms="9720" started-at="2015-02-22T13:33:06Z" finished-at="2015-02-22T13:33:16Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1013)
-	at teammates.test.pageobjects.AppPage.getNewPageInstance(AppPage.java:165)
-	at teammates.test.cases.ui.browsertests.BaseUiTestCase.loginAdminToPage(BaseUiTestCase.java:76)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.getFeedbackEditPage(InstructorFeedbackEditPageUiTest.java:1027)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.testContent(InstructorFeedbackEditPageUiTest.java:144)
-	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests(InstructorFeedbackEditPageUiTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1009)
-	... 18 more
-Caused by: java.lang.IllegalStateException: Not in the correct page!
-	at teammates.test.pageobjects.AppPage.<init>(AppPage.java:147)
-	at teammates.test.pageobjects.InstructorFeedbackEditPage.<init>(InstructorFeedbackEditPage.java:149)
-	... 23 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@2bd560]" name="classTearDown" is-config="true" duration-ms="172" started-at="2015-02-22T13:33:16Z" finished-at="2015-02-22T13:33:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classTearDown -->
-      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
+    <test name="parallel-ui-tests(failed)(failed)(failed)(failed)(failed)" duration-ms="167711" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:21:14Z">
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@dec6da]" name="classSetup" is-config="true" duration-ms="8034" started-at="2015-02-22T13:33:25Z" finished-at="2015-02-22T13:33:33Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@33b96c]" name="classSetup" is-config="true" duration-ms="7737" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:19:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@dec6da]" name="testAll" duration-ms="12074" started-at="2015-02-22T13:33:33Z" finished-at="2015-02-22T13:33:45Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@33b96c]" name="testAll" duration-ms="13650" started-at="2015-02-25T13:19:57Z" finished-at="2015-02-25T13:20:10Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -1716,38 +1662,91 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@dec6da]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:45Z" finished-at="2015-02-22T13:33:45Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest@33b96c]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:10Z" finished-at="2015-02-25T13:20:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackQuestionSubmitPageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.AdminHomePageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1be1733]" name="classSetup" is-config="true" duration-ms="16" started-at="2015-02-22T13:33:51Z" finished-at="2015-02-22T13:33:51Z">
+      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@116ee8c]" name="classSetup" is-config="true" duration-ms="49506" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:19:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1be1733]" name="testAll" duration-ms="41964" started-at="2015-02-22T13:33:51Z" finished-at="2015-02-22T13:34:33Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@116ee8c]" name="allTests" duration-ms="7989" started-at="2015-02-25T13:19:17Z" finished-at="2015-02-25T13:19:25Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1013)
+	at teammates.test.pageobjects.AppPage.getNewPageInstance(AppPage.java:165)
+	at teammates.test.cases.ui.browsertests.BaseUiTestCase.loginAdminToPage(BaseUiTestCase.java:76)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.getFeedbackEditPage(InstructorFeedbackEditPageUiTest.java:1027)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.testContent(InstructorFeedbackEditPageUiTest.java:144)
+	at teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest.allTests(InstructorFeedbackEditPageUiTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1009)
+	... 18 more
+Caused by: java.lang.IllegalStateException: Not in the correct page!
+	at teammates.test.pageobjects.AppPage.<init>(AppPage.java:147)
+	at teammates.test.pageobjects.InstructorFeedbackEditPage.<init>(InstructorFeedbackEditPage.java:149)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allTests -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest@116ee8c]" name="classTearDown" is-config="true" duration-ms="23934" started-at="2015-02-25T13:19:25Z" finished-at="2015-02-25T13:19:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackEditPageUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.AdminHomePageUiTest">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@38e644]" name="classSetup" is-config="true" duration-ms="16" started-at="2015-02-25T13:20:22Z" finished-at="2015-02-25T13:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@38e644]" name="testAll" duration-ms="52477" started-at="2015-02-25T13:20:22Z" finished-at="2015-02-25T13:21:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"id","selector":"statusMessage"}
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 15 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: 1de84dab-a86b-4e14-8686-73599194c7c1
+Session ID: 0c0d940d-4dde-45d3-b379-fe569dede048
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"statusMessage"}
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 15 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: 1de84dab-a86b-4e14-8686-73599194c7c1
+Session ID: 0c0d940d-4dde-45d3-b379-fe569dede048
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.GeneratedConstructorAccessor115.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor86.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
@@ -1780,28 +1779,556 @@ Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unabl
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous1741812418421234851webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous1741812418421234851webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous1741812418421234851webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous1741812418421234851webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous1741812418421234851webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8305957714722348528webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8305957714722348528webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8305957714722348528webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8305957714722348528webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8305957714722348528webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@1be1733]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:34:33Z" finished-at="2015-02-22T13:34:33Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.AdminHomePageUiTest@38e644]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:21:14Z" finished-at="2015-02-25T13:21:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.AdminHomePageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@fb1100]" name="classSetup" is-config="true" duration-ms="39759" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:33:16Z">
+      <class name="teammates.test.cases.ui.browsertests.AllAccessControlUiTests">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1e3c996]" name="classSetup" is-config="true" duration-ms="18408" started-at="2015-02-25T13:20:23Z" finished-at="2015-02-25T13:20:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@fb1100]" name="testAll" duration-ms="12669" started-at="2015-02-22T13:33:16Z" finished-at="2015-02-22T13:33:29Z">
+        <test-method status="FAIL" signature="testPubliclyAccessiblePages()[pri:0, instance:teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1e3c996]" name="testPubliclyAccessiblePages" duration-ms="3635" started-at="2015-02-25T13:20:41Z" finished-at="2015-02-25T13:20:45Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<<[expected>
+
+   <html>
+      <head>
+         <link href="/favicon.png" rel="shortcut icon"/>
+                  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+                  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+                  <title>
+            TEAMMATES
+         </title>
+         <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="stylesheets/teammatesCommon.css" rel="stylesheet" type="text/css"/>
+               </head>
+      <body>
+         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="/index.html">
+                     TEAMMATES
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="container" id="frameBodyWrapper">
+            <div class="row">
+               <div class="alert alert-warning col-md-6 col-md-offset-3">
+                  <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                                    <p>
+                     TEAMMATES could not locate what you were trying to access.
+                     <br/>
+                                          <br/>
+                                          If you are a registered user you can go back to the
+                     <a href="/page/studentHomePage">
+                        home page
+                     </a>
+                     <br/>
+                                          <br/>
+                                          <br/>
+                                          <br/>
+                                          Possible reasons include:
+                  </p>
+                  <ul>
+                     <li>
+                        You clicked on a link received in email, but the link was mangled by the
+                                email software. Try copy-pasting the entire link into the Browser address
+                                bar.
+                     </li>
+                     <li>
+                        The entity (e.g. course, session) you were trying to access was deleted
+                                by an instructor after the link was sent to you by TEAMMATES.
+                        <br/>
+                                                <br/>
+                                             </li>
+                  </ul>
+                  If the problem persists, contact TEAMMATES support at
+                  <a>
+                     teammates@comp.nus.edu.sg
+                  </a>
+                  <br/>
+                                    <br/>
+                                    <b>
+                     Note:
+                  </b>
+                  If the problematic link was received via email,
+                        remember to copy-paste that email content when contacting TEAMMATES
+                        support.
+                  <br/>
+                                    <br/>
+                                    <p>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" id="footerComponent">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2">
+                     <span>
+                        [
+                        <a href="/index.html">
+                           TEAMMATES
+                        </a>
+                        V4.99]
+                     </span>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+                  <div class="col-md-2">
+                     <span>
+                        [Send
+                        <a class="link" href="../contact.html" target="_blank">
+                           Feedback
+                        </a>
+                        ]
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>
+
+</expected]>> but was:<<[actual>
+
+   <html>
+      <head>
+         <link href="/favicon.png" rel="shortcut icon"/>
+                  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+                  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+                  <title>
+            TEAMMATES
+         </title>
+         <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="stylesheets/teammatesCommon.css" rel="stylesheet" type="text/css"/>
+               </head>
+      <body>
+         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="/index.html">
+                     TEAMMATES
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="container" id="frameBodyWrapper">
+            <div class="row">
+               <div class="alert alert-warning col-md-6 col-md-offset-3">
+                  <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                                    <p>
+                     <br/>
+                                          <br/>
+                                          TEAMMATES could not locate what you were trying to access.
+                     <br/>
+                                          <br/>
+                                          <br/>
+                                          <br/>
+                                          Possible reasons include:
+                  </p>
+                  <ul>
+                     <li>
+                        You clicked on a link received in email, but the link was mangled by the
+                                email software. Try copy-pasting the entire link into the Browser address
+                                bar.
+                     </li>
+                     <li>
+                        The entity (e.g. course, session) you were trying to access was deleted
+                                by an instructor after the link was sent to you by TEAMMATES.
+                        <br/>
+                                                <br/>
+                                             </li>
+                  </ul>
+                  If the problem persists, contact TEAMMATES support at
+                  <a>
+                     teammates@comp.nus.edu.sg
+                  </a>
+                  <br/>
+                                    <br/>
+                                    <b>
+                     Note:
+                  </b>
+                  If the problematic link was received via email,
+                        remember to copy-paste that email content when contacting TEAMMATES
+                        support.
+                  <br/>
+                                    <br/>
+                                    If you are a registered user you can go back to the
+                  <a href="/page/studentHomePage">
+                     home page
+                  </a>
+                  <br/>
+                                    <br/>
+                                    <p>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" id="footerComponent">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2">
+                     <span>
+                        [
+                        <a href="/index.html">
+                           TEAMMATES
+                        </a>
+                        V4.99]
+                     </span>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+                  <div class="col-md-2">
+                     <span>
+                        [Send
+                        <a class="link" href="../contact.html" target="_blank">
+                           Feedback
+                        </a>
+                        ]
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>
+
+</actual]>>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<<[expected>
+
+   <html>
+      <head>
+         <link href="/favicon.png" rel="shortcut icon"/>
+                  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+                  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+                  <title>
+            TEAMMATES
+         </title>
+         <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="stylesheets/teammatesCommon.css" rel="stylesheet" type="text/css"/>
+               </head>
+      <body>
+         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="/index.html">
+                     TEAMMATES
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="container" id="frameBodyWrapper">
+            <div class="row">
+               <div class="alert alert-warning col-md-6 col-md-offset-3">
+                  <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                                    <p>
+                     TEAMMATES could not locate what you were trying to access.
+                     <br/>
+                                          <br/>
+                                          If you are a registered user you can go back to the
+                     <a href="/page/studentHomePage">
+                        home page
+                     </a>
+                     <br/>
+                                          <br/>
+                                          <br/>
+                                          <br/>
+                                          Possible reasons include:
+                  </p>
+                  <ul>
+                     <li>
+                        You clicked on a link received in email, but the link was mangled by the
+                                email software. Try copy-pasting the entire link into the Browser address
+                                bar.
+                     </li>
+                     <li>
+                        The entity (e.g. course, session) you were trying to access was deleted
+                                by an instructor after the link was sent to you by TEAMMATES.
+                        <br/>
+                                                <br/>
+                                             </li>
+                  </ul>
+                  If the problem persists, contact TEAMMATES support at
+                  <a>
+                     teammates@comp.nus.edu.sg
+                  </a>
+                  <br/>
+                                    <br/>
+                                    <b>
+                     Note:
+                  </b>
+                  If the problematic link was received via email,
+                        remember to copy-paste that email content when contacting TEAMMATES
+                        support.
+                  <br/>
+                                    <br/>
+                                    <p>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" id="footerComponent">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2">
+                     <span>
+                        [
+                        <a href="/index.html">
+                           TEAMMATES
+                        </a>
+                        V4.99]
+                     </span>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+                  <div class="col-md-2">
+                     <span>
+                        [Send
+                        <a class="link" href="../contact.html" target="_blank">
+                           Feedback
+                        </a>
+                        ]
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>
+
+</expected]>> but was:<<[actual>
+
+   <html>
+      <head>
+         <link href="/favicon.png" rel="shortcut icon"/>
+                  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+                  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+                  <title>
+            TEAMMATES
+         </title>
+         <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+                  <link href="stylesheets/teammatesCommon.css" rel="stylesheet" type="text/css"/>
+               </head>
+      <body>
+         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="/index.html">
+                     TEAMMATES
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="container" id="frameBodyWrapper">
+            <div class="row">
+               <div class="alert alert-warning col-md-6 col-md-offset-3">
+                  <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                                    <p>
+                     <br/>
+                                          <br/>
+                                          TEAMMATES could not locate what you were trying to access.
+                     <br/>
+                                          <br/>
+                                          <br/>
+                                          <br/>
+                                          Possible reasons include:
+                  </p>
+                  <ul>
+                     <li>
+                        You clicked on a link received in email, but the link was mangled by the
+                                email software. Try copy-pasting the entire link into the Browser address
+                                bar.
+                     </li>
+                     <li>
+                        The entity (e.g. course, session) you were trying to access was deleted
+                                by an instructor after the link was sent to you by TEAMMATES.
+                        <br/>
+                                                <br/>
+                                             </li>
+                  </ul>
+                  If the problem persists, contact TEAMMATES support at
+                  <a>
+                     teammates@comp.nus.edu.sg
+                  </a>
+                  <br/>
+                                    <br/>
+                                    <b>
+                     Note:
+                  </b>
+                  If the problematic link was received via email,
+                        remember to copy-paste that email content when contacting TEAMMATES
+                        support.
+                  <br/>
+                                    <br/>
+                                    If you are a registered user you can go back to the
+                  <a href="/page/studentHomePage">
+                     home page
+                  </a>
+                  <br/>
+                                    <br/>
+                                    <p>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" id="footerComponent">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2">
+                     <span>
+                        [
+                        <a href="/index.html">
+                           TEAMMATES
+                        </a>
+                        V4.99]
+                     </span>
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+                  <div class="col-md-2">
+                     <span>
+                        [Send
+                        <a class="link" href="../contact.html" target="_blank">
+                           Feedback
+                        </a>
+                        ]
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>
+
+</actual]>>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtml(HtmlHelper.java:34)
+	at teammates.test.pageobjects.AppPage.verifyHtml(AppPage.java:722)
+	at teammates.test.cases.ui.browsertests.AllAccessControlUiTests.testPubliclyAccessiblePages(AllAccessControlUiTests.java:303)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPubliclyAccessiblePages -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.AllAccessControlUiTests@1e3c996]" name="classTearDown" is-config="true" duration-ms="4056" started-at="2015-02-25T13:20:45Z" finished-at="2015-02-25T13:20:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- teammates.test.cases.ui.browsertests.AllAccessControlUiTests -->
+      <class name="teammates.test.cases.logic.StudentsLogicTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@c0c9c4]" name="testSetUp" is-config="true" duration-ms="858" started-at="2015-02-25T13:18:27Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1496198]" name="testSetUp" is-config="true" duration-ms="0" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionClosingReminderTest@1496198]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:21:14Z" finished-at="2015-02-25T13:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.logic.StudentsLogicTest@c0c9c4]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:21:14Z" finished-at="2015-02-25T13:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+      </class> <!-- teammates.test.cases.logic.StudentsLogicTest -->
+      <class name="teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest@4b3b20]" name="classSetup" is-config="true" duration-ms="5990" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:19:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest@4b3b20]" name="allTests" duration-ms="13603" started-at="2015-02-25T13:19:55Z" finished-at="2015-02-25T13:20:09Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1013)
+	at teammates.test.pageobjects.AppPage.getNewPageInstance(AppPage.java:165)
+	at teammates.test.cases.ui.browsertests.BaseUiTestCase.loginAdminToPage(BaseUiTestCase.java:76)
+	at teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest.getFeedbackEditPage(FeedbackRubricQuestionUiTest.java:284)
+	at teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest.testEditPage(FeedbackRubricQuestionUiTest.java:144)
+	at teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest.allTests(FeedbackRubricQuestionUiTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1009)
+	... 18 more
+Caused by: java.lang.IllegalStateException: Not in the correct page!
+	at teammates.test.pageobjects.AppPage.<init>(AppPage.java:147)
+	at teammates.test.pageobjects.InstructorFeedbackEditPage.<init>(InstructorFeedbackEditPage.java:149)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allTests -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest@4b3b20]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:09Z" finished-at="2015-02-25T13:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+      </class> <!-- teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest -->
+      <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1d26ddd]" name="classSetup" is-config="true" duration-ms="30611" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:18:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetup -->
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1d26ddd]" name="testAll" duration-ms="11031" started-at="2015-02-25T13:18:58Z" finished-at="2015-02-25T13:19:09Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -1844,70 +2371,17 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@fb1100]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:29Z" finished-at="2015-02-22T13:33:29Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest@1d26ddd]" name="classTearDown" is-config="true" duration-ms="39756" started-at="2015-02-25T13:19:09Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackResultsPageUiTest -->
-      <class name="teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest@a24fe7]" name="classSetup" is-config="true" duration-ms="8520" started-at="2015-02-22T13:33:16Z" finished-at="2015-02-22T13:33:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest@a24fe7]" name="allTests" duration-ms="14274" started-at="2015-02-22T13:33:25Z" finished-at="2015-02-22T13:33:39Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1013)
-	at teammates.test.pageobjects.AppPage.getNewPageInstance(AppPage.java:165)
-	at teammates.test.cases.ui.browsertests.BaseUiTestCase.loginAdminToPage(BaseUiTestCase.java:76)
-	at teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest.getFeedbackEditPage(FeedbackRubricQuestionUiTest.java:283)
-	at teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest.testEditPage(FeedbackRubricQuestionUiTest.java:144)
-	at teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest.allTests(FeedbackRubricQuestionUiTest.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at teammates.test.pageobjects.AppPage.createNewPage(AppPage.java:1009)
-	... 18 more
-Caused by: java.lang.IllegalStateException: Not in the correct page!
-	at teammates.test.pageobjects.AppPage.<init>(AppPage.java:147)
-	at teammates.test.pageobjects.InstructorFeedbackEditPage.<init>(InstructorFeedbackEditPage.java:149)
-	... 23 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest@a24fe7]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:39Z" finished-at="2015-02-22T13:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classTearDown -->
-      </class> <!-- teammates.test.cases.ui.browsertests.FeedbackRubricQuestionUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@1ce5858]" name="classSetup" is-config="true" duration-ms="8705" started-at="2015-02-22T13:33:29Z" finished-at="2015-02-22T13:33:38Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@874cc3]" name="classSetup" is-config="true" duration-ms="9641" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:19:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@1ce5858]" name="testAll" duration-ms="10873" started-at="2015-02-22T13:33:38Z" finished-at="2015-02-22T13:33:49Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@874cc3]" name="testAll" duration-ms="14726" started-at="2015-02-25T13:19:59Z" finished-at="2015-02-25T13:20:13Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -1950,35 +2424,17 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@1ce5858]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:49Z" finished-at="2015-02-22T13:33:49Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest@874cc3]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:13Z" finished-at="2015-02-25T13:20:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackSubmitPageUiTest -->
-      <class name="teammates.test.cases.ui.AllActionsAccessControlTest">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@1193540]" name="testSetUp" is-config="true" duration-ms="593" started-at="2015-02-22T13:32:36Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@13a03b0]" name="testSetUp" is-config="true" duration-ms="16" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.automated.FeedbackSessionOpeningReminderTest@13a03b0]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:34:33Z" finished-at="2015-02-22T13:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:teammates.test.cases.ui.AllActionsAccessControlTest@1193540]" name="testTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:34:33Z" finished-at="2015-02-22T13:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTearDown -->
-      </class> <!-- teammates.test.cases.ui.AllActionsAccessControlTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@86b178]" name="classSetup" is-config="true" duration-ms="6661" started-at="2015-02-22T13:33:51Z" finished-at="2015-02-22T13:33:58Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1764cb8]" name="classSetup" is-config="true" duration-ms="10295" started-at="2015-02-25T13:20:15Z" finished-at="2015-02-25T13:20:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@86b178]" name="testAll" duration-ms="8206" started-at="2015-02-22T13:33:58Z" finished-at="2015-02-22T13:34:06Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1764cb8]" name="testAll" duration-ms="14103" started-at="2015-02-25T13:20:25Z" finished-at="2015-02-25T13:20:39Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -2020,17 +2476,17 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@86b178]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:34:06Z" finished-at="2015-02-22T13:34:06Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest@1764cb8]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:39Z" finished-at="2015-02-25T13:20:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackSubmitPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@82190a]" name="classSetup" is-config="true" duration-ms="14165" started-at="2015-02-22T13:33:49Z" finished-at="2015-02-22T13:34:03Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@19dd00d]" name="classSetup" is-config="true" duration-ms="23867" started-at="2015-02-25T13:20:13Z" finished-at="2015-02-25T13:20:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@82190a]" name="testAll" duration-ms="15974" started-at="2015-02-22T13:34:03Z" finished-at="2015-02-22T13:34:19Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@19dd00d]" name="testAll" duration-ms="17566" started-at="2015-02-25T13:20:37Z" finished-at="2015-02-25T13:20:55Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -2072,17 +2528,17 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@82190a]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:34:19Z" finished-at="2015-02-22T13:34:19Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest@19dd00d]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:55Z" finished-at="2015-02-25T13:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackResultsPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@30df0]" name="classSetup" is-config="true" duration-ms="1732" started-at="2015-02-22T13:33:45Z" finished-at="2015-02-22T13:33:47Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@1c7bcc0]" name="classSetup" is-config="true" duration-ms="5367" started-at="2015-02-25T13:20:10Z" finished-at="2015-02-25T13:20:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@30df0]" name="testAll" duration-ms="4274" started-at="2015-02-22T13:33:47Z" finished-at="2015-02-22T13:33:51Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@1c7bcc0]" name="testAll" duration-ms="6177" started-at="2015-02-25T13:20:16Z" finished-at="2015-02-25T13:20:22Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -2124,17 +2580,17 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@30df0]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:51Z" finished-at="2015-02-22T13:33:51Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest@1c7bcc0]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:22Z" finished-at="2015-02-25T13:20:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.StudentFeedbackQuestionSubmitPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@10aac6c]" name="classSetup" is-config="true" duration-ms="48294" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:33:25Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@10cc4c1]" name="classSetup" is-config="true" duration-ms="40347" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:19:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@10aac6c]" name="allTests" duration-ms="26566" started-at="2015-02-22T13:33:25Z" finished-at="2015-02-22T13:33:51Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@10cc4c1]" name="allTests" duration-ms="24185" started-at="2015-02-25T13:19:08Z" finished-at="2015-02-25T13:19:32Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Timed out after 15 seconds waiting for presence of element located by: By.id: statusMessage
@@ -2171,10 +2627,10 @@ Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: 415d4ac3-169c-416b-913b-7c7df66ea6d1
+Session ID: e6c43f02-2be3-492d-967d-9f45caf2d121
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.GeneratedConstructorAccessor115.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor86.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
@@ -2194,28 +2650,28 @@ Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unabl
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8517599603687677621webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8517599603687677621webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8517599603687677621webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8517599603687677621webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8517599603687677621webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2762880131749382169webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2762880131749382169webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2762880131749382169webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2762880131749382169webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2762880131749382169webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@10aac6c]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:51Z" finished-at="2015-02-22T13:33:51Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest@10cc4c1]" name="classTearDown" is-config="true" duration-ms="16882" started-at="2015-02-25T13:19:32Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorFeedbackPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@e530d5]" name="classSetup" is-config="true" duration-ms="31" started-at="2015-02-22T13:33:39Z" finished-at="2015-02-22T13:33:39Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@106bb21]" name="classSetup" is-config="true" duration-ms="296" started-at="2015-02-25T13:20:09Z" finished-at="2015-02-25T13:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@e530d5]" name="testAll" duration-ms="43820" started-at="2015-02-22T13:33:39Z" finished-at="2015-02-22T13:34:23Z">
+        <test-method status="FAIL" signature="testAll()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@106bb21]" name="testAll" duration-ms="57236" started-at="2015-02-25T13:20:09Z" finished-at="2015-02-25T13:21:06Z">
           <exception class="org.junit.ComparisonFailure">
             <message>
               <![CDATA[expected:<<[expected>
@@ -5317,22 +5773,176 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@e530d5]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:34:23Z" finished-at="2015-02-22T13:34:23Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest@106bb21]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:21:06Z" finished-at="2015-02-25T13:21:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorStudentRecordsPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.StudentProfilePageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@e91a77]" name="classSetup" is-config="true" duration-ms="21768" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:32:58Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@8916fa]" name="classSetup" is-config="true" duration-ms="58041" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:19:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@e91a77]" name="allTests" duration-ms="22983" started-at="2015-02-22T13:32:58Z" finished-at="2015-02-22T13:33:21Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@8916fa]" name="allTests" duration-ms="49050" started-at="2015-02-25T13:19:26Z" finished-at="2015-02-25T13:20:15Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<<[expected>
+   <div class="container" id="frameBodyWrapper">
+      <div class="row">
+         <div class="alert alert-warning col-md-4 col-md-offset-4">
+            <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                        <p>
+               We could not locate what you were trying to access.
+               <br/>
+                              <br/>
+                              Make sure that the URL is correct, and you are a registered user of TEAMMATES. [
+               <a href="/logout.jsp">
+                  Logout
+               </a>
+               ]
+            </p>
+         </div>
+      </div>
+   </div>
+
+</expected]>> but was:<<[actual>
+   <div class="container" id="frameBodyWrapper">
+      <div class="row">
+         <div class="alert alert-warning col-md-6 col-md-offset-3">
+            <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                        <p>
+               <br/>
+                              <br/>
+                              TEAMMATES could not locate what you were trying to access.
+               <br/>
+                              <br/>
+                              <br/>
+                              <br/>
+                              Possible reasons include:
+            </p>
+            <ul>
+               <li>
+                  You clicked on a link received in email, but the link was mangled by the
+                                email software. Try copy-pasting the entire link into the Browser address
+                                bar.
+               </li>
+               <li>
+                  The entity (e.g. course, session) you were trying to access was deleted
+                                by an instructor after the link was sent to you by TEAMMATES.
+                  <br/>
+                                    <br/>
+                                 </li>
+            </ul>
+            If the problem persists, contact TEAMMATES support at
+            <a>
+               teammates@comp.nus.edu.sg
+            </a>
+            <br/>
+                        <br/>
+                        <b>
+               Note:
+            </b>
+            If the problematic link was received via email,
+                        remember to copy-paste that email content when contacting TEAMMATES
+                        support.
+            <br/>
+                        <br/>
+                        If you are a registered user you can go back to the
+            <a href="/page/studentHomePage">
+               home page
+            </a>
+            <br/>
+                        <br/>
+                        <p>
+            </p>
+         </div>
+      </div>
+   </div>
+
+</actual]>>]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.testActions(StudentProfilePageUiTest.java:114)
-	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests(StudentProfilePageUiTest.java:45)
+              <![CDATA[org.junit.ComparisonFailure: expected:<<[expected>
+   <div class="container" id="frameBodyWrapper">
+      <div class="row">
+         <div class="alert alert-warning col-md-4 col-md-offset-4">
+            <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                        <p>
+               We could not locate what you were trying to access.
+               <br/>
+                              <br/>
+                              Make sure that the URL is correct, and you are a registered user of TEAMMATES. [
+               <a href="/logout.jsp">
+                  Logout
+               </a>
+               ]
+            </p>
+         </div>
+      </div>
+   </div>
+
+</expected]>> but was:<<[actual>
+   <div class="container" id="frameBodyWrapper">
+      <div class="row">
+         <div class="alert alert-warning col-md-6 col-md-offset-3">
+            <img src="/images/puzzled.png" style="float: left; margin: 0 10px 10px 0; height: 90px;"/>
+                        <p>
+               <br/>
+                              <br/>
+                              TEAMMATES could not locate what you were trying to access.
+               <br/>
+                              <br/>
+                              <br/>
+                              <br/>
+                              Possible reasons include:
+            </p>
+            <ul>
+               <li>
+                  You clicked on a link received in email, but the link was mangled by the
+                                email software. Try copy-pasting the entire link into the Browser address
+                                bar.
+               </li>
+               <li>
+                  The entity (e.g. course, session) you were trying to access was deleted
+                                by an instructor after the link was sent to you by TEAMMATES.
+                  <br/>
+                                    <br/>
+                                 </li>
+            </ul>
+            If the problem persists, contact TEAMMATES support at
+            <a>
+               teammates@comp.nus.edu.sg
+            </a>
+            <br/>
+                        <br/>
+                        <b>
+               Note:
+            </b>
+            If the problematic link was received via email,
+                        remember to copy-paste that email content when contacting TEAMMATES
+                        support.
+            <br/>
+                        <br/>
+                        If you are a registered user you can go back to the
+            <a href="/page/studentHomePage">
+               home page
+            </a>
+            <br/>
+                        <br/>
+                        <p>
+            </p>
+         </div>
+      </div>
+   </div>
+
+</actual]>>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at teammates.test.driver.HtmlHelper.assertSameHtmlPart(HtmlHelper.java:43)
+	at teammates.test.pageobjects.AppPage.verifyHtmlPart(AppPage.java:821)
+	at teammates.test.pageobjects.StudentProfilePicturePage.verifyIsEntityNotFoundErrorPage(StudentProfilePicturePage.java:39)
+	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.testAjaxPictureUrl(StudentProfilePageUiTest.java:197)
+	at teammates.test.cases.ui.browsertests.StudentProfilePageUiTest.allTests(StudentProfilePageUiTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -5348,21 +5958,21 @@ Driver info: driver.version: unknown
 	at java.lang.Thread.run(Thread.java:745)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.junit.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="testAfter()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@e91a77]" name="testAfter" is-config="true" duration-ms="3543" started-at="2015-02-22T13:33:21Z" finished-at="2015-02-22T13:33:25Z">
+        <test-method status="PASS" signature="testAfter()[pri:0, instance:teammates.test.cases.ui.browsertests.StudentProfilePageUiTest@8916fa]" name="testAfter" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:15Z" finished-at="2015-02-25T13:20:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAfter -->
       </class> <!-- teammates.test.cases.ui.browsertests.StudentProfilePageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@1d4fc58]" name="classSetup" is-config="true" duration-ms="3619" started-at="2015-02-22T13:33:25Z" finished-at="2015-02-22T13:33:29Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@a663a4]" name="classSetup" is-config="true" duration-ms="4742" started-at="2015-02-25T13:19:49Z" finished-at="2015-02-25T13:19:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@1d4fc58]" name="allTests" duration-ms="26816" started-at="2015-02-22T13:33:29Z" finished-at="2015-02-22T13:33:55Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@a663a4]" name="allTests" duration-ms="28875" started-at="2015-02-25T13:19:54Z" finished-at="2015-02-25T13:20:23Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Timed out after 15 seconds waiting for presence of element located by: By.id: statusMessage
@@ -5395,14 +6005,14 @@ Driver info: driver.version: unknown
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"statusMessage"}
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 15 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
-Session ID: 3e578343-bcd8-41ff-80f8-a91006545f5c
+Session ID: 31c57078-7568-48f8-bccf-6f85e38d07ec
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=21.0}]
-	at sun.reflect.GeneratedConstructorAccessor115.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor86.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
@@ -5422,28 +6032,28 @@ Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unabl
 Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
 System info: host: 'soccf-tr5-001', ip: '172.26.191.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_60'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8653808909319860636webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8653808909319860636webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8653808909319860636webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8653808909319860636webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous8653808909319860636webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2082055170330564553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2082055170330564553webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8914)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2082055170330564553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2082055170330564553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10889)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a0100124/AppData/Local/Temp/anonymous2082055170330564553webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@1d4fc58]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-22T13:33:55Z" finished-at="2015-02-22T13:33:55Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest@a663a4]" name="classTearDown" is-config="true" duration-ms="0" started-at="2015-02-25T13:20:23Z" finished-at="2015-02-25T13:20:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
       </class> <!-- teammates.test.cases.ui.browsertests.InstructorCourseEditPageUiTest -->
       <class name="teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest">
-        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@9fa55]" name="classSetup" is-config="true" duration-ms="39774" started-at="2015-02-22T13:32:37Z" finished-at="2015-02-22T13:33:16Z">
+        <test-method status="PASS" signature="classSetup()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@2370ba]" name="classSetup" is-config="true" duration-ms="67746" started-at="2015-02-25T13:18:28Z" finished-at="2015-02-25T13:19:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetup -->
-        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@9fa55]" name="allTests" duration-ms="8301" started-at="2015-02-22T13:33:16Z" finished-at="2015-02-22T13:33:25Z">
+        <test-method status="FAIL" signature="allTests()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@2370ba]" name="allTests" duration-ms="8379" started-at="2015-02-25T13:19:35Z" finished-at="2015-02-25T13:19:44Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException]]>
@@ -5486,7 +6096,7 @@ Caused by: java.lang.IllegalStateException: Not in the correct page!
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allTests -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@9fa55]" name="classTearDown" is-config="true" duration-ms="219" started-at="2015-02-22T13:33:25Z" finished-at="2015-02-22T13:33:25Z">
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:teammates.test.cases.ui.browsertests.FeedbackContributionQuestionUiTest@2370ba]" name="classTearDown" is-config="true" duration-ms="5289" started-at="2015-02-25T13:19:44Z" finished-at="2015-02-25T13:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->

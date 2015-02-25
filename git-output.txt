@@ -1,42 +1,120 @@
 From https://github.com/TEAMMATES/repo
-   2f5f785..1da2fe7  master     -> origin/master
- * [new branch]      Issue1711  -> origin/Issue1711
-   a766a4e..3af3c37  Issue2306  -> origin/Issue2306
- * [new branch]      Issue2431  -> origin/Issue2431
- * [new branch]      Issue2511  -> origin/Issue2511
- * [new branch]      Issue2703  -> origin/Issue2703
- * [new branch]      Issue2705  -> origin/Issue2705
- * [new branch]      Issue2722  -> origin/Issue2722
- * [new branch]      Issue2755  -> origin/Issue2755
- + 394e7fe...5cd1283 Issue2767  -> origin/Issue2767  (forced update)
- * [new branch]      Issue2784  -> origin/Issue2784
- * [new branch]      Issue2859  -> origin/Issue2859
- * [new branch]      Issue2869  -> origin/Issue2869
- * [new branch]      Issue2880  -> origin/Issue2880
- * [new branch]      Issue2886  -> origin/Issue2886
- * [new branch]      Issue2896  -> origin/Issue2896
- * [new branch]      Issue2900  -> origin/Issue2900
- * [new branch]      Issue2907  -> origin/Issue2907
- * [new branch]      Issue2932  -> origin/Issue2932
- * [new branch]      Issue2944  -> origin/Issue2944
- * [new branch]      Issue2948  -> origin/Issue2948
- * [new branch]      Issue2968  -> origin/Issue2968
- * [new branch]      Issue2975  -> origin/Issue2975
- * [new branch]      Issue2987  -> origin/Issue2987
- * [new branch]      Issue3006  -> origin/Issue3006
- * [new branch]      Issue3008  -> origin/Issue3008
- * [new branch]      Issue3012  -> origin/Issue3012
- * [new branch]      contributors -> origin/contributors
-   c43f7b3..b9a7153  release    -> origin/release
- * [new tag]         V5.36      -> V5.36
- * [new tag]         V5.30      -> V5.30
- * [new tag]         V5.31      -> V5.31
- * [new tag]         V5.32      -> V5.32
- * [new tag]         V5.33      -> V5.33
- * [new tag]         V5.34      -> V5.34
- * [new tag]         V5.35      -> V5.35
-D	runtests.bat
-M	src/test/resources/pages/godmode.html
-Branch origin-Issue3012 set up to track remote branch Issue3012 from origin.
-Switched to a new branch 'origin-Issue3012'
-Already up-to-date.
+   1da2fe7..0070609  master     -> origin/master
+   c88ac1f..3fa417a  Issue2431  -> origin/Issue2431
+   f092f19..6ee4853  Issue2948  -> origin/Issue2948
+   fd7e6ee..b5b3460  Issue3012  -> origin/Issue3012
+   b9a7153..b24457b  release    -> origin/release
+ * [new tag]         V5.37      -> V5.37
+fatal: A branch named 'origin-Issue3012' already exists.
+Updating fd7e6ee..b5b3460
+Fast-forward
+ .../common/datatransfer/AccountAttributes.java     |  4 ++
+ .../FeedbackRubricQuestionDetails.java             |  8 ++-
+ src/main/java/teammates/common/util/Const.java     |  2 +-
+ .../StudentFeedbackSubmissionEditPageAction.java   |  3 +-
+ src/main/webapp/entityNotFoundPage.jsp             |  7 ++-
+ src/main/webapp/instructorHelp.html                |  6 +-
+ src/main/webapp/jsp/footer.jsp                     |  6 +-
+ src/main/webapp/jsp/instructorStudentList.jsp      | 15 +++++
+ src/main/webapp/studentHelp.html                   |  6 +-
+ .../cases/ui/InstructorCourseAddActionTest.java    |  2 +-
+ .../browsertests/FeedbackRubricQuestionUiTest.java |  9 +--
+ .../pages/InstructorCourseDetailsEmptyCourse.html  |  6 +-
+ .../pages/InstructorCourseEnrollPage.html          |  6 +-
+ .../InstructorCourseStudentDetailsRegistered.html  |  6 +-
+ .../InstructorEditStudentFeedbackPageModified.html |  6 +-
+ .../InstructorEditStudentFeedbackPageOpen.html     |  6 +-
+ .../pages/NJIfeedbackSessionSuccessEdited.html     | 36 ++++++++++-
+ .../pages/StudentEvalEditDataClearedHTML.html      |  6 +-
+ .../pages/StudentEvalEditEntryFieldsDisabled.html  |  6 +-
+ .../pages/StudentEvalEditP2PDisabled.html          |  6 +-
+ .../pages/StudentEvalEditPendingHTML.html          |  6 +-
+ .../StudentEvalEditPendingSubimittedHTML.html      |  6 +-
+ .../pages/StudentEvalEditResubmittedHTML.html      |  6 +-
+ .../pages/StudentEvalEditSubmittedHTML.html        |  6 +-
+ .../resources/pages/deadlineExceededErrorPage.html |  6 +-
+ src/test/resources/pages/entityNotFoundPage.html   |  6 +-
+ src/test/resources/pages/errorPage.html            |  6 +-
+ .../instructorCommentsPageForEmptyCourse.html      |  6 +-
+ .../pages/instructorCourseEditHelper.html          |  6 +-
+ .../pages/instructorCourseEnrollError.html         |  6 +-
+ .../instructorCourseJoinConfirmationHTML.html      |  6 +-
+ .../pages/instructorCoursesAddSuccessful.html      |  2 +-
+ .../resources/pages/instructorCoursesNoCourse.html |  6 +-
+ src/test/resources/pages/instructorEvalEdit.html   |  6 +-
+ .../pages/instructorEvalSubmissionEdit.html        |  6 +-
+ .../pages/instructorEvalSubmissionP2PDisabled.html |  6 +-
+ .../pages/instructorEvalSubmissionView.html        |  6 +-
+ .../instructorEvalSubmissionViewP2pDisabled.html   |  6 +-
+ .../pages/instructorFeedbackAddSuccess.html        | 36 ++++++++++-
+ ...orFeedbackConstSumOptionQuestionAddSuccess.html | 35 ++++++++++-
+ ...rFeedbackConstSumOptionQuestionEditSuccess.html | 36 ++++++++++-
+ ...eedbackConstSumRecipientQuestionAddSuccess.html | 36 ++++++++++-
+ ...edbackConstSumRecipientQuestionEditSuccess.html | 36 ++++++++++-
+ ...nstructorFeedbackContribQuestionAddSuccess.html | 36 ++++++++++-
+ .../instructorFeedbackContribQuestionEdit.html     | 36 ++++++++++-
+ ...structorFeedbackContribQuestionEditSuccess.html | 36 ++++++++++-
+ .../instructorFeedbackCopyQuestionSuccess.html     | 36 ++++++++++-
+ .../pages/instructorFeedbackCopySuccess.html       | 36 ++++++++++-
+ .../pages/instructorFeedbackEditCopyFail.html      | 42 +++++++++++--
+ .../pages/instructorFeedbackEditCopyPage.html      | 42 +++++++++++--
+ .../pages/instructorFeedbackEditCopySuccess.html   |  6 +-
+ .../pages/instructorFeedbackEditEmpty.html         | 42 +++++++++++--
+ .../pages/instructorFeedbackEditSuccess.html       | 36 ++++++++++-
+ .../pages/instructorFeedbackEmptyAll.html          |  6 +-
+ .../instructorFeedbackMcqQuestionAddSuccess.html   | 36 ++++++++++-
+ .../instructorFeedbackMcqQuestionEditSuccess.html  | 36 ++++++++++-
+ .../instructorFeedbackMsqQuestionAddSuccess.html   | 36 ++++++++++-
+ .../instructorFeedbackMsqQuestionEditSuccess.html  | 36 ++++++++++-
+ ...structorFeedbackNumScaleQuestionAddSuccess.html | 36 ++++++++++-
+ ...tructorFeedbackNumScaleQuestionEditSuccess.html | 36 ++++++++++-
+ .../instructorFeedbackQuestionAddSuccess.html      | 36 ++++++++++-
+ ...instructorFeedbackQuestionEditToTeamToTeam.html | 36 ++++++++++-
+ ...nstructorFeedbackQuestionVisibilityOptions.html | 36 ++++++++++-
+ ...nstructorFeedbackQuestionVisibilityPreview.html | 36 ++++++++++-
+ .../pages/instructorFeedbackResultsPageOpen.html   |  6 +-
+ ...instructorFeedbackRubricQuestionAddSuccess.html | 72 ++++++++++++++++++++--
+ .../instructorFeedbackRubricQuestionEdit.html      | 72 ++++++++++++++++++++--
+ ...torFeedbackRubricQuestionEditChoiceSuccess.html | 36 ++++++++++-
+ ...edbackRubricQuestionEditDescriptionSuccess.html | 36 ++++++++++-
+ ...edbackRubricQuestionEditSubQuestionSuccess.html | 36 ++++++++++-
+ ...nstructorFeedbackRubricQuestionEditSuccess.html | 72 ++++++++++++++++++++--
+ .../instructorFeedbackSubmitPageAwaiting.html      |  6 +-
+ ...ctorFeedbackTeamPeerEvalTemplateAddSuccess.html | 36 ++++++++++-
+ .../pages/instructorSearchPageDefault.html         |  6 +-
+ .../resources/pages/instructorStudentList.html     |  7 ++-
+ ...uctorStudentListPageDisplayArchivedCourses.html |  5 ++
+ ...tPageDisplayArchivedCoursesWithMoreOptions.html |  6 +-
+ ...structorStudentListPageHideArchivedCourses.html |  7 ++-
+ ...ListPageHideArchivedCoursesWithMoreOptions.html |  6 +-
+ .../pages/instructorStudentListPageLiveSearch.html |  5 ++
+ .../pages/instructorStudentListPageNoStudent.html  |  5 ++
+ .../instructorStudentListPageSearchShowEmail.html  |  5 ++
+ .../instructorStudentListPageWithPicture.html      |  5 ++
+ .../pages/instructorStudentListWithHelperView.html |  5 ++
+ .../pages/instructorStudentRecordsAjaxLoading.html |  6 +-
+ src/test/resources/pages/maintenance.html          |  6 +-
+ .../newlyJoinedInstructorStudentListPage.html      |  6 +-
+ src/test/resources/pages/pageNotFound.html         |  6 +-
+ .../pages/studentCommentsPageForStudent1.html      |  6 +-
+ .../pages/studentCourseJoinConfirmationHTML.html   |  6 +-
+ .../pages/studentEvalResultsExtreme1HTML.html      |  6 +-
+ .../pages/studentEvalResultsExtreme2HTML.html      |  6 +-
+ .../pages/studentEvalResultsExtreme3HTML.html      |  6 +-
+ .../pages/studentEvalResultsNotSubmittedHTML.html  |  6 +-
+ .../pages/studentEvalResultsP2PDisabled.html       |  6 +-
+ ...studentEvalResultsTheOtherDidn'tSubmitHTML.html |  6 +-
+ .../studentEvalResultsTwoMembersTypicalHTML.html   |  6 +-
+ .../pages/studentEvalResultsTypicalHTML.html       |  6 +-
+ .../pages/studentFeedbackResultsPageCONSTSUM.html  |  6 +-
+ .../pages/studentFeedbackResultsPageCONTRIB.html   |  6 +-
+ .../pages/studentFeedbackResultsPageMCQ.html       |  6 +-
+ .../pages/studentFeedbackResultsPageMSQ.html       |  6 +-
+ .../pages/studentFeedbackResultsPageNUMSCALE.html  |  6 +-
+ .../pages/studentFeedbackResultsPageOpen.html      |  6 +-
+ .../studentFeedbackResultsPageTeamToTeam.html      |  6 +-
+ .../pages/studentFeedbackSubmitPageAwaiting.html   |  6 +-
+ .../resources/pages/studentProfilePageDefault.html |  6 +-
+ .../unregisteredStudentFeedbackResultsPageMCQ.html |  6 +-
+ ...unregisteredStudentFeedbackResultsPageOpen.html |  6 +-
+ 109 files changed, 1466 insertions(+), 267 deletions(-)
